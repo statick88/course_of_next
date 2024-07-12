@@ -1,0 +1,704 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Curso de Nextjs",
+    "section": "",
+    "text": "Bienvenido",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bienvenido</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#de-qué-trata-este-curso",
+    "href": "index.html#de-qué-trata-este-curso",
+    "title": "Curso de Nextjs",
+    "section": "¿De qué trata este curso?",
+    "text": "¿De qué trata este curso?\nEste curso es una introducción a TypeScript, un lenguaje de programación de código abierto desarrollado y mantenido por Microsoft. TypeScript es un superconjunto de JavaScript que agrega tipado estático opcional y otras características avanzadas a JavaScript.\nEn este curso, aprenderá los conceptos básicos de TypeScript, incluidos los tipos de datos, las funciones, las clases, los módulos y mucho más. También explorará cómo TypeScript se puede utilizar para crear aplicaciones web modernas y escalables.\nEste curso es ideal para principiantes y aquellos con poca o ninguna experiencia en programación. Si eres un estudiante curioso, un profesional que busca cambiar de carrera o simplemente alguien que quiere aprender TypeScript, este curso es para ti.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bienvenido</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#para-quién-es-este-curso",
+    "href": "index.html#para-quién-es-este-curso",
+    "title": "Curso de Nextjs",
+    "section": "¿Para quién es este curso?",
+    "text": "¿Para quién es este curso?\nEste curso es para cualquier persona interesada en aprender TypeScript, incluidos:\n\nEstudiantes que deseen aprender un nuevo lenguaje de programación.\nProfesionales que buscan mejorar sus habilidades de desarrollo web.\nDesarrolladores que deseen aprender TypeScript para crear aplicaciones web modernas y escalables.\nCualquiera que quiera aprender un lenguaje de programación de código abierto y de alto rendimiento.\nCualquiera que quiera aprender TypeScript para mejorar su carrera profesional.\nCualquiera que quiera aprender TypeScript para crear aplicaciones web modernas y escalables.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bienvenido</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#cómo-contribuir",
+    "href": "index.html#cómo-contribuir",
+    "title": "Curso de Nextjs",
+    "section": "¿Cómo contribuir?",
+    "text": "¿Cómo contribuir?\nValoramos su contribución a este curso. Si encuentra algún error, desea sugerir mejoras o agregar contenido adicional, me encantaría saber de usted.\nPuede contribuir a través del repositorio en linea, donde puede compartir sus comentarios y sugerencias.\nJuntos, podemos mejorar continuamente este recurso educativo para beneficiar a la comunidad de estudiantes y entusiastas de la programación.\nEste ebook ha sido creado con el objetivo de proporcionar acceso gratuito y universal al conocimiento.\nEstará disponible en línea para cualquier persona, sin importar su ubicación o circunstancias, para acceder y aprender a su propio ritmo.\nPuede descargarlo en formato PDF, Epub o verlo en línea en cualquier momento y lugar.\n¡Gracias por su interés en este curso y espero que disfrute aprendiendo TypeScript!",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bienvenido</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/1_introduccion.html",
+    "href": "unidades/unidad1/1_introduccion.html",
+    "title": "Introducción",
+    "section": "",
+    "text": "En este ebook se presentan lo conceptos básicos acerca del frmework Next JS, el cual es un framework de React que permite la creación de aplicaciones web de forma sencilla y rápida. A lo largo de este ebook se presentarán los conceptos básicos de Next JS, así como ejemplos de su uso.\nLo primero que se debe hacer es instalar Next JS en su computadora. Para ello, se debe tener instalado Node JS en su computadora. Si no lo tiene instalado, puede descargarlo desde la página oficial de Node JS. Una vez que tenga Node JS instalado, puede instalar Next JS utilizando el siguiente comando:\nnpx create-next-app@latest --ts\n\n\n\nEste comando creará una nueva aplicación de Next JS en su computadora. Una vez que la aplicación se haya creado, puede ejecutarla utilizando el siguiente comando:\nnpm run dev\n\n\n\nEste comando iniciará un servidor local en su computadora y podrá ver la aplicación en su navegador web. A partir de aquí, puede comenzar a desarrollar su aplicación utilizando Next JS.\nEn los siguientes capítulos se presentarán los conceptos básicos de Next JS, así como ejemplos de su uso. Espero que este ebook le sea de utilidad y le ayude a comprender mejor el framework Next JS.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_que_es_nextjs.html",
+    "href": "unidades/unidad1/2_que_es_nextjs.html",
+    "title": "¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?",
+    "section": "",
+    "text": "Introducción a Next.js y sus beneficios.\nPara introducirnos en Next.js, primero debemos entender qué es un framework. Un framework es un conjunto de herramientas y librerías que facilitan el desarrollo de aplicaciones web. En el caso de Next.js, es un framework de React que nos permite crear aplicaciones web de forma sencilla y rápida.\nNext.js nos ofrece una serie de beneficios que lo hacen una excelente opción para el desarrollo de aplicaciones web:",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_que_es_nextjs.html#introducción-a-next.js-y-sus-beneficios.",
+    "href": "unidades/unidad1/2_que_es_nextjs.html#introducción-a-next.js-y-sus-beneficios.",
+    "title": "¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?",
+    "section": "",
+    "text": "Rendimiento: Next.js nos ofrece un rendimiento óptimo gracias a su capacidad de renderizado en el servidor y en el cliente. Esto nos permite crear aplicaciones web rápidas y eficientes.\nSEO: Next.js nos ofrece una serie de herramientas que nos permiten optimizar nuestras aplicaciones web para los motores de búsqueda. Esto nos ayuda a mejorar el posicionamiento de nuestras aplicaciones en los resultados de búsqueda.\nEscalabilidad: Next.js nos ofrece una arquitectura escalable que nos permite crear aplicaciones web de cualquier tamaño. Esto nos permite crear aplicaciones web que puedan crecer con el tiempo y adaptarse a las necesidades de nuestros usuarios.\nFacilidad de uso: Next.js nos ofrece una serie de herramientas y librerías que nos facilitan el desarrollo de aplicaciones web. Esto nos permite crear aplicaciones web de forma sencilla y rápida, sin necesidad de tener un conocimiento profundo de React.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_que_es_nextjs.html#comparación-con-otros-frameworks.",
+    "href": "unidades/unidad1/2_que_es_nextjs.html#comparación-con-otros-frameworks.",
+    "title": "¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?",
+    "section": "Comparación con otros frameworks.",
+    "text": "Comparación con otros frameworks.\nPodemos comparar Next.js con otros frameworks de React, como Create React App. A continuación, se presentan algunas diferencias entre Next.js y Vite:\n\nRendimiento: Next.js ofrece un rendimiento óptimo gracias a su capacidad de renderizado en el servidor y en el cliente. Vite, por otro lado, ofrece un rendimiento óptimo gracias a su capacidad de renderizado en el cliente.\nSEO: Next.js nos ofrece una serie de herramientas que nos permiten optimizar nuestras aplicaciones web para los motores de búsqueda. Vite, por otro lado, nos ofrece una serie de herramientas que nos permiten optimizar nuestras aplicaciones web para los motores de búsqueda.\nEscalabilidad: Next.js nos ofrece una arquitectura escalable que nos permite crear aplicaciones web de cualquier tamaño. Vite, por otro lado, nos ofrece una arquitectura escalable que nos permite crear aplicaciones web de cualquier tamaño.\nFacilidad de uso: Next.js nos ofrece una serie de herramientas y librerías que nos facilitan el desarrollo de aplicaciones web. Vite, por otro lado, nos ofrece una serie de herramientas y librerías que nos facilitan el desarrollo de aplicaciones web.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_que_es_nextjs.html#casos-de-uso-y-ejemplos-de-proyectos-exitosos.",
+    "href": "unidades/unidad1/2_que_es_nextjs.html#casos-de-uso-y-ejemplos-de-proyectos-exitosos.",
+    "title": "¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?",
+    "section": "Casos de uso y ejemplos de proyectos exitosos.",
+    "text": "Casos de uso y ejemplos de proyectos exitosos.\nNext.js es utilizado por una gran cantidad de empresas y desarrolladores en todo el mundo. Algunos ejemplos de proyectos exitosos que utilizan Next.js son:\n\nVercel: Vercel es una plataforma de desarrollo y alojamiento de aplicaciones web que utiliza Next.js como su framework principal. Vercel nos ofrece una serie de herramientas y servicios que nos permiten crear aplicaciones web de forma sencilla y rápida.\nSpotify: Spotify es una plataforma de streaming de música que utiliza Next.js para su aplicación web. Spotify nos ofrece una experiencia de usuario rápida y eficiente gracias a Next.js.\nNetflix: Netflix es una plataforma de streaming de películas y series que utiliza Next.js para su aplicación web. Netflix nos ofrece una experiencia de usuario rápida y eficiente gracias a Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_que_es_nextjs.html#conclusión.",
+    "href": "unidades/unidad1/2_que_es_nextjs.html#conclusión.",
+    "title": "¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?",
+    "section": "Conclusión.",
+    "text": "Conclusión.\nNext.js es un framework de React que nos permite crear aplicaciones web de forma sencilla y rápida. A lo largo de este ebook se presentarán los conceptos básicos de Next.js, así como ejemplos de su uso. Espero que este ebook le sea de utilidad y le ayude a comprender mejor el framework Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/3_arquitectura_de_un_proyecto_de_Nextjs.html",
+    "href": "unidades/unidad1/3_arquitectura_de_un_proyecto_de_Nextjs.html",
+    "title": "Arquitectura de un proyecto de Next.js",
+    "section": "",
+    "text": "Estructura de carpetas y archivos.\nLa estructura de un proyecto de Next.js se compone de las siguientes carpetas y archivos:",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Arquitectura de un proyecto de Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/3_arquitectura_de_un_proyecto_de_Nextjs.html#estructura-de-carpetas-y-archivos.",
+    "href": "unidades/unidad1/3_arquitectura_de_un_proyecto_de_Nextjs.html#estructura-de-carpetas-y-archivos.",
+    "title": "Arquitectura de un proyecto de Next.js",
+    "section": "",
+    "text": "pages: En esta carpeta se encuentran las páginas de la aplicación. Cada archivo en esta carpeta representa una página de la aplicación. Por ejemplo, si se crea un archivo index.js en esta carpeta, se creará una página de inicio en la aplicación.\npublic: En esta carpeta se encuentran los archivos estáticos de la aplicación, como imágenes, estilos y scripts. Estos archivos se pueden acceder directamente desde la URL de la aplicación.\nstyles: En esta carpeta se encuentran los estilos globales de la aplicación. Estos estilos se aplican a toda la aplicación y se pueden importar en cualquier archivo de la aplicación.\ncomponents: En esta carpeta se encuentran los componentes de la aplicación. Estos componentes se pueden reutilizar en diferentes partes de la aplicación.\nlib: En esta carpeta se encuentran las librerías y utilidades de la aplicación. Estas librerías se pueden importar en cualquier archivo de la aplicación.\napi: En esta carpeta se encuentran los endpoints de la API de la aplicación. Estos endpoints se pueden acceder desde la URL de la aplicación.\nconfig: En esta carpeta se encuentran los archivos de configuración de la aplicación. Estos archivos se pueden utilizar para configurar diferentes aspectos de la aplicación.\ntest: En esta carpeta se encuentran los archivos de pruebas de la aplicación. Estos archivos se pueden utilizar para probar diferentes aspectos de la aplicación.\n.env: En este archivo se encuentran las variables de entorno de la aplicación. Estas variables se pueden utilizar para configurar diferentes aspectos de la aplicación.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Arquitectura de un proyecto de Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/3_arquitectura_de_un_proyecto_de_Nextjs.html#configuración-inicial-de-un-proyecto.",
+    "href": "unidades/unidad1/3_arquitectura_de_un_proyecto_de_Nextjs.html#configuración-inicial-de-un-proyecto.",
+    "title": "Arquitectura de un proyecto de Next.js",
+    "section": "Configuración inicial de un proyecto.",
+    "text": "Configuración inicial de un proyecto.\nPara realizar la configuración inicial de un proyecto de Next.js, se deben seguir los siguientes pasos:\n\nCrear un nuevo proyecto de Next.js utilizando el siguiente comando:\n\nnpx create-next-app@latest --ts\n\nInstalar las dependencias del proyecto utilizando el siguiente comando:\n\nnpm install\n\nIniciar el servidor local utilizando el siguiente comando:\n\nnpm run dev\n\nAcceder a la aplicación en el navegador web utilizando la URL http://localhost:3000.\n\nCon estos pasos, se habrá creado un nuevo proyecto de Next.js y se podrá comenzar a desarrollar la aplicación.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Arquitectura de un proyecto de Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/3_arquitectura_de_un_proyecto_de_Nextjs.html#revisión-de-un-proyecto-ejemplo.",
+    "href": "unidades/unidad1/3_arquitectura_de_un_proyecto_de_Nextjs.html#revisión-de-un-proyecto-ejemplo.",
+    "title": "Arquitectura de un proyecto de Next.js",
+    "section": "Revisión de un proyecto ejemplo.",
+    "text": "Revisión de un proyecto ejemplo.\nA continuación se presenta un ejemplo de la estructura de un proyecto de Next.js:\nmy-next-app/\n├── pages/\n│   ├── index.tsx\n│   ├── about.tsx\n│   └── contact.tsx\n├── public/\n│   ├── images/\n│   │   └── logo.png\n│   ├── styles/\n│   │   └── main.css\n├── styles/\n│   └── global.css\n├── components/\n│   ├── header.tsx\n│   ├── footer.tsx\n│   └── button.tsx\n├── lib/\n│   ├── api.ts\n│   └── utils.ts\n├── api/\n│   ├── users.ts\n│   ├── posts.ts\n├── config/\n│   ├── app.config.ts\n├── test/\n│   ├── app.test.ts\n├── .env\nEn este ejemplo, se puede observar la estructura de un proyecto de Next.js, así como las carpetas y archivos que conforman el proyecto",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Arquitectura de un proyecto de Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/4_herramientas_y_stack.html",
+    "href": "unidades/unidad1/4_herramientas_y_stack.html",
+    "title": "Herramientas y stack utilizado en el curso",
+    "section": "",
+    "text": "Herramientas necesarias para el curso.\nPara poder seguir este curso, necesitarás tener instaladas las siguientes herramientas en tu computadora:",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Herramientas y stack utilizado en el curso</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/4_herramientas_y_stack.html#herramientas-necesarias-para-el-curso.",
+    "href": "unidades/unidad1/4_herramientas_y_stack.html#herramientas-necesarias-para-el-curso.",
+    "title": "Herramientas y stack utilizado en el curso",
+    "section": "",
+    "text": "Node.js: Es un entorno de ejecución para JavaScript que nos permite ejecutar código JavaScript en el servidor. Puedes descargar Node.js desde la página oficial de Node.js.\nnpm: Es el gestor de paquetes de Node.js que nos permite instalar y gestionar las dependencias de nuestros proyectos. npm viene incluido con Node.js, por lo que no es necesario instalarlo por separado.\nVisual Studio Code: Es un editor de código fuente desarrollado por Microsoft que nos permite escribir y editar código de forma sencilla. Puedes descargar Visual Studio Code desde la página oficial de Visual Studio Code.\nGit: Es un sistema de control de versiones que nos permite gestionar el código fuente de nuestros proyectos. Puedes descargar Git desde la página oficial de Git.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Herramientas y stack utilizado en el curso</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/4_herramientas_y_stack.html#configuración-del-entorno-de-desarrollo.",
+    "href": "unidades/unidad1/4_herramientas_y_stack.html#configuración-del-entorno-de-desarrollo.",
+    "title": "Herramientas y stack utilizado en el curso",
+    "section": "Configuración del entorno de desarrollo.",
+    "text": "Configuración del entorno de desarrollo.\nCreamos un nuevo proyecto de Next.js utilizando el siguiente comando:\nnpx create-next-app@latest --ts",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Herramientas y stack utilizado en el curso</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/4_herramientas_y_stack.html#instalación-y-configuración-de-dependencias.",
+    "href": "unidades/unidad1/4_herramientas_y_stack.html#instalación-y-configuración-de-dependencias.",
+    "title": "Herramientas y stack utilizado en el curso",
+    "section": "Instalación y configuración de dependencias.",
+    "text": "Instalación y configuración de dependencias.\nInstalamos las dependencias del proyecto utilizando el siguiente comando:\nnpm install",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Herramientas y stack utilizado en el curso</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/4_herramientas_y_stack.html#iniciar-el-servidor-local.",
+    "href": "unidades/unidad1/4_herramientas_y_stack.html#iniciar-el-servidor-local.",
+    "title": "Herramientas y stack utilizado en el curso",
+    "section": "Iniciar el servidor local.",
+    "text": "Iniciar el servidor local.\nIniciamos el servidor local utilizando el siguiente comando:\nnpm run dev",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Herramientas y stack utilizado en el curso</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/4_herramientas_y_stack.html#acceder-a-la-aplicación-en-el-navegador.",
+    "href": "unidades/unidad1/4_herramientas_y_stack.html#acceder-a-la-aplicación-en-el-navegador.",
+    "title": "Herramientas y stack utilizado en el curso",
+    "section": "Acceder a la aplicación en el navegador.",
+    "text": "Acceder a la aplicación en el navegador.\nAccedemos a la aplicación en el navegador web utilizando la URL http://localhost:3000.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Herramientas y stack utilizado en el curso</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html",
+    "href": "unidades/unidad1/5_conceptos_basicos.html",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "",
+    "text": "Rutas básicas.\nLas rutas en Next.js se crean utilizando la carpeta pages. Cada archivo en esta carpeta representa una ruta en la aplicación. Por ejemplo, si se crea un archivo index.js en esta carpeta, se creará una ruta de inicio en la aplicación.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html#rutas-dinámicas.",
+    "href": "unidades/unidad1/5_conceptos_basicos.html#rutas-dinámicas.",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "Rutas dinámicas.",
+    "text": "Rutas dinámicas.\nLas rutas dinámicas en Next.js se crean utilizando corchetes [] en el nombre del archivo. Por ejemplo, si se crea un archivo [id].js en esta carpeta, se creará una ruta dinámica en la aplicación.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html#nested-routes.",
+    "href": "unidades/unidad1/5_conceptos_basicos.html#nested-routes.",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "Nested routes.",
+    "text": "Nested routes.\nLas rutas anidadas en Next.js se crean utilizando la carpeta pages y subcarpetas. Por ejemplo, si se crea una carpeta blog y un archivo [slug].js en esta carpeta, se creará una ruta anidada en la aplicación.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html#rutas-con-parámetros.",
+    "href": "unidades/unidad1/5_conceptos_basicos.html#rutas-con-parámetros.",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "Rutas con parámetros.",
+    "text": "Rutas con parámetros.\nLas rutas con parámetros en Next.js se crean utilizando corchetes [] en la ruta. Por ejemplo, si se crea una ruta /blog/[slug] en la aplicación, se creará una ruta con parámetros en la aplicación.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html#rutas-con-query-strings.",
+    "href": "unidades/unidad1/5_conceptos_basicos.html#rutas-con-query-strings.",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "Rutas con query strings.",
+    "text": "Rutas con query strings.\nLas rutas con query strings en Next.js se crean utilizando el signo de interrogación ? en la ruta. Por ejemplo, si se crea una ruta /blog?slug=hello-world en la aplicación, se creará una ruta con query strings en la aplicación.º",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html#rutas-con-rutas-anidadas.",
+    "href": "unidades/unidad1/5_conceptos_basicos.html#rutas-con-rutas-anidadas.",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "Rutas con rutas anidadas.",
+    "text": "Rutas con rutas anidadas.\nLas rutas con rutas anidadas en Next.js se crean utilizando la carpeta pages y subcarpetas. Por ejemplo, si se crea una carpeta blog y un archivo [slug].js en esta carpeta, se creará una ruta anidada en la aplicación.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html#rutas-con-rutas-anidadas-y-parámetros.",
+    "href": "unidades/unidad1/5_conceptos_basicos.html#rutas-con-rutas-anidadas-y-parámetros.",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "Rutas con rutas anidadas y parámetros.",
+    "text": "Rutas con rutas anidadas y parámetros.\nLas rutas con rutas anidadas y parámetros en Next.js se crean utilizando la carpeta pages y subcarpetas. Por ejemplo, si se crea una carpeta blog y un archivo [slug].js en esta carpeta, se creará una ruta anidada con parámetros en la aplicación.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html#rutas-con-rutas-anidadas-y-query-strings.",
+    "href": "unidades/unidad1/5_conceptos_basicos.html#rutas-con-rutas-anidadas-y-query-strings.",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "Rutas con rutas anidadas y query strings.",
+    "text": "Rutas con rutas anidadas y query strings.\nLas rutas con rutas anidadas y query strings en Next.js se crean utilizando la carpeta pages y subcarpetas. Por ejemplo, si se crea una carpeta blog y un archivo [slug].js en esta carpeta, se creará una ruta anidada con query strings en la aplicación.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html#conclusión.",
+    "href": "unidades/unidad1/5_conceptos_basicos.html#conclusión.",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "Conclusión.",
+    "text": "Conclusión.\nEn este capítulo se presentaron los conceptos básicos de cómo crear rutas en Next.js. A lo largo de este capítulo se presentaron los siguientes temas: rutas básicas, rutas dinámicas, rutas anidadas, rutas con parámetros, rutas con query strings, rutas con rutas anidadas, rutas con rutas anidadas y parámetros, y rutas con rutas anidadas y query strings. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo crear rutas en Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html#ejercicios.",
+    "href": "unidades/unidad1/5_conceptos_basicos.html#ejercicios.",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "Ejercicios.",
+    "text": "Ejercicios.\n\nCrea una ruta básica en Next.js.\nCrea una ruta dinámica en Next.js.\nCrea una ruta anidada en Next.js.\nCrea una ruta con parámetros en Next.js.\nCrea una ruta con query strings en Next.js.\nCrea una ruta con rutas anidadas en Next.js.\nCrea una ruta con rutas anidadas y parámetros en Next.js.\nCrea una ruta con rutas anidadas y query strings en Next.js.\n\nEspero que estos ejercicios le sean de utilidad y le ayuden a practicar cómo crear rutas en Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/6_layout_next.html",
+    "href": "unidades/unidad1/6_layout_next.html",
+    "title": "Cómo crear Layout en Next.js",
+    "section": "",
+    "text": "Definición de layouts.\nPara definir un layout en Next.js, se debe crear un componente de React que contenga la estructura del layout. Por ejemplo, si se desea crear un layout con un encabezado y un pie de página, se puede crear un componente Layout que contenga estos elementos.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Cómo crear Layout en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/6_layout_next.html#definición-de-layouts.",
+    "href": "unidades/unidad1/6_layout_next.html#definición-de-layouts.",
+    "title": "Cómo crear Layout en Next.js",
+    "section": "",
+    "text": "Componente Layout:\nimport Head from 'next/head'\n\nconst Layout = ({ children }) =&gt; {\n  return (\n    &lt;div&gt;\n      &lt;Head&gt;\n        &lt;title&gt;My Next.js App&lt;/title&gt;\n      &lt;/Head&gt;\n      &lt;header&gt;\n        &lt;h1&gt;Header&lt;/h1&gt;\n      &lt;/header&gt;\n      &lt;main&gt;\n        {children}\n      &lt;/main&gt;\n      &lt;footer&gt;\n        &lt;p&gt;Footer&lt;/p&gt;\n      &lt;/footer&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default Layout\nEn el componente Layout, se define la estructura del layout con un encabezado, un pie de página y un contenedor principal para el contenido de la página. El componente recibe como prop children el contenido de la página que se renderizará en el contenedor principal.\n\n\nComponente Index:\nimport Layout from '../components/Layout'\n\nconst Index = () =&gt; {\n  return (\n    &lt;Layout&gt;\n      &lt;h1&gt;Home Page&lt;/h1&gt;\n      &lt;p&gt;Welcome to my Next.js App&lt;/p&gt;\n    &lt;/Layout&gt;\n  )\n}\n\nexport default Index\nEn el componente Index, se importa el componente Layout y se renderiza el contenido de la página dentro del layout. De esta forma, se crea una estructura de layout que se puede reutilizar en diferentes páginas de la aplicación.\n\n\nComponente Layout específico:\nimport Head from 'next/head'\n\nconst Layout = ({ title, children }) =&gt; {\n  return (\n    &lt;div&gt;\n      &lt;Head&gt;\n        &lt;title&gt;{title}&lt;/title&gt;\n      &lt;/Head&gt;\n      &lt;header&gt;\n        &lt;h1&gt;Header&lt;/h1&gt;\n      &lt;/header&gt;\n      &lt;main&gt;\n        {children}\n      &lt;/main&gt;\n      &lt;footer&gt;\n        &lt;p&gt;Footer&lt;/p&gt;\n      &lt;/footer&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default Layout\nEn el componente Layout, se define un prop title que permite personalizar el título de la página. De esta forma, se puede crear un layout específico para cada página de la aplicación.\n\n\nComponente About:\nimport Layout from '../components/Layout'\n\nconst About = () =&gt; {\n  return (\n    &lt;Layout title=\"About Page\"&gt;\n      &lt;h1&gt;About Page&lt;/h1&gt;\n      &lt;p&gt;Learn more about my Next.js App&lt;/p&gt;\n    &lt;/Layout&gt;\n  )\n}\n\nexport default About\nEn el componente About, se importa el componente Layout y se renderiza el contenido de la página dentro del layout. Se utiliza el prop title para personalizar el título de la página. De esta forma, se crea un layout específico para la página About.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Cómo crear Layout en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/6_layout_next.html#uso-de-layouts-globales-y-específicos.",
+    "href": "unidades/unidad1/6_layout_next.html#uso-de-layouts-globales-y-específicos.",
+    "title": "Cómo crear Layout en Next.js",
+    "section": "Uso de layouts globales y específicos.",
+    "text": "Uso de layouts globales y específicos.\nEn Next.js, se pueden crear layouts globales que se aplican a todas las páginas de la aplicación, así como layouts específicos que se aplican a páginas específicas de la aplicación. De esta forma, se puede personalizar el diseño de cada página de la aplicación de forma independiente.\n\nLayout global:\nPara crear un layout global en Next.js, se puede definir un componente Layout en un archivo separado y importarlo en todas las páginas de la aplicación. De esta forma, se aplica el mismo diseño a todas las páginas de la aplicación.\nEjemplo:\nimport Layout from '../components/Layout'\n\nconst MyApp = ({ Component, pageProps }) =&gt; {\n  return (\n    &lt;Layout&gt;\n      &lt;Component {...pageProps} /&gt;\n    &lt;/Layout&gt;\n  )\n}\n\nexport default MyApp\n\n\nLayout específico:\nPara crear un layout específico en Next.js, se puede definir un componente Layout en un archivo separado y personalizarlo con props específicas para cada página. De esta forma, se puede crear un diseño único para cada página de la aplicación.\nEjemplo:\nimport Layout from '../components/Layout'\n\nconst About = () =&gt; {\n  return (\n    &lt;Layout title=\"About Page\"&gt;\n      &lt;h1&gt;About Page&lt;/h1&gt;\n      &lt;p&gt;Learn more about my Next.js App&lt;/p&gt;\n    &lt;/Layout&gt;\n  )\n}\n\nexport default About\nEn este ejemplo, se crea un layout específico para la página About con un título personalizado. De esta forma, se puede personalizar el diseño de cada página de la aplicación de forma independiente.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Cómo crear Layout en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/6_layout_next.html#conclusión.",
+    "href": "unidades/unidad1/6_layout_next.html#conclusión.",
+    "title": "Cómo crear Layout en Next.js",
+    "section": "Conclusión.",
+    "text": "Conclusión.\nEn este capítulo se presentaron los conceptos básicos de cómo crear Layouts en Next.js. A lo largo de este capítulo se presentaron los siguientes temas: definición de layouts, uso de layouts globales y específicos. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo crear Layouts en Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Cómo crear Layout en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/6_layout_next.html#ejercicios.",
+    "href": "unidades/unidad1/6_layout_next.html#ejercicios.",
+    "title": "Cómo crear Layout en Next.js",
+    "section": "Ejercicios.",
+    "text": "Ejercicios.\n\nCrea un layout con un encabezado y un pie de página en Next.js.\nCrea un layout con un título personalizado en Next.js.\nCrea un layout global que se aplique a todas las páginas de la aplicación.\nCrea un layout específico que se aplique a una página específica de la aplicación.\nCrea un layout con un menú de navegación en Next.js.\nCrea un layout con un formulario de contacto en Next.js.\n\nEspero que estos ejercicios le sean de utilidad y le ayuden a practicar cómo crear Layouts en Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Cómo crear Layout en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/6_layout_next.html#implementación-de-layouts-en-un-proyecto.",
+    "href": "unidades/unidad1/6_layout_next.html#implementación-de-layouts-en-un-proyecto.",
+    "title": "Cómo crear Layout en Next.js",
+    "section": "Implementación de layouts en un proyecto.",
+    "text": "Implementación de layouts en un proyecto.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Cómo crear Layout en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/7_navegacion_next.html",
+    "href": "unidades/unidad1/7_navegacion_next.html",
+    "title": "Cómo funciona la navegación en Next.js",
+    "section": "",
+    "text": "Link component.\nEl componente Link de Next.js nos permite crear enlaces entre las diferentes páginas de nuestra aplicación. Este componente se utiliza de la siguiente forma:\nEn el ejemplo anterior, se crea un enlace a la página About utilizando el componente Link. Al hacer clic en el enlace, se navegará a la página About de forma rápida y sin recargar la página.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Cómo funciona la navegación en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/7_navegacion_next.html#link-component.",
+    "href": "unidades/unidad1/7_navegacion_next.html#link-component.",
+    "title": "Cómo funciona la navegación en Next.js",
+    "section": "",
+    "text": "import Link from 'next/link'\n\nconst Index = () =&gt; {\n  return (\n    &lt;div&gt;\n      &lt;h1&gt;Home Page&lt;/h1&gt;\n      &lt;Link href=\"/about\"&gt;\n        &lt;a&gt;About Page&lt;/a&gt;\n      &lt;/Link&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default Index",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Cómo funciona la navegación en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/7_navegacion_next.html#uso-de-router.",
+    "href": "unidades/unidad1/7_navegacion_next.html#uso-de-router.",
+    "title": "Cómo funciona la navegación en Next.js",
+    "section": "Uso de Router.",
+    "text": "Uso de Router.\nLa librería next/router nos permite navegar entre las diferentes páginas de nuestra aplicación de forma programática. Para utilizar esta librería, se debe importar el objeto Router de la siguiente forma:\nimport { useRouter } from 'next/router'\n\nconst About = () =&gt; {\n  const router = useRouter()\n\n  const handleClick = () =&gt; {\n    router.push('/')\n  }\n\n  return (\n    &lt;div&gt;\n      &lt;h1&gt;About Page&lt;/h1&gt;\n      &lt;button onClick={handleClick}&gt;Go to Home Page&lt;/button&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default About\nEn el ejemplo anterior, se importa el objeto Router de la librería next/router y se utiliza el método push para navegar a la página de inicio al hacer clic en un botón.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Cómo funciona la navegación en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/7_navegacion_next.html#navegación-programática.",
+    "href": "unidades/unidad1/7_navegacion_next.html#navegación-programática.",
+    "title": "Cómo funciona la navegación en Next.js",
+    "section": "Navegación programática.",
+    "text": "Navegación programática.\nLa navegación programática nos permite navegar entre las diferentes páginas de nuestra aplicación de forma dinámica. Esto nos permite crear experiencias de usuario más interactivas y personalizadas.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Cómo funciona la navegación en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/7_navegacion_next.html#conclusión.",
+    "href": "unidades/unidad1/7_navegacion_next.html#conclusión.",
+    "title": "Cómo funciona la navegación en Next.js",
+    "section": "Conclusión.",
+    "text": "Conclusión.\nLa navegación en Next.js se realiza a través de la librería next/router y el componente Link. Estas herramientas nos permiten crear enlaces entre las diferentes páginas de nuestra aplicación y navegar de forma programática. Conocer cómo funciona la navegación en Next.js es fundamental para crear aplicaciones web modernas y eficientes.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Cómo funciona la navegación en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/7_navegacion_next.html#ejercicio.",
+    "href": "unidades/unidad1/7_navegacion_next.html#ejercicio.",
+    "title": "Cómo funciona la navegación en Next.js",
+    "section": "Ejercicio.",
+    "text": "Ejercicio.\nCrea un enlace en la página de inicio que te lleve a la página About y un botón en la página About que te lleve a la página de inicio. Utiliza tanto el componente Link como la librería next/router para realizar la navegación entre las páginas de la aplicación.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Cómo funciona la navegación en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/8_manejo_parametros_rutas_next.html",
+    "href": "unidades/unidad1/8_manejo_parametros_rutas_next.html",
+    "title": "Manejo de parámetros en rutas en Next.js",
+    "section": "",
+    "text": "Parámetros de ruta.\nLos parámetros de ruta en Next.js se utilizan para pasar información a una ruta a través de la URL. Por ejemplo, si se desea mostrar el detalle de un producto en una tienda en línea, se puede utilizar un parámetro de ruta para pasar el ID del producto a la ruta.\nEjemplo:\nEn el ejemplo anterior, se crea una ruta dinámica /product/[id] que recibe un parámetro id a través de la URL. Al acceder a la ruta /product/123, se mostrará el detalle del producto con el ID 123.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manejo de parámetros en rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/8_manejo_parametros_rutas_next.html#parámetros-de-ruta.",
+    "href": "unidades/unidad1/8_manejo_parametros_rutas_next.html#parámetros-de-ruta.",
+    "title": "Manejo de parámetros en rutas en Next.js",
+    "section": "",
+    "text": "// pages/product/[id].js\nimport { useRouter } from 'next/router'\n\nconst Product = () =&gt; {\n  const router = useRouter()\n  const { id } = router.query\n\n  return (\n    &lt;div&gt;\n      &lt;h1&gt;Product Detail&lt;/h1&gt;\n      &lt;p&gt;Product ID: {id}&lt;/p&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default Product",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manejo de parámetros en rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/8_manejo_parametros_rutas_next.html#parámetros-de-consulta-query-params.",
+    "href": "unidades/unidad1/8_manejo_parametros_rutas_next.html#parámetros-de-consulta-query-params.",
+    "title": "Manejo de parámetros en rutas en Next.js",
+    "section": "Parámetros de consulta (query params).",
+    "text": "Parámetros de consulta (query params).\nLos parámetros de consulta en Next.js se utilizan para pasar información a una ruta a través de la URL utilizando el signo de interrogación ?. Por ejemplo, si se desea filtrar una lista de productos por categoría, se puede utilizar un parámetro de consulta para pasar la categoría a la ruta.\nEjemplo:\n// pages/products.js\nimport { useRouter } from 'next/router'\n\nconst Products = () =&gt; {\n  const router = useRouter()\n  const { category } = router.query\n\n  return (\n    &lt;div&gt;\n      &lt;h1&gt;Products&lt;/h1&gt;\n      &lt;p&gt;Category: {category}&lt;/p&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default Products\nEn el ejemplo anterior, se crea una ruta /products que recibe un parámetro de consulta category a través de la URL. Al acceder a la ruta /products?category=electronics, se mostrarán los productos de la categoría electronics.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manejo de parámetros en rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/8_manejo_parametros_rutas_next.html#uso-de-userouter-para-acceder-a-los-parámetros.",
+    "href": "unidades/unidad1/8_manejo_parametros_rutas_next.html#uso-de-userouter-para-acceder-a-los-parámetros.",
+    "title": "Manejo de parámetros en rutas en Next.js",
+    "section": "Uso de useRouter para acceder a los parámetros.",
+    "text": "Uso de useRouter para acceder a los parámetros.\nLa librería next/router proporciona el hook useRouter para acceder a los parámetros de ruta y de consulta en una página de Next.js. Este hook nos permite obtener los parámetros de la URL y utilizarlos en la página.\nEjemplo:\nimport { useRouter } from 'next/router'\n\nconst Product = () =&gt; {\n  const router = useRouter()\n  const { id } = router.query\n\n  return (\n    &lt;div&gt;\n      &lt;h1&gt;Product Detail&lt;/h1&gt;\n      &lt;p&gt;Product ID: {id}&lt;/p&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default Product\nEn el ejemplo anterior, se importa el hook useRouter de la librería next/router y se utiliza para acceder al parámetro id de la URL. Este parámetro se puede utilizar en la página para mostrar el detalle del producto.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manejo de parámetros en rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/8_manejo_parametros_rutas_next.html#conclusión.",
+    "href": "unidades/unidad1/8_manejo_parametros_rutas_next.html#conclusión.",
+    "title": "Manejo de parámetros en rutas en Next.js",
+    "section": "Conclusión.",
+    "text": "Conclusión.\nEn este capítulo se presentó cómo manejar parámetros en las rutas de Next.js. A lo largo de este capítulo se presentaron los siguientes temas: parámetros de ruta, parámetros de consulta (query params) y uso de useRouter para acceder a los parámetros. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo manejar parámetros en las rutas de Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manejo de parámetros en rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/8_manejo_parametros_rutas_next.html#ejercicios.",
+    "href": "unidades/unidad1/8_manejo_parametros_rutas_next.html#ejercicios.",
+    "title": "Manejo de parámetros en rutas en Next.js",
+    "section": "Ejercicios.",
+    "text": "Ejercicios.\n\nCrea una ruta dinámica en Next.js que reciba un parámetro de ruta.\nCrea una ruta en Next.js que reciba un parámetro de consulta y muestre el valor en la página.\nUtiliza el hook useRouter para acceder a los parámetros de ruta y de consulta en una página de Next.js.\nCrea una aplicación en Next.js que utilice parámetros de ruta y de consulta en diferentes páginas.\nExperimenta con diferentes formas de pasar parámetros a las rutas en Next.js y observa cómo se comporta la aplicación.\nInvestiga cómo validar los parámetros de ruta y de consulta en Next.js y aplica la validación en tu aplicación.\nComparte tus experiencias y aprendizajes sobre cómo manejar parámetros en las rutas de Next.js con tus compañeros de clase.\nInvestiga cómo manejar parámetros en las rutas de Next.js utilizando la librería next/router y comparte tus hallazgos con tus compañeros de clase.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manejo de parámetros en rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/9_react_server_component_next.html",
+    "href": "unidades/unidad1/9_react_server_component_next.html",
+    "title": "React Server Components en Next.js: notación “use Client”",
+    "section": "",
+    "text": "Introducción a React Server Components.\nReact Server Components es una nueva característica de React que permite renderizar componentes en el servidor y enviar solo los datos necesarios al cliente. Esto mejora el rendimiento de la aplicación al reducir la cantidad de datos que se envían al cliente.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>React Server Components en Next.js: notación \"use Client\"</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/9_react_server_component_next.html#introducción-a-react-server-components.",
+    "href": "unidades/unidad1/9_react_server_component_next.html#introducción-a-react-server-components.",
+    "title": "React Server Components en Next.js: notación “use Client”",
+    "section": "",
+    "text": "¿Qué es use Client?\nLa notación “use Client” en React Server Components se utiliza para indicar que un componente se renderizará en el cliente en lugar de en el servidor. Esto permite que el componente se actualice de forma dinámica en el cliente sin tener que volver a renderizarlo en el servidor.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>React Server Components en Next.js: notación \"use Client\"</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/9_react_server_component_next.html#uso-de-la-notación-use-client.",
+    "href": "unidades/unidad1/9_react_server_component_next.html#uso-de-la-notación-use-client.",
+    "title": "React Server Components en Next.js: notación “use Client”",
+    "section": "Uso de la notación “use Client”.",
+    "text": "Uso de la notación “use Client”.\nLa notación “use Client” se utiliza en un componente de React Server Components para indicar que el componente se renderizará en el cliente. Por ejemplo:\nimport { useClient } from 'react-server-components'\n\nconst MyComponent = () =&gt; {\n  const data = useClient(fetchData)\n\n  return (\n    &lt;div&gt;\n      &lt;h1&gt;{data.title}&lt;/h1&gt;\n      &lt;p&gt;{data.content}&lt;/p&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default MyComponent\nEn el ejemplo anterior, el componente MyComponent utiliza la notación “use Client” para indicar que se renderizará en el cliente. El componente llama a la función fetchData para obtener los datos necesarios y los muestra en la interfaz de usuario.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>React Server Components en Next.js: notación \"use Client\"</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/9_react_server_component_next.html#ventajas-de-la-notación-use-client.",
+    "href": "unidades/unidad1/9_react_server_component_next.html#ventajas-de-la-notación-use-client.",
+    "title": "React Server Components en Next.js: notación “use Client”",
+    "section": "Ventajas de la notación “use Client”.",
+    "text": "Ventajas de la notación “use Client”.\nLa notación “use Client” en React Server Components ofrece las siguientes ventajas:\n\nPermite renderizar componentes en el cliente de forma dinámica.\nReduce la cantidad de datos que se envían al cliente.\nMejora el rendimiento de la aplicación al evitar renderizaciones innecesarias en el servidor.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>React Server Components en Next.js: notación \"use Client\"</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/9_react_server_component_next.html#ejemplos-prácticos.",
+    "href": "unidades/unidad1/9_react_server_component_next.html#ejemplos-prácticos.",
+    "title": "React Server Components en Next.js: notación “use Client”",
+    "section": "Ejemplos prácticos.",
+    "text": "Ejemplos prácticos.\n\nCrea un componente de React Server Components que utilice la notación “use Client”.\n\nimport { useClient } from 'react-server-components'\n\nconst MyComponent = () =&gt; {\n  const data = useClient(fetchData)\n\n  return (\n    &lt;div&gt;\n      &lt;h1&gt;{data.title}&lt;/h1&gt;\n      &lt;p&gt;{data.content}&lt;/p&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default MyComponent\n\nUtiliza la notación “use Client” en un componente de React Server Components para renderizar datos dinámicamente en el cliente.\n\nimport { useClient } from 'react-server-components'\n\nconst MyComponent = () =&gt; {\n  const data = useClient(fetchData)\n\n  return (\n    &lt;div&gt;\n      &lt;h1&gt;{data.title}&lt;/h1&gt;\n      &lt;p&gt;{data.content}&lt;/p&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default MyComponent",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>React Server Components en Next.js: notación \"use Client\"</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/9_react_server_component_next.html#conclusión.",
+    "href": "unidades/unidad1/9_react_server_component_next.html#conclusión.",
+    "title": "React Server Components en Next.js: notación “use Client”",
+    "section": "Conclusión.",
+    "text": "Conclusión.\nEn este capítulo se presentaron los conceptos básicos de cómo utilizar React Server Components en Next.js. A lo largo de este capítulo se presentaron los siguientes temas: introducción a React Server Components, notación “use Client”, uso de la notación “use Client” y ventajas de la notación “use Client”. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo utilizar React Server Components en Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>React Server Components en Next.js: notación \"use Client\"</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/9_react_server_component_next.html#ejercicios.",
+    "href": "unidades/unidad1/9_react_server_component_next.html#ejercicios.",
+    "title": "React Server Components en Next.js: notación “use Client”",
+    "section": "Ejercicios.",
+    "text": "Ejercicios.\n\nCrea un componente de React Server Components que utilice la notación “use Client”.\nUtiliza la notación “use Client” en un componente de React Server Components para renderizar datos dinámicamente en el cliente.\nCrea una aplicación en Next.js que utilice React Server Components y la notación “use Client” en diferentes componentes.\n\nEspero que estos ejercicios le sean de utilidad y le ayuden a practicar cómo utilizar React Server Components en Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>React Server Components en Next.js: notación \"use Client\"</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html",
+    "href": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html",
+    "title": "Manejo de estilos y archivos estáticos en Next.js",
+    "section": "",
+    "text": "Estilos en Next.js\nLos estilos en Next.js se pueden manejar de diferentes formas, como CSS global, CSS Modules y Styled JSX. Cada una de estas formas tiene sus propias ventajas y desventajas, y se pueden utilizar según las necesidades del proyecto.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manejo de estilos y archivos estáticos en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#estilos-en-next.js",
+    "href": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#estilos-en-next.js",
+    "title": "Manejo de estilos y archivos estáticos en Next.js",
+    "section": "",
+    "text": "CSS global\nEl CSS global en Next.js se puede utilizar para aplicar estilos a toda la aplicación. Para utilizar CSS global en Next.js, se puede crear un archivo styles.css en la carpeta public y enlazarlo en el archivo **_app.js**.\n/* styles.css */\n\nbody {\n  font-family: 'Arial', sans-serif;\n  background-color: #f0f0f0;\n}\n// _app.js\nimport '../public/styles.css'\n\nfunction MyApp({ Component, pageProps }) {\n  return &lt;Component {...pageProps} /&gt;\n}\n\nexport default MyApp",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manejo de estilos y archivos estáticos en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#css-modules-en-next.js",
+    "href": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#css-modules-en-next.js",
+    "title": "Manejo de estilos y archivos estáticos en Next.js",
+    "section": "CSS Modules en Next.js",
+    "text": "CSS Modules en Next.js\n\nCSS Modules\nLos CSS Modules en Next.js permiten crear estilos locales para cada componente. Para utilizar CSS Modules en Next.js, se puede crear un archivo styles.module.css en la carpeta del componente y importarlo en el archivo del componente.\n/* Button.module.css */\n\n.button {\n  background-color: #007bff;\n  color: #fff;\n  padding: 10px 20px;\n  border: none;\n  border-radius: 5px;\n}\n// Button.js\nimport styles from './Button.module.css'\n\nconst Button = () =&gt; {\n  return &lt;button className={styles.button}&gt;Click me&lt;/button&gt;\n}\n\nexport default Button\n\n\nScoped CSS en Next.js\nEn Next.js, los estilos se aplican de forma local por defecto, lo que significa que los estilos de un componente no afectan a otros componentes. Esto se conoce como scoped CSS y ayuda a evitar conflictos de estilos entre componentes.\n\n\nCreación y uso de CSS Modules.\nPara crear y utilizar CSS Modules en Next.js, se deben seguir los siguientes pasos:\n\nCrear un archivo styles.module.css en la carpeta del componente.\nDefinir los estilos en el archivo styles.module.css utilizando la sintaxis de CSS.\nImportar los estilos en el archivo del componente y utilizar la clase generada por CSS Modules.\n\n/* styles.module.css */\n\n.button {\n  background-color: #007bff;\n  color: #fff;\n  padding: 10px 20px;\n  border: none;\n  border-radius: 5px;\n}\n// Button.js\nimport styles from './styles.module.css'\n\nconst Button = () =&gt; {\n  return &lt;button className={styles.button}&gt;Click me&lt;/button&gt;\n}\n\nexport default Button",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manejo de estilos y archivos estáticos en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#styled-jsx-en-next.js",
+    "href": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#styled-jsx-en-next.js",
+    "title": "Manejo de estilos y archivos estáticos en Next.js",
+    "section": "Styled JSX en Next.js",
+    "text": "Styled JSX en Next.js\n\nStyled JSX\nStyled JSX en Next.js permite escribir estilos en línea dentro de los componentes. Para utilizar Styled JSX en Next.js, se puede utilizar la etiqueta style y definir los estilos dentro de ella.\n// Button.js\n\nconst Button = () =&gt; {\n  return (\n    &lt;button&gt;\n      Click me\n      &lt;style jsx&gt;{`\n        button {\n          background-color: #007bff;\n          color: #fff;\n          padding: 10px 20px;\n          border: none;\n          border-radius: 5px;\n        }\n      `}&lt;/style&gt;\n    &lt;/button&gt;\n  )\n}\n\nexport default Button\n\n\nVentajas de Styled JSX\nLas ventajas de Styled JSX en Next.js son las siguientes:\n\nPermite escribir estilos en línea de forma sencilla.\nPermite utilizar variables y funciones de JavaScript en los estilos.\nPermite aplicar estilos de forma local a un componente.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manejo de estilos y archivos estáticos en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#conclusión",
+    "href": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#conclusión",
+    "title": "Manejo de estilos y archivos estáticos en Next.js",
+    "section": "Conclusión",
+    "text": "Conclusión\nEn este capítulo se presentaron los conceptos básicos de cómo manejar estilos y archivos estáticos en Next.js. A lo largo de este capítulo se presentaron las diferentes formas de manejar estilos en Next.js, como CSS global, CSS Modules y Styled JSX. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo manejar estilos y archivos estáticos en Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manejo de estilos y archivos estáticos en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#ejercicios",
+    "href": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#ejercicios",
+    "title": "Manejo de estilos y archivos estáticos en Next.js",
+    "section": "Ejercicios",
+    "text": "Ejercicios\n\nCrea un archivo styles.css en la carpeta public y enlázalo en el archivo **_app.js** para aplicar estilos globales a la aplicación.\nCrea un archivo styles.module.css en la carpeta de un componente y utilízalo para aplicar estilos locales al componente.\nUtiliza Styled JSX en un componente de Next.js para aplicar estilos en línea al componente.\n\nEspero que estos ejercicios le sean de utilidad y le ayuden a practicar cómo manejar estilos y archivos estáticos en Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manejo de estilos y archivos estáticos en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Acerca de mi",
+    "section": "",
+    "text": "¡Hola! Soy Diego Saavedra, un experto en desarrollo avanzado de software e investigación. Mi amplia experiencia abarca diversas tecnologías, incluyendo Python (Django, Flask, Fast API) y JavaScript (Express, Next, React, Nestjs), así como también tengo conocimientos sólidos en bases de datos, arquitecturas de software y liderazgo ágil.\nMi pasión por la innovación, el desarrollo y la educación me ha llevado a destacarme como un profesional versátil e invaluable. Estoy constantemente listo para enfrentar desafíos técnicos y liderar proyectos de vanguardia.\nMi formación académica incluye el ser estudiante de Doctorado centrado en la inteligencia artificial, estoy enfocando mi investigación en la detección de TDA+H y Asperger mediante Visión Artificial a traves de algoritmos de Inteligencia Artificial. Además, poseo una Maestría en Ciencias de la Computación, con un enfoque en el Deep Learning (Convolutional Neural Network) y la Atención.\nCon esta sólida base académica y experiencia profesional, estoy preparado para aportar soluciones innovadoras y liderar equipos hacia el éxito en cualquier proyecto tecnológico que se me presente.\nAdemás, tengo experiencia en el desarrollo móvil utilizando Flutter y en la implementación de soluciones backend utilizando servicios Backend as a Service (BaaS) como Firebase y Supabase.\nEn el ámbito de la educación, he sido docente de programación en institutos y universidades, actualmente soy parte del Departamento de Ciencias de la Computación en la Universidad de las Fuerzas Armadas ESPE, donde he impartido asignaturas de desarrollo de Software Web con tecnologías como JavaScript, Java y C# asi como sus respectivos frameworks.\nMi experiencia en el desarrollo de software y la investigación me ha permitido adquirir habilidades de liderazgo, trabajo en equipo y comunicación efectiva. Estoy seguro de que mi experiencia y habilidades serán de gran valor para cualquier proyecto tecnológico que se me presente.\nEn este curso aprenderás a desarrollar aplicaciones web con Python y Django, una de las tecnologías más populares y poderosas para el desarrollo de aplicaciones web. A lo largo del curso, aprenderás a crear aplicaciones web desde cero, utilizando Django y Python, y a implementar funcionalidades avanzadas como integración con APIs externas y mucho más.\nTambien veremos tecnologías como Git, Github, Docker, Python, Django, Django Rest Framework, Html5, Css3, JavaScript, Nodejs, Npm y React.\n\n\n¡Estoy emocionado de compartir contigo mi conocimiento y experiencia en el desarrollo de aplicaciones web con Python y Django!"
+  },
+  {
+    "objectID": "license.html",
+    "href": "license.html",
+    "title": "Licencia",
+    "section": "",
+    "text": "Uso Permitido\nPuedes utilizar el contenido de este curso con fines educativos y personales. Puedes modificar los ejemplos y el código proporcionado para tus propias necesidades de aprendizaje."
+  },
+  {
+    "objectID": "license.html#restricciones",
+    "href": "license.html#restricciones",
+    "title": "Licencia",
+    "section": "Restricciones",
+    "text": "Restricciones\nNo tienes permitido redistribuir, vender o utilizar el contenido de este curso para fines comerciales sin el permiso explícito de [Nombre de la Compañía]. Además, no tienes permitido copiar o duplicar el contenido del curso y presentarlo como propio."
+  },
+  {
+    "objectID": "license.html#atribución",
+    "href": "license.html#atribución",
+    "title": "Licencia",
+    "section": "Atribución",
+    "text": "Atribución\nSi compartes los ejemplos, los fragmentos de código o el contenido de este curso en línea, te pedimos que proporciones la atribución adecuada a [Nombre de la Compañía]."
+  },
+  {
+    "objectID": "license.html#cambios-en-la-licencia",
+    "href": "license.html#cambios-en-la-licencia",
+    "title": "Licencia",
+    "section": "Cambios en la Licencia",
+    "text": "Cambios en la Licencia\n[Nombre de la Compañía] se reserva el derecho de modificar los términos de esta licencia en cualquier momento. Cualquier cambio se reflejará en esta página.\nGracias por respetar nuestros derechos de autor y por tu comprensión."
+  }
+]
