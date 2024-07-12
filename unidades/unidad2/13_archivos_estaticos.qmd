@@ -1,0 +1,112 @@
+# Cómo agregar archivos estáticos en Next.js
+
+## Carpeta public.
+
+Los archivos estáticos en Next.js se pueden agregar en la carpeta **public**. Esta carpeta se utiliza para almacenar archivos estáticos como imágenes, fuentes, hojas de estilo y scripts.
+
+Ejemplo:
+
+```
+public/
+  images/
+    logo.png
+  styles/
+    styles.css
+```
+
+En el ejemplo anterior, se crean las carpetas **images** y **styles** en la carpeta **public** para almacenar archivos estáticos como imágenes y hojas de estilo.
+
+## Acceso y uso de archivos estáticos.
+
+Los archivos estáticos en la carpeta **public** se pueden acceder y utilizar en los componentes de Next.js utilizando la ruta relativa a la carpeta **public**.
+
+Ejemplo:
+
+```jsx
+// Image.js
+
+const Image = () => {
+  return <img src="/images/logo.png" alt="Logo" />;
+}
+
+export default Image;
+```
+
+En el ejemplo anterior, se crea un componente **Image** que muestra la imagen **logo.png** almacenada en la carpeta **images** de la carpeta **public**.
+
+## Ventajas de la carpeta public.
+
+Las ventajas de utilizar la carpeta **public** en Next.js son las siguientes:
+
+- Permite almacenar archivos estáticos de forma organizada.
+
+- Permite acceder y utilizar archivos estáticos en los componentes de forma sencilla.
+
+- Permite mejorar el rendimiento de la aplicación al almacenar archivos estáticos en caché.
+
+## Ejemplos prácticos.
+
+1. Crea una carpeta **public** en la raíz del proyecto y agrega archivos estáticos como imágenes, fuentes, hojas de estilo y scripts.
+
+Ejemplo:
+
+```
+public/
+  images/
+    logo.png
+  styles/
+    styles.css
+```
+
+En el ejemplo anterior, se crea la carpeta **public** en la raíz del proyecto y se agregan archivos estáticos como la imagen **logo.png** y la hoja de estilo **styles.css**.
+
+2. Accede y utiliza los archivos estáticos en los componentes de Next.js utilizando la ruta relativa a la carpeta **public**.
+
+Ejemplo:
+
+```jsx
+// Image.js
+
+const Image = () => {
+  return <img src="/images/logo.png" alt="Logo" />;
+}
+
+export default Image;
+```
+
+En el ejemplo anterior, se crea un componente **Image** que muestra la imagen **logo.png** almacenada en la carpeta **images** de la carpeta **public**.
+
+3. Comprueba que los archivos estáticos se cargan correctamente en la aplicación y se muestran en los componentes.
+
+Ejemplo:
+
+```jsx
+// App.js
+
+import Image from './components/Image';
+
+const App = () => {
+  return (
+    <div>
+      <h1>Static Files in Next.js</h1>
+      <Image />
+    </div>
+  );
+}
+
+export default App;
+```
+
+En el ejemplo anterior, se crea un componente **App** que muestra el título de la aplicación y el componente **Image** que muestra la imagen **logo.png** almacenada en la carpeta **images** de la carpeta **public**.
+
+## Conclusión.
+
+En este capítulo se presentaron los conceptos básicos de cómo agregar archivos estáticos en Next.js. A lo largo de este capítulo se presentaron las ventajas de utilizar la carpeta **public** para almacenar archivos estáticos y cómo acceder y utilizar los archivos estáticos en los componentes de Next.js. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo agregar archivos estáticos en Next.js.
+
+## Ejercicios.
+
+1. Crea una carpeta **public** en la raíz del proyecto y agrega archivos estáticos como imágenes, fuentes, hojas de estilo y scripts.
+
+2. Accede y utiliza los archivos estáticos en los componentes de Next.js utilizando la ruta relativa a la carpeta **public**.
+
+3. Comprueba que los archivos estáticos se cargan correctamente en la aplicación y se muestran en los componentes.

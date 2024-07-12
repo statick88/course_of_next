@@ -1,0 +1,74 @@
+# Cómo utilizar estilos globales en Next.js
+
+En este capítulo se presentarán los conceptos básicos de cómo utilizar estilos globales en Next.js. A lo largo de este capítulo se presentarán los siguientes temas:
+
+## Estilos globales vs. estilos locales.
+
+Los estilos globales en Next.js se pueden utilizar para aplicar estilos a toda la aplicación, mientras que los estilos locales se utilizan para aplicar estilos a componentes específicos.
+
+Ejemplo:
+
+```css
+/* styles.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+```
+En el código anterior, se crea un archivo **styles.css** con estilos globales para la aplicación. Los estilos se aplican al cuerpo de la página y al componente **Button**.
+
+## Implementación de estilos globales.
+
+Para utilizar estilos globales en Next.js, se puede crear un archivo **styles.css** en la carpeta **public** y enlazarlo en el archivo **_app.js**.
+
+```jsx
+// _app.js
+import '../public/styles.css'
+
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />
+}
+
+export default MyApp
+```
+
+## Uso de reset y normalize.css.
+
+Para restablecer los estilos predeterminados del navegador y garantizar una apariencia consistente en diferentes navegadores, se pueden utilizar las bibliotecas **reset.css** o **normalize.css**.
+
+Ejemplo:
+
+```jsx
+// _app.js
+import 'normalize.css'
+import '../public/styles.css'
+
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />
+}
+
+export default MyApp
+```
+
+En el ejemplo anterior, se importa la biblioteca **normalize.css** en el archivo **_app.js** para restablecer los estilos predeterminados del navegador.
+
+## Conclusión.
+
+En este capítulo se presentaron los conceptos básicos de cómo utilizar estilos globales en Next.js. A lo largo de este capítulo se presentaron los siguientes temas: estilos globales vs. estilos locales, implementación de estilos globales, uso de reset y normalize.css. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo utilizar estilos globales en Next.js.
+
+## Ejercicios.
+
+1. Crea un archivo **styles.css** con estilos globales para tu aplicación Next.js.
+
+2. Utiliza la biblioteca **normalize.css** para restablecer los estilos predeterminados del navegador en tu aplicación Next.js.
+
+3. Crea un componente **Button** con estilos globales y locales en tu aplicación Next.js.

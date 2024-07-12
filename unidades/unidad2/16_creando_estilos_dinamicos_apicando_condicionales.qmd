@@ -1,0 +1,120 @@
+# Creando estilos dinámicos aplicando condicionales en Next.js
+
+En Next.js, se pueden crear estilos dinámicos aplicando condicionales en los componentes para cambiar la apariencia de los elementos según ciertas condiciones. Esto permite personalizar la apariencia de los componentes de forma dinámica en función de la lógica de la aplicación.
+
+## Estilos dinámicos.
+
+Los estilos dinámicos en Next.js se pueden aplicar utilizando condicionales en los estilos de los componentes. Esto permite cambiar la apariencia de los elementos en función de ciertas condiciones, como el estado de un componente o los datos recibidos de una API.
+
+Ejemplo:
+
+```jsx
+// Button.js
+
+const Button = ({ primary }) => {
+  return (
+    <button style={{ backgroundColor: primary ? '#007bff' : '#f0f0f0', color: primary ? '#fff' : '#000' }}>
+      Click me
+    </button>
+  );
+}
+
+export default Button;
+```
+
+En el ejemplo anterior, se crea un componente **Button** con un estilo dinámico que cambia el color de fondo y el color del texto en función de la prop **primary**. Si la prop **primary** es verdadera, se aplican los estilos para un botón principal; de lo contrario, se aplican los estilos para un botón secundario.
+
+## Aplicación de condicionales en estilos.
+
+Para aplicar condicionales en los estilos de los componentes en Next.js, se pueden utilizar operadores ternarios o funciones condicionales para determinar los estilos a aplicar en función de ciertas condiciones.
+
+Ejemplo:
+
+```jsx
+// Button.js
+
+const Button = ({ primary }) => {
+  const buttonStyles = {
+    backgroundColor: primary ? '#007bff' : '#f0f0f0',
+    color: primary ? '#fff' : '#000',
+    padding: '10px 20px',
+    border: 'none',
+    borderRadius: '5px',
+  };
+
+  return (
+    <button style={buttonStyles}>
+      Click me
+    </button>
+  );
+}
+
+export default Button;
+```
+
+En el ejemplo anterior, se crea un objeto **buttonStyles** con los estilos del botón y se utiliza un operador ternario para aplicar los estilos en función de la prop **primary**. Esto permite personalizar la apariencia del botón de forma dinámica en función de la prop recibida.
+
+## Ejemplos prácticos.
+
+1. Crea un componente **Button** con estilos dinámicos que cambien la apariencia del botón en función de una prop **primary**.
+
+Ejemplo:
+
+```jsx
+// Button.js
+
+const Button = ({ primary }) => {
+  const buttonStyles = {
+    backgroundColor: primary ? '#007bff' : '#f0f0f0',
+    color: primary ? '#fff' : '#000',
+    padding: '10px 20px',
+    border: 'none',
+    borderRadius: '5px',
+  };
+
+  return (
+    <button style={buttonStyles}>
+      Click me
+    </button>
+  );
+}
+
+export default Button;
+```
+
+En el ejemplo anterior, se crea un componente **Button** con estilos dinámicos que cambian la apariencia del botón en función de la prop **primary**. Si la prop **primary** es verdadera, se aplican los estilos para un botón principal; de lo contrario, se aplican los estilos para un botón secundario.
+
+2. Utiliza el componente **Button** en otros componentes de la aplicación y prueba los estilos dinámicos cambiando el valor de la prop **primary**.
+
+Ejemplo:
+
+```jsx
+// App.js
+
+import Button from './components/Button';
+
+const App = () => {
+  return (
+    <div>
+      <h1>Dynamic Styles in Next.js</h1>
+      <Button primary>Primary Button</Button>
+      <Button>Secondary Button</Button>
+    </div>
+  );
+}
+
+export default App;
+```
+
+En el ejemplo anterior, se importa el componente **Button** en el componente **App** y se utiliza el componente con diferentes valores de la prop **primary** para probar los estilos dinámicos. El botón se mostrará con estilos diferentes en función del valor de la prop **primary**.
+
+## Conclusión.
+
+En Next.js, se pueden crear estilos dinámicos aplicando condicionales en los componentes para cambiar la apariencia de los elementos en función de ciertas condiciones. Esto permite personalizar la apariencia de los componentes de forma dinámica y adaptativa, lo que mejora la experiencia del usuario y la interactividad de la aplicación.
+
+Los estilos dinámicos son una herramienta poderosa para crear interfaces atractivas y funcionales en Next.js, ya que permiten adaptar la apariencia de los elementos según el contexto y la interacción del usuario. Al aplicar condicionales en los estilos de los componentes, se pueden crear interfaces más dinámicas y personalizadas que se ajusten a las necesidades y preferencias de los usuarios.
+
+## Ejercicio.
+
+Crea un componente **Card** con estilos dinámicos que cambien el color de fondo y el color del texto en función de una prop **variant**. Utiliza diferentes valores de la prop **variant** para probar los estilos dinámicos y observa cómo cambia la apariencia de la tarjeta en función de la variante seleccionada.
+

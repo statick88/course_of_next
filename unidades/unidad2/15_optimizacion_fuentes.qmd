@@ -1,0 +1,132 @@
+# Optimización de fuentes con Next.js
+
+En Next.js, se pueden optimizar las fuentes para mejorar el rendimiento y la carga de la aplicación. Para optimizar las fuentes en Next.js, se pueden utilizar las siguientes técnicas:
+
+## Uso de fuentes personalizadas.
+
+Para utilizar fuentes personalizadas en Next.js, se pueden agregar las fuentes en la carpeta **public** y enlazarlas en el archivo **_app.js**.
+
+Ejemplo:
+
+```jsx
+// _app.js
+
+import '../public/fonts.css'
+
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />
+}
+
+export default MyApp
+```
+
+En el ejemplo anterior, se enlaza el archivo **fonts.css** que contiene las fuentes personalizadas en el archivo **_app.js**.
+
+## Optimización de carga de fuentes.
+
+Para optimizar la carga de fuentes en Next.js, se pueden utilizar las propiedades **preload** y **prefetch** en el archivo **_document.js**.
+
+Ejemplo:
+
+```jsx
+// _document.js
+
+import Document, { Html, Head, Main, NextScript } from 'next/document'
+
+class MyDocument extends Document {
+  render() {
+    return (
+      <Html>
+        <Head>
+          <link rel="preload" href="/fonts/my-font.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="prefetch" href="/fonts/my-font.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
+  }
+}
+
+export default MyDocument
+```
+
+En el ejemplo anterior, se utiliza la propiedad **preload** para cargar la fuente **my-font.woff2** de forma anticipada y la propiedad **prefetch** para cargar la fuente **my-font.woff2** de forma diferida.
+
+## Ejemplos prácticos.
+
+1. Crea una carpeta **fonts** en la carpeta **public** y agrega las fuentes personalizadas en formato WOFF2.
+
+```
+public/
+  fonts/
+    my-font.woff2
+```
+
+2. Crea un archivo **fonts.css** en la carpeta **public** y enlaza las fuentes personalizadas.
+
+```css
+/* fonts.css */
+
+@font-face {
+  font-family: 'My Font';
+  src: url('/fonts/my-font.woff2') format('woff2');
+}
+```
+
+3. Enlaza el archivo **fonts.css** en el archivo **_app.js** para utilizar las fuentes personalizadas en la aplicación.
+
+```jsx
+// _app.js
+
+import '../public/fonts.css'
+
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />
+}
+
+export default MyApp
+```
+
+4. Optimiza la carga de las fuentes en Next.js utilizando las propiedades **preload** y **prefetch** en el archivo **_document.js**.
+
+```jsx
+// _document.js
+
+import Document, { Html, Head, Main, NextScript } from 'next/document'
+
+class MyDocument extends Document {
+  render() {
+    return (
+      <Html>
+        <Head>
+          <link rel="preload" href="/fonts/my-font.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+          <link rel="prefetch" href="/fonts/my-font.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
+  }
+}
+
+export default MyDocument
+```
+
+En el ejemplo anterior, se optimiza la carga de la fuente **my-font.woff2** utilizando las propiedades **preload** y **prefetch** en el archivo **_document.js**.
+
+## Conclusión.
+
+La optimización de fuentes en Next.js es importante para mejorar el rendimiento y la carga de la aplicación. Al utilizar fuentes personalizadas y optimizar su carga, se puede garantizar una mejor experiencia de usuario y una mayor eficiencia en la aplicación.
+
+## Ejericios
+
+1. Agrega una fuente personalizada a tu aplicación Next.js y enlázala en el archivo **_app.js**.
+
+2. Optimiza la carga de la fuente personalizada utilizando las propiedades **preload** y **prefetch** en el archivo **_document.js**.
+
+3. Comprueba que la fuente personalizada se carga correctamente en la aplicación y se muestra en los componentes.

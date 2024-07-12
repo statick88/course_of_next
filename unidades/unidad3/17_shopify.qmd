@@ -1,0 +1,165 @@
+# Creación de tienda de Shopify para un proyecto en Next.js
+
+## Introducción.
+
+Shopify es una plataforma de comercio electrónico que permite a los usuarios crear tiendas en línea y vender productos en Internet. En este tutorial, se mostrará cómo integrar Shopify con Next.js para crear una tienda en línea en un proyecto de Next.js.
+
+## Requisitos previos.
+
+- Conocimientos básicos de Next.js.
+- Cuenta de Shopify.
+
+## Configuración de Shopify.
+
+Para comenzar, es necesario crear una cuenta en Shopify y configurar una tienda en línea. Una vez creada la cuenta, se pueden agregar productos, configurar métodos de pago y personalizar el diseño de la tienda.
+
+## Creación de una aplicación en Shopify.
+
+Para integrar Shopify con Next.js, es necesario crear una aplicación en Shopify y obtener las credenciales de la API. Para ello, se debe seguir los siguientes pasos:
+
+1. Iniciar sesión en la cuenta de Shopify.
+
+2. Ir a la sección de "Aplicaciones" en el panel de administración.
+
+3. Hacer clic en el botón "Crear aplicación".
+
+4. Configurar la aplicación con los siguientes datos:
+   - Nombre de la aplicación.
+   - URL de redirección.
+   - Permisos de la API.
+
+5. Guardar la configuración y obtener las credenciales de la API.
+
+## Integración de Shopify con Next.js.
+
+Empezamos creando un proyecto desde 0 con Next.js:
+
+```bash
+npx create-next-app my-shopify-store
+```
+
+Luego, instalamos las dependencias necesarias para la integración con Shopify:
+
+```bash
+npm install @shopify/app-bridge @shopify/polaris @shopify/koa-shopify-auth koa koa-session dotenv
+```
+
+A continuación, creamos un archivo **.env** en la raíz del proyecto con las credenciales de la API de Shopify:
+
+```
+SHOPIFY_API_KEY=your_api_key
+SHOPIFY_API_SECRET=your_api_secret
+SHOPIFY_API_SCOPES=read_products,write_products
+SHOPIFY_API_REDIRECT_URI=https://localhost:3000/auth/callback
+```
+
+Luego, creamos un archivo **server.js** en la raíz del proyecto con el siguiente contenido:
+
+```js
+require('dotenv').config()
+const Koa = require('koa')
+const { default: createShopifyAuth } = require('@shopify/koa-shopify-auth')
+const { verifyRequest } = require('@shopify/koa-shopify-auth')
+const session = require('koa-session')
+
+const { SHOPIFY_API_KEY, SHOPIFY_API_SECRET, SHOPIFY_API_SCOPES, SHOPIFY_API_REDIRECT_URI } = process.env
+
+const app = new Koa()
+app.keys = [SHOPIFY_API_SECRET]
+
+app.use(session(app))
+app.use(
+  createShopifyAuth({
+    apiKey: SHOPIFY_API_KEY,
+    secret: SHOPIFY_API_SECRET,
+    scopes: [SHOPIFY_API_SCOPES],
+    afterAuth(ctx) {
+      const { shop, accessToken } = ctx.session
+      ctx.redirect('/')
+    },
+  })
+)
+
+app.use(verifyRequest())
+
+app.listen(3000, () => {
+  console.log('Server running on http://localhost:3000')
+})
+```
+
+Finalmente, ejecutamos el servidor con el siguiente comando:
+
+```bash
+node server.js
+```
+
+## Creación de la tienda en Next.js.
+
+Para crear la tienda en Next.js, se pueden utilizar componentes de Shopify como **AppProvider** y **ResourcePicker** para mostrar productos y gestionar el carrito de compras.
+
+Ejemplo:
+
+```jsx
+import { AppProvider, Page, ResourcePicker } from '@shopify/polaris'
+
+const Index = () => {
+  return (
+    <AppProvider>
+      <Page title="My Shopify Store">
+        <ResourcePicker />
+      </Page>
+    </AppProvider>
+  )
+}
+
+export default Index
+```
+
+En el código anterior, se importan los componentes de Shopify y se utiliza **ResourcePicker** para mostrar los productos de la tienda.
+
+## Personalización de la tienda.
+
+Para personalizar la tienda en Next.js, se pueden utilizar estilos y componentes personalizados para mejorar la apariencia y la funcionalidad de la tienda.
+
+Ejemplo:
+
+```jsx
+import { AppProvider, Page, ResourcePicker } from '@shopify/polaris'
+
+const Index = () => {
+  return (
+    <AppProvider>
+      <Page title="My Shopify Store">
+        <ResourcePicker />
+        <ProductList />
+      </Page>
+    </AppProvider>
+  )
+}
+
+const ProductList = () => {
+  return (
+    <div>
+      <h2>Products</h2>
+      <ul>
+        <li>Product 1</li>
+        <li>Product 2</li>
+        <li>Product 3</li>
+      </ul>
+    </div>
+  )
+}
+
+export default Index
+```
+
+En el código anterior, se crea un componente **ProductList** que muestra una lista de productos en la tienda.
+
+## Conclusiones.
+
+En este tutorial, se mostró cómo integrar Shopify con Next.js para crear una tienda en línea en un proyecto de Next.js. Se presentaron los siguientes temas: configuración de Shopify, creación de una aplicación en Shopify, integración de Shopify con Next.js, creación de la tienda en Next.js y personalización de la tienda.
+
+
+
+
+## Ejemplos prácticos.

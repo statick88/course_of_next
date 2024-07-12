@@ -43,7 +43,18 @@ book:
         - unidades/unidad1/7_navegacion_next.qmd
         - unidades/unidad1/8_manejo_parametros_rutas_next.qmd
         - unidades/unidad1/9_react_server_component_next.qmd
-        - unidades/unidad1/10_manejo_estilos_archivos_estaticos.qmd
+      
+    - part: "Unidad 2: Manejo de Estilos y Archivos Estáticos"
+      chapters:
+        - unidades/unidad2/10_css_modules.qmd
+        - unidades/unidad2/11_uso_sass.qmd
+        - unidades/unidad2/12_estilos_globales.qmd
+        - unidades/unidad2/13_archivos_estaticos.qmd
+        - unidades/unidad2/14_manejo_y_optimizacion_imagenes.qmd
+        - unidades/unidad2/15_optimizacion_fuentes.qmd
+        - unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.qmd
+
+    - part: "Unidad 3: Data Fetching en Next.js"
 
 bibliography: references.bib
 biblio-style: "apalike"

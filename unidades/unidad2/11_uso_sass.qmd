@@ -1,0 +1,95 @@
+# Uso de Sass en Next.js
+
+En este capítulo se presentará cómo utilizar Sass en Next.js. A lo largo de este capítulo se presentarán los siguientes temas:
+
+## Instalación y configuración de Sass.
+
+Para utilizar Sass en Next.js, se debe instalar la librería **sass** y configurarla en el archivo **next.config.js**. Para instalar la librería **sass**, se puede utilizar el siguiente comando:
+
+```bash
+npm install sass
+```
+
+Para configurar Sass en Next.js, se debe crear un archivo **next.config.js** en la raíz del proyecto y agregar la siguiente configuración:
+
+```js
+// next.config.js
+const path = require('path')
+
+module.exports = {
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
+  },
+}
+```
+En el ejemplo anterior, se configura Sass en Next.js para que pueda importar archivos Sass desde la carpeta **styles**.
+
+## Uso de Sass en componentes.
+
+Para utilizar Sass en los componentes de Next.js, se puede crear un archivo **styles.scss** en la carpeta del componente y importarlo en el archivo del componente.
+
+```scss
+// Button.module.scss
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+```
+
+```jsx
+// Button.js
+import styles from './Button.module.scss'
+
+const Button = () => {
+  return <button className={styles.button}>Click me</button>
+}
+
+export default Button
+```
+
+En el ejemplo anterior, se crea un archivo **styles.scss** con estilos Sass para el componente **Button** y se importa en el archivo del componente.
+
+## Variables y mixins en Sass.
+
+Sass permite utilizar variables y mixins para reutilizar estilos en los componentes de Next.js. Para utilizar variables y mixins en Sass, se puede crear un archivo **styles.scss** con las variables y mixins necesarias y importarlo en los componentes.
+
+```scss
+// styles.scss
+
+$primary-color: #007bff;
+
+@mixin button-styles {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+```
+
+```scss
+// Button.module.scss
+@import 'styles.scss';
+
+.button {
+  @include button-styles;
+}
+```
+
+En el ejemplo anterior, se crea un archivo **styles.scss** con variables y mixins para los estilos del componente **Button** y se importa en el archivo **Button.module.scss**.
+
+## Conclusión.
+
+En este capítulo se presentó cómo utilizar Sass en Next.js. A lo largo de este capítulo se presentaron los siguientes temas: instalación y configuración de Sass, uso de Sass en componentes, variables y mixins en Sass. Espero que
+
+## Ejercicios.
+
+1. Crea un archivo **styles.scss** con estilos Sass para un componente en Next.js.
+
+2. Crea variables y mixins en Sass para reutilizar estilos en los componentes de Next.js.
+
+3. Importa un archivo Sass en un componente de Next.js y aplica los estilos en el componente.

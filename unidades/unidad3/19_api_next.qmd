@@ -1,0 +1,164 @@
+# Cómo obtener información de una API con Next.js
+
+## Introducción
+
+En este capítulo se presentarán los conceptos básicos de cómo obtener información de una API con Next.js. A lo largo de este capítulo se presentarán los siguientes temas:
+
+## API en Next.js
+
+Las API en Next.js se pueden utilizar para obtener información de un servidor y mostrarla en la aplicación. Para utilizar una API en Next.js, se puede utilizar la función **getServerSideProps** o **getStaticProps** en el archivo de la página.
+
+### getServerSideProps
+
+La función **getServerSideProps** se utiliza para obtener información de una API en el servidor y pasarla como props a la página. Para utilizar **getServerSideProps** en Next.js, se puede crear una función con este nombre en el archivo de la página.
+
+Ejemplo:
+
+```jsx
+// pages/index.js
+
+export default function Home({ data }) {
+  return (
+    <div>
+      <h1>{data.title}</h1>
+      <p>{data.body}</p>
+    </div>
+  )
+}
+
+export async function getServerSideProps() {
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts/1')
+  const data = await res.json()
+
+  return {
+    props: {
+      data
+    }
+  }
+}
+```
+
+En el ejemplo anterior, se crea una página de inicio en la aplicación con la función **Home** que muestra el título y el cuerpo de un post obtenido de la API **jsonplaceholder**. Se utiliza la función **getServerSideProps** para obtener la información del post y pasarla como props a la página.
+
+### getStaticProps
+
+La función **getStaticProps** se utiliza para obtener información de una API en la compilación y pasarla como props a la página. Para utilizar **getStaticProps** en Next.js, se puede crear una función con este nombre en el archivo de la página.
+
+Ejemplo:
+
+```jsx
+// pages/index.js
+
+export default function Home({ data }) {
+  return (
+    <div>
+      <h1>{data.title}</h1>
+      <p>{data.body}</p>
+    </div>
+  )
+}
+
+export async function getStaticProps() {
+  const res = await fetch('https://json
+
+placeholder.typicode.com/posts/1')
+    const data = await res.json()
+    
+    return {
+        props: {
+        data
+        }
+    }
+}
+```
+
+En el ejemplo anterior, se crea una página de inicio en la aplicación con la función **Home** que muestra el título y el cuerpo de un post obtenido de la API **jsonplaceholder**. Se utiliza la función **getStaticProps** para obtener la información del post y pasarla como props a la página.
+
+## Fetching data desde el servidor.
+
+Para este ejemplo vamos a consumir una api de una tienda virtual de productos de tecnología.
+
+```jsx
+// pages/index.js
+
+export default function Home({ products }) {
+  return (
+    <div>
+      <h1>Products</h1>
+      <ul>
+        {products.map(product => (
+          <li key={product.id}>{product.title}</li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
+export async function getServerSideProps() {
+  const res = await fetch('https://fakestoreapi.com/products')
+  const products = await res.json()
+
+  return {
+    props: {
+      products
+    }
+  }
+}
+```
+
+En el ejemplo anterior, se crea una página de inicio en la aplicación con la función **Home** que muestra una lista de productos obtenidos de la API **fakestoreapi**. Se utiliza la función **getServerSideProps** para obtener la información de los productos y pasarla como props a la página.
+
+## Fetching data desde el cliente.
+
+En este caso vamos a utilizar la librería **SWR** para obtener información de una API desde el cliente.
+
+Primero, instalamos la librería **swr** en nuestro proyecto.
+
+```bash
+npm install swr
+```
+
+Luego, utilizamos la librería **swr** para obtener información de una API en el cliente.
+
+```jsx
+// pages/index.js
+
+import useSWR from 'swr'
+
+const fetcher = (url) => fetch(url).then((res) => res.json())
+
+export default function Home() {
+  const { data, error } = useSWR('https://fakestoreapi.com/products', fetcher)
+
+  if (error) return <div>Error loading data</div>
+  if (!data) return <div>Loading...</div>
+
+  return (
+    <div>
+      <h1>Products</h1>
+      <ul>
+        {data.map(product => (
+          <li key={product.id}>{product.title}</li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+```
+
+En el ejemplo anterior, se utiliza la librería **swr** para obtener información de la API **fakestoreapi** en el cliente. Se crea una función **fetcher** que se utiliza para obtener los datos de la API y se pasa como argumento a la función **useSWR** junto con la URL de la API. Se muestra una lista de productos obtenidos de la API en la página.
+
+## Uso de SWR para data fetching.
+
+La librería **swr** es una herramienta poderosa para obtener información de una API en el cliente. Permite realizar consultas a la API de forma sencilla y manejar el estado de carga, error y éxito de la consulta de forma eficiente.
+
+En este capítulo se presentaron los conceptos básicos de cómo obtener información de una API con Next.js. Se mostraron ejemplos de cómo utilizar las funciones **getServerSideProps** y **getStaticProps** para obtener información de una API en el servidor y en la compilación, respectivamente. También se presentó cómo utilizar la librería **swr** para obtener información de una API en el cliente de forma eficiente y sencilla.
+
+## Ejercicios.
+
+1. Crea una página en Next.js que obtenga información de una API utilizando la función **getServerSideProps**.
+
+2. Crea una página en Next.js que obtenga información de una API utilizando la función **getStaticProps**.
+
+3. Crea una página en Next.js que obtenga información de una API utilizando la librería **swr**.
+

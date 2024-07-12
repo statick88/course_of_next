@@ -1,0 +1,66 @@
+# Manejo de variables de entorno en Next.js
+
+En Next.js, es posible utilizar variables de entorno para configurar la aplicación y gestionar información sensible de forma segura. Las variables de entorno se pueden utilizar para almacenar claves de API, URLs de servicios externos, configuraciones de la aplicación, entre otros.
+
+## Configuración de variables de entorno.
+
+Para configurar variables de entorno en Next.js, se pueden utilizar los archivos **.env.local** y **.env** en la raíz del proyecto. Las variables de entorno se definen en estos archivos utilizando la sintaxis **NOMBRE=VALOR**.
+
+Ejemplo:
+
+```env
+API_KEY=1234567890
+API_URL=https://api.example.com
+```
+
+En el ejemplo anterior, se definen las variables de entorno **API_KEY** y **API_URL** con sus respectivos valores.
+
+## Acceso a variables de entorno en el código.
+
+Para acceder a las variables de entorno en el código de Next.js, se puede utilizar el objeto **process.env** seguido del nombre de la variable de entorno.
+
+Ejemplo:
+
+```jsx
+const apiKey
+    = process.env.API_KEY
+const apiUrl = process.env.API_URL
+```
+
+## Uso de variables de entorno en el código.
+
+Las variables de entorno se pueden utilizar en el código de Next.js para configurar la aplicación, acceder a servicios externos, gestionar información sensible, entre otros.
+
+Ejemplo:
+
+```jsx
+const fetchData = async () => {
+  const response = await fetch(`${process.env.API_URL}/data`, {
+    headers: {
+      'X-API-Key': process.env.API_KEY,
+    },
+  })
+  const data = await response.json()
+  return data
+}
+
+export default fetchData
+```
+
+En el ejemplo anterior, se utiliza la variable de entorno **API_URL** para acceder a un servicio externo y la variable de entorno **API_KEY** para autenticar la solicitud.
+
+## Buenas prácticas.
+
+Al utilizar variables de entorno en Next.js, es importante seguir algunas buenas prácticas:
+
+- No almacenar información sensible en el código fuente.
+
+- No compartir las variables de entorno en repositorios públicos.
+
+- Utilizar archivos **.env.local** para variables de entorno locales y archivos **.env** para variables de entorno globales.
+
+- No incluir archivos **.env** en el control de versiones.
+
+## Conclusión.
+
+El manejo de variables de entorno en Next.js permite configurar la aplicación de forma segura y gestionar información sensible de manera eficiente. Al utilizar variables de entorno, se puede separar la configuración de la aplicación de la lógica del código y mantener la seguridad de la información sensible.

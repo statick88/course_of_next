@@ -1,0 +1,88 @@
+# Manejo y optimización de imágenes con Next Image
+
+Las imágenes son un elemento importante en el desarrollo web, ya que pueden mejorar la apariencia y la experiencia del usuario. En Next.js, se puede utilizar el componente **Image** para mostrar imágenes de forma eficiente y optimizada. En esta unidad, se explorará cómo manejar y optimizar imágenes con Next Image.
+
+## Introducción al componente Image.
+
+El componente **Image** en Next.js se utiliza para mostrar imágenes de forma eficiente y optimizada. El componente **Image** utiliza el formato de imagen WebP y la carga perezosa para mejorar el rendimiento de la aplicación.
+
+Ejemplo:
+
+```jsx
+// Image.js
+
+import Image from 'next/image';
+
+const MyImage = () => {
+  return <Image src="/images/my-image.jpg" alt="My Image" width={500} height={300} />;
+}
+
+export default MyImage;
+```
+
+En el ejemplo anterior, se crea un componente **MyImage** que muestra la imagen **my-image.jpg** con un ancho de 500 píxeles y una altura de 300 píxeles utilizando el componente **Image**.
+
+## Configuración y optimización de imágenes.
+
+Para configurar y optimizar las imágenes en Next.js, se pueden utilizar las siguientes propiedades del componente **Image**:
+
+- **src**: La ruta de la imagen.
+
+- **alt**: El texto alternativo de la imagen.
+
+- **width**: El ancho de la imagen en píxeles.
+
+- **height**: La altura de la imagen en píxeles.
+
+- **layout**: La disposición de la imagen (responsive, fixed, fill, intrinsic).
+
+- **objectFit**: La forma en que la imagen se ajusta al contenedor.
+
+- **objectPosition**: La posición de la imagen dentro del contenedor.
+
+Ejemplo:
+
+```jsx
+// Image.js
+
+import Image from 'next/image';
+
+const MyImage = () => {
+  return <Image src="/images/my-image.jpg" alt="My Image" width={500} height={300} layout="responsive" objectFit="cover" objectPosition="center" />;
+}
+
+export default MyImage;
+```
+
+En el ejemplo anterior, se configura la imagen **my-image.jpg** con un ancho de 500 píxeles, una altura de 300 píxeles, una disposición responsive, un ajuste de objeto de cubierta y una posición de objeto centrada.
+
+## Uso de imágenes remotas y locales.
+
+En Next.js, se pueden utilizar imágenes remotas y locales en el componente **Image**. Las imágenes remotas se pueden cargar desde una URL externa, mientras que las imágenes locales se pueden cargar desde la carpeta **public**.
+
+Ejemplo:
+
+```jsx
+// Image.js
+
+import Image from 'next/image';
+
+const MyImage = () => {
+  return (
+    <div>
+      <Image src="https://example.com/my-remote-image.jpg" alt="My Remote Image" width={500} height={300} />
+      <Image src="/images/my-local-image.jpg" alt="My Local Image" width={500} height={300} />
+    </div>
+  );
+}
+
+export default MyImage;
+```
+
+En el ejemplo anterior, se muestra una imagen remota **my-remote-image.jpg** y una imagen local **my-local-image.jpg** utilizando el componente **Image**.
+
+## Conclusión.
+
+El componente **Image** en Next.js permite mostrar imágenes de forma eficiente y optimizada en la aplicación. Al utilizar el componente **Image**, se puede mejorar el rendimiento de la aplicación y proporcionar una mejor experiencia al usuario al cargar imágenes de manera rápida y eficiente.
+
+En esta unidad, se exploró cómo manejar y optimizar imágenes con Next Image, incluyendo la configuración de propiedades, el uso de imágenes remotas y locales, y la importancia de utilizar el componente **Image** para mejorar el rendimiento de la aplicación.   
