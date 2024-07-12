@@ -2,28 +2,46 @@
 
 La navegación en Next.js se realiza a través de la librería `next/router`. Esta librería nos permite navegar entre las diferentes páginas de nuestra aplicación de forma programática o mediante enlaces.
 
+Es necesario eliminar el directorio **src/app** y el archivo "src/app.js" para que la aplicación funcione correctamente.
+
 ## Link component.
 
 El componente **Link** de Next.js nos permite crear enlaces entre las diferentes páginas de nuestra aplicación. Este componente se utiliza de la siguiente forma:
 
 ```jsx
-import Link from 'next/link'
+//index.jsx
+import Link from "next/link";
 
-const Index = () => {
+export default function Home() {
   return (
     <div>
-      <h1>Home Page</h1>
+      Hello World.{" "}
       <Link href="/about">
-        <a>About Page</a>
+        About
       </Link>
     </div>
-  )
+  );
 }
-
-export default Index
 ```
 
 En el ejemplo anterior, se crea un enlace a la página **About** utilizando el componente **Link**. Al hacer clic en el enlace, se navegará a la página **About** de forma rápida y sin recargar la página.
+
+```js
+//_app.js
+export default function App({ Component, pageProps }) {
+    return <Component {...pageProps} />;
+  }
+```
+Este archivo es el punto de entrada de nuestra aplicación y se utiliza para envolver todos los componentes de la aplicación con un componente de diseño o estilo común.
+
+```jsx
+//about.jsx
+export default function About() {
+    return <div>About</div>;
+  }
+```
+
+En este archivo se crea la página **About** de la aplicación. Al navegar a esta página, se mostrará el contenido del componente **About**.
 
 ## Uso de Router.
 

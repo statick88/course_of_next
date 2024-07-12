@@ -6,6 +6,23 @@ En este capítulo se presentarán los conceptos básicos de cómo crear rutas en
 
 Las rutas en Next.js se crean utilizando la carpeta **pages**. Cada archivo en esta carpeta representa una ruta en la aplicación. Por ejemplo, si se crea un archivo **index.js** en esta carpeta, se creará una ruta de inicio en la aplicación.
 
+### Componente Index:
+
+```jsx
+const Index = () => {
+  return (
+    <div>
+      <h1>Home Page</h1>
+      <p>Welcome to my Next.js App</p>
+    </div>
+  )
+}
+
+export default Index
+```
+
+En el ejemplo anterior, se crea una ruta de inicio en la aplicación con el componente **Index** que renderiza el contenido de la página.
+
 ## Rutas dinámicas.
 
 Las rutas dinámicas en Next.js se crean utilizando corchetes **[]** en el nombre del archivo. Por ejemplo, si se crea un archivo **[id].js** en esta carpeta, se creará una ruta dinámica en la aplicación.
