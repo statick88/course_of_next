@@ -1,0 +1,96 @@
+# React Server Components en Next.js: notación "use Client"
+
+En este capítulo se presentarán los conceptos básicos de cómo utilizar React Server Components en Next.js. A lo largo de este capítulo se presentarán los siguientes temas:
+
+## Introducción a React Server Components.
+
+React Server Components es una nueva característica de React que permite renderizar componentes en el servidor y enviar solo los datos necesarios al cliente. Esto mejora el rendimiento de la aplicación al reducir la cantidad de datos que se envían al cliente.
+
+###  ¿Qué es use Client?
+
+La notación "use Client" en React Server Components se utiliza para indicar que un componente se renderizará en el cliente en lugar de en el servidor. Esto permite que el componente se actualice de forma dinámica en el cliente sin tener que volver a renderizarlo en el servidor.
+
+## Uso de la notación "use Client".
+
+La notación "use Client" se utiliza en un componente de React Server Components para indicar que el componente se renderizará en el cliente. Por ejemplo:
+
+```jsx
+import { useClient } from 'react-server-components'
+
+const MyComponent = () => {
+  const data = useClient(fetchData)
+
+  return (
+    <div>
+      <h1>{data.title}</h1>
+      <p>{data.content}</p>
+    </div>
+  )
+}
+
+export default MyComponent
+```
+
+En el ejemplo anterior, el componente **MyComponent** utiliza la notación "use Client" para indicar que se renderizará en el cliente. El componente llama a la función **fetchData** para obtener los datos necesarios y los muestra en la interfaz de usuario.
+
+## Ventajas de la notación "use Client".
+
+La notación "use Client" en React Server Components ofrece las siguientes ventajas:
+
+- Permite renderizar componentes en el cliente de forma dinámica.
+- Reduce la cantidad de datos que se envían al cliente.
+- Mejora el rendimiento de la aplicación al evitar renderizaciones innecesarias en el servidor.
+
+## Ejemplos prácticos.
+
+1. Crea un componente de React Server Components que utilice la notación "use Client".
+
+```jsx
+import { useClient } from 'react-server-components'
+
+const MyComponent = () => {
+  const data = useClient(fetchData)
+
+  return (
+    <div>
+      <h1>{data.title}</h1>
+      <p>{data.content}</p>
+    </div>
+  )
+}
+
+export default MyComponent
+```
+
+2. Utiliza la notación "use Client" en un componente de React Server Components para renderizar datos dinámicamente en el cliente.
+
+```jsx
+import { useClient } from 'react-server-components'
+
+const MyComponent = () => {
+  const data = useClient(fetchData)
+
+  return (
+    <div>
+      <h1>{data.title}</h1>
+      <p>{data.content}</p>
+    </div>
+  )
+}
+
+export default MyComponent
+```
+
+## Conclusión.
+
+En este capítulo se presentaron los conceptos básicos de cómo utilizar React Server Components en Next.js. A lo largo de este capítulo se presentaron los siguientes temas: introducción a React Server Components, notación "use Client", uso de la notación "use Client" y ventajas de la notación "use Client". Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo utilizar React Server Components en Next.js.
+
+## Ejercicios.
+
+1. Crea un componente de React Server Components que utilice la notación "use Client".
+
+2. Utiliza la notación "use Client" en un componente de React Server Components para renderizar datos dinámicamente en el cliente.
+
+3. Crea una aplicación en Next.js que utilice React Server Components y la notación "use Client" en diferentes componentes.
+
+Espero que estos ejercicios le sean de utilidad y le ayuden a practicar cómo utilizar React Server Components en Next.js.

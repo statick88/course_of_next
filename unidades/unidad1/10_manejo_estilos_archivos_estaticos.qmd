@@ -1,0 +1,148 @@
+# Manejo de estilos y archivos estáticos en Next.js
+
+En este capítulo se presentarán los conceptos básicos de cómo manejar estilos y archivos estáticos en Next.js. A lo largo de este capítulo se presentarán los siguientes temas:
+
+## Estilos en Next.js
+
+Los estilos en Next.js se pueden manejar de diferentes formas, como CSS global, CSS Modules y Styled JSX. Cada una de estas formas tiene sus propias ventajas y desventajas, y se pueden utilizar según las necesidades del proyecto.
+
+### CSS global
+
+El CSS global en Next.js se puede utilizar para aplicar estilos a toda la aplicación. Para utilizar CSS global en Next.js, se puede crear un archivo **styles.css** en la carpeta **public** y enlazarlo en el archivo **_app.js**.
+
+```css
+/* styles.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+```
+
+```jsx
+// _app.js
+import '../public/styles.css'
+
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />
+}
+
+export default MyApp
+```
+
+## CSS Modules en Next.js
+
+### CSS Modules
+
+Los CSS Modules en Next.js permiten crear estilos locales para cada componente. Para utilizar CSS Modules en Next.js, se puede crear un archivo **styles.module.css** en la carpeta del componente y importarlo en el archivo del componente.
+
+```css
+/* Button.module.css */
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+```
+
+```jsx
+// Button.js
+import styles from './Button.module.css'
+
+const Button = () => {
+  return <button className={styles.button}>Click me</button>
+}
+
+export default Button
+```
+
+### Scoped CSS en Next.js
+
+En Next.js, los estilos se aplican de forma local por defecto, lo que significa que los estilos de un componente no afectan a otros componentes. Esto se conoce como scoped CSS y ayuda a evitar conflictos de estilos entre componentes.
+
+### Creación y uso de CSS Modules.
+
+Para crear y utilizar CSS Modules en Next.js, se deben seguir los siguientes pasos:
+
+1. Crear un archivo **styles.module.css** en la carpeta del componente.
+
+2. Definir los estilos en el archivo **styles.module.css** utilizando la sintaxis de CSS.
+
+3. Importar los estilos en el archivo del componente y utilizar la clase generada por CSS Modules.
+
+```css
+/* styles.module.css */
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+```
+
+```jsx
+// Button.js
+import styles from './styles.module.css'
+
+const Button = () => {
+  return <button className={styles.button}>Click me</button>
+}
+
+export default Button
+```
+
+## Styled JSX en Next.js
+
+### Styled JSX
+
+Styled JSX en Next.js permite escribir estilos en línea dentro de los componentes. Para utilizar Styled JSX en Next.js, se puede utilizar la etiqueta **style** y definir los estilos dentro de ella.
+
+```jsx
+// Button.js
+
+const Button = () => {
+  return (
+    <button>
+      Click me
+      <style jsx>{`
+        button {
+          background-color: #007bff;
+          color: #fff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+        }
+      `}</style>
+    </button>
+  )
+}
+
+export default Button
+```
+
+### Ventajas de Styled JSX
+
+Las ventajas de Styled JSX en Next.js son las siguientes:
+
+- Permite escribir estilos en línea de forma sencilla.
+- Permite utilizar variables y funciones de JavaScript en los estilos.
+- Permite aplicar estilos de forma local a un componente.
+
+## Conclusión
+
+En este capítulo se presentaron los conceptos básicos de cómo manejar estilos y archivos estáticos en Next.js. A lo largo de este capítulo se presentaron las diferentes formas de manejar estilos en Next.js, como CSS global, CSS Modules y Styled JSX. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo manejar estilos y archivos estáticos en Next.js.
+
+## Ejercicios
+
+1. Crea un archivo **styles.css** en la carpeta **public** y enlázalo en el archivo **_app.js** para aplicar estilos globales a la aplicación.
+
+2. Crea un archivo **styles.module.css** en la carpeta de un componente y utilízalo para aplicar estilos locales al componente.
+
+3. Utiliza Styled JSX en un componente de Next.js para aplicar estilos en línea al componente.
+
+Espero que estos ejercicios le sean de utilidad y le ayuden a practicar cómo manejar estilos y archivos estáticos en Next.js.

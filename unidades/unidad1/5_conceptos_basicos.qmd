@@ -1,0 +1,60 @@
+# Cómo crear rutas en Next.js
+
+En este capítulo se presentarán los conceptos básicos de cómo crear rutas en Next.js. A lo largo de este capítulo se presentarán los siguientes temas:
+
+## Rutas básicas.
+
+Las rutas en Next.js se crean utilizando la carpeta **pages**. Cada archivo en esta carpeta representa una ruta en la aplicación. Por ejemplo, si se crea un archivo **index.js** en esta carpeta, se creará una ruta de inicio en la aplicación.
+
+## Rutas dinámicas.
+
+Las rutas dinámicas en Next.js se crean utilizando corchetes **[]** en el nombre del archivo. Por ejemplo, si se crea un archivo **[id].js** en esta carpeta, se creará una ruta dinámica en la aplicación.
+
+## Nested routes.
+
+Las rutas anidadas en Next.js se crean utilizando la carpeta **pages** y subcarpetas. Por ejemplo, si se crea una carpeta **blog** y un archivo **[slug].js** en esta carpeta, se creará una ruta anidada en la aplicación.
+
+## Rutas con parámetros.
+
+Las rutas con parámetros en Next.js se crean utilizando corchetes **[]** en la ruta. Por ejemplo, si se crea una ruta **/blog/[slug]** en la aplicación, se creará una ruta con parámetros en la aplicación.
+
+## Rutas con query strings.
+
+Las rutas con query strings en Next.js se crean utilizando el signo de interrogación **?** en la ruta. Por ejemplo, si se crea una ruta **/blog?slug=hello-world** en la aplicación, se creará una ruta con query strings en la aplicación.º
+
+## Rutas con rutas anidadas.
+
+Las rutas con rutas anidadas en Next.js se crean utilizando la carpeta **pages** y subcarpetas. Por ejemplo, si se crea una carpeta **blog** y un archivo **[slug].js** en esta carpeta, se creará una ruta anidada en la aplicación.
+
+## Rutas con rutas anidadas y parámetros.
+
+Las rutas con rutas anidadas y parámetros en Next.js se crean utilizando la carpeta **pages** y subcarpetas. Por ejemplo, si se crea una carpeta **blog** y un archivo **[slug].js** en esta carpeta, se creará una ruta anidada con parámetros en la aplicación.
+
+## Rutas con rutas anidadas y query strings.
+
+Las rutas con rutas anidadas y query strings en Next.js se crean utilizando la carpeta **pages** y subcarpetas. Por ejemplo, si se crea una carpeta **blog** y un archivo **[slug].js** en esta carpeta, se creará una ruta anidada con query strings en la aplicación.
+
+## Conclusión.
+
+En este capítulo se presentaron los conceptos básicos de cómo crear rutas en Next.js. A lo largo de este capítulo se presentaron los siguientes temas: rutas básicas, rutas dinámicas, rutas anidadas, rutas con parámetros, rutas con query strings, rutas con rutas anidadas, rutas con rutas anidadas y parámetros, y rutas con rutas anidadas y query strings. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo crear rutas en Next.js.
+
+## Ejercicios.
+
+1. Crea una ruta básica en Next.js.
+
+2. Crea una ruta dinámica en Next.js.
+
+3. Crea una ruta anidada en Next.js.
+
+4. Crea una ruta con parámetros en Next.js.
+
+5. Crea una ruta con query strings en Next.js.
+
+6. Crea una ruta con rutas anidadas en Next.js.
+
+7. Crea una ruta con rutas anidadas y parámetros en Next.js.
+
+8. Crea una ruta con rutas anidadas y query strings en Next.js.
+
+Espero que estos ejercicios le sean de utilidad y le ayuden a practicar cómo crear rutas en Next.js.
+

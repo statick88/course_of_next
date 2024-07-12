@@ -1,0 +1,44 @@
+# ¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?
+
+Next.js es un framework de React que permite la creación de aplicaciones web de forma sencilla y rápida. A lo largo de este ebook se presentarán los conceptos básicos de Next.js, así como ejemplos de su uso.
+
+## Introducción a Next.js y sus beneficios.
+
+Para introducirnos en Next.js, primero debemos entender qué es un framework. Un framework es un conjunto de herramientas y librerías que facilitan el desarrollo de aplicaciones web. En el caso de Next.js, es un framework de React que nos permite crear aplicaciones web de forma sencilla y rápida.
+
+Next.js nos ofrece una serie de beneficios que lo hacen una excelente opción para el desarrollo de aplicaciones web:
+
+- **Rendimiento**: Next.js nos ofrece un rendimiento óptimo gracias a su capacidad de renderizado en el servidor y en el cliente. Esto nos permite crear aplicaciones web rápidas y eficientes.
+
+- **SEO**: Next.js nos ofrece una serie de herramientas que nos permiten optimizar nuestras aplicaciones web para los motores de búsqueda. Esto nos ayuda a mejorar el posicionamiento de nuestras aplicaciones en los resultados de búsqueda.
+
+- **Escalabilidad**: Next.js nos ofrece una arquitectura escalable que nos permite crear aplicaciones web de cualquier tamaño. Esto nos permite crear aplicaciones web que puedan crecer con el tiempo y adaptarse a las necesidades de nuestros usuarios.
+
+- **Facilidad de uso**: Next.js nos ofrece una serie de herramientas y librerías que nos facilitan el desarrollo de aplicaciones web. Esto nos permite crear aplicaciones web de forma sencilla y rápida, sin necesidad de tener un conocimiento profundo de React.
+
+## Comparación con otros frameworks.
+
+Podemos comparar Next.js con otros frameworks de React, como Create React App. A continuación, se presentan algunas diferencias entre Next.js y Vite:
+
+- **Rendimiento**: Next.js ofrece un rendimiento óptimo gracias a su capacidad de renderizado en el servidor y en el cliente. Vite, por otro lado, ofrece un rendimiento óptimo gracias a su capacidad de renderizado en el cliente.
+
+- **SEO**: Next.js nos ofrece una serie de herramientas que nos permiten optimizar nuestras aplicaciones web para los motores de búsqueda. Vite, por otro lado, nos ofrece una serie de herramientas que nos permiten optimizar nuestras aplicaciones web para los motores de búsqueda.
+
+- **Escalabilidad**: Next.js nos ofrece una arquitectura escalable que nos permite crear aplicaciones web de cualquier tamaño. Vite, por otro lado, nos ofrece una arquitectura escalable que nos permite crear aplicaciones web de cualquier tamaño.
+
+- **Facilidad de uso**: Next.js nos ofrece una serie de herramientas y librerías que nos facilitan el desarrollo de aplicaciones web. Vite, por otro lado, nos ofrece una serie de herramientas y librerías que nos facilitan el desarrollo de aplicaciones web.
+
+## Casos de uso y ejemplos de proyectos exitosos.
+
+Next.js es utilizado por una gran cantidad de empresas y desarrolladores en todo el mundo. Algunos ejemplos de proyectos exitosos que utilizan Next.js son:
+
+- **Vercel**: Vercel es una plataforma de desarrollo y alojamiento de aplicaciones web que utiliza Next.js como su framework principal. Vercel nos ofrece una serie de herramientas y servicios que nos permiten crear aplicaciones web de forma sencilla y rápida.
+
+- **Spotify**: Spotify es una plataforma de streaming de música que utiliza Next.js para su aplicación web. Spotify nos ofrece una experiencia de usuario rápida y eficiente gracias a Next.js.
+
+- **Netflix**: Netflix es una plataforma de streaming de películas y series que utiliza Next.js para su aplicación web. Netflix nos ofrece una experiencia de usuario rápida y eficiente gracias a Next.js.
+
+## Conclusión.
+
+Next.js es un framework de React que nos permite crear aplicaciones web de forma sencilla y rápida. A lo largo de este ebook se presentarán los conceptos básicos de Next.js, así como ejemplos de su uso. Espero que este ebook le sea de utilidad y le ayude a comprender mejor el framework Next.js.
+

@@ -1,0 +1,29 @@
+::::: justify
+# Introducción
+
+En este ebook se presentan lo conceptos básicos acerca del frmework Next JS, el cual es un framework de React que permite la creación de aplicaciones web de forma sencilla y rápida. A lo largo de este ebook se presentarán los conceptos básicos de Next JS, así como ejemplos de su uso.
+
+Lo primero que se debe hacer es instalar Next JS en su computadora. Para ello, se debe tener instalado Node JS en su computadora. Si no lo tiene instalado, puede descargarlo desde la página oficial de Node JS. Una vez que tenga Node JS instalado, puede instalar Next JS utilizando el siguiente comando:
+
+``` bash
+npx create-next-app@latest --ts
+```
+
+::: center
+![](images/paste-17.png)
+:::
+
+Este comando creará una nueva aplicación de Next JS en su computadora. Una vez que la aplicación se haya creado, puede ejecutarla utilizando el siguiente comando:
+
+``` bash
+npm run dev
+```
+
+::: center
+![](images/paste-18.png)
+:::
+
+Este comando iniciará un servidor local en su computadora y podrá ver la aplicación en su navegador web. A partir de aquí, puede comenzar a desarrollar su aplicación utilizando Next JS.
+
+En los siguientes capítulos se presentarán los conceptos básicos de Next JS, así como ejemplos de su uso. Espero que este ebook le sea de utilidad y le ayude a comprender mejor el framework Next JS.
+:::::

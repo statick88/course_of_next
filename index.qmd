@@ -1,0 +1,48 @@
+# Bienvenido
+
+:::{.center}
+![Typescript](/images/logo_tipescript.png){width=20%}
+:::
+
+::: {.center}
+¡Bienvenido al Curso de Typescript! 
+
+En este curso, exploraremos todo, desde los fundamentos hasta las aplicaciones prácticas.
+:::
+
+::: {.justify}
+## ¿De qué trata este curso?
+
+Este curso es una introducción a TypeScript, un lenguaje de programación de código abierto desarrollado y mantenido por Microsoft. TypeScript es un superconjunto de JavaScript que agrega tipado estático opcional y otras características avanzadas a JavaScript.
+
+En este curso, aprenderá los conceptos básicos de TypeScript, incluidos los tipos de datos, las funciones, las clases, los módulos y mucho más. También explorará cómo TypeScript se puede utilizar para crear aplicaciones web modernas y escalables.
+
+Este curso es ideal para principiantes y aquellos con poca o ninguna experiencia en programación. Si eres un estudiante curioso, un profesional que busca cambiar de carrera o simplemente alguien que quiere aprender TypeScript, este curso es para ti.
+
+## ¿Para quién es este curso?
+
+Este curso es para cualquier persona interesada en aprender TypeScript, incluidos:
+
+- Estudiantes que deseen aprender un nuevo lenguaje de programación.
+- Profesionales que buscan mejorar sus habilidades de desarrollo web.
+- Desarrolladores que deseen aprender TypeScript para crear aplicaciones web modernas y escalables.
+- Cualquiera que quiera aprender un lenguaje de programación de código abierto y de alto rendimiento.
+- Cualquiera que quiera aprender TypeScript para mejorar su carrera profesional.
+- Cualquiera que quiera aprender TypeScript para crear aplicaciones web modernas y escalables.
+
+## ¿Cómo contribuir?
+
+Valoramos su contribución a este curso. Si encuentra algún error, desea sugerir mejoras o agregar contenido adicional, me encantaría saber de usted. 
+
+Puede contribuir a través del repositorio en linea, donde puede compartir sus comentarios y sugerencias. 
+
+Juntos, podemos mejorar continuamente este recurso educativo para beneficiar a la comunidad de estudiantes y entusiastas de la programación.
+
+Este ebook ha sido creado con el objetivo de proporcionar acceso gratuito y universal al conocimiento.
+
+Estará disponible en línea para cualquier persona, sin importar su ubicación o circunstancias, para acceder y aprender a su propio ritmo.
+
+Puede descargarlo en formato PDF, Epub o verlo en línea en cualquier momento y lugar.
+
+¡Gracias por su interés en este curso y espero que disfrute aprendiendo TypeScript!
+:::

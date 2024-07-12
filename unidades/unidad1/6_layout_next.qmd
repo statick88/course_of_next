@@ -1,0 +1,172 @@
+# Cómo crear Layout en Next.js
+
+En este capítulo se presentarán los conceptos básicos de cómo crear Layouts en Next.js. A lo largo de este capítulo se presentarán los siguientes temas:
+
+## Definición de layouts.
+
+Para definir un layout en Next.js, se debe crear un componente de React que contenga la estructura del layout. Por ejemplo, si se desea crear un layout con un encabezado y un pie de página, se puede crear un componente **Layout** que contenga estos elementos.
+
+### Componente Layout:
+
+```jsx
+import Head from 'next/head'
+
+const Layout = ({ children }) => {
+  return (
+    <div>
+      <Head>
+        <title>My Next.js App</title>
+      </Head>
+      <header>
+        <h1>Header</h1>
+      </header>
+      <main>
+        {children}
+      </main>
+      <footer>
+        <p>Footer</p>
+      </footer>
+    </div>
+  )
+}
+
+export default Layout
+```
+
+En el componente **Layout**, se define la estructura del layout con un encabezado, un pie de página y un contenedor principal para el contenido de la página. El componente recibe como prop **children** el contenido de la página que se renderizará en el contenedor principal.
+
+### Componente **Index**:
+
+```jsx
+import Layout from '../components/Layout'
+
+const Index = () => {
+  return (
+    <Layout>
+      <h1>Home Page</h1>
+      <p>Welcome to my Next.js App</p>
+    </Layout>
+  )
+}
+
+export default Index
+```
+
+En el componente **Index**, se importa el componente **Layout** y se renderiza el contenido de la página dentro del layout. De esta forma, se crea una estructura de layout que se puede reutilizar en diferentes páginas de la aplicación.
+
+### Componente Layout específico:
+
+```jsx
+import Head from 'next/head'
+
+const Layout = ({ title, children }) => {
+  return (
+    <div>
+      <Head>
+        <title>{title}</title>
+      </Head>
+      <header>
+        <h1>Header</h1>
+      </header>
+      <main>
+        {children}
+      </main>
+      <footer>
+        <p>Footer</p>
+      </footer>
+    </div>
+  )
+}
+
+export default Layout
+```
+
+En el componente **Layout**, se define un prop **title** que permite personalizar el título de la página. De esta forma, se puede crear un layout específico para cada página de la aplicación.
+
+### Componente **About**:
+
+```jsx
+import Layout from '../components/Layout'
+
+const About = () => {
+  return (
+    <Layout title="About Page">
+      <h1>About Page</h1>
+      <p>Learn more about my Next.js App</p>
+    </Layout>
+  )
+}
+
+export default About
+```
+
+En el componente **About**, se importa el componente **Layout** y se renderiza el contenido de la página dentro del layout. Se utiliza el prop **title** para personalizar el título de la página. De esta forma, se crea un layout específico para la página **About**.
+
+## Uso de layouts globales y específicos.
+
+En Next.js, se pueden crear layouts globales que se aplican a todas las páginas de la aplicación, así como layouts específicos que se aplican a páginas específicas de la aplicación. De esta forma, se puede personalizar el diseño de cada página de la aplicación de forma independiente.
+
+### Layout global:
+
+Para crear un layout global en Next.js, se puede definir un componente **Layout** en un archivo separado y importarlo en todas las páginas de la aplicación. De esta forma, se aplica el mismo diseño a todas las páginas de la aplicación.
+
+Ejemplo: 
+
+```jsx
+import Layout from '../components/Layout'
+
+const MyApp = ({ Component, pageProps }) => {
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  )
+}
+
+export default MyApp
+```
+
+### Layout específico:
+
+Para crear un layout específico en Next.js, se puede definir un componente **Layout** en un archivo separado y personalizarlo con props específicas para cada página. De esta forma, se puede crear un diseño único para cada página de la aplicación.
+
+Ejemplo:
+
+```jsx
+import Layout from '../components/Layout'
+
+const About = () => {
+  return (
+    <Layout title="About Page">
+      <h1>About Page</h1>
+      <p>Learn more about my Next.js App</p>
+    </Layout>
+  )
+}
+
+export default About
+```
+
+En este ejemplo, se crea un layout específico para la página **About** con un título personalizado. De esta forma, se puede personalizar el diseño de cada página de la aplicación de forma independiente.
+
+## Conclusión.
+
+En este capítulo se presentaron los conceptos básicos de cómo crear Layouts en Next.js. A lo largo de este capítulo se presentaron los siguientes temas: definición de layouts, uso de layouts globales y específicos. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo crear Layouts en Next.js.
+
+## Ejercicios.
+
+1. Crea un layout con un encabezado y un pie de página en Next.js.
+
+2. Crea un layout con un título personalizado en Next.js.
+
+3. Crea un layout global que se aplique a todas las páginas de la aplicación.
+
+4. Crea un layout específico que se aplique a una página específica de la aplicación.
+
+5. Crea un layout con un menú de navegación en Next.js.
+
+6. Crea un layout con un formulario de contacto en Next.js.
+
+Espero que estos ejercicios le sean de utilidad y le ayuden a practicar cómo crear Layouts en Next.js.
+
+## Implementación de layouts en un proyecto.

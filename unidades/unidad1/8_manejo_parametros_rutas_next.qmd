@@ -1,0 +1,99 @@
+# Manejo de parámetros en rutas en Next.js
+
+En este capítulo se presentará cómo manejar parámetros en las rutas de Next.js. A lo largo de este capítulo se presentarán los siguientes temas:
+
+## Parámetros de ruta.
+
+Los parámetros de ruta en Next.js se utilizan para pasar información a una ruta a través de la URL. Por ejemplo, si se desea mostrar el detalle de un producto en una tienda en línea, se puede utilizar un parámetro de ruta para pasar el ID del producto a la ruta.
+
+Ejemplo:
+
+```jsx
+// pages/product/[id].js
+import { useRouter } from 'next/router'
+
+const Product = () => {
+  const router = useRouter()
+  const { id } = router.query
+
+  return (
+    <div>
+      <h1>Product Detail</h1>
+      <p>Product ID: {id}</p>
+    </div>
+  )
+}
+
+export default Product
+```
+
+En el ejemplo anterior, se crea una ruta dinámica **/product/[id]** que recibe un parámetro **id** a través de la URL. Al acceder a la ruta **/product/123**, se mostrará el detalle del producto con el ID **123**.
+
+## Parámetros de consulta (query params).
+
+Los parámetros de consulta en Next.js se utilizan para pasar información a una ruta a través de la URL utilizando el signo de interrogación **?**. Por ejemplo, si se desea filtrar una lista de productos por categoría, se puede utilizar un parámetro de consulta para pasar la categoría a la ruta.
+
+Ejemplo:
+
+```jsx
+// pages/products.js
+import { useRouter } from 'next/router'
+
+const Products = () => {
+  const router = useRouter()
+  const { category } = router.query
+
+  return (
+    <div>
+      <h1>Products</h1>
+      <p>Category: {category}</p>
+    </div>
+  )
+}
+
+export default Products
+```
+
+En el ejemplo anterior, se crea una ruta **/products** que recibe un parámetro de consulta **category** a través de la URL. Al acceder a la ruta **/products?category=electronics**, se mostrarán los productos de la categoría **electronics**.
+
+## Uso de useRouter para acceder a los parámetros.
+
+La librería **next/router** proporciona el hook **useRouter** para acceder a los parámetros de ruta y de consulta en una página de Next.js. Este hook nos permite obtener los parámetros de la URL y utilizarlos en la página.
+
+Ejemplo:
+
+```jsx
+import { useRouter } from 'next/router'
+
+const Product = () => {
+  const router = useRouter()
+  const { id } = router.query
+
+  return (
+    <div>
+      <h1>Product Detail</h1>
+      <p>Product ID: {id}</p>
+    </div>
+  )
+}
+
+export default Product
+```
+
+En el ejemplo anterior, se importa el hook **useRouter** de la librería **next/router** y se utiliza para acceder al parámetro **id** de la URL. Este parámetro se puede utilizar en la página para mostrar el detalle del producto.
+
+
+## Conclusión.
+
+En este capítulo se presentó cómo manejar parámetros en las rutas de Next.js. A lo largo de este capítulo se presentaron los siguientes temas: parámetros de ruta, parámetros de consulta (query params) y uso de **useRouter** para acceder a los parámetros. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo manejar parámetros en las rutas de Next.js.
+
+## Ejercicios.
+
+1. Crea una ruta dinámica en Next.js que reciba un parámetro de ruta.
+2. Crea una ruta en Next.js que reciba un parámetro de consulta y muestre el valor en la página.
+3. Utiliza el hook **useRouter** para acceder a los parámetros de ruta y de consulta en una página de Next.js.
+4. Crea una aplicación en Next.js que utilice parámetros de ruta y de consulta en diferentes páginas.
+5. Experimenta con diferentes formas de pasar parámetros a las rutas en Next.js y observa cómo se comporta la aplicación.
+6. Investiga cómo validar los parámetros de ruta y de consulta en Next.js y aplica la validación en tu aplicación.
+7. Comparte tus experiencias y aprendizajes sobre cómo manejar parámetros en las rutas de Next.js con tus compañeros de clase.
+8. Investiga cómo manejar parámetros en las rutas de Next.js utilizando la librería **next/router** y comparte tus hallazgos con tus compañeros de clase.

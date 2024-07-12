@@ -1,0 +1,1507 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Curso de Typescript",
+    "section": "",
+    "text": "Bienvenido",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bienvenido</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#de-qué-trata-este-curso",
+    "href": "index.html#de-qué-trata-este-curso",
+    "title": "Curso de Typescript",
+    "section": "¿De qué trata este curso?",
+    "text": "¿De qué trata este curso?\nEste curso es una introducción a TypeScript, un lenguaje de programación de código abierto desarrollado y mantenido por Microsoft. TypeScript es un superconjunto de JavaScript que agrega tipado estático opcional y otras características avanzadas a JavaScript.\nEn este curso, aprenderá los conceptos básicos de TypeScript, incluidos los tipos de datos, las funciones, las clases, los módulos y mucho más. También explorará cómo TypeScript se puede utilizar para crear aplicaciones web modernas y escalables.\nEste curso es ideal para principiantes y aquellos con poca o ninguna experiencia en programación. Si eres un estudiante curioso, un profesional que busca cambiar de carrera o simplemente alguien que quiere aprender TypeScript, este curso es para ti.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bienvenido</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#para-quién-es-este-curso",
+    "href": "index.html#para-quién-es-este-curso",
+    "title": "Curso de Typescript",
+    "section": "¿Para quién es este curso?",
+    "text": "¿Para quién es este curso?\nEste curso es para cualquier persona interesada en aprender TypeScript, incluidos:\n\nEstudiantes que deseen aprender un nuevo lenguaje de programación.\nProfesionales que buscan mejorar sus habilidades de desarrollo web.\nDesarrolladores que deseen aprender TypeScript para crear aplicaciones web modernas y escalables.\nCualquiera que quiera aprender un lenguaje de programación de código abierto y de alto rendimiento.\nCualquiera que quiera aprender TypeScript para mejorar su carrera profesional.\nCualquiera que quiera aprender TypeScript para crear aplicaciones web modernas y escalables.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bienvenido</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#cómo-contribuir",
+    "href": "index.html#cómo-contribuir",
+    "title": "Curso de Typescript",
+    "section": "¿Cómo contribuir?",
+    "text": "¿Cómo contribuir?\nValoramos su contribución a este curso. Si encuentra algún error, desea sugerir mejoras o agregar contenido adicional, me encantaría saber de usted.\nPuede contribuir a través del repositorio en linea, donde puede compartir sus comentarios y sugerencias.\nJuntos, podemos mejorar continuamente este recurso educativo para beneficiar a la comunidad de estudiantes y entusiastas de la programación.\nEste ebook ha sido creado con el objetivo de proporcionar acceso gratuito y universal al conocimiento.\nEstará disponible en línea para cualquier persona, sin importar su ubicación o circunstancias, para acceder y aprender a su propio ritmo.\nPuede descargarlo en formato PDF, Epub o verlo en línea en cualquier momento y lugar.\n¡Gracias por su interés en este curso y espero que disfrute aprendiendo TypeScript!",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Bienvenido</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/1_introduccion.html#historia-y-evolución-de-typescript",
+    "href": "unidades/unidad1/1_introduccion.html#historia-y-evolución-de-typescript",
+    "title": "Introducción a TypeScript",
+    "section": "Historia y Evolución de TypeScript",
+    "text": "Historia y Evolución de TypeScript\n\nOrigen de TypeScript:\nTypeScript fue desarrollado por Microsoft y anunciado por primera vez en octubre de 2012. Su creador principal es Anders Hejlsberg, también conocido por ser el creador de C#.\nLa necesidad de TypeScript surgió debido a la creciente complejidad de las aplicaciones web y la necesidad de un lenguaje que pudiera manejar mejor el desarrollo a gran escala.\n\n\nEvolución:\n\n2012: Versión 0.8 - Lanzamiento inicial de TypeScript.\n2014: Versión 1.0 - Primer lanzamiento estable, introduciendo características como módulos externos y compatibilidad con ECMAScript 6.\n2016: Versión 2.0 - Se introdujeron mejoras significativas como tipos no null y control de flujo basado en tipos.\n2018: Versión 3.0 - Añadió soporte para proyectos referenciados y mejoras en la experiencia de desarrollo.\n2020: Versión 4.0 - Introducción de nuevas características como variadic tuple types, label inference en destructuring y mejoras en la inferencia de tipos.\nActualidad: TypeScript sigue evolucionando con nuevas versiones que mejoran la robustez del lenguaje y la experiencia del desarrollador.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción a TypeScript</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/1_introduccion.html#diferencias-entre-javascript-y-typescript",
+    "href": "unidades/unidad1/1_introduccion.html#diferencias-entre-javascript-y-typescript",
+    "title": "Introducción a TypeScript",
+    "section": "Diferencias entre JavaScript y TypeScript",
+    "text": "Diferencias entre JavaScript y TypeScript\n\nTipado Estático vs. Tipado Dinámico:\nJavaScript: Lenguaje de tipado dinámico, donde los tipos se determinan en tiempo de ejecución.\nTypeScript: Añade tipado estático, permitiendo definir tipos durante la escritura del código, lo que ayuda a detectar errores antes de la ejecución.\nGracias al tipado estático, TypeScript se ha convertido en una herramienta popular para el desarrollo de aplicaciones web ya que es más seguro y fácil de mantener en compraración con JavaScript.\n\n\nCompatibilidad:\nJavaScript: Todo código JavaScript válido es código TypeScript válido, lo que significa que TypeScript es un superconjunto de JavaScript.\nTypeScript: Permite usar las últimas características de ECMAScript, y transpila el código a versiones anteriores de JavaScript para compatibilidad con navegadores más antiguos.\n\n\n\n\n\n\nTip\n\n\n\n¿Qué es transpilación de código?\nLa transpilación es el proceso de convertir código de un lenguaje a otro. En el caso de TypeScript, el código, la herramienta más utilizada es el compilador de TypeScript (tsc), que convierte el código TypeScript a JavaScript. Sin embargo tambien se puede usar Babel para transpilar código TypeScript a JavaScript.\n\n\n\n\nCaracterísticas Adicionales:\nInterfaces: TypeScript permite definir interfaces que ayudan a describir la forma de los objetos.\nEnumeraciones (enums): TypeScript introduce enums, permitiendo definir conjuntos de constantes con nombres.\nDecoradores: TypeScript soporta decoradores, que son una forma de modificar clases y métodos.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción a TypeScript</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/1_introduccion.html#instalación-y-configuración-del-entorno",
+    "href": "unidades/unidad1/1_introduccion.html#instalación-y-configuración-del-entorno",
+    "title": "Introducción a TypeScript",
+    "section": "Instalación y Configuración del Entorno",
+    "text": "Instalación y Configuración del Entorno",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción a TypeScript</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/1_introduccion.html#instalación-de-fnm",
+    "href": "unidades/unidad1/1_introduccion.html#instalación-de-fnm",
+    "title": "Introducción a TypeScript",
+    "section": "Instalación de fnm:",
+    "text": "Instalación de fnm:\nPara instalar fnm se puede utilizar el instalador oficial de fnm, para ello se recomienda seguir los siguientes pasos:\n\nDescargar el instalador de fnm desde la página oficial: fnm\nEjecutar el instalador y seguir las instrucciones.\nVerificar la instalación ejecutando los siguientes comandos en la terminal:\n\n1fnm -v\n\n1\n\nMuestra la versión de fnm instalada.\n\n\nPara poder cambiar la versión de Node.js se puede utilizar el siguiente comando en la terminal:\n1fnm use &lt;version&gt;\n\n1\n\nCambia la versión de Node.js a la versión especificada.\n\n\nEjemplo:\nfnm use 14.17.0\nEl comando anterior cambiará la versión de Node.js a la versión 14.17.0.\nSi queremos utilizar una versión más reciente de Node.js se puede utilizar el siguiente comando en la terminal:\nfnm install latest\nEl comando anterior instalará la última versión de Node.js.\nSi queremos utilizar una versión en particular como la 20.0.0 se puede utilizar el siguiente comando en la terminal:\nfnm install 20.0.0\nEl comando anterior instalará la versión 20.0.0 de Node.js.\nSi queremos cambiar de versión de Node.js en un proyecto en particular se puede utilizar el siguiente comando en la terminal:\n1fnm use &lt;version&gt; --global false\n\n1\n\nCambia la versión de Node.js a la versión especificada en el proyecto actual.\n\n\nEjemplo:\nfnm use 20.0.0 --global false\nEl comando anterior cambiará la versión de Node.js a la versión 20.0.0 en el proyecto actual.\nDe esa forma se puede cambiar de versión de Node.js en un proyecto en particular.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción a TypeScript</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/1_introduccion.html#instalación-de-typescript",
+    "href": "unidades/unidad1/1_introduccion.html#instalación-de-typescript",
+    "title": "Introducción a TypeScript",
+    "section": "Instalación de TypeScript:",
+    "text": "Instalación de TypeScript:\nPara instalar TypeScript se puede utilizar el gestor de paquetes npm, para ello se recomienda seguir los siguientes pasos:\n\nInstalar TypeScript de forma global ejecutando el siguiente comando en la terminal:\n\nnpm install -g typescript\nEl comando anterior instalará TypeScript de forma global en el sistema, lo que permitirá utilizar el compilador de TypeScript (tsc) desde cualquier directorio.\n\nVerificar la instalación ejecutando el siguiente comando en la terminal:\n\n1tsc -v\n\n1\n\nMuestra la versión de TypeScript instalada.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción a TypeScript</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/1_introduccion.html#configuración-de-typescript",
+    "href": "unidades/unidad1/1_introduccion.html#configuración-de-typescript",
+    "title": "Introducción a TypeScript",
+    "section": "Configuración de TypeScript:",
+    "text": "Configuración de TypeScript:\nPara configurar TypeScript en un proyecto se debe crear un archivo de configuración llamado tsconfig.json, que contiene las opciones de configuración del compilador de TypeScript.\nPara crear un archivo de configuración de TypeScript se puede utilizar el siguiente comando en la terminal:\ntsc --init\nEl comando anterior creará un archivo tsconfig.json con la configuración por defecto del compilador de TypeScript.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción a TypeScript</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/1_introduccion.html#compilación-de-typescript",
+    "href": "unidades/unidad1/1_introduccion.html#compilación-de-typescript",
+    "title": "Introducción a TypeScript",
+    "section": "Compilación de TypeScript:",
+    "text": "Compilación de TypeScript:\nPara compilar un archivo TypeScript se puede utilizar el compilador de TypeScript (tsc), que convierte el código TypeScript a JavaScript.\nPara compilar un archivo TypeScript se puede utilizar el siguiente comando en la terminal:\ntsc archivo.ts\nEl comando anterior compilará el archivo archivo.ts y generará un archivo archivo.js con el código JavaScript resultante.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción a TypeScript</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/1_introduccion.html#ejemplo-práctico",
+    "href": "unidades/unidad1/1_introduccion.html#ejemplo-práctico",
+    "title": "Introducción a TypeScript",
+    "section": "Ejemplo Práctico",
+    "text": "Ejemplo Práctico",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción a TypeScript</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/1_introduccion.html#conclusiones",
+    "href": "unidades/unidad1/1_introduccion.html#conclusiones",
+    "title": "Introducción a TypeScript",
+    "section": "Conclusiones",
+    "text": "Conclusiones",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción a TypeScript</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/1_introduccion.html#referencias",
+    "href": "unidades/unidad1/1_introduccion.html#referencias",
+    "title": "Introducción a TypeScript",
+    "section": "Referencias",
+    "text": "Referencias",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción a TypeScript</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_fundamentos.html#tipos-primitivos-string-number-boolean-any-void-null-undefined.",
+    "href": "unidades/unidad1/2_fundamentos.html#tipos-primitivos-string-number-boolean-any-void-null-undefined.",
+    "title": "Fundamentos de TypeScript",
+    "section": "Tipos primitivos (string, number, boolean, any, void, null, undefined).",
+    "text": "Tipos primitivos (string, number, boolean, any, void, null, undefined).\n\nstring\nlet nombre: string = 'Juan';\nEn el caso de las cadenas de texto, TypeScript permite el uso de comillas simples o dobles.\n\n\nnumber\nlet edad: number = 30;\nEn el caso de los números, TypeScript permite el uso de números enteros y decimales.\n\n\nboolean\nlet esMayorDeEdad: boolean = true;\nEn el caso de los booleanos, TypeScript permite el uso de true y false.\n\n\nany\nlet variable: any = 'Hola';\nvariable = 10;\nvariable = true;\nEn el caso de la variable any, TypeScript permite asignar cualquier tipo de valor.\n\n\nvoid\nfunction saludar(): void {\n    console.log('Hola mundo');\n}\nEn el caso de las funciones, TypeScript permite el uso de void para indicar que la función no retorna ningún valor.\n\n\nnull\nlet variable: null = null;\nEn el caso de las variables, TypeScript permite el uso de null.\n\n\nundefined\nlet variable: undefined = undefined;\nEn el caso de las variables, TypeScript permite el uso de undefined.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Fundamentos de TypeScript</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_fundamentos.html#tipos-personalizados-enums-tuples",
+    "href": "unidades/unidad1/2_fundamentos.html#tipos-personalizados-enums-tuples",
+    "title": "Fundamentos de TypeScript",
+    "section": "Tipos personalizados (enums, tuples)",
+    "text": "Tipos personalizados (enums, tuples)\nEn esta sección se abordarán los tipos personalizados en TypeScript, como los enums y tuples.\n\nenums\nenum Color {\n    Rojo,\n    Verde,\n    Azul\n}\n\nlet color: Color = Color.Verde;\nEn el caso de los enums, TypeScript permite definir un conjunto de valores.\n\n\ntuples\nlet persona: [string, number] = ['Juan', 30];\nEn el caso de las tuples, TypeScript permite definir un conjunto de valores con tipos específicos.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Fundamentos de TypeScript</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_fundamentos.html#inferencia-de-tipos",
+    "href": "unidades/unidad1/2_fundamentos.html#inferencia-de-tipos",
+    "title": "Fundamentos de TypeScript",
+    "section": "Inferencia de tipos",
+    "text": "Inferencia de tipos\nEn TypeScript, la Inferencia de tipos permite asignar un tipo de dato a una variable sin necesidad de especificarlo.\nlet nombre = 'Juan';\nEn el caso anterior, TypeScript infiere que la variable nombre es de tipo string.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Fundamentos de TypeScript</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_fundamentos.html#ejemplos-prácticos.",
+    "href": "unidades/unidad1/2_fundamentos.html#ejemplos-prácticos.",
+    "title": "Fundamentos de TypeScript",
+    "section": "Ejemplos Prácticos.",
+    "text": "Ejemplos Prácticos.\n\nEjemplo 1: Tipos primitivos\n\nCrear un archivo tipos-primitivos.ts.\nAgregar el siguiente código:\n\nlet nombre: string = 'Juan';\nlet edad: number = 30;\nlet esMayorDeEdad: boolean = true;\nlet variable: any = 'Hola';\nvariable = 10;\nvariable = true;\nlet variableNula: null = null;\nlet variableIndefinida: undefined = undefined;\n\nconsole.log(nombre);\nconsole.log(edad);\nconsole.log(esMayorDeEdad);\nconsole.log(variable);\nconsole.log(variableNula);\nconsole.log(variableIndefinida);\nEn el caso anterior, se declararon variables de tipo string, number, boolean, any, null y undefined.\n\nEjecutar el archivo tipos-primitivos.ts.\n\ntsc tipos-primitivos.ts\nnode tipos-primitivos.js\nEn el caso anterior, se compila el archivo tipos-primitivos.ts y se ejecuta el archivo tipos-primitivos.js.\n\n\nEjemplo 2: Tipos personalizados\n\nCrear un archivo tipos-personalizados.ts.\nAgregar el siguiente código:\n\nlet persona1: [string, number] = ['Juan', 30];\n\nconsole.log(persona1);\nEn el caso anterior, se declaró un enum llamado Color y una tuple llamada persona.\n\nEjecutar el archivo tipos-personalizados.ts.\n\ntsc tipos-personalizados.ts\nnode tipos-personalizados.js\nEn el caso anterior, se compila el archivo tipos-personalizados.ts y se ejecuta el archivo tipos-personalizados.js.\n\n\nEjemplo 3: Inferencia de tipos\n\nCrear un archivo inferencia-tipos.ts.\nAgregar el siguiente código:\n\nlet nombre = 'Juan';\n\nconsole.log(nombre);\nEn el caso anterior, se declaró una variable nombre sin especificar el tipo de dato.\n\nEjecutar el archivo inferencia-tipos.ts.\n\ntsc inferencia-tipos.ts\nnode inferencia-tipos.js\nEn el caso anterior, se compila el archivo inferencia-tipos.ts y se ejecuta el archivo inferencia-tipos.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Fundamentos de TypeScript</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_fundamentos.html#ejemplos",
+    "href": "unidades/unidad1/2_fundamentos.html#ejemplos",
+    "title": "Fundamentos de TypeScript",
+    "section": "Ejemplos",
+    "text": "Ejemplos\n\nCrear un archivo tipos-primitivos.ts que contenga las siguientes variables:\n\n\nUna variable de tipo string llamada nombre con el valor ‘Juan’.\nUna variable de tipo number llamada edad con el valor 30.\nUna variable de tipo boolean llamada esMayorDeEdad con el valor true.\nUna variable de tipo any llamada variable con el valor ‘Hola’.\nUna variable de tipo any llamada variable con el valor 10.\nUna variable de tipo any llamada variable con el valor true.\nUna variable de tipo null llamada variableNula con el valor null.\nUna variable de tipo undefined llamada variableIndefinida con el valor undefined.\nCrear un archivo tipos-primitivos.ts.\n\nlet nombre: string = 'Juan';\nlet edad: number = 30;\nlet esMayorDeEdad: boolean = true;\nlet variable: any = 'Hola';\nvariable = 10;\nvariable = true;\nlet variableNula: null = null;\nlet variableIndefinida: undefined = undefined;\n\nconsole.log(nombre); // Juan\nconsole.log(edad); // 30\nconsole.log(esMayorDeEdad); // true\nconsole.log(variable); // true\nconsole.log(variableNula); // null\nconsole.log(variableIndefinida); // undefined\n\nEjecutar el archivo tipos-primitivos.ts.\n\ntsc tipos-primitivos.ts\nnode tipos-primitivos.js\n\nCrear un archivo tipos-personalizados.ts que contenga las siguientes variables:\n\n\nUn enum llamado Color con los valores Rojo, Verde y Azul.\nUna tuple llamada persona con los valores ‘Juan’ y 30.\nCrear un archivo tipos-personalizados.ts.\n\nenum Color {\n    Rojo,\n    Verde,\n    Azul\n}\n\nlet color: Color = Color.Verde;\n\nconsole.log(color); // 1\n\nlet persona: [string, number] = ['Juan', 30];\n\nconsole.log(persona); // ['Juan', 30]\n\nEjecutar el archivo tipos-personalizados.ts.\n\ntsc tipos-personalizados.ts\nnode tipos-personalizados.js\nEn el caso anterior, se declaró un enum llamado Color y una tuple llamada persona.\n\nCrear un archivo inferencia-tipos.ts que contenga la siguiente variable:\n\n\nUna variable llamada nombre con el valor ‘Juan’.\nCrear un archivo inferencia-tipos.ts.\n\nlet nombre = 'Juan';\n\nconsole.log(nombre); // Juan\n\nEjecutar el archivo inferencia-tipos.ts.\n\ntsc inferencia-tipos.ts\nnode inferencia-tipos.js\nEn el caso anterior, se declaró una variable nombre sin especificar el tipo de dato.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Fundamentos de TypeScript</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_fundamentos.html#reto",
+    "href": "unidades/unidad1/2_fundamentos.html#reto",
+    "title": "Fundamentos de TypeScript",
+    "section": "Reto",
+    "text": "Reto\n\nCrear un archivo tipos-primitivos.ts que contenga las siguientes variables:\n\n\nUna variable de tipo string llamada nombre con el valor ‘Juan’.\nUna variable de tipo number llamada edad con el valor 30.\nUna variable de tipo boolean llamada esMayorDeEdad con el valor true.\nUna variable de tipo any llamada variable con el valor ‘Hola’.\nUna variable de tipo any llamada variable con el valor 10.\nUna variable de tipo any llamada variable con el valor true.\nUna variable de tipo null llamada variableNula con el valor null.\nUna variable de tipo undefined llamada variableIndefinida con el valor undefined.\n\n\n\n🔍 Ver código\n\n\nCrear un archivo tipos-primitivos.ts.\n\nlet nombre: string = 'Juan';\nlet edad: number = 30;\nlet esMayorDeEdad: boolean = true;\nlet variable: any = 'Hola';\nvariable = 10;\nvariable = true;\nlet variableNula: null = null;\nlet variableIndefinida: undefined = undefined;\n\nconsole.log(nombre); // Juan\nconsole.log(edad); // 30\nconsole.log(esMayorDeEdad); // true\nconsole.log(variable); // true\nconsole.log(variableNula); // null\nconsole.log(variableIndefinida); // undefined\n\nEjecutar el archivo tipos-primitivos.ts.\n\ntsc tipos-primitivos.ts\nnode tipos-primitivos.js",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Fundamentos de TypeScript</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_fundamentos.html#conclusiones",
+    "href": "unidades/unidad1/2_fundamentos.html#conclusiones",
+    "title": "Fundamentos de TypeScript",
+    "section": "Conclusiones",
+    "text": "Conclusiones\nEn este capítulo se abordaron los fundamentos de TypeScript, como los tipos primitivos, tipos personalizados e Inferencia de tipos en TypeScript.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Fundamentos de TypeScript</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_fundamentos.html#enlaces-de-interés",
+    "href": "unidades/unidad1/2_fundamentos.html#enlaces-de-interés",
+    "title": "Fundamentos de TypeScript",
+    "section": "Enlaces de interés",
+    "text": "Enlaces de interés\n\nFundamentos de TypeScript\nTipos primitivos en TypeScript\nTipos personalizados en TypeScript\nInferencia de tipos en TypeScript",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Fundamentos de TypeScript</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/3_interfaces_y_tipos_avanzados.html#interfaces-definición-y-uso.",
+    "href": "unidades/unidad1/3_interfaces_y_tipos_avanzados.html#interfaces-definición-y-uso.",
+    "title": "Interfaces y Tipos Avanzados",
+    "section": "Interfaces: definición y uso.",
+    "text": "Interfaces: definición y uso.\nLas interfaces son una forma de definir la estructura de un objeto en TypeScript. Se pueden definir interfaces para objetos, funciones, clases y arreglos.\ninterface Person {\n  name: string;\n  age: number;\n}\n\nconst person: Person = {\n  name: 'John',\n  age: 30\n};\n\nconsole.log(person); // { name: 'John', age: 30 }\nEn el ejemplo anterior, definimos una interfaz Person que tiene dos propiedades: name y age. Luego, creamos un objeto person que cumple con la estructura de la interfaz Person.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interfaces y Tipos Avanzados</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/3_interfaces_y_tipos_avanzados.html#tipos-literales-y-tipos-de-unión",
+    "href": "unidades/unidad1/3_interfaces_y_tipos_avanzados.html#tipos-literales-y-tipos-de-unión",
+    "title": "Interfaces y Tipos Avanzados",
+    "section": "Tipos literales y tipos de unión",
+    "text": "Tipos literales y tipos de unión\nLos tipos literales son una forma de definir un tipo que solo puede tener un conjunto específico de valores. Por ejemplo, podemos definir un tipo literal para representar los días de la semana.\ntype Day = 'Monday' | 'Tuesday' | 'Wednesday' | 'Thursday' | 'Friday' | 'Saturday' | 'Sunday';\n\nconst day: Day = 'Monday';\n\nconsole.log(day); // Monday\nEn el ejemplo anterior, definimos un tipo Day que solo puede tener los valores Monday, Tuesday, Wednesday, Thursday, Friday, Saturday o Sunday. Luego, creamos una variable day de tipo Day y le asignamos el valor Monday.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interfaces y Tipos Avanzados</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/3_interfaces_y_tipos_avanzados.html#tipos-de-unión",
+    "href": "unidades/unidad1/3_interfaces_y_tipos_avanzados.html#tipos-de-unión",
+    "title": "Interfaces y Tipos Avanzados",
+    "section": "Tipos de unión",
+    "text": "Tipos de unión\nLos tipos de unión son una forma de combinar varios tipos en uno solo. Por ejemplo, podemos definir un tipo de unión para representar un número o una cadena.\ntype NumberOrString = number | string;\n\nconst value1: NumberOrString = 10;\nconst value2: NumberOrString = 'Hello';\n\nconsole.log(value1); // 10\nconsole.log(value2); // Hello\nEn el ejemplo anterior, definimos un tipo NumberOrString que puede ser un número o una cadena. Luego, creamos dos variables value1 y value2 de tipo NumberOrString y les asignamos un número y una cadena, respectivamente.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interfaces y Tipos Avanzados</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/3_interfaces_y_tipos_avanzados.html#tipos-genéricos",
+    "href": "unidades/unidad1/3_interfaces_y_tipos_avanzados.html#tipos-genéricos",
+    "title": "Interfaces y Tipos Avanzados",
+    "section": "Tipos genéricos",
+    "text": "Tipos genéricos\nLos tipos genéricos son una forma de definir tipos que pueden ser parametrizados con otros tipos. Por ejemplo, podemos definir una función genérica que toma un tipo T como argumento y devuelve un arreglo de ese tipo.\nfunction toArray&lt;T&gt;(value: T): T[] {\n  return [value];\n}\n\nconst array1 = toArray(10);\nconst array2 = toArray('Hello');\n\nconsole.log(array1); // [10]\nconsole.log(array2); // ['Hello']\nEn el ejemplo anterior, definimos una función genérica toArray que toma un tipo T como argumento y devuelve un arreglo de ese tipo. Luego, creamos dos arreglos array1 y array2 llamando a la función toArray con un número y una cadena, respectivamente.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interfaces y Tipos Avanzados</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/3_interfaces_y_tipos_avanzados.html#tipos-avanzados",
+    "href": "unidades/unidad1/3_interfaces_y_tipos_avanzados.html#tipos-avanzados",
+    "title": "Interfaces y Tipos Avanzados",
+    "section": "Tipos avanzados",
+    "text": "Tipos avanzados\nLos tipos avanzados son una forma de definir tipos más complejos en TypeScript. Algunos tipos avanzados incluyen tipos condicionales, tipos inferidos, tipos de intersección y tipos de unión.\ntype Person = {\n  name: string;\n  age: number;\n};\n\ntype Employee = {\n  name: string;\n  salary: number;\n};\n\ntype Manager = Person & Employee;\n\nconst manager: Manager = {\n  name: 'John',\n  age: 30,\n  salary: 50000\n};\n\nconsole.log(manager); // { name: 'John', age: 30, salary: 50000 }\nEn el ejemplo anterior, definimos tres tipos: Person, Employee y Manager. El tipo Manager es una intersección de los tipos Person y Employee, lo que significa que tiene todas las propiedades de ambos tipos. Luego, creamos un objeto manager que cumple con la estructura del tipo Manager.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interfaces y Tipos Avanzados</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/3_interfaces_y_tipos_avanzados.html#ejemplos-prácticos.",
+    "href": "unidades/unidad1/3_interfaces_y_tipos_avanzados.html#ejemplos-prácticos.",
+    "title": "Interfaces y Tipos Avanzados",
+    "section": "Ejemplos Prácticos.",
+    "text": "Ejemplos Prácticos.\n\nEjemplo 1: Definir una interfaz para un objeto.\ninterface Animal {\n  name: string;\n  age: number;\n}\nEn el ejemplo anterior, definimos una interfaz Animal que tiene dos propiedades: name y age.\n\n\nEjemplo 2: Definir un tipo literal para representar los meses del año.\ntype Month = 'January' | 'February' | 'March' | 'April' | 'May' | 'June' | 'July' | 'August' | 'September' | 'October' | 'November' | 'December';\n\nconst month: Month = 'January';\n\nconsole.log(month); // January\nEn el ejemplo anterior, definimos un tipo Month que solo puede tener los valores January, February, March, April, May, June, July, August, September, October, November o December.\n\n\nEjemplo 3: Definir un tipo de unión para representar un número o una cadena.\ntype NumberOrString = number | string;\n\nconst value1: NumberOrString = 10;\n\nconsole.log(value1); // 10\nEn el ejemplo anterior, definimos un tipo NumberOrString que puede ser un número o una cadena.\n\n\nEjemplo 4: Definir una función genérica que toma un tipo T como argumento y devuelve un arreglo de ese tipo.\nfunction toArray&lt;T&gt;(value: T): T[] {\n  return [value];\n}\n\nconst array1 = toArray(10);\n\nconsole.log(array1); // [10]\n\nconst array2 = toArray('Hello');\n\nconsole.log(array2); // ['Hello']\n\nconst array3 = toArray({ name: 'John', age: 30 });\n\nconsole.log(array3); // [{ name: 'John', age: 30 }]\n\nconst array4 = toArray([1, 2, 3]);\n\nconsole.log(array4); // [[1, 2, 3]]\n\nconst array5 = toArray(true);\n\nconsole.log(array5); // [true]\nEn el ejemplo anterior, definimos una función genérica toArray que toma un tipo T como argumento y devuelve un arreglo de ese tipo.\n\n\nEjemplo 5: Definir un tipo de intersección para combinar dos tipos.\ntype Animal = {\n  name: string;\n  age: number;\n};\n\ntype Pet = {\n  name: string;\n  breed: string;\n};\n\ntype Dog = Animal & Pet;\n\nconst dog: Dog = {\n  name: 'Buddy',\n  age: 5,\n  breed: 'Labrador'\n};\n\nconsole.log(dog); // { name: 'Buddy', age: 5, breed: 'Labrador' }\nEn el ejemplo anterior, definimos tres tipos: Animal, Pet y Dog. El tipo Dog es una intersección de los tipos Animal y Pet, lo que significa que tiene todas las propiedades de ambos tipos.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interfaces y Tipos Avanzados</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/3_interfaces_y_tipos_avanzados.html#conclusiones",
+    "href": "unidades/unidad1/3_interfaces_y_tipos_avanzados.html#conclusiones",
+    "title": "Interfaces y Tipos Avanzados",
+    "section": "Conclusiones",
+    "text": "Conclusiones\nEn este capítulo aprendimos sobre las interfaces y los tipos avanzados de TypeScript, asi tambien como los tipos literales y los tipos de unión. Estos conceptos nos permiten definir tipos más complejos y reutilizables en nuestros programas.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interfaces y Tipos Avanzados</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/3_interfaces_y_tipos_avanzados.html#referencias",
+    "href": "unidades/unidad1/3_interfaces_y_tipos_avanzados.html#referencias",
+    "title": "Interfaces y Tipos Avanzados",
+    "section": "Referencias",
+    "text": "Referencias\n\nInterfaces\nTipos literales\nTipos de unión\nTipos genéricos\nTipos avanzados",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Interfaces y Tipos Avanzados</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/4_funciones_typescript.html#parámetros-opcionales-y-valores-por-defecto.",
+    "href": "unidades/unidad1/4_funciones_typescript.html#parámetros-opcionales-y-valores-por-defecto.",
+    "title": "Funciones en TypeScript.",
+    "section": "Parámetros opcionales y valores por defecto.",
+    "text": "Parámetros opcionales y valores por defecto.\nEn TypeScript, se pueden definir parámetros opcionales y valores por defecto en una función. Para definir un parámetro opcional, se utiliza el signo de interrogación (?) después del nombre del parámetro. Para definir un valor por defecto, se utiliza el operador de asignación (=) seguido del valor por defecto. A continuación, se muestra un ejemplo de una función con parámetros opcionales y valores por defecto:\nfunction saludar(nombre: string, mensaje: string = \"Hola\", hora?: string): string {\n    if (hora) {\n        return `${mensaje}, ${nombre}! Son las ${hora}.`;\n    } else {\n        return `${mensaje}, ${nombre}!`;\n    }\n}\n\nlet saludo1 = saludar(\"Juan\"); // saludo1 = \"Hola, Juan!\"\nEn el ejemplo anterior, se define una función llamada saludar que recibe tres parámetros: nombre, mensaje y hora. El parámetro mensaje tiene un valor por defecto de “Hola” y el parámetro hora es opcional. La función devuelve un mensaje personalizado dependiendo de los parámetros que recibe.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Funciones en TypeScript.</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/4_funciones_typescript.html#funciones-de-flecha.",
+    "href": "unidades/unidad1/4_funciones_typescript.html#funciones-de-flecha.",
+    "title": "Funciones en TypeScript.",
+    "section": "Funciones de flecha.",
+    "text": "Funciones de flecha.\nEn TypeScript, se pueden definir funciones de flecha utilizando la sintaxis (parámetros) =&gt; expresión. Las funciones de flecha son una forma más concisa de definir funciones y permiten omitir la palabra clave function y las llaves {}. A continuación, se muestra un ejemplo de una función de flecha en TypeScript:\nlet sumar = (a: number, b: number): number =&gt; a + b;\n\nlet resultado = sumar(10, 20); // resultado = 30\nEn el ejemplo anterior, se define una función de flecha llamada sumar que recibe dos parámetros de tipo number y devuelve un valor de tipo number. La función suma los dos números y devuelve el resultado.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Funciones en TypeScript.</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/4_funciones_typescript.html#funciones-como-parámetros.",
+    "href": "unidades/unidad1/4_funciones_typescript.html#funciones-como-parámetros.",
+    "title": "Funciones en TypeScript.",
+    "section": "Funciones como parámetros.",
+    "text": "Funciones como parámetros.\nEn el ejemplo anterior, se define una función de flecha llamada sumar que recibe dos parámetros de tipo number y devuelve un valor de tipo number. La función suma los dos números y devuelve el resultado.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Funciones en TypeScript.</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/4_funciones_typescript.html#funciones-como-parámetros.-1",
+    "href": "unidades/unidad1/4_funciones_typescript.html#funciones-como-parámetros.-1",
+    "title": "Funciones en TypeScript.",
+    "section": "Funciones como parámetros.",
+    "text": "Funciones como parámetros.\nEn TypeScript, se pueden pasar funciones como parámetros a otras funciones. Esto permite crear funciones de orden superior que toman funciones como argumentos y devuelven funciones como resultado. A continuación, se muestra un ejemplo de una función que recibe una función como parámetro:\nfunction aplicarFuncion(funcion: (a: number, b: number) =&gt; number, a: number, b: number): number {\n    return funcion(a, b);\n}\n\nlet resultado = aplicarFuncion((a, b) =&gt; a + b, 10, 20); // resultado = 30\nEn el ejemplo anterior, se define una función llamada aplicarFuncion que recibe tres parámetros: funcion, a y b. El parámetro funcion es una función que recibe dos parámetros de tipo number y devuelve un valor de tipo number. La función aplicarFuncion llama a la función pasada como argumento con los parámetros a y b y devuelve el resultado.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Funciones en TypeScript.</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/4_funciones_typescript.html#funciones-genéricas.",
+    "href": "unidades/unidad1/4_funciones_typescript.html#funciones-genéricas.",
+    "title": "Funciones en TypeScript.",
+    "section": "Funciones genéricas.",
+    "text": "Funciones genéricas.\nEn TypeScript, se pueden definir funciones genéricas que aceptan un tipo de dato como parámetro. Esto permite reutilizar la misma función con diferentes tipos de datos. A continuación, se muestra un ejemplo de una función genérica en TypeScript:\nfunction imprimir&lt;T&gt;(valor: T): void {\n    console.log(valor);\n}\n\nimprimir&lt;number&gt;(10); // Imprime 10\nimprimir&lt;string&gt;(\"Hola\"); // Imprime Hola\nEn el ejemplo anterior, se define una función genérica llamada imprimir que acepta un parámetro de tipo T y no devuelve ningún valor. La función imprime el valor pasado como argumento utilizando la función console.log. Se pueden llamar a la función imprimir con diferentes tipos de datos, como number y string.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Funciones en TypeScript.</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_clases_herencia.html#clases-y-objetos.",
+    "href": "unidades/unidad1/5_clases_herencia.html#clases-y-objetos.",
+    "title": "Clases y Herencia",
+    "section": "Clases y objetos.",
+    "text": "Clases y objetos.\nUna clase es un modelo que define un conjunto de atributos y métodos que tendrán los objetos que se creen a partir de ella.\nclass Persona {\n    nombre: string;\n    edad: number;\n\n    constructor(nombre: string, edad: number) {\n        this.nombre = nombre;\n        this.edad = edad;\n    }\n\n    saludar() {\n        console.log(`Hola, soy ${this.nombre} y tengo ${this.edad} años.`);\n    }\n}\n\nlet persona1 = new Persona('Juan', 30); // Se crea un objeto de la clase Persona\nlet persona2 = new Persona('Ana', 25); // Se crea otro objeto de la clase Persona\n\npersona1.saludar(); // Hola, soy Juan y tengo 30 años.\npersona2.saludar(); // Hola, soy Ana y tengo 25 años.\nEn el ejemplo anterior se ha creado una clase Persona que tiene dos atributos (nombre y edad) y un método (saludar). A partir de esta clase se han creado dos objetos (persona1 y persona2) que tienen los mismos atributos y métodos.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Clases y Herencia</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_clases_herencia.html#herencia",
+    "href": "unidades/unidad1/5_clases_herencia.html#herencia",
+    "title": "Clases y Herencia",
+    "section": "Herencia",
+    "text": "Herencia\nLa herencia es un mecanismo que permite crear una nueva clase a partir de una clase existente. La nueva clase hereda los atributos y métodos de la clase existente y puede añadir nuevos atributos y métodos.\nclass Empleado extends Persona {\n    salario: number;\n\n    constructor(nombre: string, edad: number, salario: number) {\n        super(nombre, edad);\n        this.salario = salario;\n    }\n\n    trabajar() {\n        console.log(`${this.nombre} está trabajando.`);\n    }\n}\n\nlet empleado1 = new Empleado('Pedro', 35, 2000);\n\nempleado1.saludar(); // Hola, soy Pedro y tengo 35 años.\nempleado1.trabajar(); // Pedro está trabajando.\nEn el ejemplo anterior se ha creado una clase Empleado que hereda de la clase Persona. La clase Empleado tiene un atributo adicional (salario) y un método adicional (trabajar).",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Clases y Herencia</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_clases_herencia.html#métodos-estáticos",
+    "href": "unidades/unidad1/5_clases_herencia.html#métodos-estáticos",
+    "title": "Clases y Herencia",
+    "section": "Métodos estáticos",
+    "text": "Métodos estáticos\nLos métodos estáticos son métodos que se pueden llamar sin necesidad de crear un objeto de la clase.\nclass Calculadora {\n    static sumar(a: number, b: number) {\n        return a + b;\n    }\n\n    static restar(a: number, b: number) {\n        return a - b;\n    }\n}\n\nconsole.log(Calculadora.sumar(5, 3)); // 8\nconsole.log(Calculadora.restar(5, 3)); // 2\nEn el ejemplo anterior se ha creado una clase Calculadora con dos métodos estáticos (sumar y restar). Estos métodos se pueden llamar directamente a través de la clase sin necesidad de crear un objeto.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Clases y Herencia</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_clases_herencia.html#modificadores-de-acceso-public-private-protected",
+    "href": "unidades/unidad1/5_clases_herencia.html#modificadores-de-acceso-public-private-protected",
+    "title": "Clases y Herencia",
+    "section": "Modificadores de acceso (public, private, protected)",
+    "text": "Modificadores de acceso (public, private, protected)\nEn este apartado se explicarán los modificadores de acceso que se pueden utilizar en TypeScript.\n\npublic\nEl modificador public indica que los atributos y métodos son accesibles desde cualquier parte del código.\nclass Coche {\n    public marca: string;\n    public modelo: string;\n\n    constructor(marca: string, modelo: string) {\n        this.marca = marca;\n        this.modelo = modelo;\n    }\n\n    mostrar() {\n        console.log(`Marca: ${this.marca}, Modelo: ${this.modelo}`);\n    }\n}\n\nlet coche = new Coche('Seat', 'Ibiza');\nconsole.log(coche.marca); // Seat\nconsole.log(coche.modelo); // Ibiza\ncoche.mostrar(); // Marca: Seat, Modelo: Ibiza\nEn el ejemplo anterior se ha creado una clase Coche con dos atributos (marca y modelo) y un método (mostrar). Los atributos y métodos son públicos, por lo que se pueden acceder desde cualquier parte del código.\n\n\nprivate\nEl modificador private indica que los atributos y métodos son accesibles únicamente desde la propia clase.\nclass Coche {\n    private marca: string;\n    private modelo: string;\n\n    constructor(marca: string, modelo: string) {\n        this.marca = marca;\n        this.modelo = modelo;\n    }\n\n    mostrar() {\n        console.log(`Marca: ${this.marca}, Modelo: ${this.modelo}`);\n    }\n}\n\nlet coche = new Coche('Seat', 'Ibiza');\nconsole.log(coche.marca); // Error\nconsole.log(coche.modelo); // Error\ncoche.mostrar(); // Marca: Seat, Modelo: Ibiza\nEn el ejemplo anterior se ha creado una clase Coche con dos atributos (marca y modelo) y un método (mostrar). Los atributos y métodos son privados, por lo que no se pueden acceder desde fuera de la clase.\n\n\nprotected\nEl modificador protected indica que los atributos y métodos son accesibles desde la propia clase y desde las clases hijas.\nclass Vehiculo {\n    protected marca: string;\n    protected modelo: string;\n\n    constructor(marca: string, modelo: string) {\n        this.marca = marca;\n        this.modelo = modelo;\n    }\n\n    mostrar() {\n        console.log(`Marca: ${this.marca}, Modelo: ${this.modelo}`);\n    }\n}\n\nclass Coche extends Vehiculo {\n    constructor(marca: string, modelo: string) {\n        super(marca, modelo);\n    }\n\n    mostrar() {\n        console.log(`Coche: Marca: ${this.marca}, Modelo: ${this.modelo}`);\n    }\n}\n\nlet coche = new Coche('Seat', 'Ibiza');\ncoche.mostrar(); // Coche: Marca: Seat, Modelo: Ibiza\nEn el ejemplo anterior se ha creado una clase Vehiculo con dos atributos (marca y modelo) y un método (mostrar). Los atributos y métodos son protegidos, por lo que se pueden acceder desde la propia clase y desde las clases hijas.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Clases y Herencia</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_clases_herencia.html#getters-y-setters",
+    "href": "unidades/unidad1/5_clases_herencia.html#getters-y-setters",
+    "title": "Clases y Herencia",
+    "section": "Getters y setters",
+    "text": "Getters y setters\nLos getters y setters son métodos especiales que se utilizan para acceder y modificar los atributos de una clase.\nclass Persona {\n    private _nombre: string;\n\n    constructor(nombre: string) {\n        this._nombre = nombre;\n    }\n\n    get nombre() {\n        return this._nombre;\n    }\n\n    set nombre(nombre: string) {\n        this._nombre = nombre;\n    }\n}\n\nlet persona = new Persona('Juan');\nconsole.log(persona.nombre); // Juan\npersona.nombre = 'Pedro';\nconsole.log(persona.nombre); // Pedro\nEn el ejemplo anterior se ha creado una clase Persona con un atributo privado (**_nombre**) y un getter y un setter para acceder y modificar el atributo.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Clases y Herencia</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_clases_herencia.html#herencia-y-polimorfismo",
+    "href": "unidades/unidad1/5_clases_herencia.html#herencia-y-polimorfismo",
+    "title": "Clases y Herencia",
+    "section": "Herencia y polimorfismo",
+    "text": "Herencia y polimorfismo\nEl polimorfismo es un concepto que permite que un objeto de una clase hija se comporte como un objeto de la clase padre.\nclass Vehiculo {\n    protected marca: string;\n    protected modelo: string;\n\n    constructor(marca: string, modelo: string) {\n        this.marca = marca;\n        this.modelo = modelo;\n    }\n\n    mostrar() {\n        console.log(`Marca: ${this.marca}, Modelo: ${this.modelo}`);\n    }\n}\n\nclass Coche extends Vehiculo {\n    constructor(marca: string, modelo: string) {\n        super(marca, modelo);\n    }\n\n    mostrar() {\n        console.log(`Coche: Marca: ${this.marca}, Modelo: ${this.modelo}`);\n    }\n}\n\nlet vehiculo: Vehiculo = new Coche('Seat', 'Ibiza');\nvehiculo.mostrar(); // Coche: Marca: Seat, Modelo: Ibiza\nEn el ejemplo anterior se ha creado una clase Vehiculo con un método mostrar y una clase Coche que hereda de la clase Vehiculo y sobrescribe el método mostrar. Se crea un objeto de la clase Coche y se asigna a una variable de tipo Vehiculo. Al llamar al método mostrar se ejecuta el método de la clase Coche.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Clases y Herencia</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_clases_herencia.html#abstract-classes",
+    "href": "unidades/unidad1/5_clases_herencia.html#abstract-classes",
+    "title": "Clases y Herencia",
+    "section": "Abstract classes",
+    "text": "Abstract classes\nLas clases abstractas son clases que no se pueden instanciar directamente, sino que se utilizan como base para crear otras clases.\nabstract class Figura {\n    abstract area(): number;\n}\n\nclass Circulo extends Figura {\n    private radio: number;\n\n    constructor(radio: number) {\n        super();\n        this.radio = radio;\n    }\n\n    area(): number {\n        return Math.PI * this.radio * this.radio;\n    }\n}\n\nlet circulo = new Circulo(5);\nconsole.log(circulo.area()); // 78.53981633974483\nEn el ejemplo anterior se ha creado una clase abstracta Figura con un método abstracto area. Se ha creado una clase Circulo que hereda de la clase Figura y sobrescribe el método area. Al crear un objeto de la clase Circulo se puede llamar al método area.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Clases y Herencia</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_clases_herencia.html#interfaces",
+    "href": "unidades/unidad1/5_clases_herencia.html#interfaces",
+    "title": "Clases y Herencia",
+    "section": "Interfaces",
+    "text": "Interfaces\nLas interfaces son un mecanismo que permite definir la estructura que deben tener los objetos.\ninterface Figura {\n    area(): number;\n}\n\nclass Circulo implements Figura {\n    private radio: number;\n\n    constructor(radio: number) {\n        this.radio = radio;\n    }\n\n    area(): number {\n        return Math.PI * this.radio * this.radio;\n    }\n}\n\nlet circulo = new Circulo(5);\nconsole.log(circulo.area()); // 78.53981633974483\nEn el ejemplo anterior se ha creado una interfaz Figura con un método area. Se ha creado una clase Circulo que implementa la interfaz Figura y define el método area. Al crear un objeto de la clase Circulo se puede llamar al método area.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Clases y Herencia</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_clases_herencia.html#conclusiones",
+    "href": "unidades/unidad1/5_clases_herencia.html#conclusiones",
+    "title": "Clases y Herencia",
+    "section": "Conclusiones",
+    "text": "Conclusiones\nEn este capítulo se ha explicado cómo se pueden crear clases y cómo se pueden heredar de otras clases. También se han explicado los modificadores de acceso, los métodos estáticos, los getters y setters, las clases abstractas y las interfaces.",
+    "crumbs": [
+      "Unidad 1: Introducción a Typescript",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Clases y Herencia</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/1_modularizacion_y_espacios_de_nombres.html#modularización",
+    "href": "unidades/unidad2/1_modularizacion_y_espacios_de_nombres.html#modularización",
+    "title": "Modularización y Espacios de Nombres",
+    "section": "Modularización",
+    "text": "Modularización\nLa modularización es una técnica de programación que consiste en dividir un programa en módulos o partes más pequeñas. Esto permite que el código sea más fácil de mantener y de entender.\nEn TypeScript, podemos modularizar nuestro código utilizando los siguientes mecanismos:\n\nMódulos: nos permiten dividir nuestro código en archivos separados y reutilizarlo en otros archivos.\nNamespaces: nos permiten agrupar nuestro código en espacios de nombres para evitar conflictos de nombres.",
+    "crumbs": [
+      "Unidad 2: Profundización en TypeScript",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Modularización y Espacios de Nombres</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/1_modularizacion_y_espacios_de_nombres.html#export",
+    "href": "unidades/unidad2/1_modularizacion_y_espacios_de_nombres.html#export",
+    "title": "Modularización y Espacios de Nombres",
+    "section": "Export",
+    "text": "Export\nPara exportar un módulo en TypeScript, utilizamos la palabra clave export seguida del nombre de la variable, función o clase que queremos exportar.\n// modulo.ts\nexport const PI = 3.1416;\nexport function suma(a: number, b: number): number {\n  return a + b;\n}\n\nexport class Persona {\n  constructor(public nombre: string, public edad: number) {}\n}\nEn el ejemplo anterior, exportamos una constante PI, una función suma y una clase Persona.",
+    "crumbs": [
+      "Unidad 2: Profundización en TypeScript",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Modularización y Espacios de Nombres</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/1_modularizacion_y_espacios_de_nombres.html#import",
+    "href": "unidades/unidad2/1_modularizacion_y_espacios_de_nombres.html#import",
+    "title": "Modularización y Espacios de Nombres",
+    "section": "Import",
+    "text": "Import\nPara importar un módulo en TypeScript, utilizamos la palabra clave import seguida del nombre del módulo que queremos importar.\n// main.ts\nimport { PI, suma, Persona } from './modulo';\n\nconsole.log(PI); // 3.1416\nconsole.log(suma(2, 3)); // 5\n\nconst persona = new Persona('Juan', 30);\nconsole.log(persona); // Persona { nombre: 'Juan', edad: 30 }\nEn el ejemplo anterior, importamos la constante PI, la función suma y la clase Persona del módulo modulo.ts.",
+    "crumbs": [
+      "Unidad 2: Profundización en TypeScript",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Modularización y Espacios de Nombres</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/1_modularizacion_y_espacios_de_nombres.html#export-por-defecto",
+    "href": "unidades/unidad2/1_modularizacion_y_espacios_de_nombres.html#export-por-defecto",
+    "title": "Modularización y Espacios de Nombres",
+    "section": "Export por defecto",
+    "text": "Export por defecto\nTambién podemos exportar un módulo por defecto en TypeScript utilizando la palabra clave default.\n// modulo.ts\nexport default function saludar(nombre: string): string {\n  return `Hola, ${nombre}!`;\n}\nEn el ejemplo anterior, exportamos la función saludar por defecto.\n// main.ts\nimport saludar from './modulo';\n\nconsole.log(saludar('Juan')); // Hola, Juan!\nEn el ejemplo anterior, importamos la función saludar del módulo modulo.ts utilizando la palabra clave default.",
+    "crumbs": [
+      "Unidad 2: Profundización en TypeScript",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Modularización y Espacios de Nombres</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/2_decoradores.html",
+    "href": "unidades/unidad2/2_decoradores.html",
+    "title": "Decoradores",
+    "section": "",
+    "text": "En este capítulo aprenderemos sobre los decoradores en TypeScript. Los decoradores son una característica experimental de JavaScript que permite agregar funcionalidades a clases y sus miembros. Los decoradores se utilizan para modificar o extender la funcionalidad de una clase o método sin modificar su código fuente.\nLos decoradores se utilizan para agregar metadatos a clases y sus miembros. Los decoradores se pueden aplicar a clases, métodos, propiedades y parámetros de métodos. Los decoradores se utilizan para extender la funcionalidad de una clase o método sin modificar su código fuente.\n@decorator\nclass MyClass {\n    @decorator\n    myMethod() {\n        // code\n    }\n}\nEn el ejemplo anterior, (decorator?) es un decorador que se aplica a la clase MyClass y al método myMethod. Los decoradores se pueden aplicar a clases, métodos, propiedades y parámetros de métodos.\nLos decoradores se utilizan para extender la funcionalidad de una clase o método sin modificar su código fuente. Los decoradores se utilizan para agregar metadatos a clases y sus miembros.\nEn TypeScript, los decoradores se definen como funciones que toman un argumento y devuelven una función que se aplica a la clase o miembro de la clase. Los decoradores se aplican a clases y miembros de la clase utilizando la sintaxis (decorator?).\n\nIntroducción a los decoradores\nEn TypeScript, los decoradores se definen como funciones que toman un argumento y devuelven una función que se aplica a la clase o miembro de la clase. Los decoradores se aplican a clases y miembros de la clase utilizando la sintaxis (decorator?).\nLos decoradores se utilizan para extender la funcionalidad de una clase o método sin modificar su código fuente. Los decoradores se utilizan para agregar metadatos a clases y sus miembros.\nLos decoradores se pueden aplicar a clases, métodos, propiedades y parámetros de métodos. Los decoradores se utilizan para extender la funcionalidad de una clase o método sin modificar su código fuente.\n\n\nDecoradores de clases\nLos decoradores de clases se utilizan para extender la funcionalidad de una clase sin modificar su código fuente. Los decoradores de clases se aplican a clases utilizando la sintaxis (decorator?).\nLos decoradores de clases se definen como funciones que toman un argumento y devuelven una función que se aplica a la clase. Los decoradores de clases se utilizan para agregar metadatos a clases.\nfunction classDecorator&lt;T extends { new (...args: any[]): {} }&gt;(constructor: T) {\n    return class extends constructor {\n        newProperty = \"new property\";\n        hello = \"override\";\n    };\n}\n\n@classDecorator\nclass Greeter {\n    property = \"property\";\n    hello: string;\n    constructor(m: string) {\n        this.hello = m;\n    }\n}\n\nconsole.log(new Greeter(\"world\")); // Greeter { newProperty: 'new property', hello: 'override' }\nEn el ejemplo anterior, classDecorator es un decorador de clase que se aplica a la clase Greeter. El decorador de clase classDecorator agrega una nueva propiedad newProperty a la clase Greeter.\n\n\nDecoradores de clases, métodos y propiedades\nLos decoradores de clases, métodos y propiedades se utilizan para extender la funcionalidad de una clase, método o propiedad sin modificar su código fuente. Los decoradores de clases, métodos y propiedades se aplican a clases, métodos y propiedades utilizando la sintaxis (decorator?).\nfunction classDecorator&lt;T extends { new (...args: any[]): {} }&gt;(constructor: T) {\n    return class extends constructor {\n        newProperty = \"new property\";\n        hello = \"override\";\n    };\n}\n\nfunction methodDecorator(target: any, propertyKey: string, descriptor: PropertyDescriptor) {\n    console.log(\"Method Decorator called\");\n}\n\nfunction propertyDecorator(target: any, propertyKey: string) {\n    console.log(\"Property Decorator called\");\n}\n\n@classDecorator\nclass Greeter {\n    @propertyDecorator\n    property = \"property\";\n    hello: string;\n    constructor(m: string) {\n        this.hello = m;\n    }\n\n    @methodDecorator\n    greet() {\n        return \"Hello, \" + this.hello;\n    }\n}\n\nconsole.log(new Greeter(\"world\").greet()); // Method Decorator called\nEn el ejemplo anterior, classDecorator es un decorador de clase que se aplica a la clase Greeter. El decorador de clase classDecorator agrega una nueva propiedad newProperty a la clase Greeter.\nEl decorador de propiedad propertyDecorator se aplica a la propiedad property de la clase Greeter. El decorador de método methodDecorator se aplica al método greet de la clase Greeter.\n\n\nDecoradores de métodos y propiedades\nLos decoradores de métodos y propiedades se utilizan para extender la funcionalidad de un método o propiedad sin modificar su código fuente. Los decoradores de métodos y propiedades se aplican a métodos y propiedades utilizando la sintaxis (decorator?).\nfunction methodDecorator(target: any, propertyKey: string, descriptor: PropertyDescriptor) {\n    console.log(\"Method Decorator called\");\n}\n\nfunction propertyDecorator(target: any, propertyKey: string) {\n    console.log(\"Property Decorator called\");\n}\n\nclass Greeter {\n    @propertyDecorator\n    property = \"property\";\n    hello: string;\n    constructor(m: string) {\n        this.hello = m;\n    }\n\n    @methodDecorator\n    greet() {\n        return \"Hello, \" + this.hello;\n    }\n}\n\nconsole.log(new Greeter(\"world\").greet()); // Method Decorator called\nEn el ejemplo anterior, el decorador de propiedad propertyDecorator se aplica a la propiedad property de la clase Greeter. El decorador de método methodDecorator se aplica al método greet de la clase Greeter.\n\n\nDecoradores de parámetros\nLos decoradores de parámetros se utilizan para extender la funcionalidad de un parámetro de método sin modificar su código fuente. Los decoradores de parámetros se aplican a parámetros de métodos utilizando la sintaxis (decorator?).\nfunction parameterDecorator(target: any, propertyKey: string, parameterIndex: number) {\n    console.log(\"Parameter Decorator called\");\n}\n\nclass Greeter {\n    greet(@parameterDecorator name: string) {\n        return \"Hello, \" + name;\n    }\n}\n\nconsole.log(new Greeter().greet(\"world\")); // Parameter Decorator called\nEn el ejemplo anterior, el decorador de parámetro parameterDecorator se aplica al parámetro name del método greet de la clase Greeter.\n\n\nDecoradores de fábrica\nLos decoradores de fábrica son funciones que devuelven funciones que se aplican a clases, métodos, propiedades y parámetros de métodos. Los decoradores de fábrica se utilizan para extender la funcionalidad de una clase o método sin modificar su código fuente.\nfunction factoryDecorator(value: string) {\n    return function (target: any, propertyKey: string, descriptor: PropertyDescriptor) {\n        console.log(\"Factory Decorator called with value: \" + value);\n    };\n}\n\nclass Greeter {\n    @factoryDecorator(\"value\")\n    property = \"property\";\n    hello: string;\n    constructor(m: string) {\n        this.hello = m;\n    }\n}\n\nconsole.log(new Greeter(\"world\")); // Factory Decorator called with value: value\nEn el ejemplo anterior, factoryDecorator es un decorador de fábrica que devuelve una función que se aplica a la propiedad property de la clase Greeter. El decorador de fábrica factoryDecorator agrega metadatos a la propiedad property de la clase Greeter.\n\n\nDecoradores de métodos de acceso\nLos decoradores de métodos de acceso se utilizan para extender la funcionalidad de un método de acceso sin modificar su código fuente. Los decoradores de métodos de acceso se aplican a métodos de acceso utilizando la sintaxis (decorator?).\nfunction accessorDecorator(target: any, propertyKey: string, descriptor: PropertyDescriptor) {\n    console.log(\"Accessor Decorator called\");\n}\n\nclass Greeter {\n    private _name: string = \"\";\n\n    @accessorDecorator\n    get name(): string {\n        return this._name;\n    }\n\n    set name(value: string) {\n        this._name = value;\n    }\n}\n\nconst greeter = new Greeter();\ngreeter.name = \"world\";\nconsole.log(greeter.name); // Accessor Decorator called\nEn el ejemplo anterior, el decorador de método de acceso accessorDecorator se aplica a los métodos de acceso get y set de la propiedad name de la clase Greeter.\n\n\nDecoradores de métodos estáticos\nLos decoradores de métodos estáticos se utilizan para extender la funcionalidad de un método estático sin modificar su código fuente. Los decoradores de métodos estáticos se aplican a métodos estáticos utilizando la sintaxis (decorator?).\nfunction staticMethodDecorator(target: any, propertyKey: string, descriptor: PropertyDescriptor) {\n    console.log(\"Static Method Decorator called\");\n}\n\nclass Greeter {\n    static name: string = \"world\";\n\n    @staticMethodDecorator\n    static greet() {\n        return \"Hello, \" + Greeter.name;\n    }\n}\n\nconsole.log(Greeter.greet()); // Static Method Decorator called\nEn el ejemplo anterior, el decorador de método estático staticMethodDecorator se aplica al método estático greet de la clase Greeter.\n\n\nReto\n\nCrear un decorador de clase que agregue una propiedad newProperty a la clase MyClass.\nCrear un decorador de método que se aplique al método myMethod de la clase MyClass.\nCrear un decorador de propiedad que se aplique a la propiedad myProperty de la clase MyClass.\nCrear un decorador de parámetro que se aplique al parámetro myParameter del método myMethod de la clase MyClass.\n\n\n\nSolución\n\nfunction classDecorator&lt;T extends { new (...args: any[]): {} }&gt;(constructor: T) {\n    return class extends constructor {\n        newProperty = \"new property\";\n    };\n}\n\nfunction methodDecorator(target: any, propertyKey: string, descriptor: PropertyDescriptor) {\n    console.log(\"Method Decorator called\");\n}\n\nfunction propertyDecorator(target: any, propertyKey: string) {\n    console.log(\"Property Decorator called\");\n}\n\nfunction parameterDecorator(target: any, propertyKey: string, parameterIndex: number) {\n    console.log(\"Parameter Decorator called\");\n}\n\n@classDecorator\nclass MyClass {\n    @propertyDecorator\n    myProperty = \"my property\";\n\n    constructor() {}\n\n    @methodDecorator\n    myMethod(@parameterDecorator myParameter: string) {\n        return \"Hello, \" + myParameter;\n    }\n}\n\nconsole.log(new MyClass().myMethod(\"world\")); // Method Decorator called\n\n\n\nConclusiones\nLos decoradores son una característica experimental de JavaScript que permite agregar funcionalidades a clases y sus miembros. Los decoradores se utilizan para modificar o extender la funcionalidad de una clase o método sin modificar su código fuente.\nLos decoradores se utilizan para agregar metadatos a clases y sus miembros. Los decoradores se pueden aplicar a clases, métodos, propiedades y parámetros de métodos. Los decoradores se utilizan para extender la funcionalidad de una clase o método sin modificar su código fuente.\nEn TypeScript, los decoradores se definen como funciones que toman un argumento y devuelven una función que se aplica a la clase o miembro de la clase. Los decoradores se aplican a clases y miembros de la clase utilizando la sintaxis (decorator?).\nLos decoradores se utilizan para extender la funcionalidad de una clase o método sin modificar su código fuente. Los decoradores se utilizan para agregar metadatos a clases y sus miembros.\nLos decoradores se pueden aplicar a clases, métodos, propiedades y parámetros de métodos. Los decoradores se utilizan para extender la funcionalidad de una clase o método sin modificar su código fuente.",
+    "crumbs": [
+      "Unidad 2: Profundización en TypeScript",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Decoradores</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/3_manejo_de_errores.html",
+    "href": "unidades/unidad2/3_manejo_de_errores.html",
+    "title": "Manejo de Errores",
+    "section": "",
+    "text": "En este capítulo vamos a ver cómo manejar errores en TypeScript.\n\nIntroducción\nEn TypeScript, como en cualquier otro lenguaje de programación, los errores pueden ocurrir en cualquier momento. Estos errores pueden ser de varios tipos, como errores de sintaxis, errores de tiempo de ejecución, errores de lógica, etc.\nEn este capítulo vamos a ver cómo manejar errores en TypeScript.\n\n\nErrores en TypeScript\nEn TypeScript, los errores pueden ocurrir en cualquier momento. Estos errores pueden ser de varios tipos, como errores de sintaxis, errores de tiempo de ejecución, errores de lógica, etc.\nEn TypeScript, los errores se pueden clasificar en dos categorías:\n\nErrores de sintaxis: Estos errores ocurren cuando el código no sigue las reglas de sintaxis del lenguaje de programación. Por ejemplo, si olvidamos cerrar una llave o un paréntesis, TypeScript generará un error de sintaxis.\nErrores de tiempo de ejecución: Estos errores ocurren cuando el código se ejecuta y algo inesperado sucede. Por ejemplo, si intentamos dividir un número por cero, TypeScript generará un error de tiempo de ejecución.\n\n\n\nManejo de errores en TypeScript\nEn TypeScript, podemos manejar errores de varias maneras. Algunas de las formas más comunes de manejar errores en TypeScript son:\n\nUsando la declaración try…catch: La declaración try…catch nos permite capturar errores y manejarlos de manera controlada.\nUsando la declaración throw: La declaración throw nos permite lanzar un error manualmente.\nUsando la declaración finally: La declaración finally nos permite ejecutar un bloque de código después de que se haya completado el bloque try o catch.\n\n\n\nEjemplo de manejo de errores en TypeScript\nVeamos un ejemplo de cómo manejar errores en TypeScript usando la declaración try…catch:\ntry {\n    // Código que puede lanzar un error\n    let x = 1 / 0;\n} catch (error) {\n    // Manejar el error\n    console.log('Ocurrió un error:', error);\n}\nEn este ejemplo, estamos intentando dividir un número por cero, lo cual generará un error de tiempo de ejecución. Usamos la declaración try…catch para capturar el error y manejarlo de manera controlada.\n\n\nLanzar errores manualmente en TypeScript\nEn TypeScript, podemos lanzar errores manualmente usando la declaración throw. Por ejemplo:\ntry {\n    // Código que puede lanzar un error\n    throw new Error('Este es un error manual');\n} catch (error) {\n    // Manejar el error\n    console.log('Ocurrió un error:', error);\n}\nEn este ejemplo, estamos lanzando un error manualmente usando la declaración throw. Luego, usamos la declaración try…catch para capturar el error y manejarlo de manera controlada.\n\n\nBloque finally en TypeScript\nEn TypeScript, podemos usar la declaración finally para ejecutar un bloque de código después de que se haya completado el bloque try o catch. Por ejemplo:\ntry {\n    // Código que puede lanzar un error\n    let x = 1 / 0;\n} catch (error) {\n    // Manejar el error\n    console.log('Ocurrió un error:', error);\n} finally {\n    // Código que se ejecutará siempre\n    console.log('Este código se ejecutará siempre');\n}\nEn este ejemplo, estamos intentando dividir un número por cero, lo cual generará un error de tiempo de ejecución. Usamos la declaración try…catch para capturar el error y manejarlo de manera controlada. Luego, usamos la declaración finally para ejecutar un bloque de código después de que se haya completado el bloque try o catch.\n\n\nReto\nEscribe un programa en TypeScript que maneje errores usando la declaración try…catch. El programa debe intentar dividir un número por cero y capturar el error usando la declaración try…catch. Luego, debe lanzar un error manualmente usando la declaración throw y capturar el error usando la declaración try…catch. Finalmente, debe ejecutar un bloque de código después de que se haya completado el bloque try o catch usando la declaración finally.\n\n\nSolución\n\ntry {\n    function divideByZero() {\n        let x = 1 / 0;\n    }\n    let x = 1 / 0;\n} catch (error) {\n    // Manejar el error\n    console.log('Ocurrió un error:', error);\n}\n\ntry {\n    function throwError() {\n        throw new Error('Este es un error manual');\n    }\n    throwError();\n} catch (error) {\n    // Manejar el error\n    console.log('Ocurrió un error:', error);\n}\n\ntry {\n    function divideByZero() {\n        let x = 1 / 0;\n    }\n    divideByZero();\n} catch (error) {\n    // Manejar el error\n    console.log('Ocurrió un error:', error);\n} finally {\n    // Código que se ejecutará siempre\n    console.log('Este código se ejecutará siempre');\n}\n\n\n\nConclusión\nEn este capítulo, aprendimos cómo manejar errores en TypeScript. Vimos cómo usar la declaración try…catch para capturar errores y manejarlos de manera controlada. También vimos cómo lanzar errores manualmente usando la declaración throw y cómo ejecutar un bloque de código después de que se haya completado el bloque try o catch usando la declaración finally.",
+    "crumbs": [
+      "Unidad 2: Profundización en TypeScript",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manejo de Errores</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/4_programacion_asincrona_en_typescript.html",
+    "href": "unidades/unidad2/4_programacion_asincrona_en_typescript.html",
+    "title": "Programación Asíncrona en TypeScript",
+    "section": "",
+    "text": "En este capítulo vamos a ver cómo trabajar con código asíncrono en TypeScript. Vamos a ver cómo trabajar con promesas y cómo podemos usar async y await para trabajar con código asíncrono de una forma más sencilla.\n\nPromesas y async/await\n\n\nPromesas\nLas promesas son un objeto que representa la terminación o el fracaso de una operación asíncrona. Una promesa es un objeto devuelto al cuál se adjuntan funciones callback, en lugar de pasar callbacks a una función.\nconst promesa = new Promise((resolve, reject) =&gt; {\n    setTimeout(() =&gt; {\n        resolve('Se ha resuelto la promesa');\n    }, 1000);\n});\n\npromesa.then((mensaje) =&gt; {\n    console.log(mensaje);\n});\nEn el ejemplo anterior, creamos una promesa que se resuelve después de 1 segundo. Cuando la promesa se resuelve, se ejecuta la función then que recibe el mensaje que se ha pasado al método resolve.\n\n\nasync/await\nasync y await son una forma de trabajar con promesas de una forma más sencilla. async se usa para declarar una función asíncrona y await se usa para esperar a que una promesa se resuelva.\nconst promesa = new Promise((resolve, reject) =&gt; {\n    setTimeout(() =&gt; {\n        resolve('Se ha resuelto la promesa');\n    }, 1000);\n});\n\nasync function miFuncion() {\n    const mensaje = await promesa;\n    console.log(mensaje);\n}\n\nmiFuncion(); // Se ejecuta la función asíncrona\nEn el ejemplo anterior, creamos una función asíncrona que espera a que la promesa se resuelva. Cuando la promesa se resuelve, se almacena el mensaje en la variable mensaje y se imprime por consola.\n\n\nTipado de funciones asíncronas\nPodemos tipar las funciones asíncronas de la misma forma que tipamos las funciones normales. Podemos indicar el tipo de los parámetros y el tipo de retorno de la función.\nconst promesa = new Promise&lt;string&gt;((resolve, reject) =&gt; {\n    setTimeout(() =&gt; {\n        resolve('Se ha resuelto la promesa');\n    }, 1000);\n});\n\nasync function miFuncion(parametro: string): Promise&lt;string&gt; {\n    const mensaje = await promesa;\n    return mensaje + parametro;\n}\n\nmiFuncion('Hola').then((mensaje) =&gt; {\n    console.log(mensaje);\n});\nEn el ejemplo anterior, la función miFuncion recibe un parámetro de tipo string y devuelve una promesa de tipo string.\n\n\nCaptura de errores\nPodemos capturar los errores que se producen en una función asíncrona con un bloque try/catch.\nconst promesa = new Promise&lt;string&gt;((resolve, reject) =&gt; {\n    setTimeout(() =&gt; {\n        reject('Se ha producido un error');\n    }, 1000);\n});\n\nasync function miFuncion(parametro: string): Promise&lt;string&gt; {\n    try {\n        const mensaje = await promesa;\n        return mensaje + parametro;\n    } catch (error) {\n        console.error(error);\n        return error;\n    }\n}\n\nmiFuncion('Hola').then((mensaje) =&gt; {\n    console.log(mensaje);\n});\nEn el ejemplo anterior, la promesa se rechaza después de 1 segundo. Cuando la promesa se rechaza, se captura el error en el bloque catch y se imprime por consola.\n\n\nEjemplo\nEn el siguiente ejemplo vamos a ver cómo podemos trabajar con código asíncrono en TypeScript. Vamos a crear una función asíncrona que recibe un número y devuelve el doble de ese número después de 1 segundo.\nconst promesa = new Promise&lt;number&gt;((resolve, reject) =&gt; {\n    setTimeout(() =&gt; {\n        resolve(10);\n    }, 1000);\n});\n\nasync function doble(numero: number): Promise&lt;number&gt; {\n    try {\n        const resultado = await promesa;\n        return resultado * 2;\n    } catch (error) {\n        console.error(error);\n        return error;\n    }\n}\n\ndoble(5).then((resultado) =&gt; {\n    console.log(resultado);\n});\nEn el ejemplo anterior, la función doble recibe un número y devuelve el doble de ese número después de 1 segundo. Cuando la promesa se resuelve, se imprime el resultado por consola.\n\n\nReto\nCrea una función asíncrona que reciba un número y devuelva el cuadrado de ese número después de 1 segundo. Llama a la función con el número 5 y muestra el resultado por consola.\n\n\nSolución\n\nconst promesa = new Promise&lt;number&gt;((resolve, reject) =&gt; {\n    setTimeout(() =&gt; {\n        resolve(10);\n    }, 1000);\n});\n\nasync function cuadrado(numero: number): Promise&lt;number&gt; {\n    try {\n        const resultado = await promesa;\n        return resultado * resultado;\n    } catch (error) {\n        console.error(error);\n        return error;\n    }\n}\n\ncuadrado(5).then((resultado) =&gt; {\n    console.log(resultado);\n});\n\n\n\nConclusión\nEn este capítulo hemos visto cómo trabajar con código asíncrono en TypeScript. Hemos visto cómo trabajar con promesas y cómo podemos usar async y await para trabajar con código asíncrono de una forma más sencilla. En el siguiente capítulo vamos a ver cómo podemos trabajar con módulos en TypeScript.",
+    "crumbs": [
+      "Unidad 2: Profundización en TypeScript",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Programación Asíncrona en TypeScript</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad3/4_event_binding.html#event-binding",
+    "href": "unidades/unidad3/4_event_binding.html#event-binding",
+    "title": "Event Binding en Angular",
+    "section": "Event Binding",
+    "text": "Event Binding\nEl event binding en Angular nos permite reaccionar a eventos del usuario, como por ejemplo, un click, un doble click, un hover, etc. Para ello, vamos a ver un ejemplo sencillo.\nVamos a crear un nuevo componente llamado contador:\nng g c contador\nUna vez creado el componente, nos movemos al archivo contador.component.html y escribimos el siguiente código:\n&lt;h1&gt;Contador&lt;/h1&gt;\n\n&lt;p&gt;{{ contador }}&lt;/p&gt;\n\n&lt;button&gt;Incrementar&lt;/button&gt;\n&lt;button&gt;Decrementar&lt;/button&gt;\nEn este código, tenemos un título, un párrafo que muestra el valor del contador y dos botones, uno para incrementar el contador y otro para decrementarlo.\nPara poder reaccionar a los eventos de click de los botones, vamos a utilizar el event binding. Para ello, nos movemos al archivo contador.component.html y escribimos el siguiente código:\n&lt;h1&gt;Contador&lt;/h1&gt;\n\n&lt;p&gt;{{ contador }}&lt;/p&gt;\n\n&lt;button (click)=\"incrementar()\"&gt;Incrementar&lt;/button&gt;\n&lt;button (click)=\"decrementar()\"&gt;Decrementar&lt;/button&gt;\nEn este código, estamos utilizando el event binding para reaccionar al evento de click de los botones. Cuando se haga click en el botón de incrementar, se va a ejecutar el método incrementar() y cuando se haga click en el botón de decrementar, se va a ejecutar el método decrementar().\nAhora, nos movemos al archivo contador.component.ts y escribimos el siguiente código:\nimport { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-contador',\n  standalone: true,\n  imports: [],\n  templateUrl: './contador.component.html',\n  styleUrl: './contador.component.css'\n})\nexport class ContadorComponent {\n\n    contador: number = 0;\n    \n    incrementar() {\n        this.contador++;\n    }\n    \n    decrementar() {\n        this.contador--;\n    }\n}\nEn este código, estamos creando una variable contador que va a almacenar el valor del contador y dos métodos incrementar() y decrementar() que se van a encargar de incrementar y decrementar el contador respectivamente.\n\n\n\n\n\n\nTip\n\n\n\nNo olvides agregar el componente ContadorComponent a la aplicación principal en el archivo app.component.ts.\nimport { Component } from '@angular/core';\nimport { RouterOutlet } from '@angular/router';\n1import { ContadorComponent } from './contador/contador.component';\n\n@Component({\n  selector: 'app-root',\n  standalone: true,\n  imports: [\n    RouterOutlet,\n2    ContadorComponent\n  ],\n  templateUrl: './app.component.html',\n  styleUrl: './app.component.css'\n})\nexport class AppComponent {\n  title = 'event-binding';\n}\n\n1\n\nImportamos el componente ContadorComponent.\n\n2\n\nAgregamos el componente ContadorComponent al arreglo de imports.\n\n\nTambien es necesario agregar el selector del componente ContadorComponent en el archivo app.component.html.\n&lt;app-contador&gt;&lt;/app-contador&gt;\n\n\nAhora, si ejecutamos la aplicación con el siguiente comando:\nng s -o\nPodremos ver el contador en la pantalla y si hacemos click en los botones de incrementar y decrementar, el contador se va a incrementar y decrementar respectivamente.",
+    "crumbs": [
+      "Unidad 2: Profundización en TypeScript",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Event Binding en Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad3/1_introduccion_a_angular.html#qué-es-angular",
+    "href": "unidades/unidad3/1_introduccion_a_angular.html#qué-es-angular",
+    "title": "Introducción a Angular",
+    "section": "¿Qué es Angular?",
+    "text": "¿Qué es Angular?\n\n\n\nAngular es un framework de desarrollo de aplicaciones web desarrollado por Google. Angular es un framework de código abierto y gratuito que permite a los desarrolladores crear aplicaciones web de una sola página (SPA) de alta calidad y alto rendimiento.",
+    "crumbs": [
+      "Unidad 3: TypeScript con Angular",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Introducción a Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad3/2_componentes_y_templates.html",
+    "href": "unidades/unidad3/2_componentes_y_templates.html",
+    "title": "Componentes",
+    "section": "",
+    "text": "Crear un componente\nPara crear un componente en Angular, se puede hacer de dos formas, la primera es utilizando el comando:\no\nOtr opción que es la que recomiendo para entender los componentes es hacerlo de forma manual y para ello se debe crear una carpeta con el nombre del componente en la carpeta src/app y dentro de esta carpeta se deben crear los archivos component.ts, component.html, component.css y component.spec.ts.\nPara entender de mejor forma los componentes vamos a crear un componente llamado header y un componente llamado footer. El primero lo haremos de forma manual y el segundo lo haremos utilizando el comando ng generate component.",
+    "crumbs": [
+      "Unidad 3: TypeScript con Angular",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Componentes</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad3/2_componentes_y_templates.html#crear-un-componente",
+    "href": "unidades/unidad3/2_componentes_y_templates.html#crear-un-componente",
+    "title": "Componentes",
+    "section": "",
+    "text": "ng generate component\n\nng g c\n\n\n\n\n\n\n\nTip\n\n\n\nPor convensión se acostumbra crear un directorio con el nombre del componente en minúsculas y dentro de este directorio se crean los archivos del componente. Y cada uno de los archivos del componente debe tener el mismo nombre del directorio, agregando la palabra component y la extensión correspondiente.\n\n\n\n\nCrear el componente header de forma manual\nPara crear el componente header de forma manual se deben seguir los siguientes pasos:\n\nCrear la carpeta header en la carpeta src/app.\nDentro de la carpeta header crear los archivos header.component.ts, header.component.html, header.component.css.\nEn el archivo header.component.ts se debe agregar el siguiente código:\n\nimport { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-header',\n  standalone: true,\n  templateUrl: './header.component.html',\n  styleUrls: ['./header.component.css']\n})\nexport class HeaderComponent {\n  title = 'Header';\n}\n\n\n\n\n\n\nWarning\n\n\n\nA partir de la versión 16 se utiliza los componentes standalone, por lo que se debe agregar el atributo standalone: true en el decorador (Component?).\n\n\n\nEn el archivo header.component.html se debe agregar el siguiente código:\n\n&lt;header&gt;\n  &lt;h1&gt;{{ title }}&lt;/h1&gt;\n&lt;/header&gt;\n\nEn el archivo header.component.css se debe agregar el siguiente código:\n\nheader {\n  background-color: #333;\n  color: white;\n  text-align: center;\n  padding: 10px;\n}\n\nPara utilizar el componente header en la aplicación se debe agregar el selector app-header en el archivo app.component.html:\n\n&lt;app-header&gt;&lt;/app-header&gt;\nimport { Component } from '@angular/core';\nimport { RouterOutlet } from '@angular/router';\n1import { HeaderComponent } from './header/header.component';\n\n@Component({\n  selector: 'app-root',\n  standalone: true,\n  imports: [\n    RouterOutlet,\n2    HeaderComponent\n  ],\n  templateUrl: './app.component.html',\n  styleUrl: './app.component.css'\n})\nexport class AppComponent {\n  title = 'angular-components';\n}\n\n1\n\nSe importa el componente HeaderComponent.\n\n2\n\nSe agrega el componente HeaderComponent en el arreglo de imports.\n\n\nSi todo salio bien al correr el servidor de desarrollo con el comando:\nng s\nSe debe ver el título Header en la parte superior de la página.\n\n\n\nAhora vamos a crear el componente footer.\n\n\nCrear el componente footer\nPara crear el componente footer de forma automática se debe utilizar el comando:\nng g c footer\nEste comando crea la carpeta footer en la carpeta src/app y dentro de esta carpeta se crean los archivos footer.component.ts, footer.component.html, footer.component.css y footer.component.spec.ts.\nPara utilizar el componente footer en la aplicación se debe agregar el selector app-footer en el archivo app.component.html:\n&lt;app-footer&gt;&lt;/app-footer&gt;\nimport { Component } from '@angular/core';\nimport { RouterOutlet } from '@angular/router';\nimport { HeaderComponent } from './header/header.component';\n1import { FooterComponent } from './footer/footer.component';\n\n@Component({\n  selector: 'app-root',\n  standalone: true,\n  imports: [\n    RouterOutlet,\n    HeaderComponent,\n2    FooterComponent\n  ],\n  templateUrl: './app.component.html',\n  styleUrl: './app.component.css'\n})\n\nexport class AppComponent {\n  title = 'angular-components';\n}\n\n1\n\nSe importa el componente FooterComponent.\n\n2\n\nSe agrega el componente FooterComponent en el arreglo de imports.\n\n\nModificamos un poco el archivo footer.component.html para que se vea de la siguiente forma:\n&lt;footer&gt;\n    &lt;div class=\"container\"&gt;\n        &lt;div class=\"row\"&gt;\n        &lt;div class=\"col-md-12\"&gt;\n            &lt;p class=\"text-center\"&gt;© 2024 &lt;a href=\"\n            https://espe.edu.ec\" target=\"_blank\"&gt;Universidad de las Fuerzas Armadas ESPE&lt;/a&gt;&lt;/p&gt;\n        &lt;/div&gt;\n        &lt;/div&gt;\n    &lt;/div&gt;\n&lt;/footer&gt;\nTambien el archivo footer.component.css para que se vea de la siguiente forma:\nfooter {\n  background-color: #333;\n  color: white;\n  text-align: center;\n  padding: 10px;\n}\nSi todo salio bien al correr el servidor de desarrollo con el comando:\nng s\nSe debe ver el título Footer en la parte inferior de la página.",
+    "crumbs": [
+      "Unidad 3: TypeScript con Angular",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Componentes</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad3/3_interpolacion.html#crear-un-componente",
+    "href": "unidades/unidad3/3_interpolacion.html#crear-un-componente",
+    "title": "Interpolación en Angular",
+    "section": "Crear un componente",
+    "text": "Crear un componente\nVamos a crear un nuevo componente llamado usuario. Para ello, ejecutamos el siguiente comando en la terminal:\nng generate component usuario",
+    "crumbs": [
+      "Unidad 3: TypeScript con Angular",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Interpolación en Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad3/3_interpolacion.html#interpolación",
+    "href": "unidades/unidad3/3_interpolacion.html#interpolación",
+    "title": "Interpolación en Angular",
+    "section": "Interpolación",
+    "text": "Interpolación\nVamos a mostrar el nombre de un usuario en la vista del componente usuario. Para ello, abrimos el archivo usuario.component.ts y agregamos la siguiente propiedad:\nnombre: string = 'Diego';\nAhora, abrimos el archivo usuario.component.html y agregamos el siguiente código:\n&lt;p&gt;Nombre: {{ nombre }}&lt;/p&gt;\nGuardamos los cambios y observamos el navegador. Deberíamos ver el nombre del usuario en la vista.\nPara probar nuestro proyecto, vamos a recordar lo que aprendimos en el capítulo anterior. Agregamos nuestro componente usuario al archivo app.component.html:\n&lt;app-usuario&gt;&lt;/app-usuario&gt;\nGuardamos y agregamos el componente a las importaciones de la aplicación principal. Abrimos el archivo app.module.ts y agregamos el siguiente código:\nimport { Component } from '@angular/core';\nimport { RouterOutlet } from '@angular/router';\n1import { UsuarioComponent } from './usuario/usuario.component';\n\n@Component({\n  selector: 'app-root',\n  standalone: true,\n  imports: [\n    RouterOutlet,\n2    UsuarioComponent\n  ],\n  templateUrl: './app.component.html',\n  styleUrl: './app.component.css'\n})\nexport class AppComponent {\n  title = 'interpolacion';\n}\n\n1\n\nImportamos el componente UsuarioComponent.\n\n2\n\nAgregamos el componente UsuarioComponent a las importaciones de la aplicación.\n\n\nSi todo está correcto, deberíamos ver el nombre del usuario en la vista.\n\n\n\n\n\n\n\n\n\nTip\n\n\n\nLas propiedades solo pueden ser llamadas en las vistas de los componentes que las contienen. Si intentaramos llamar la propiedad nombre en el archivo app.component.html, obtendríamos un error.\n\n\nAl utilizar typescript como lenguaje de programación las propiedades que definimos pueden ser de tipado estricto, es decir en el ejemplo anterior la propiedad nombre es de tipo string. Si intentamos asignar un valor de otro tipo a la propiedad obtendremos un error.\nnombre: string = 10; // Error\nEn el ejemplo anterior se define la propiedad nombre como un número, pero se le asigna un valor de tipo string. Para corregir el error, debemos asignar un valor de tipo string a la propiedad nombre.\nnombre: string = '10'; // Correcto\nRecordemos los tipos de datos que podemos utilizar en typescript:\n\nnumber: Números enteros o decimales.\nstring: Cadenas de texto.\nboolean: Valores booleanos (true o false).\nany: Cualquier tipo de dato.\nArray: Arreglos de datos.\nObject: Objetos.\n\nAhora vamos a intentar utilizar un objeto, en este caso un objeto de tipo Persona, para definirlo dentro del componente usuario y mostrar sus propiedades en la vista.\nModificamos el archivo usuario.component.ts y agregamos la siguiente propiedad:\nimport { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-usuario',\n  standalone: true,\n  imports: [],\n  templateUrl: './usuario.component.html',\n  styleUrl: './usuario.component.css'\n})\nexport class UsuarioComponent {\n1  persona: any = {\n2    nombre: 'Diego',\n3    edad: 36,\n4    direccion: {\n5    calle: 'Calle 123',\n6    ciudad: 'Quito'\n    }\n  }\n}\n\n1\n\nDefinimos la propiedad persona.\n\n2\n\nDefinimos la propiedad nombre.\n\n3\n\nDefinimos la propiedad edad.\n\n4\n\nDefinimos la propiedad direccion.\n\n5\n\nDefinimos la propiedad calle.\n\n6\n\nDefinimos la propiedad ciudad.\n\n\nEn el ejemplo anterior, definimos un objeto de tipo Persona con las propiedades nombre, edad y direccion. La propiedad direccion es un objeto que contiene las propiedades calle y ciudad.\nAhora, abrimos el archivo usuario.component.html y agregamos el siguiente código:\n&lt;p&gt;Nombre: {{ persona.nombre }}&lt;/p&gt;\n&lt;p&gt;Edad: {{ persona.edad }}&lt;/p&gt;\n&lt;p&gt;Dirección: {{ persona.direccion.calle }}, {{ persona.direccion.ciudad }}&lt;/p&gt;\nEn el archivo usuario.component.html mostramos las propiedades nombre, edad y direccion del objeto persona. La propiedad direccion es un objeto que contiene las propiedades calle y ciudad.\nSi todo está correcto, deberíamos ver el nombre, la edad y la dirección de la persona en la vista.\n\n\n\nAhora si nos fijamos bien nuestro objeto persona es de tipo any lo que significa que puede ser cualquier tipo de dato, pero si queremos que nuestro objeto persona sea de tipo Persona debemos crear una interfaz que defina las propiedades del objeto.\nVamos a crear una interfaz llamada Persona. Para ello, abrimos el archivo usuario.ts y agregamos la siguiente interfaz:\n1export interface Persona {\n2  nombre: string;\n3  edad: number;\n4  direccion: {\n5    calle: string;\n6    ciudad: string;\n  }\n}\n\n1\n\nDefinimos la interfaz Persona.\n\n2\n\nDefinimos la propiedad nombre.\n\n3\n\nDefinimos la propiedad edad.\n\n4\n\nDefinimos la propiedad direccion.\n\n5\n\nDefinimos la propiedad calle.\n\n6\n\nDefinimos la propiedad ciudad.\n\n\nAhora, modificamos la propiedad persona para que sea de tipo Persona. Para ello, abrimos el archivo usuario.component.ts y modificamos la propiedad persona de la siguiente manera:\nimport { Component } from '@angular/core';\nimport { Persona } from './usuario';\n\n@Component({\n  selector: 'app-usuario',\n  standalone: true,\n  imports: [],\n  templateUrl: './usuario.component.html',\n  styleUrl: './usuario.component.css'\n})\nexport class UsuarioComponent {\n  persona: Persona = {\n    nombre: 'Diego',\n    edad: 36,\n    direccion: {\n      calle: 'Calle 123',\n      ciudad: 'Quito'\n    }\n  }\n}\n\n\n\n\n\n\nTip\n\n\n\n¿Qué conseguimos con esto?\nAl definir la propiedad persona como un objeto de tipo Persona, estamos asegurando que el objeto persona tenga las propiedades nombre, edad y direccion. Si intentamos agregar una propiedad que no está definida en la interfaz Persona, obtendremos un error.\n\n\nSi todo está correcto, deberíamos ver el nombre, la edad y la dirección de la persona en la vista.",
+    "crumbs": [
+      "Unidad 3: TypeScript con Angular",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Interpolación en Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad3/5_bootstrap.html#introducción",
+    "href": "unidades/unidad3/5_bootstrap.html#introducción",
+    "title": "Bootstrap en Angular",
+    "section": "Introducción",
+    "text": "Introducción\nBootstrap es un framework de diseño que nos permite crear interfaces de usuario de forma rápida y sencilla. Bootstrap nos proporciona una serie de estilos CSS y componentes HTML que podemos utilizar en nuestros proyectos.\nPara agregar Bootstrap a un proyecto Angular, podemos hacerlo de dos formas:\n\nDescargando los archivos CSS y JS de Bootstrap y agregándolos a nuestro proyecto.\nUtilizando la librería ngx-bootstrap.\n\nEn esta unidad aprenderemos a agrear Bootstrap mediante los archivos CSS y JS.\nCreamos un proyecto Angular con el siguiente comando:\nng new proyecto-bootstrap\nNos ubicamos en la carpeta del proyecto:\ncd proyecto-bootstrap\ncode .",
+    "crumbs": [
+      "Unidad 3: TypeScript con Angular",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Bootstrap en Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad3/5_bootstrap.html#agregando-bootstrap-a-un-proyecto-angular",
+    "href": "unidades/unidad3/5_bootstrap.html#agregando-bootstrap-a-un-proyecto-angular",
+    "title": "Bootstrap en Angular",
+    "section": "Agregando Bootstrap a un proyecto Angular",
+    "text": "Agregando Bootstrap a un proyecto Angular\nPara agregar Bootstrap al proyecto vamos a utilizar el CDN de Bootstrap. Vamos a agregar los archivos CSS y JS de Bootstrap en el archivo index.html que se encuentra en la carpeta src.\n&lt;!doctype html&gt;\n&lt;html lang=\"en\"&gt;\n&lt;head&gt;\n  &lt;meta charset=\"utf-8\"&gt;\n  &lt;title&gt;ProyectoBootstrap&lt;/title&gt;\n  &lt;base href=\"/\"&gt;\n  &lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"&gt;\n  &lt;link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\"&gt;\n1  &lt;link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH\" crossorigin=\"anonymous\"&gt;\n&lt;/head&gt;\n&lt;body&gt;\n  &lt;app-root&gt;&lt;/app-root&gt;\n2  &lt;script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz\" crossorigin=\"anonymous\"&gt;&lt;/script&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n\n1\n\nAgregamos el archivo CSS de Bootstrap.\n\n2\n\nAgregamos el archivo JS de Bootstrap.",
+    "crumbs": [
+      "Unidad 3: TypeScript con Angular",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Bootstrap en Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad3/5_bootstrap.html#creando-un-componente",
+    "href": "unidades/unidad3/5_bootstrap.html#creando-un-componente",
+    "title": "Bootstrap en Angular",
+    "section": "Creando un componente",
+    "text": "Creando un componente\nVamos a crear un componente llamado navbar que contendrá un menú de navegación.\nng g c navbar",
+    "crumbs": [
+      "Unidad 3: TypeScript con Angular",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Bootstrap en Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad3/5_bootstrap.html#agregando-el-componente-a-la-aplicación-principal",
+    "href": "unidades/unidad3/5_bootstrap.html#agregando-el-componente-a-la-aplicación-principal",
+    "title": "Bootstrap en Angular",
+    "section": "Agregando el componente a la aplicación principal",
+    "text": "Agregando el componente a la aplicación principal\nVamos a agregar el componente navbar al archivo app.component.html.\n&lt;app-navbar&gt;&lt;/app-navbar&gt;\nAgregamos tambien el componente navbar al archivo app.module.ts.\nimport { Component } from '@angular/core';\nimport { RouterOutlet } from '@angular/router';\nimport { NavbarComponent } from './navbar/navbar.component';\n\n@Component({\n  selector: 'app-root',\n  standalone: true,\n  imports: [\n    RouterOutlet,\n    NavbarComponent\n  ],\n  templateUrl: './app.component.html',\n  styleUrl: './app.component.css'\n})\nexport class AppComponent {\n  title = 'proyecto-bootstrap';\n}",
+    "crumbs": [
+      "Unidad 3: TypeScript con Angular",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Bootstrap en Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad3/5_bootstrap.html#creando-el-menú-de-navegación",
+    "href": "unidades/unidad3/5_bootstrap.html#creando-el-menú-de-navegación",
+    "title": "Bootstrap en Angular",
+    "section": "Creando el menú de navegación",
+    "text": "Creando el menú de navegación\nVamos a agregar el siguiente código al archivo navbar.component.html.\n&lt;ul class=\"nav nav-pills nav-fill gap-2 p-1 small bg-primary rounded-5 shadow-sm\" id=\"pillNav2\" role=\"tablist\" style=\"--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);\"&gt;\n  &lt;li class=\"nav-item\" role=\"presentation\"&gt;\n    &lt;button class=\"nav-link active rounded-5\" id=\"home-tab2\" data-bs-toggle=\"tab\" type=\"button\" role=\"tab\" aria-selected=\"true\"&gt;Home&lt;/button&gt;\n  &lt;/li&gt;\n  &lt;li class=\"nav-item\" role=\"presentation\"&gt;\n    &lt;button class=\"nav-link rounded-5\" id=\"profile-tab2\" data-bs-toggle=\"tab\" type=\"button\" role=\"tab\" aria-selected=\"false\"&gt;Profile&lt;/button&gt;\n  &lt;/li&gt;\n  &lt;li class=\"nav-item\" role=\"presentation\"&gt;\n    &lt;button class=\"nav-link rounded-5\" id=\"contact-tab2\" data-bs-toggle=\"tab\" type=\"button\" role=\"tab\" aria-selected=\"false\"&gt;Contact&lt;/button&gt;\n  &lt;/li&gt;\n&lt;/ul&gt;",
+    "crumbs": [
+      "Unidad 3: TypeScript con Angular",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Bootstrap en Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad3/5_bootstrap.html#agregando-un-contenedor",
+    "href": "unidades/unidad3/5_bootstrap.html#agregando-un-contenedor",
+    "title": "Bootstrap en Angular",
+    "section": "Agregando un contenedor",
+    "text": "Agregando un contenedor\nVamos a agregar un contenedor a la aplicación para centrar el contenido.\n&lt;div class=\"container\"&gt;\n  &lt;app-navbar&gt;&lt;/app-navbar&gt;\n&lt;/div&gt;",
+    "crumbs": [
+      "Unidad 3: TypeScript con Angular",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Bootstrap en Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad3/5_bootstrap.html#ejecutando-la-aplicación",
+    "href": "unidades/unidad3/5_bootstrap.html#ejecutando-la-aplicación",
+    "title": "Bootstrap en Angular",
+    "section": "Ejecutando la aplicación",
+    "text": "Ejecutando la aplicación\nVamos a ejecutar la aplicación con el siguiente comando:\nng serve -o\nSi todo salio bien deberíamos ver el menú de navegación en la aplicación.",
+    "crumbs": [
+      "Unidad 3: TypeScript con Angular",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Bootstrap en Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad5/1_introduccion_a_react_con_typescript.html#setup-del-proyecto",
+    "href": "unidades/unidad5/1_introduccion_a_react_con_typescript.html#setup-del-proyecto",
+    "title": "Tutorial: Crear un CRUD en Angular",
+    "section": "Setup del Proyecto",
+    "text": "Setup del Proyecto\nCrear un nuevo proyecto Angular utilizando Angular CLI\n\nInstalar Angular CLI (si no lo tienes instalado):\n\nnpm install -g @angular/cli\n\nCrear un nuevo proyecto Angular:\n\nng new angular-crud\ncd angular-crud\n\nIniciar el servidor de desarrollo:\n\nng serve\nNavega a http://localhost:4200/ para ver la aplicación en funcionamiento.",
+    "crumbs": [
+      "Unidad 5: Creación de Proyectos con Angular",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Tutorial: Crear un CRUD en Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad5/1_introduccion_a_react_con_typescript.html#configurar-el-proyecto",
+    "href": "unidades/unidad5/1_introduccion_a_react_con_typescript.html#configurar-el-proyecto",
+    "title": "Tutorial: Crear un CRUD en Angular",
+    "section": "Configurar el proyecto",
+    "text": "Configurar el proyecto\nConfigurar el proyecto para utilizar un servicio backend simulado con json-server o in-memory-web-api\nPara este tutorial, usaremos json-server.\n\n\n\n\n\n\nTip\n\n\n\n¿Qué es json-server?\nEs una herramienta que nos permite crear un servidor RESTful simulado a partir de un archivo JSON. Es útil para prototipar aplicaciones y realizar pruebas sin tener que configurar un servidor backend real.\n\n\n\nInstalar json-server:\n\nnpm install -g json-server\nCrear un archivo db.json en la raíz del proyecto con datos iniciales:\n{\n  \"products\": [\n    { \"id\": 1, \"name\": \"Product 1\", \"price\": 100 },\n    { \"id\": 2, \"name\": \"Product 2\", \"price\": 200 }\n  ]\n}\n\nIniciar json-server:\n\nnpx json-server db.json\n\n\n\n\n\n\nTip\n\n\n\n¿Qué es npx?\nEs un ejecutable que viene con npm 5.2.0 o superior. Se utiliza para ejecutar paquetes instalados localmente en el proyecto sin tener que instalarlos globalmente.\n\n\nEl servidor estará disponible en http://localhost:3000.",
+    "crumbs": [
+      "Unidad 5: Creación de Proyectos con Angular",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Tutorial: Crear un CRUD en Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad5/1_introduccion_a_react_con_typescript.html#componentes-y-servicios",
+    "href": "unidades/unidad5/1_introduccion_a_react_con_typescript.html#componentes-y-servicios",
+    "title": "Tutorial: Crear un CRUD en Angular",
+    "section": "Componentes y Servicios",
+    "text": "Componentes y Servicios\nCrear componentes para listar, agregar, editar y eliminar elementos\n\nGenerar los componentes:\n\nng generate component product-list\nng generate component product-add\nng generate component product-edit\nng generate component product-delete",
+    "crumbs": [
+      "Unidad 5: Creación de Proyectos con Angular",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Tutorial: Crear un CRUD en Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad5/1_introduccion_a_react_con_typescript.html#creación-de-operaciones-crud",
+    "href": "unidades/unidad5/1_introduccion_a_react_con_typescript.html#creación-de-operaciones-crud",
+    "title": "Tutorial: Crear un CRUD en Angular",
+    "section": "Creación de Operaciones CRUD",
+    "text": "Creación de Operaciones CRUD\nCrear un servicio Angular para manejar las operaciones CRUD contra el backend simulado.\n\n\n\n\n\n\nTip\n\n\n\n¿Qué es un servicio en Angular?\nUn servicio en Angular es una clase que se utiliza para compartir datos y funcionalidades entre componentes. Se utiliza para manejar operaciones asíncronas como llamadas HTTP, y para compartir datos entre componentes.\n\n\n\nGenerar el servicio:\n\nng generate service product\n\n\n\nModificar el servicio product.service.ts para manejar las operaciones CRUD:\nimport { Injectable } from '@angular/core';\nimport { HttpClient } from '@angular/common/http';\nimport { Observable } from 'rxjs';\n\ninterface Product {\n    id: number;\n    name: string;\n    price: number;\n}\n\n@Injectable({\n    providedIn: 'root'\n})\nexport class ProductService {\n    private apiUrl = 'http://localhost:3000/products';\n\n    constructor(private http: HttpClient) {}\n\n    getProducts(): Observable&lt;Product[]&gt; {\n    return this.http.get&lt;Product[]&gt;(this.apiUrl);\n    }\n\n    getProduct(id: number): Observable&lt;Product&gt; {\n    return this.http.get&lt;Product&gt;(`${this.apiUrl}/${id}`);\n    }\n\n    addProduct(product: Product): Observable&lt;Product&gt; {\n    return this.http.post&lt;Product&gt;(this.apiUrl, product);\n    }\n\n    updateProduct(product: Product): Observable&lt;Product&gt; {\n    return this.http.put&lt;Product&gt;(`${this.apiUrl}/${product.id}`, product);\n    }\n\n    deleteProduct(id: number): Observable&lt;void&gt; {\n    return this.http.delete&lt;void&gt;(`${this.apiUrl}/${id}`);\n    }\n}\nEn el servicio product.service.ts se definen las operaciones CRUD para manejar los productos. Se utilizan los métodos get, post, put y delete del servicio HttpClient para realizar las operaciones CRUD.",
+    "crumbs": [
+      "Unidad 5: Creación de Proyectos con Angular",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Tutorial: Crear un CRUD en Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad5/1_introduccion_a_react_con_typescript.html#operaciones-crud",
+    "href": "unidades/unidad5/1_introduccion_a_react_con_typescript.html#operaciones-crud",
+    "title": "Tutorial: Crear un CRUD en Angular",
+    "section": "Operaciones CRUD",
+    "text": "Operaciones CRUD\nImplementar la funcionalidad para listar todos los productos\n\nModificar el componente product-list.component.ts:\n\nimport { Component } from '@angular/core';\nimport { FormsModule } from '@angular/forms';\nimport { ProductService } from '../product.service';\nimport { CommonModule } from '@angular/common';\n\ninterface Product {\n  id: number;\n  name: string;\n  price: number;\n}\n\n@Component({\n  selector: 'app-product-list',\n  standalone: true,\n  imports: [FormsModule, CommonModule],\n  providers: [ProductService],\n  templateUrl: './product-list.component.html',\n  styleUrl: './product-list.component.css'\n})\n\nexport class ProductListComponent {\n  \ndeleteProduct(arg0: number) {\nthrow new Error('Method not implemented.');\n}\n\neditProduct(arg0: number) {\nthrow new Error('Method not implemented.');\n}\n  products: Product[] = [];\n\n  constructor(private productService: ProductService) {}\n\n  ngOnInit(): void {\n    this.productService.getProducts().subscribe((data: Product[]) =&gt; {\n      this.products = data;\n    });\n  }\n}\nEn el componente product-list.component.ts se define la clase ProductListComponent que se encarga de listar los productos. Se utiliza el método getProducts del servicio ProductService para obtener los productos y se almacenan en la propiedad products.\n\nModificar el template product-list.component.html:\n\n&lt;h2&gt;Product List&lt;/h2&gt;\n&lt;ul&gt;\n    &lt;li *ngFor=\"let product of products\"&gt;\n    {{ product.name }} - ${{ product.price }}\n    &lt;button (click)=\"editProduct(product.id)\"&gt;Edit&lt;/button&gt;\n    &lt;button (click)=\"deleteProduct(product.id)\"&gt;Delete&lt;/button&gt;\n    &lt;/li&gt;\n&lt;/ul&gt;\n&lt;button routerLink=\"/add\"&gt;Add Product&lt;/button&gt;\nEn el template product-list.component.html se utiliza la directiva ngFor para iterar sobre la lista de productos y mostrarlos en una lista. Se utilizan los botones Edit y Delete para editar y eliminar los productos respectivamente.",
+    "crumbs": [
+      "Unidad 5: Creación de Proyectos con Angular",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Tutorial: Crear un CRUD en Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad5/1_introduccion_a_react_con_typescript.html#implementar-la-funcionalidad-para-agregar-un-nuevo-producto",
+    "href": "unidades/unidad5/1_introduccion_a_react_con_typescript.html#implementar-la-funcionalidad-para-agregar-un-nuevo-producto",
+    "title": "Tutorial: Crear un CRUD en Angular",
+    "section": "Implementar la funcionalidad para agregar un nuevo producto",
+    "text": "Implementar la funcionalidad para agregar un nuevo producto\n\nModificar el componente product-add.component.ts:\n\nimport { Component } from '@angular/core';\nimport { ProductService } from '../product.service';\nimport { Router } from '@angular/router';\nimport { FormsModule } from '@angular/forms';\n\ninterface Product {\n  id: number;\n  name: string;\n  price: number;\n}\n\n@Component({\n  selector: 'app-product-add',\n  standalone: true,\n  imports: [FormsModule],\n  templateUrl: './product-add.component.html',\n  styleUrl: './product-add.component.css'\n})\nexport class ProductAddComponent {\n  product: Product = { id: 0, name: '', price: 0 };\n\n  constructor(private productService: ProductService, private router: Router) {}\n\n  addProduct(): void {\n    this.productService.addProduct(this.product).subscribe(() =&gt; {\n      this.router.navigate(['/']);\n    });\n  }\n}\nEn el componente product-add.component.ts se define la clase ProductAddComponent que se encarga de agregar un nuevo producto. Se utiliza el método addProduct del servicio ProductService para agregar el producto y se redirige al componente ProductListComponent.\n\nModificar el template product-add.component.html:\n\n&lt;h2&gt;Add Product&lt;/h2&gt;\n&lt;form (ngSubmit)=\"addProduct()\"&gt;\n    &lt;label for=\"name\"&gt;Name&lt;/label&gt;\n    &lt;input id=\"name\" [(ngModel)]=\"product.name\" name=\"name\" required&gt;\n    &lt;label for=\"price\"&gt;Price&lt;/label&gt;\n    &lt;input id=\"price\" [(ngModel)]=\"product.price\" name=\"price\" required&gt;\n    &lt;button type=\"submit\"&gt;Add&lt;/button&gt;\n&lt;/form&gt;\nEn el template product-add.component.html se define un formulario para agregar un nuevo producto. Se utilizan las directivas ngModel y ngSubmit para enlazar los campos del formulario con la propiedad product y para manejar el evento de envío del formulario.",
+    "crumbs": [
+      "Unidad 5: Creación de Proyectos con Angular",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Tutorial: Crear un CRUD en Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad5/1_introduccion_a_react_con_typescript.html#implementar-la-funcionalidad-para-editar-un-producto-existente",
+    "href": "unidades/unidad5/1_introduccion_a_react_con_typescript.html#implementar-la-funcionalidad-para-editar-un-producto-existente",
+    "title": "Tutorial: Crear un CRUD en Angular",
+    "section": "Implementar la funcionalidad para editar un producto existente",
+    "text": "Implementar la funcionalidad para editar un producto existente\n\nModificar el componente product-edit.component.ts:\n\nimport { Component, Inject } from '@angular/core';\nimport { ProductService } from '../product.service';\nimport { ActivatedRoute, Router } from '@angular/router';\nimport { FormsModule } from '@angular/forms';\n\ninterface Product {\n  id: number;\n  name: string;\n  price: number;\n}\n\n@Component({\n  selector: 'app-product-edit',\n  standalone: true,\n  providers: [ProductService],\n  imports: [FormsModule],\n  templateUrl: './product-edit.component.html',\n  styleUrl: './product-edit.component.css'\n})\nexport class ProductEditComponent {\n\n  product: Product = { id: 0, name: '', price: 0 };\n\n  constructor(\n    private productService: ProductService,\n    @Inject(ActivatedRoute) private route: ActivatedRoute,\n    @Inject(Router) private router: Router\n  ) {}\n\n  ngOnInit(): void {\n    const id = Number(this.route.snapshot.paramMap.get('id'));\n    this.productService.getProduct(id).subscribe((data: Product) =&gt; {\n      this.product = data;\n    });\n  }\n\n  updateProduct(): void {\n    this.productService.updateProduct(this.product).subscribe(() =&gt; {\n      this.router.navigate(['/']);\n    });\n  }\n}\nEn el componente product-edit.component.ts se define la clase ProductEditComponent que se encarga de editar un producto existente. Se utiliza el método getProduct del servicio ProductService para obtener el producto a editar y se utiliza el método updateProduct para actualizar el producto.\n\nModificar el template product-edit.component.html:\n\n&lt;h2&gt;Edit Product&lt;/h2&gt;\n&lt;form (ngSubmit)=\"updateProduct()\"&gt;\n    &lt;label for=\"name\"&gt;Name&lt;/label&gt;\n    &lt;input id=\"name\" [(ngModel)]=\"product.name\" name=\"name\" required&gt;\n    &lt;label for=\"price\"&gt;Price&lt;/label&gt;\n    &lt;input id=\"price\" [(ngModel)]=\"product.price\" name=\"price\" required&gt;\n    &lt;button type=\"submit\"&gt;Update&lt;/button&gt;\n&lt;/form&gt;\nEn el template product-edit.component.html se define un formulario para editar un producto existente. Se utilizan las directivas ngModel y ngSubmit para enlazar los campos del formulario con la propiedad product y para manejar el evento de envío del formulario.",
+    "crumbs": [
+      "Unidad 5: Creación de Proyectos con Angular",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Tutorial: Crear un CRUD en Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad5/1_introduccion_a_react_con_typescript.html#implementar-la-funcionalidad-para-eliminar-un-producto",
+    "href": "unidades/unidad5/1_introduccion_a_react_con_typescript.html#implementar-la-funcionalidad-para-eliminar-un-producto",
+    "title": "Tutorial: Crear un CRUD en Angular",
+    "section": "Implementar la funcionalidad para eliminar un producto",
+    "text": "Implementar la funcionalidad para eliminar un producto\n\nModificar el componente product-delete.component.ts para agregar la funcionalidad de eliminación:\n\nimport { Component, Inject } from '@angular/core';\nimport { FormsModule } from '@angular/forms';\nimport { ProductService } from '../product.service';\nimport { Router, ActivatedRoute } from '@angular/router';\nimport { CommonModule } from '@angular/common';\n\ninterface Product {\n  id: number;\n  name: string;\n  price: number;\n}\n\n@Component({\n  selector: 'app-product-delete',\n  standalone: true,\n  providers: [ProductService],\n  imports: [FormsModule, FormsModule, CommonModule],\n  templateUrl: './product-delete.component.html',\n  styleUrl: './product-delete.component.css'\n})\nexport class ProductDeleteComponent {\n  product: Product | null = null;\n\n  constructor(\n    private productService: ProductService,\n    @Inject(ActivatedRoute) private route: ActivatedRoute,\n    private router: Router\n  ) {}\n\n  ngOnInit(): void {\n    const id = Number(this.route.snapshot.paramMap.get('id'));\n    this.productService.getProduct(id).subscribe((data: Product) =&gt; {\n      this.product = data;\n    });\n  }\n\n  deleteProduct(): void {\n    if (this.product) {\n      this.productService.deleteProduct(this.product.id).subscribe(() =&gt; {\n        this.router.navigate(['/']);\n      });\n    }\n  }\n\n  cancel(): void {\n    this.router.navigate(['/']);\n  }\n}\nEn el componente product-delete.component.ts se define la clase ProductDeleteComponent que se encarga de eliminar un producto. Se utiliza el método getProduct del servicio ProductService para obtener el producto a eliminar y se utiliza el método deleteProduct para eliminar el producto.\n\nModificar el template product-delete.component.html:\n\n&lt;h2&gt;Delete Product&lt;/h2&gt;\n\n&lt;div *ngIf=\"product\"&gt;\n  &lt;p&gt;Are you sure you want to delete the product \"{{ product.name }}\"?&lt;/p&gt;\n  &lt;button (click)=\"deleteProduct()\"&gt;Yes, Delete&lt;/button&gt;\n  &lt;button (click)=\"cancel()\"&gt;Cancel&lt;/button&gt;\n&lt;/div&gt;\n\n&lt;div *ngIf=\"!product\"&gt;\n  &lt;p&gt;Loading...&lt;/p&gt;\n&lt;/div&gt;\nEn el template product-delete.component.html se muestra un mensaje de confirmación para eliminar el producto. Se utilizan los botones Yes, Delete y Cancel para confirmar o cancelar la eliminación del producto.",
+    "crumbs": [
+      "Unidad 5: Creación de Proyectos con Angular",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Tutorial: Crear un CRUD en Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad5/1_introduccion_a_react_con_typescript.html#routes",
+    "href": "unidades/unidad5/1_introduccion_a_react_con_typescript.html#routes",
+    "title": "Tutorial: Crear un CRUD en Angular",
+    "section": "Routes",
+    "text": "Routes\nPara configurar las rutas de la aplicación, modificar el archivo app.routes.ts:\nimport { Routes } from '@angular/router';\nimport { ProductListComponent } from './product-list/product-list.component';\nimport { ProductAddComponent } from './product-add/product-add.component';\nimport { ProductEditComponent } from './product-edit/product-edit.component';\nimport { ProductDeleteComponent } from './product-delete/product-delete.component';\n\nexport const routes: Routes = [\n  { path: 'product-list', component: ProductListComponent },\n  { path: 'product-add', component: ProductAddComponent },\n  { path: 'product-edit/:id', component: ProductEditComponent },\n  { path: 'product-delete/:id', component: ProductDeleteComponent },\n  { path: '', redirectTo: '/product-list', pathMatch: 'full' },\n//   { path: '**', component: PageNotFoundComponent } // Asegúrate de haber creado este componente\n];\nEn el archivo app.routes.ts se definen las rutas de la aplicación. Se utiliza la propiedad path para definir la URL de la ruta y la propiedad component para definir el componente asociado a la ruta. Se utiliza la ruta ’’ para redirigir al componente ProductListComponent cuando no se especifica ninguna ruta.\n\n\n\n\n\n\nTip\n\n\n\nTomar en cuenta que no ha sido implementado el componente PageNotFoundComponent.\n\n\nModificar el archivo app.component.ts para importar las rutas:\nimport { Component } from '@angular/core';\nimport { RouterOutlet, RouterLink, RouterLinkActive, RouterModule } from '@angular/router';\nimport { CommonModule } from '@angular/common';\n\nimport { ProductDeleteComponent } from './product-delete/product-delete.component';\nimport { ProductListComponent } from './product-list/product-list.component';\nimport { ProductEditComponent } from './product-edit/product-edit.component';\nimport { ProductAddComponent } from './product-add/product-add.component';\n\n@Component({\n  selector: 'app-root',\n  standalone: true,\n  imports: [\n    CommonModule,\n    RouterOutlet,\n    RouterLink,\n    RouterLinkActive,\n    RouterModule,\n    ProductListComponent,\n    ProductAddComponent,\n    ProductEditComponent,\n    ProductDeleteComponent\n  ],\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.css']\n})\nexport class AppComponent {\n  title = 'angular-crud';\n}\nEn el archivo app.component.ts se importan las rutas definidas en el archivo app.routes.ts.\nModificar el archivo app.component.html para agregar las rutas:\n&lt;h1&gt;{{ title }}&lt;/h1&gt;\n&lt;nav&gt;\n  &lt;a class=\"button\" routerLink=\"/product-list\" routerLinkActive=\"activebutton\" ariaCurrentWhenActive=\"page\"&gt;Product List&lt;/a&gt; |\n  &lt;a class=\"button\" routerLink=\"/product-add\" routerLinkActive=\"activebutton\" ariaCurrentWhenActive=\"page\"&gt;Add Product&lt;/a&gt;\n  &lt;a class=\"button\" routerLink=\"/product-edit\" routerLinkActive=\"activebutton\" ariaCurrentWhenActive=\"page\"&gt;Edit Product&lt;/a&gt;\n  &lt;a class=\"button\" routerLink=\"/product-delete\" routerLinkActive=\"activebutton\" ariaCurrentWhenActive=\"page\"&gt;Delete Product&lt;/a&gt;\n&lt;/nav&gt;\n&lt;router-outlet&gt;&lt;/router-outlet&gt;\nEn el archivo app.component.html se definen los enlaces de navegación para las rutas de la aplicación. Se utilizan las directivas routerLink y routerLinkActive para enlazar las rutas con los botones de navegación y para resaltar el botón activo.\n\n\n\n\n\n\nTip\n\n\n\nSe utiliza router-outlet para mostrar el componente asociado a la ruta actual.\n\n\nAhora vamos a modificar el archivo main.ts para importar las rutas:\nimport { bootstrapApplication } from '@angular/platform-browser';\nimport { provideHttpClient } from '@angular/common/http';\nimport { provideRouter } from '@angular/router';\n\nimport { AppComponent } from './app/app.component';\nimport { routes } from './app/app.routes';\n\nbootstrapApplication(AppComponent, {\n  providers: [\n    provideHttpClient(),\n    provideRouter(routes)\n  ]\n}).catch(err =&gt; console.error(err));\nEn el archivo main.ts se importan las rutas definidas en el archivo app.routes.ts y se proporcionan los servicios HttpClient y Router.\nFinalmente modificar el archivo app.module.css para agregar estilos:\n.button {\n    box-shadow: inset 0 1px 0 0 #ffffff;\n    background: #ffffff linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);\n    border-radius: 6px;\n    border: 1px solid #dcdcdc;\n    display: inline-block;\n    cursor: pointer;\n    color: #666666;\n    font-family: Arial, sans-serif;\n    font-size: 15px;\n    font-weight: bold;\n    padding: 6px 24px;\n    text-decoration: none;\n    text-shadow: 0 1px 0 #ffffff;\n    outline: 0;\n  }\n  .activebutton {\n    box-shadow: inset 0 1px 0 0 #dcecfb;\n    background: #bddbfa linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);\n    border: 1px solid #84bbf3;\n    color: #ffffff;\n    text-shadow: 0 1px 0 #528ecc;\n  }\nEn el archivo app.module.css se definen los estilos para los botones de navegación.\nSi todo salio bien deberías ver algo como esto:",
+    "crumbs": [
+      "Unidad 5: Creación de Proyectos con Angular",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Tutorial: Crear un CRUD en Angular</span>"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Acerca de mi",
+    "section": "",
+    "text": "¡Hola! Soy Diego Saavedra, un experto en desarrollo avanzado de software e investigación. Mi amplia experiencia abarca diversas tecnologías, incluyendo Python (Django, Flask, Fast API) y JavaScript (Express, Next, React, Nestjs), así como también tengo conocimientos sólidos en bases de datos, arquitecturas de software y liderazgo ágil.\nMi pasión por la innovación, el desarrollo y la educación me ha llevado a destacarme como un profesional versátil e invaluable. Estoy constantemente listo para enfrentar desafíos técnicos y liderar proyectos de vanguardia.\nMi formación académica incluye el ser estudiante de Doctorado centrado en la inteligencia artificial, estoy enfocando mi investigación en la detección de TDA+H y Asperger mediante Visión Artificial a traves de algoritmos de Inteligencia Artificial. Además, poseo una Maestría en Ciencias de la Computación, con un enfoque en el Deep Learning (Convolutional Neural Network) y la Atención.\nCon esta sólida base académica y experiencia profesional, estoy preparado para aportar soluciones innovadoras y liderar equipos hacia el éxito en cualquier proyecto tecnológico que se me presente.\nAdemás, tengo experiencia en el desarrollo móvil utilizando Flutter y en la implementación de soluciones backend utilizando servicios Backend as a Service (BaaS) como Firebase y Supabase.\nEn el ámbito de la educación, he sido docente de programación en institutos y universidades, actualmente soy parte del Departamento de Ciencias de la Computación en la Universidad de las Fuerzas Armadas ESPE, donde he impartido asignaturas de desarrollo de Software Web con tecnologías como JavaScript, Java y C# asi como sus respectivos frameworks.\nMi experiencia en el desarrollo de software y la investigación me ha permitido adquirir habilidades de liderazgo, trabajo en equipo y comunicación efectiva. Estoy seguro de que mi experiencia y habilidades serán de gran valor para cualquier proyecto tecnológico que se me presente.\nEn este curso aprenderás a desarrollar aplicaciones web con Python y Django, una de las tecnologías más populares y poderosas para el desarrollo de aplicaciones web. A lo largo del curso, aprenderás a crear aplicaciones web desde cero, utilizando Django y Python, y a implementar funcionalidades avanzadas como integración con APIs externas y mucho más.\nTambien veremos tecnologías como Git, Github, Docker, Python, Django, Django Rest Framework, Html5, Css3, JavaScript, Nodejs, Npm y React.\n\n\n¡Estoy emocionado de compartir contigo mi conocimiento y experiencia en el desarrollo de aplicaciones web con Python y Django!"
+  },
+  {
+    "objectID": "license.html",
+    "href": "license.html",
+    "title": "Licencia",
+    "section": "",
+    "text": "Uso Permitido\nPuedes utilizar el contenido de este curso con fines educativos y personales. Puedes modificar los ejemplos y el código proporcionado para tus propias necesidades de aprendizaje."
+  },
+  {
+    "objectID": "license.html#restricciones",
+    "href": "license.html#restricciones",
+    "title": "Licencia",
+    "section": "Restricciones",
+    "text": "Restricciones\nNo tienes permitido redistribuir, vender o utilizar el contenido de este curso para fines comerciales sin el permiso explícito de [Nombre de la Compañía]. Además, no tienes permitido copiar o duplicar el contenido del curso y presentarlo como propio."
+  },
+  {
+    "objectID": "license.html#atribución",
+    "href": "license.html#atribución",
+    "title": "Licencia",
+    "section": "Atribución",
+    "text": "Atribución\nSi compartes los ejemplos, los fragmentos de código o el contenido de este curso en línea, te pedimos que proporciones la atribución adecuada a [Nombre de la Compañía]."
+  },
+  {
+    "objectID": "license.html#cambios-en-la-licencia",
+    "href": "license.html#cambios-en-la-licencia",
+    "title": "Licencia",
+    "section": "Cambios en la Licencia",
+    "text": "Cambios en la Licencia\n[Nombre de la Compañía] se reserva el derecho de modificar los términos de esta licencia en cualquier momento. Cualquier cambio se reflejará en esta página.\nGracias por respetar nuestros derechos de autor y por tu comprensión."
+  },
+  {
+    "objectID": "unidades/unidad4/5_fetch_con_angular.html",
+    "href": "unidades/unidad4/5_fetch_con_angular.html",
+    "title": "Fetch vs Axios con Angular",
+    "section": "",
+    "text": "Crear proyecto con Fetch\nVamos a crear un proyecto con fetch. Para ello vamos a ejecutar el siguiente comando:\nUna vez creado el proyecto vamos a instalar la librería de Material Design para que se vea más bonito. Para ello vamos a ejecutar el siguiente comando:\nVamos a seleccionar la opción de “Indigo/Pink” y luego vamos a seleccionar la opción de “Custom” para seleccionar los componentes que queremos instalar. Vamos a seleccionar los siguientes componentes:\nUna vez instalado vamos a crear un componente llamado “fetch” con el siguiente comando:\nVamos a modificar el archivo src/app/app.router.ts para que el componente fetch sea el componente por defecto. Para ello vamos a modificar el archivo de la siguiente manera:\nVamos a modificar el archivo src/app/fetch/fetch.component.ts para que haga una petición con fetch. Para ello vamos a modificar el archivo de la siguiente manera:\nVamos a modificar el archivo src/app/fetch/fetch.component.html para que muestre los datos que se obtienen de la petición. Para ello vamos a modificar el archivo de la siguiente manera:\nVamos a modificar el archivo src/app/fetch/fetch.component.ts para que guarde los datos que se obtienen de la petición. Para ello vamos a modificar el archivo de la siguiente manera:",
+    "crumbs": [
+      "Unidad 4: Angular avanzado",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Fetch vs Axios con Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad4/5_fetch_con_angular.html#crear-proyecto-con-fetch",
+    "href": "unidades/unidad4/5_fetch_con_angular.html#crear-proyecto-con-fetch",
+    "title": "Fetch vs Axios con Angular",
+    "section": "",
+    "text": "ng new fetch-angular\n\nng add @angular/material\n\n\nNavigation\nLayout\nButtons\n\n\nng generate component fetch\n\nimport { NgModule } from '@angular/core';\nimport { Routes, RouterModule } from '@angular/router';\nimport { FetchComponent } from './fetch/fetch.component';\n\nconst routes: Routes = [\n  { path: '', component: FetchComponent }\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n\nimport { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-fetch',\n  templateUrl: './fetch.component.html',\n  styleUrls: ['./fetch.component.css']\n})\nexport class FetchComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n    fetch('https://jsonplaceholder.typicode.com/posts')\n      .then(response =&gt; response.json())\n      .then(data =&gt; console.log(data));\n  }\n\n}\n\n&lt;p&gt;\n  fetch-angular works!\n&lt;/p&gt;\n\n&lt;ul&gt;\n  &lt;li *ngFor=\"let post of posts\"&gt;{{ post.title }}&lt;/li&gt;\n&lt;/ul&gt;\n\nimport { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-fetch',\n  templateUrl: './fetch.component.html',\n  styleUrls: ['./fetch.component.css']\n})\nexport class FetchComponent implements OnInit {\n\n  posts: any[] = [];\n\n  constructor() { }\n\n  ngOnInit(): void {\n    fetch('https://jsonplaceholder.typicode.com/posts')\n      .then(response =&gt; response.json())\n      .then(data =&gt; this.posts = data);\n  }\n\n}",
+    "crumbs": [
+      "Unidad 4: Angular avanzado",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Fetch vs Axios con Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad4/5_fetch_con_angular.html#crear-proyecto-con-axios",
+    "href": "unidades/unidad4/5_fetch_con_angular.html#crear-proyecto-con-axios",
+    "title": "Fetch vs Axios con Angular",
+    "section": "Crear proyecto con Axios",
+    "text": "Crear proyecto con Axios\nVamos a crear un proyecto con axios. Para ello vamos a ejecutar el siguiente comando:\nng new axios-angular\nUna vez creado el proyecto vamos a instalar la librería de Material Design para que se vea más bonito. Para ello vamos a ejecutar el siguiente comando:\nng add @angular/material\nVamos a seleccionar la opción de “Indigo/Pink” y luego vamos a seleccionar la opción de “Custom” para seleccionar los componentes que queremos instalar. Vamos a seleccionar los siguientes componentes:\n\nNavigation\nLayout\nButtons\n\nUna vez instalado vamos a crear un componente llamado “axios” con el siguiente comando:\nng generate component axios\nVamos a modificar el archivo src/app/app.router.ts para que el componente axios sea el componente por defecto. Para ello vamos a modificar el archivo de la siguiente manera:\nimport { NgModule } from '@angular/core';\nimport { Routes, RouterModule } from '@angular/router';\nimport { AxiosComponent } from './axios/axios.component';\n\nconst routes: Routes = [\n    {path: '', component: AxiosComponent}\n];\n\n@NgModule({\n    imports: [RouterModule.forRoot(routes)],\n    exports: [RouterModule]\n})\nexport class AppRoutingModule { }\nVamos a modificar el archivo src/app/axios/axios.component.ts para que haga una petición con axios. Para ello vamos a modificar el archivo de la siguiente manera:\nimport { Component, OnInit } from '@angular/core';\nimport axios from 'axios';\n\n@Component({\n  selector: 'app-axios',\n  templateUrl: './axios.component.html',\n  styleUrls: ['./axios.component.css']\n})\nexport class AxiosComponent implements OnInit {\n\n  posts: any[] = [];\n\n  constructor() { }\n\n  ngOnInit(): void {\n    axios.get('https://jsonplaceholder.typicode.com/posts')\n      .then(response =&gt; this.posts = response.data);\n  }\n\n}\nVamos a modificar el archivo src/app/axios/axios.component.html para que muestre los datos que se obtienen de la petición. Para ello vamos a modificar el archivo de la siguiente manera:\n&lt;p&gt;\n  axios-angular works!\n&lt;/p&gt;\n\n&lt;ul&gt;\n  &lt;li *ngFor=\"let post of posts\"&gt;{{ post.title }}&lt;/li&gt;\n&lt;/ul&gt;",
+    "crumbs": [
+      "Unidad 4: Angular avanzado",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Fetch vs Axios con Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad4/5_fetch_con_angular.html#ejecutar-los-proyectos",
+    "href": "unidades/unidad4/5_fetch_con_angular.html#ejecutar-los-proyectos",
+    "title": "Fetch vs Axios con Angular",
+    "section": "Ejecutar los proyectos",
+    "text": "Ejecutar los proyectos\nVamos a ejecutar los proyectos para ver como funcionan. Para ello vamos a ejecutar los siguientes comandos:\nng serve fetch-angular\nng serve axios-angular\nUna vez ejecutados los proyectos vamos a abrir el navegador y vamos a acceder a la siguiente URL:\n\nhttp://localhost:4200/\n\nVamos a ver que ambos proyectos muestran los mismos datos. La diferencia es que uno usa fetch y el otro usa axios.",
+    "crumbs": [
+      "Unidad 4: Angular avanzado",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Fetch vs Axios con Angular</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/1_introduccion.html",
+    "href": "unidades/unidad1/1_introduccion.html",
+    "title": "Introducción",
+    "section": "",
+    "text": "En este ebook se presentan lo conceptos básicos acerca del frmework Next JS, el cual es un framework de React que permite la creación de aplicaciones web de forma sencilla y rápida. A lo largo de este ebook se presentarán los conceptos básicos de Next JS, así como ejemplos de su uso.\nLo primero que se debe hacer es instalar Next JS en su computadora. Para ello, se debe tener instalado Node JS en su computadora. Si no lo tiene instalado, puede descargarlo desde la página oficial de Node JS. Una vez que tenga Node JS instalado, puede instalar Next JS utilizando el siguiente comando:\nnpx create-next-app@latest --ts\n\n\n\nEste comando creará una nueva aplicación de Next JS en su computadora. Una vez que la aplicación se haya creado, puede ejecutarla utilizando el siguiente comando:\nnpm run dev\n\n\n\nEste comando iniciará un servidor local en su computadora y podrá ver la aplicación en su navegador web. A partir de aquí, puede comenzar a desarrollar su aplicación utilizando Next JS.\nEn los siguientes capítulos se presentarán los conceptos básicos de Next JS, así como ejemplos de su uso. Espero que este ebook le sea de utilidad y le ayude a comprender mejor el framework Next JS.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_que_es_nextjs.html",
+    "href": "unidades/unidad1/2_que_es_nextjs.html",
+    "title": "¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?",
+    "section": "",
+    "text": "Introducción a Next.js y sus beneficios.\nPara introducirnos en Next.js, primero debemos entender qué es un framework. Un framework es un conjunto de herramientas y librerías que facilitan el desarrollo de aplicaciones web. En el caso de Next.js, es un framework de React que nos permite crear aplicaciones web de forma sencilla y rápida.\nNext.js nos ofrece una serie de beneficios que lo hacen una excelente opción para el desarrollo de aplicaciones web:",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_que_es_nextjs.html#introducción-a-next.js-y-sus-beneficios.",
+    "href": "unidades/unidad1/2_que_es_nextjs.html#introducción-a-next.js-y-sus-beneficios.",
+    "title": "¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?",
+    "section": "",
+    "text": "Rendimiento: Next.js nos ofrece un rendimiento óptimo gracias a su capacidad de renderizado en el servidor y en el cliente. Esto nos permite crear aplicaciones web rápidas y eficientes.\nSEO: Next.js nos ofrece una serie de herramientas que nos permiten optimizar nuestras aplicaciones web para los motores de búsqueda. Esto nos ayuda a mejorar el posicionamiento de nuestras aplicaciones en los resultados de búsqueda.\nEscalabilidad: Next.js nos ofrece una arquitectura escalable que nos permite crear aplicaciones web de cualquier tamaño. Esto nos permite crear aplicaciones web que puedan crecer con el tiempo y adaptarse a las necesidades de nuestros usuarios.\nFacilidad de uso: Next.js nos ofrece una serie de herramientas y librerías que nos facilitan el desarrollo de aplicaciones web. Esto nos permite crear aplicaciones web de forma sencilla y rápida, sin necesidad de tener un conocimiento profundo de React.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_que_es_nextjs.html#comparación-con-otros-frameworks.",
+    "href": "unidades/unidad1/2_que_es_nextjs.html#comparación-con-otros-frameworks.",
+    "title": "¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?",
+    "section": "Comparación con otros frameworks.",
+    "text": "Comparación con otros frameworks.\nPodemos comparar Next.js con otros frameworks de React, como Create React App. A continuación, se presentan algunas diferencias entre Next.js y Vite:\n\nRendimiento: Next.js ofrece un rendimiento óptimo gracias a su capacidad de renderizado en el servidor y en el cliente. Vite, por otro lado, ofrece un rendimiento óptimo gracias a su capacidad de renderizado en el cliente.\nSEO: Next.js nos ofrece una serie de herramientas que nos permiten optimizar nuestras aplicaciones web para los motores de búsqueda. Vite, por otro lado, nos ofrece una serie de herramientas que nos permiten optimizar nuestras aplicaciones web para los motores de búsqueda.\nEscalabilidad: Next.js nos ofrece una arquitectura escalable que nos permite crear aplicaciones web de cualquier tamaño. Vite, por otro lado, nos ofrece una arquitectura escalable que nos permite crear aplicaciones web de cualquier tamaño.\nFacilidad de uso: Next.js nos ofrece una serie de herramientas y librerías que nos facilitan el desarrollo de aplicaciones web. Vite, por otro lado, nos ofrece una serie de herramientas y librerías que nos facilitan el desarrollo de aplicaciones web.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_que_es_nextjs.html#casos-de-uso-y-ejemplos-de-proyectos-exitosos.",
+    "href": "unidades/unidad1/2_que_es_nextjs.html#casos-de-uso-y-ejemplos-de-proyectos-exitosos.",
+    "title": "¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?",
+    "section": "Casos de uso y ejemplos de proyectos exitosos.",
+    "text": "Casos de uso y ejemplos de proyectos exitosos.\nNext.js es utilizado por una gran cantidad de empresas y desarrolladores en todo el mundo. Algunos ejemplos de proyectos exitosos que utilizan Next.js son:\n\nVercel: Vercel es una plataforma de desarrollo y alojamiento de aplicaciones web que utiliza Next.js como su framework principal. Vercel nos ofrece una serie de herramientas y servicios que nos permiten crear aplicaciones web de forma sencilla y rápida.\nSpotify: Spotify es una plataforma de streaming de música que utiliza Next.js para su aplicación web. Spotify nos ofrece una experiencia de usuario rápida y eficiente gracias a Next.js.\nNetflix: Netflix es una plataforma de streaming de películas y series que utiliza Next.js para su aplicación web. Netflix nos ofrece una experiencia de usuario rápida y eficiente gracias a Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/2_que_es_nextjs.html#conclusión.",
+    "href": "unidades/unidad1/2_que_es_nextjs.html#conclusión.",
+    "title": "¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?",
+    "section": "Conclusión.",
+    "text": "Conclusión.\nNext.js es un framework de React que nos permite crear aplicaciones web de forma sencilla y rápida. A lo largo de este ebook se presentarán los conceptos básicos de Next.js, así como ejemplos de su uso. Espero que este ebook le sea de utilidad y le ayude a comprender mejor el framework Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/6_layout_next.html",
+    "href": "unidades/unidad1/6_layout_next.html",
+    "title": "Cómo crear Layout en Next.js",
+    "section": "",
+    "text": "Definición de layouts.\nPara definir un layout en Next.js, se debe crear un componente de React que contenga la estructura del layout. Por ejemplo, si se desea crear un layout con un encabezado y un pie de página, se puede crear un componente Layout que contenga estos elementos.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Cómo crear Layout en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/6_layout_next.html#definición-de-layouts.",
+    "href": "unidades/unidad1/6_layout_next.html#definición-de-layouts.",
+    "title": "Cómo crear Layout en Next.js",
+    "section": "",
+    "text": "Componente Layout:\nimport Head from 'next/head'\n\nconst Layout = ({ children }) =&gt; {\n  return (\n    &lt;div&gt;\n      &lt;Head&gt;\n        &lt;title&gt;My Next.js App&lt;/title&gt;\n      &lt;/Head&gt;\n      &lt;header&gt;\n        &lt;h1&gt;Header&lt;/h1&gt;\n      &lt;/header&gt;\n      &lt;main&gt;\n        {children}\n      &lt;/main&gt;\n      &lt;footer&gt;\n        &lt;p&gt;Footer&lt;/p&gt;\n      &lt;/footer&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default Layout\nEn el componente Layout, se define la estructura del layout con un encabezado, un pie de página y un contenedor principal para el contenido de la página. El componente recibe como prop children el contenido de la página que se renderizará en el contenedor principal.\n\n\nComponente Index:\nimport Layout from '../components/Layout'\n\nconst Index = () =&gt; {\n  return (\n    &lt;Layout&gt;\n      &lt;h1&gt;Home Page&lt;/h1&gt;\n      &lt;p&gt;Welcome to my Next.js App&lt;/p&gt;\n    &lt;/Layout&gt;\n  )\n}\n\nexport default Index\nEn el componente Index, se importa el componente Layout y se renderiza el contenido de la página dentro del layout. De esta forma, se crea una estructura de layout que se puede reutilizar en diferentes páginas de la aplicación.\n\n\nComponente Layout específico:\nimport Head from 'next/head'\n\nconst Layout = ({ title, children }) =&gt; {\n  return (\n    &lt;div&gt;\n      &lt;Head&gt;\n        &lt;title&gt;{title}&lt;/title&gt;\n      &lt;/Head&gt;\n      &lt;header&gt;\n        &lt;h1&gt;Header&lt;/h1&gt;\n      &lt;/header&gt;\n      &lt;main&gt;\n        {children}\n      &lt;/main&gt;\n      &lt;footer&gt;\n        &lt;p&gt;Footer&lt;/p&gt;\n      &lt;/footer&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default Layout\nEn el componente Layout, se define un prop title que permite personalizar el título de la página. De esta forma, se puede crear un layout específico para cada página de la aplicación.\n\n\nComponente About:\nimport Layout from '../components/Layout'\n\nconst About = () =&gt; {\n  return (\n    &lt;Layout title=\"About Page\"&gt;\n      &lt;h1&gt;About Page&lt;/h1&gt;\n      &lt;p&gt;Learn more about my Next.js App&lt;/p&gt;\n    &lt;/Layout&gt;\n  )\n}\n\nexport default About\nEn el componente About, se importa el componente Layout y se renderiza el contenido de la página dentro del layout. Se utiliza el prop title para personalizar el título de la página. De esta forma, se crea un layout específico para la página About.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Cómo crear Layout en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/6_layout_next.html#uso-de-layouts-globales-y-específicos.",
+    "href": "unidades/unidad1/6_layout_next.html#uso-de-layouts-globales-y-específicos.",
+    "title": "Cómo crear Layout en Next.js",
+    "section": "Uso de layouts globales y específicos.",
+    "text": "Uso de layouts globales y específicos.\nEn Next.js, se pueden crear layouts globales que se aplican a todas las páginas de la aplicación, así como layouts específicos que se aplican a páginas específicas de la aplicación. De esta forma, se puede personalizar el diseño de cada página de la aplicación de forma independiente.\n\nLayout global:\nPara crear un layout global en Next.js, se puede definir un componente Layout en un archivo separado y importarlo en todas las páginas de la aplicación. De esta forma, se aplica el mismo diseño a todas las páginas de la aplicación.\nEjemplo:\nimport Layout from '../components/Layout'\n\nconst MyApp = ({ Component, pageProps }) =&gt; {\n  return (\n    &lt;Layout&gt;\n      &lt;Component {...pageProps} /&gt;\n    &lt;/Layout&gt;\n  )\n}\n\nexport default MyApp\n\n\nLayout específico:\nPara crear un layout específico en Next.js, se puede definir un componente Layout en un archivo separado y personalizarlo con props específicas para cada página. De esta forma, se puede crear un diseño único para cada página de la aplicación.\nEjemplo:\nimport Layout from '../components/Layout'\n\nconst About = () =&gt; {\n  return (\n    &lt;Layout title=\"About Page\"&gt;\n      &lt;h1&gt;About Page&lt;/h1&gt;\n      &lt;p&gt;Learn more about my Next.js App&lt;/p&gt;\n    &lt;/Layout&gt;\n  )\n}\n\nexport default About\nEn este ejemplo, se crea un layout específico para la página About con un título personalizado. De esta forma, se puede personalizar el diseño de cada página de la aplicación de forma independiente.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Cómo crear Layout en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/6_layout_next.html#conclusión.",
+    "href": "unidades/unidad1/6_layout_next.html#conclusión.",
+    "title": "Cómo crear Layout en Next.js",
+    "section": "Conclusión.",
+    "text": "Conclusión.\nEn este capítulo se presentaron los conceptos básicos de cómo crear Layouts en Next.js. A lo largo de este capítulo se presentaron los siguientes temas: definición de layouts, uso de layouts globales y específicos. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo crear Layouts en Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Cómo crear Layout en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/6_layout_next.html#ejercicios.",
+    "href": "unidades/unidad1/6_layout_next.html#ejercicios.",
+    "title": "Cómo crear Layout en Next.js",
+    "section": "Ejercicios.",
+    "text": "Ejercicios.\n\nCrea un layout con un encabezado y un pie de página en Next.js.\nCrea un layout con un título personalizado en Next.js.\nCrea un layout global que se aplique a todas las páginas de la aplicación.\nCrea un layout específico que se aplique a una página específica de la aplicación.\nCrea un layout con un menú de navegación en Next.js.\nCrea un layout con un formulario de contacto en Next.js.\n\nEspero que estos ejercicios le sean de utilidad y le ayuden a practicar cómo crear Layouts en Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Cómo crear Layout en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/6_layout_next.html#implementación-de-layouts-en-un-proyecto.",
+    "href": "unidades/unidad1/6_layout_next.html#implementación-de-layouts-en-un-proyecto.",
+    "title": "Cómo crear Layout en Next.js",
+    "section": "Implementación de layouts en un proyecto.",
+    "text": "Implementación de layouts en un proyecto.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Cómo crear Layout en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/3_arquitectura_de_un_proyecto_de_Nextjs.html",
+    "href": "unidades/unidad1/3_arquitectura_de_un_proyecto_de_Nextjs.html",
+    "title": "Arquitectura de un proyecto de Next.js",
+    "section": "",
+    "text": "Estructura de carpetas y archivos.\nLa estructura de un proyecto de Next.js se compone de las siguientes carpetas y archivos:",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Arquitectura de un proyecto de Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/3_arquitectura_de_un_proyecto_de_Nextjs.html#estructura-de-carpetas-y-archivos.",
+    "href": "unidades/unidad1/3_arquitectura_de_un_proyecto_de_Nextjs.html#estructura-de-carpetas-y-archivos.",
+    "title": "Arquitectura de un proyecto de Next.js",
+    "section": "",
+    "text": "pages: En esta carpeta se encuentran las páginas de la aplicación. Cada archivo en esta carpeta representa una página de la aplicación. Por ejemplo, si se crea un archivo index.js en esta carpeta, se creará una página de inicio en la aplicación.\npublic: En esta carpeta se encuentran los archivos estáticos de la aplicación, como imágenes, estilos y scripts. Estos archivos se pueden acceder directamente desde la URL de la aplicación.\nstyles: En esta carpeta se encuentran los estilos globales de la aplicación. Estos estilos se aplican a toda la aplicación y se pueden importar en cualquier archivo de la aplicación.\ncomponents: En esta carpeta se encuentran los componentes de la aplicación. Estos componentes se pueden reutilizar en diferentes partes de la aplicación.\nlib: En esta carpeta se encuentran las librerías y utilidades de la aplicación. Estas librerías se pueden importar en cualquier archivo de la aplicación.\napi: En esta carpeta se encuentran los endpoints de la API de la aplicación. Estos endpoints se pueden acceder desde la URL de la aplicación.\nconfig: En esta carpeta se encuentran los archivos de configuración de la aplicación. Estos archivos se pueden utilizar para configurar diferentes aspectos de la aplicación.\ntest: En esta carpeta se encuentran los archivos de pruebas de la aplicación. Estos archivos se pueden utilizar para probar diferentes aspectos de la aplicación.\n.env: En este archivo se encuentran las variables de entorno de la aplicación. Estas variables se pueden utilizar para configurar diferentes aspectos de la aplicación.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Arquitectura de un proyecto de Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/3_arquitectura_de_un_proyecto_de_Nextjs.html#configuración-inicial-de-un-proyecto.",
+    "href": "unidades/unidad1/3_arquitectura_de_un_proyecto_de_Nextjs.html#configuración-inicial-de-un-proyecto.",
+    "title": "Arquitectura de un proyecto de Next.js",
+    "section": "Configuración inicial de un proyecto.",
+    "text": "Configuración inicial de un proyecto.\nPara realizar la configuración inicial de un proyecto de Next.js, se deben seguir los siguientes pasos:\n\nCrear un nuevo proyecto de Next.js utilizando el siguiente comando:\n\nnpx create-next-app@latest --ts\n\nInstalar las dependencias del proyecto utilizando el siguiente comando:\n\nnpm install\n\nIniciar el servidor local utilizando el siguiente comando:\n\nnpm run dev\n\nAcceder a la aplicación en el navegador web utilizando la URL http://localhost:3000.\n\nCon estos pasos, se habrá creado un nuevo proyecto de Next.js y se podrá comenzar a desarrollar la aplicación.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Arquitectura de un proyecto de Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/3_arquitectura_de_un_proyecto_de_Nextjs.html#revisión-de-un-proyecto-ejemplo.",
+    "href": "unidades/unidad1/3_arquitectura_de_un_proyecto_de_Nextjs.html#revisión-de-un-proyecto-ejemplo.",
+    "title": "Arquitectura de un proyecto de Next.js",
+    "section": "Revisión de un proyecto ejemplo.",
+    "text": "Revisión de un proyecto ejemplo.\nA continuación se presenta un ejemplo de la estructura de un proyecto de Next.js:\nmy-next-app/\n├── pages/\n│   ├── index.tsx\n│   ├── about.tsx\n│   └── contact.tsx\n├── public/\n│   ├── images/\n│   │   └── logo.png\n│   ├── styles/\n│   │   └── main.css\n├── styles/\n│   └── global.css\n├── components/\n│   ├── header.tsx\n│   ├── footer.tsx\n│   └── button.tsx\n├── lib/\n│   ├── api.ts\n│   └── utils.ts\n├── api/\n│   ├── users.ts\n│   ├── posts.ts\n├── config/\n│   ├── app.config.ts\n├── test/\n│   ├── app.test.ts\n├── .env\nEn este ejemplo, se puede observar la estructura de un proyecto de Next.js, así como las carpetas y archivos que conforman el proyecto",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Arquitectura de un proyecto de Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/4_herramientas_y_stack.html",
+    "href": "unidades/unidad1/4_herramientas_y_stack.html",
+    "title": "Herramientas y stack utilizado en el curso",
+    "section": "",
+    "text": "Herramientas necesarias para el curso.\nPara poder seguir este curso, necesitarás tener instaladas las siguientes herramientas en tu computadora:",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Herramientas y stack utilizado en el curso</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/4_herramientas_y_stack.html#herramientas-necesarias-para-el-curso.",
+    "href": "unidades/unidad1/4_herramientas_y_stack.html#herramientas-necesarias-para-el-curso.",
+    "title": "Herramientas y stack utilizado en el curso",
+    "section": "",
+    "text": "Node.js: Es un entorno de ejecución para JavaScript que nos permite ejecutar código JavaScript en el servidor. Puedes descargar Node.js desde la página oficial de Node.js.\nnpm: Es el gestor de paquetes de Node.js que nos permite instalar y gestionar las dependencias de nuestros proyectos. npm viene incluido con Node.js, por lo que no es necesario instalarlo por separado.\nVisual Studio Code: Es un editor de código fuente desarrollado por Microsoft que nos permite escribir y editar código de forma sencilla. Puedes descargar Visual Studio Code desde la página oficial de Visual Studio Code.\nGit: Es un sistema de control de versiones que nos permite gestionar el código fuente de nuestros proyectos. Puedes descargar Git desde la página oficial de Git.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Herramientas y stack utilizado en el curso</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/4_herramientas_y_stack.html#configuración-del-entorno-de-desarrollo.",
+    "href": "unidades/unidad1/4_herramientas_y_stack.html#configuración-del-entorno-de-desarrollo.",
+    "title": "Herramientas y stack utilizado en el curso",
+    "section": "Configuración del entorno de desarrollo.",
+    "text": "Configuración del entorno de desarrollo.\nCreamos un nuevo proyecto de Next.js utilizando el siguiente comando:\nnpx create-next-app@latest --ts",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Herramientas y stack utilizado en el curso</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/4_herramientas_y_stack.html#instalación-y-configuración-de-dependencias.",
+    "href": "unidades/unidad1/4_herramientas_y_stack.html#instalación-y-configuración-de-dependencias.",
+    "title": "Herramientas y stack utilizado en el curso",
+    "section": "Instalación y configuración de dependencias.",
+    "text": "Instalación y configuración de dependencias.\nInstalamos las dependencias del proyecto utilizando el siguiente comando:\nnpm install",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Herramientas y stack utilizado en el curso</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/4_herramientas_y_stack.html#iniciar-el-servidor-local.",
+    "href": "unidades/unidad1/4_herramientas_y_stack.html#iniciar-el-servidor-local.",
+    "title": "Herramientas y stack utilizado en el curso",
+    "section": "Iniciar el servidor local.",
+    "text": "Iniciar el servidor local.\nIniciamos el servidor local utilizando el siguiente comando:\nnpm run dev",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Herramientas y stack utilizado en el curso</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/4_herramientas_y_stack.html#acceder-a-la-aplicación-en-el-navegador.",
+    "href": "unidades/unidad1/4_herramientas_y_stack.html#acceder-a-la-aplicación-en-el-navegador.",
+    "title": "Herramientas y stack utilizado en el curso",
+    "section": "Acceder a la aplicación en el navegador.",
+    "text": "Acceder a la aplicación en el navegador.\nAccedemos a la aplicación en el navegador web utilizando la URL http://localhost:3000.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Herramientas y stack utilizado en el curso</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html",
+    "href": "unidades/unidad1/5_conceptos_basicos.html",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "",
+    "text": "Rutas básicas.\nLas rutas en Next.js se crean utilizando la carpeta pages. Cada archivo en esta carpeta representa una ruta en la aplicación. Por ejemplo, si se crea un archivo index.js en esta carpeta, se creará una ruta de inicio en la aplicación.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html#rutas-dinámicas.",
+    "href": "unidades/unidad1/5_conceptos_basicos.html#rutas-dinámicas.",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "Rutas dinámicas.",
+    "text": "Rutas dinámicas.\nLas rutas dinámicas en Next.js se crean utilizando corchetes [] en el nombre del archivo. Por ejemplo, si se crea un archivo [id].js en esta carpeta, se creará una ruta dinámica en la aplicación.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html#nested-routes.",
+    "href": "unidades/unidad1/5_conceptos_basicos.html#nested-routes.",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "Nested routes.",
+    "text": "Nested routes.\nLas rutas anidadas en Next.js se crean utilizando la carpeta pages y subcarpetas. Por ejemplo, si se crea una carpeta blog y un archivo [slug].js en esta carpeta, se creará una ruta anidada en la aplicación.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html#rutas-con-parámetros.",
+    "href": "unidades/unidad1/5_conceptos_basicos.html#rutas-con-parámetros.",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "Rutas con parámetros.",
+    "text": "Rutas con parámetros.\nLas rutas con parámetros en Next.js se crean utilizando corchetes [] en la ruta. Por ejemplo, si se crea una ruta /blog/[slug] en la aplicación, se creará una ruta con parámetros en la aplicación.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html#rutas-con-query-strings.",
+    "href": "unidades/unidad1/5_conceptos_basicos.html#rutas-con-query-strings.",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "Rutas con query strings.",
+    "text": "Rutas con query strings.\nLas rutas con query strings en Next.js se crean utilizando el signo de interrogación ? en la ruta. Por ejemplo, si se crea una ruta /blog?slug=hello-world en la aplicación, se creará una ruta con query strings en la aplicación.º",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html#rutas-con-rutas-anidadas.",
+    "href": "unidades/unidad1/5_conceptos_basicos.html#rutas-con-rutas-anidadas.",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "Rutas con rutas anidadas.",
+    "text": "Rutas con rutas anidadas.\nLas rutas con rutas anidadas en Next.js se crean utilizando la carpeta pages y subcarpetas. Por ejemplo, si se crea una carpeta blog y un archivo [slug].js en esta carpeta, se creará una ruta anidada en la aplicación.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html#rutas-con-rutas-anidadas-y-parámetros.",
+    "href": "unidades/unidad1/5_conceptos_basicos.html#rutas-con-rutas-anidadas-y-parámetros.",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "Rutas con rutas anidadas y parámetros.",
+    "text": "Rutas con rutas anidadas y parámetros.\nLas rutas con rutas anidadas y parámetros en Next.js se crean utilizando la carpeta pages y subcarpetas. Por ejemplo, si se crea una carpeta blog y un archivo [slug].js en esta carpeta, se creará una ruta anidada con parámetros en la aplicación.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html#rutas-con-rutas-anidadas-y-query-strings.",
+    "href": "unidades/unidad1/5_conceptos_basicos.html#rutas-con-rutas-anidadas-y-query-strings.",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "Rutas con rutas anidadas y query strings.",
+    "text": "Rutas con rutas anidadas y query strings.\nLas rutas con rutas anidadas y query strings en Next.js se crean utilizando la carpeta pages y subcarpetas. Por ejemplo, si se crea una carpeta blog y un archivo [slug].js en esta carpeta, se creará una ruta anidada con query strings en la aplicación.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html#conclusión.",
+    "href": "unidades/unidad1/5_conceptos_basicos.html#conclusión.",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "Conclusión.",
+    "text": "Conclusión.\nEn este capítulo se presentaron los conceptos básicos de cómo crear rutas en Next.js. A lo largo de este capítulo se presentaron los siguientes temas: rutas básicas, rutas dinámicas, rutas anidadas, rutas con parámetros, rutas con query strings, rutas con rutas anidadas, rutas con rutas anidadas y parámetros, y rutas con rutas anidadas y query strings. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo crear rutas en Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html#ejercicios.",
+    "href": "unidades/unidad1/5_conceptos_basicos.html#ejercicios.",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "Ejercicios.",
+    "text": "Ejercicios.\n\nCrea una ruta básica en Next.js.\nCrea una ruta dinámica en Next.js.\nCrea una ruta anidada en Next.js.\nCrea una ruta con parámetros en Next.js.\nCrea una ruta con query strings en Next.js.\nCrea una ruta con rutas anidadas en Next.js.\nCrea una ruta con rutas anidadas y parámetros en Next.js.\nCrea una ruta con rutas anidadas y query strings en Next.js.\n\nEspero que estos ejercicios le sean de utilidad y le ayuden a practicar cómo crear rutas en Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/7_navegacion_next.html",
+    "href": "unidades/unidad1/7_navegacion_next.html",
+    "title": "Cómo funciona la navegación en Next.js",
+    "section": "",
+    "text": "Link component.\nEl componente Link de Next.js nos permite crear enlaces entre las diferentes páginas de nuestra aplicación. Este componente se utiliza de la siguiente forma:\nEn el ejemplo anterior, se crea un enlace a la página About utilizando el componente Link. Al hacer clic en el enlace, se navegará a la página About de forma rápida y sin recargar la página.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Cómo funciona la navegación en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/7_navegacion_next.html#link-component.",
+    "href": "unidades/unidad1/7_navegacion_next.html#link-component.",
+    "title": "Cómo funciona la navegación en Next.js",
+    "section": "",
+    "text": "import Link from 'next/link'\n\nconst Index = () =&gt; {\n  return (\n    &lt;div&gt;\n      &lt;h1&gt;Home Page&lt;/h1&gt;\n      &lt;Link href=\"/about\"&gt;\n        &lt;a&gt;About Page&lt;/a&gt;\n      &lt;/Link&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default Index",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Cómo funciona la navegación en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/7_navegacion_next.html#uso-de-router.",
+    "href": "unidades/unidad1/7_navegacion_next.html#uso-de-router.",
+    "title": "Cómo funciona la navegación en Next.js",
+    "section": "Uso de Router.",
+    "text": "Uso de Router.\nLa librería next/router nos permite navegar entre las diferentes páginas de nuestra aplicación de forma programática. Para utilizar esta librería, se debe importar el objeto Router de la siguiente forma:\nimport { useRouter } from 'next/router'\n\nconst About = () =&gt; {\n  const router = useRouter()\n\n  const handleClick = () =&gt; {\n    router.push('/')\n  }\n\n  return (\n    &lt;div&gt;\n      &lt;h1&gt;About Page&lt;/h1&gt;\n      &lt;button onClick={handleClick}&gt;Go to Home Page&lt;/button&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default About\nEn el ejemplo anterior, se importa el objeto Router de la librería next/router y se utiliza el método push para navegar a la página de inicio al hacer clic en un botón.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Cómo funciona la navegación en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/7_navegacion_next.html#navegación-programática.",
+    "href": "unidades/unidad1/7_navegacion_next.html#navegación-programática.",
+    "title": "Cómo funciona la navegación en Next.js",
+    "section": "Navegación programática.",
+    "text": "Navegación programática.\nLa navegación programática nos permite navegar entre las diferentes páginas de nuestra aplicación de forma dinámica. Esto nos permite crear experiencias de usuario más interactivas y personalizadas.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Cómo funciona la navegación en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/7_navegacion_next.html#conclusión.",
+    "href": "unidades/unidad1/7_navegacion_next.html#conclusión.",
+    "title": "Cómo funciona la navegación en Next.js",
+    "section": "Conclusión.",
+    "text": "Conclusión.\nLa navegación en Next.js se realiza a través de la librería next/router y el componente Link. Estas herramientas nos permiten crear enlaces entre las diferentes páginas de nuestra aplicación y navegar de forma programática. Conocer cómo funciona la navegación en Next.js es fundamental para crear aplicaciones web modernas y eficientes.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Cómo funciona la navegación en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/7_navegacion_next.html#ejercicio.",
+    "href": "unidades/unidad1/7_navegacion_next.html#ejercicio.",
+    "title": "Cómo funciona la navegación en Next.js",
+    "section": "Ejercicio.",
+    "text": "Ejercicio.\nCrea un enlace en la página de inicio que te lleve a la página About y un botón en la página About que te lleve a la página de inicio. Utiliza tanto el componente Link como la librería next/router para realizar la navegación entre las páginas de la aplicación.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Cómo funciona la navegación en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html",
+    "href": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html",
+    "title": "Manejo de estilos y archivos estáticos en Next.js",
+    "section": "",
+    "text": "Estilos en Next.js\nLos estilos en Next.js se pueden manejar de diferentes formas, como CSS global, CSS Modules y Styled JSX. Cada una de estas formas tiene sus propias ventajas y desventajas, y se pueden utilizar según las necesidades del proyecto.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manejo de estilos y archivos estáticos en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#estilos-en-next.js",
+    "href": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#estilos-en-next.js",
+    "title": "Manejo de estilos y archivos estáticos en Next.js",
+    "section": "",
+    "text": "CSS global\nEl CSS global en Next.js se puede utilizar para aplicar estilos a toda la aplicación. Para utilizar CSS global en Next.js, se puede crear un archivo styles.css en la carpeta public y enlazarlo en el archivo **_app.js**.\n/* styles.css */\n\nbody {\n  font-family: 'Arial', sans-serif;\n  background-color: #f0f0f0;\n}\n// _app.js\nimport '../public/styles.css'\n\nfunction MyApp({ Component, pageProps }) {\n  return &lt;Component {...pageProps} /&gt;\n}\n\nexport default MyApp",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manejo de estilos y archivos estáticos en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#css-modules-en-next.js",
+    "href": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#css-modules-en-next.js",
+    "title": "Manejo de estilos y archivos estáticos en Next.js",
+    "section": "CSS Modules en Next.js",
+    "text": "CSS Modules en Next.js\n\nCSS Modules\nLos CSS Modules en Next.js permiten crear estilos locales para cada componente. Para utilizar CSS Modules en Next.js, se puede crear un archivo styles.module.css en la carpeta del componente y importarlo en el archivo del componente.\n/* Button.module.css */\n\n.button {\n  background-color: #007bff;\n  color: #fff;\n  padding: 10px 20px;\n  border: none;\n  border-radius: 5px;\n}\n// Button.js\nimport styles from './Button.module.css'\n\nconst Button = () =&gt; {\n  return &lt;button className={styles.button}&gt;Click me&lt;/button&gt;\n}\n\nexport default Button\n\n\nScoped CSS en Next.js\nEn Next.js, los estilos se aplican de forma local por defecto, lo que significa que los estilos de un componente no afectan a otros componentes. Esto se conoce como scoped CSS y ayuda a evitar conflictos de estilos entre componentes.\n\n\nCreación y uso de CSS Modules.\nPara crear y utilizar CSS Modules en Next.js, se deben seguir los siguientes pasos:\n\nCrear un archivo styles.module.css en la carpeta del componente.\nDefinir los estilos en el archivo styles.module.css utilizando la sintaxis de CSS.\nImportar los estilos en el archivo del componente y utilizar la clase generada por CSS Modules.\n\n/* styles.module.css */\n\n.button {\n  background-color: #007bff;\n  color: #fff;\n  padding: 10px 20px;\n  border: none;\n  border-radius: 5px;\n}\n// Button.js\nimport styles from './styles.module.css'\n\nconst Button = () =&gt; {\n  return &lt;button className={styles.button}&gt;Click me&lt;/button&gt;\n}\n\nexport default Button",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manejo de estilos y archivos estáticos en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#styled-jsx-en-next.js",
+    "href": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#styled-jsx-en-next.js",
+    "title": "Manejo de estilos y archivos estáticos en Next.js",
+    "section": "Styled JSX en Next.js",
+    "text": "Styled JSX en Next.js\n\nStyled JSX\nStyled JSX en Next.js permite escribir estilos en línea dentro de los componentes. Para utilizar Styled JSX en Next.js, se puede utilizar la etiqueta style y definir los estilos dentro de ella.\n// Button.js\n\nconst Button = () =&gt; {\n  return (\n    &lt;button&gt;\n      Click me\n      &lt;style jsx&gt;{`\n        button {\n          background-color: #007bff;\n          color: #fff;\n          padding: 10px 20px;\n          border: none;\n          border-radius: 5px;\n        }\n      `}&lt;/style&gt;\n    &lt;/button&gt;\n  )\n}\n\nexport default Button\n\n\nVentajas de Styled JSX\nLas ventajas de Styled JSX en Next.js son las siguientes:\n\nPermite escribir estilos en línea de forma sencilla.\nPermite utilizar variables y funciones de JavaScript en los estilos.\nPermite aplicar estilos de forma local a un componente.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manejo de estilos y archivos estáticos en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#conclusión",
+    "href": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#conclusión",
+    "title": "Manejo de estilos y archivos estáticos en Next.js",
+    "section": "Conclusión",
+    "text": "Conclusión\nEn este capítulo se presentaron los conceptos básicos de cómo manejar estilos y archivos estáticos en Next.js. A lo largo de este capítulo se presentaron las diferentes formas de manejar estilos en Next.js, como CSS global, CSS Modules y Styled JSX. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo manejar estilos y archivos estáticos en Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manejo de estilos y archivos estáticos en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#ejercicios",
+    "href": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#ejercicios",
+    "title": "Manejo de estilos y archivos estáticos en Next.js",
+    "section": "Ejercicios",
+    "text": "Ejercicios\n\nCrea un archivo styles.css en la carpeta public y enlázalo en el archivo **_app.js** para aplicar estilos globales a la aplicación.\nCrea un archivo styles.module.css en la carpeta de un componente y utilízalo para aplicar estilos locales al componente.\nUtiliza Styled JSX en un componente de Next.js para aplicar estilos en línea al componente.\n\nEspero que estos ejercicios le sean de utilidad y le ayuden a practicar cómo manejar estilos y archivos estáticos en Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manejo de estilos y archivos estáticos en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/8_manejo_parametros_rutas_next.html",
+    "href": "unidades/unidad1/8_manejo_parametros_rutas_next.html",
+    "title": "Manejo de parámetros en rutas en Next.js",
+    "section": "",
+    "text": "Parámetros de ruta.\nLos parámetros de ruta en Next.js se utilizan para pasar información a una ruta a través de la URL. Por ejemplo, si se desea mostrar el detalle de un producto en una tienda en línea, se puede utilizar un parámetro de ruta para pasar el ID del producto a la ruta.\nEjemplo:\nEn el ejemplo anterior, se crea una ruta dinámica /product/[id] que recibe un parámetro id a través de la URL. Al acceder a la ruta /product/123, se mostrará el detalle del producto con el ID 123.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manejo de parámetros en rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/8_manejo_parametros_rutas_next.html#parámetros-de-ruta.",
+    "href": "unidades/unidad1/8_manejo_parametros_rutas_next.html#parámetros-de-ruta.",
+    "title": "Manejo de parámetros en rutas en Next.js",
+    "section": "",
+    "text": "// pages/product/[id].js\nimport { useRouter } from 'next/router'\n\nconst Product = () =&gt; {\n  const router = useRouter()\n  const { id } = router.query\n\n  return (\n    &lt;div&gt;\n      &lt;h1&gt;Product Detail&lt;/h1&gt;\n      &lt;p&gt;Product ID: {id}&lt;/p&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default Product",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manejo de parámetros en rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/8_manejo_parametros_rutas_next.html#parámetros-de-consulta-query-params.",
+    "href": "unidades/unidad1/8_manejo_parametros_rutas_next.html#parámetros-de-consulta-query-params.",
+    "title": "Manejo de parámetros en rutas en Next.js",
+    "section": "Parámetros de consulta (query params).",
+    "text": "Parámetros de consulta (query params).\nLos parámetros de consulta en Next.js se utilizan para pasar información a una ruta a través de la URL utilizando el signo de interrogación ?. Por ejemplo, si se desea filtrar una lista de productos por categoría, se puede utilizar un parámetro de consulta para pasar la categoría a la ruta.\nEjemplo:\n// pages/products.js\nimport { useRouter } from 'next/router'\n\nconst Products = () =&gt; {\n  const router = useRouter()\n  const { category } = router.query\n\n  return (\n    &lt;div&gt;\n      &lt;h1&gt;Products&lt;/h1&gt;\n      &lt;p&gt;Category: {category}&lt;/p&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default Products\nEn el ejemplo anterior, se crea una ruta /products que recibe un parámetro de consulta category a través de la URL. Al acceder a la ruta /products?category=electronics, se mostrarán los productos de la categoría electronics.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manejo de parámetros en rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/8_manejo_parametros_rutas_next.html#uso-de-userouter-para-acceder-a-los-parámetros.",
+    "href": "unidades/unidad1/8_manejo_parametros_rutas_next.html#uso-de-userouter-para-acceder-a-los-parámetros.",
+    "title": "Manejo de parámetros en rutas en Next.js",
+    "section": "Uso de useRouter para acceder a los parámetros.",
+    "text": "Uso de useRouter para acceder a los parámetros.\nLa librería next/router proporciona el hook useRouter para acceder a los parámetros de ruta y de consulta en una página de Next.js. Este hook nos permite obtener los parámetros de la URL y utilizarlos en la página.\nEjemplo:\nimport { useRouter } from 'next/router'\n\nconst Product = () =&gt; {\n  const router = useRouter()\n  const { id } = router.query\n\n  return (\n    &lt;div&gt;\n      &lt;h1&gt;Product Detail&lt;/h1&gt;\n      &lt;p&gt;Product ID: {id}&lt;/p&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default Product\nEn el ejemplo anterior, se importa el hook useRouter de la librería next/router y se utiliza para acceder al parámetro id de la URL. Este parámetro se puede utilizar en la página para mostrar el detalle del producto.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manejo de parámetros en rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/8_manejo_parametros_rutas_next.html#conclusión.",
+    "href": "unidades/unidad1/8_manejo_parametros_rutas_next.html#conclusión.",
+    "title": "Manejo de parámetros en rutas en Next.js",
+    "section": "Conclusión.",
+    "text": "Conclusión.\nEn este capítulo se presentó cómo manejar parámetros en las rutas de Next.js. A lo largo de este capítulo se presentaron los siguientes temas: parámetros de ruta, parámetros de consulta (query params) y uso de useRouter para acceder a los parámetros. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo manejar parámetros en las rutas de Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manejo de parámetros en rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/8_manejo_parametros_rutas_next.html#ejercicios.",
+    "href": "unidades/unidad1/8_manejo_parametros_rutas_next.html#ejercicios.",
+    "title": "Manejo de parámetros en rutas en Next.js",
+    "section": "Ejercicios.",
+    "text": "Ejercicios.\n\nCrea una ruta dinámica en Next.js que reciba un parámetro de ruta.\nCrea una ruta en Next.js que reciba un parámetro de consulta y muestre el valor en la página.\nUtiliza el hook useRouter para acceder a los parámetros de ruta y de consulta en una página de Next.js.\nCrea una aplicación en Next.js que utilice parámetros de ruta y de consulta en diferentes páginas.\nExperimenta con diferentes formas de pasar parámetros a las rutas en Next.js y observa cómo se comporta la aplicación.\nInvestiga cómo validar los parámetros de ruta y de consulta en Next.js y aplica la validación en tu aplicación.\nComparte tus experiencias y aprendizajes sobre cómo manejar parámetros en las rutas de Next.js con tus compañeros de clase.\nInvestiga cómo manejar parámetros en las rutas de Next.js utilizando la librería next/router y comparte tus hallazgos con tus compañeros de clase.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Manejo de parámetros en rutas en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/9_react_server_component_next.html",
+    "href": "unidades/unidad1/9_react_server_component_next.html",
+    "title": "React Server Components en Next.js: notación “use Client”",
+    "section": "",
+    "text": "Introducción a React Server Components.\nReact Server Components es una nueva característica de React que permite renderizar componentes en el servidor y enviar solo los datos necesarios al cliente. Esto mejora el rendimiento de la aplicación al reducir la cantidad de datos que se envían al cliente.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>React Server Components en Next.js: notación \"use Client\"</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/9_react_server_component_next.html#introducción-a-react-server-components.",
+    "href": "unidades/unidad1/9_react_server_component_next.html#introducción-a-react-server-components.",
+    "title": "React Server Components en Next.js: notación “use Client”",
+    "section": "",
+    "text": "¿Qué es use Client?\nLa notación “use Client” en React Server Components se utiliza para indicar que un componente se renderizará en el cliente en lugar de en el servidor. Esto permite que el componente se actualice de forma dinámica en el cliente sin tener que volver a renderizarlo en el servidor.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>React Server Components en Next.js: notación \"use Client\"</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/9_react_server_component_next.html#uso-de-la-notación-use-client.",
+    "href": "unidades/unidad1/9_react_server_component_next.html#uso-de-la-notación-use-client.",
+    "title": "React Server Components en Next.js: notación “use Client”",
+    "section": "Uso de la notación “use Client”.",
+    "text": "Uso de la notación “use Client”.\nLa notación “use Client” se utiliza en un componente de React Server Components para indicar que el componente se renderizará en el cliente. Por ejemplo:\nimport { useClient } from 'react-server-components'\n\nconst MyComponent = () =&gt; {\n  const data = useClient(fetchData)\n\n  return (\n    &lt;div&gt;\n      &lt;h1&gt;{data.title}&lt;/h1&gt;\n      &lt;p&gt;{data.content}&lt;/p&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default MyComponent\nEn el ejemplo anterior, el componente MyComponent utiliza la notación “use Client” para indicar que se renderizará en el cliente. El componente llama a la función fetchData para obtener los datos necesarios y los muestra en la interfaz de usuario.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>React Server Components en Next.js: notación \"use Client\"</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/9_react_server_component_next.html#ventajas-de-la-notación-use-client.",
+    "href": "unidades/unidad1/9_react_server_component_next.html#ventajas-de-la-notación-use-client.",
+    "title": "React Server Components en Next.js: notación “use Client”",
+    "section": "Ventajas de la notación “use Client”.",
+    "text": "Ventajas de la notación “use Client”.\nLa notación “use Client” en React Server Components ofrece las siguientes ventajas:\n\nPermite renderizar componentes en el cliente de forma dinámica.\nReduce la cantidad de datos que se envían al cliente.\nMejora el rendimiento de la aplicación al evitar renderizaciones innecesarias en el servidor.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>React Server Components en Next.js: notación \"use Client\"</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/9_react_server_component_next.html#ejemplos-prácticos.",
+    "href": "unidades/unidad1/9_react_server_component_next.html#ejemplos-prácticos.",
+    "title": "React Server Components en Next.js: notación “use Client”",
+    "section": "Ejemplos prácticos.",
+    "text": "Ejemplos prácticos.\n\nCrea un componente de React Server Components que utilice la notación “use Client”.\n\nimport { useClient } from 'react-server-components'\n\nconst MyComponent = () =&gt; {\n  const data = useClient(fetchData)\n\n  return (\n    &lt;div&gt;\n      &lt;h1&gt;{data.title}&lt;/h1&gt;\n      &lt;p&gt;{data.content}&lt;/p&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default MyComponent\n\nUtiliza la notación “use Client” en un componente de React Server Components para renderizar datos dinámicamente en el cliente.\n\nimport { useClient } from 'react-server-components'\n\nconst MyComponent = () =&gt; {\n  const data = useClient(fetchData)\n\n  return (\n    &lt;div&gt;\n      &lt;h1&gt;{data.title}&lt;/h1&gt;\n      &lt;p&gt;{data.content}&lt;/p&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default MyComponent",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>React Server Components en Next.js: notación \"use Client\"</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/9_react_server_component_next.html#conclusión.",
+    "href": "unidades/unidad1/9_react_server_component_next.html#conclusión.",
+    "title": "React Server Components en Next.js: notación “use Client”",
+    "section": "Conclusión.",
+    "text": "Conclusión.\nEn este capítulo se presentaron los conceptos básicos de cómo utilizar React Server Components en Next.js. A lo largo de este capítulo se presentaron los siguientes temas: introducción a React Server Components, notación “use Client”, uso de la notación “use Client” y ventajas de la notación “use Client”. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo utilizar React Server Components en Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>React Server Components en Next.js: notación \"use Client\"</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad1/9_react_server_component_next.html#ejercicios.",
+    "href": "unidades/unidad1/9_react_server_component_next.html#ejercicios.",
+    "title": "React Server Components en Next.js: notación “use Client”",
+    "section": "Ejercicios.",
+    "text": "Ejercicios.\n\nCrea un componente de React Server Components que utilice la notación “use Client”.\nUtiliza la notación “use Client” en un componente de React Server Components para renderizar datos dinámicamente en el cliente.\nCrea una aplicación en Next.js que utilice React Server Components y la notación “use Client” en diferentes componentes.\n\nEspero que estos ejercicios le sean de utilidad y le ayuden a practicar cómo utilizar React Server Components en Next.js.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>React Server Components en Next.js: notación \"use Client\"</span>"
+    ]
+  }
+]

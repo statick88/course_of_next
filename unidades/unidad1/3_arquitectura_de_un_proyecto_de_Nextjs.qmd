@@ -1,0 +1,87 @@
+# Arquitectura de un proyecto de Next.js
+
+En este capítulo se presentará la arquitectura de un proyecto de Next.js, así como las carpetas y archivos que conforman un proyecto
+
+## Estructura de carpetas y archivos.
+
+La estructura de un proyecto de Next.js se compone de las siguientes carpetas y archivos:
+
+- **pages**: En esta carpeta se encuentran las páginas de la aplicación. Cada archivo en esta carpeta representa una página de la aplicación. Por ejemplo, si se crea un archivo `index.js` en esta carpeta, se creará una página de inicio en la aplicación.
+
+- **public**: En esta carpeta se encuentran los archivos estáticos de la aplicación, como imágenes, estilos y scripts. Estos archivos se pueden acceder directamente desde la URL de la aplicación.
+
+- **styles**: En esta carpeta se encuentran los estilos globales de la aplicación. Estos estilos se aplican a toda la aplicación y se pueden importar en cualquier archivo de la aplicación.
+
+- **components**: En esta carpeta se encuentran los componentes de la aplicación. Estos componentes se pueden reutilizar en diferentes partes de la aplicación.
+
+- **lib**: En esta carpeta se encuentran las librerías y utilidades de la aplicación. Estas librerías se pueden importar en cualquier archivo de la aplicación.
+
+- **api**: En esta carpeta se encuentran los endpoints de la API de la aplicación. Estos endpoints se pueden acceder desde la URL de la aplicación.
+
+- **config**: En esta carpeta se encuentran los archivos de configuración de la aplicación. Estos archivos se pueden utilizar para configurar diferentes aspectos de la aplicación.
+
+- **test**: En esta carpeta se encuentran los archivos de pruebas de la aplicación. Estos archivos se pueden utilizar para probar diferentes aspectos de la aplicación.
+
+- **.env**: En este archivo se encuentran las variables de entorno de la aplicación. Estas variables se pueden utilizar para configurar diferentes aspectos de la aplicación.
+
+## Configuración inicial de un proyecto.
+
+Para realizar la configuración inicial de un proyecto de Next.js, se deben seguir los siguientes pasos:
+
+1. Crear un nuevo proyecto de Next.js utilizando el siguiente comando:
+
+``` bash
+npx create-next-app@latest --ts
+```
+
+2. Instalar las dependencias del proyecto utilizando el siguiente comando:
+
+``` bash
+npm install
+```
+
+3. Iniciar el servidor local utilizando el siguiente comando:
+
+``` bash
+npm run dev
+```
+
+4. Acceder a la aplicación en el navegador web utilizando la URL `http://localhost:3000`.
+
+Con estos pasos, se habrá creado un nuevo proyecto de Next.js y se podrá comenzar a desarrollar la aplicación.
+
+## Revisión de un proyecto ejemplo.
+
+A continuación se presenta un ejemplo de la estructura de un proyecto de Next.js:
+
+```
+my-next-app/
+├── pages/
+│   ├── index.tsx
+│   ├── about.tsx
+│   └── contact.tsx
+├── public/
+│   ├── images/
+│   │   └── logo.png
+│   ├── styles/
+│   │   └── main.css
+├── styles/
+│   └── global.css
+├── components/
+│   ├── header.tsx
+│   ├── footer.tsx
+│   └── button.tsx
+├── lib/
+│   ├── api.ts
+│   └── utils.ts
+├── api/
+│   ├── users.ts
+│   ├── posts.ts
+├── config/
+│   ├── app.config.ts
+├── test/
+│   ├── app.test.ts
+├── .env
+```
+
+En este ejemplo, se puede observar la estructura de un proyecto de Next.js, así como las carpetas y archivos que conforman el proyecto

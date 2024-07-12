@@ -1,0 +1,65 @@
+# Cómo funciona la navegación en Next.js
+
+La navegación en Next.js se realiza a través de la librería `next/router`. Esta librería nos permite navegar entre las diferentes páginas de nuestra aplicación de forma programática o mediante enlaces.
+
+## Link component.
+
+El componente **Link** de Next.js nos permite crear enlaces entre las diferentes páginas de nuestra aplicación. Este componente se utiliza de la siguiente forma:
+
+```jsx
+import Link from 'next/link'
+
+const Index = () => {
+  return (
+    <div>
+      <h1>Home Page</h1>
+      <Link href="/about">
+        <a>About Page</a>
+      </Link>
+    </div>
+  )
+}
+
+export default Index
+```
+
+En el ejemplo anterior, se crea un enlace a la página **About** utilizando el componente **Link**. Al hacer clic en el enlace, se navegará a la página **About** de forma rápida y sin recargar la página.
+
+## Uso de Router.
+
+La librería **next/router** nos permite navegar entre las diferentes páginas de nuestra aplicación de forma programática. Para utilizar esta librería, se debe importar el objeto **Router** de la siguiente forma:
+
+```jsx
+import { useRouter } from 'next/router'
+
+const About = () => {
+  const router = useRouter()
+
+  const handleClick = () => {
+    router.push('/')
+  }
+
+  return (
+    <div>
+      <h1>About Page</h1>
+      <button onClick={handleClick}>Go to Home Page</button>
+    </div>
+  )
+}
+
+export default About
+```
+
+En el ejemplo anterior, se importa el objeto **Router** de la librería **next/router** y se utiliza el método **push** para navegar a la página de inicio al hacer clic en un botón.
+
+## Navegación programática.
+
+La navegación programática nos permite navegar entre las diferentes páginas de nuestra aplicación de forma dinámica. Esto nos permite crear experiencias de usuario más interactivas y personalizadas.
+
+## Conclusión.
+
+La navegación en Next.js se realiza a través de la librería **next/router** y el componente **Link**. Estas herramientas nos permiten crear enlaces entre las diferentes páginas de nuestra aplicación y navegar de forma programática. Conocer cómo funciona la navegación en Next.js es fundamental para crear aplicaciones web modernas y eficientes.
+
+## Ejercicio.
+
+Crea un enlace en la página de inicio que te lleve a la página **About** y un botón en la página **About** que te lleve a la página de inicio. Utiliza tanto el componente **Link** como la librería **next/router** para realizar la navegación entre las páginas de la aplicación.

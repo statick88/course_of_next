@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Curso de Ruby on Rails">
+
+<title>Curso de Ruby on Rails - Definición y Uso de Métodos</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../unidades/unidad4/1_programacion_orientada_a_objetos.html" rel="next">
+<link href="../../unidades/unidad2/1_variables_y_tipos_de_datos.html" rel="prev">
+<link href="../../logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/unidad3/1_definicio_uso_metodos.html">Unidad 3: Métodos y Bloques</a></li><li class="breadcrumb-item"><a href="../../unidades/unidad3/1_definicio_uso_metodos.html"><span class="chapter-title">Definición y Uso de Métodos</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="../../index.html" class="sidebar-logo-link">
+      <img src="../../logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../../">Curso de Ruby on Rails</a> 
+        <div class="sidebar-tools-main tools-wide">
+    <div class="dropdown">
+      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download"><i class="bi bi-download"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="../../curso_ruby_on_rails.pdf">
+              <i class="bi bi-bi-file-pdf pe-1"></i>
+            Download PDF
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="../../curso_ruby_on_rails.epub">
+              <i class="bi bi-bi-journal pe-1"></i>
+            Download ePub
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bienvenido</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+ <span class="menu-text">Unidad 1: Fundamentos de Ruby</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unidades/unidad1/1_instalacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducción</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+ <span class="menu-text">Unidad 2: Estructuras Básicas y Tipos de Datos</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unidades/unidad2/1_variables_y_tipos_de_datos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Variables y Tipos de Datos</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Unidad 3: Métodos y Bloques</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unidades/unidad3/1_definicio_uso_metodos.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Definición y Uso de Métodos</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false">
+ <span class="menu-text">Unidad 4: Programación Orientada a Objetos</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unidades/unidad4/1_programacion_orientada_a_objetos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Clases y Objetos</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+ <span class="menu-text">Unidad 5: Manejo de Errores y Pruebas</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unidades/unidad5/1_manejo_excepciones.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Manejo de Excepciones</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false">
+ <span class="menu-text">Unidad 6: Ruby Avanzado</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unidades/unidad6/1_metaprogramacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Metaprogramación y Enumerables en Ruby</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false">
+ <span class="menu-text">Unidad 7: Ruby y la Web</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unidades/unidad7/1_introduccion_a_ruby_on_rails.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducción a Ruby on Rails</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/unidad3/1_definicio_uso_metodos.html">Unidad 3: Métodos y Bloques</a></li><li class="breadcrumb-item"><a href="../../unidades/unidad3/1_definicio_uso_metodos.html"><span class="chapter-title">Definición y Uso de Métodos</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Definición y Uso de Métodos</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="justify">
+<section id="introducción" class="level2">
+<h2 class="anchored" data-anchor-id="introducción">Introducción</h2>
+<p>En esta lección aprenderemos sobre la importancia de los métodos en la programación, cómo definir y utilizar métodos en Ruby, y cómo utilizar bloques, Procs, y Lambdas.</p>
+<section id="definición-de-métodos" class="level3">
+<h3 class="anchored" data-anchor-id="definición-de-métodos">Definición de Métodos</h3>
+<p>Un método es un bloque de código que realiza una tarea específica. Los métodos son una parte fundamental de la programación orientada a objetos, ya que permiten reutilizar código y mantenerlo organizado.</p>
+<p>En Ruby, los métodos se definen utilizando la palabra clave <strong>def</strong>, seguida del nombre del método y los parámetros que recibe. El cuerpo del método se define con un bloque de código que se ejecuta cuando se llama al método.</p>
+</section>
+<section id="uso-de-métodos" class="level3">
+<h3 class="anchored" data-anchor-id="uso-de-métodos">Uso de Métodos</h3>
+<p>Para llamar a un método en Ruby, simplemente escribimos su nombre seguido de paréntesis que contienen los argumentos que se le pasan al método. Por ejemplo:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">def</span> saludar(nombre)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">puts</span> <span class="st">"Hola, </span><span class="sc">#{</span>nombre<span class="sc">}</span><span class="st">!"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>saludar(<span class="st">"Juan"</span>) <span class="co"># Hola, Juan!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>saludar</strong> recibe un argumento <strong>nombre</strong> y lo imprime en la consola. Al llamar al método <strong>saludar</strong> con el argumento <strong>“Juan”</strong>, se imprimirá <strong>“Hola, Juan!”</strong>.</p>
+</section>
+<section id="valores-de-retorno" class="level3">
+<h3 class="anchored" data-anchor-id="valores-de-retorno">Valores de Retorno</h3>
+<p>Los métodos en Ruby pueden devolver un valor utilizando la palabra clave <strong>return</strong>. Por ejemplo:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">def</span> suma(a, b)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> a <span class="kw">+</span> b</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>resultado <span class="kw">=</span> suma(<span class="dv">3</span>, <span class="dv">5</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> resultado <span class="co"># 8</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>suma</strong> recibe dos argumentos <strong>a</strong> y <strong>b</strong>, y devuelve la suma de los dos valores. Al llamar al método <strong>suma</strong> con los argumentos <strong>3</strong> y <strong>5</strong>, se asigna el resultado a la variable <strong>resultado</strong> y se imprime en la consola.</p>
+</section>
+</section>
+<section id="bloques-procs-y-lambdas" class="level2">
+<h2 class="anchored" data-anchor-id="bloques-procs-y-lambdas">Bloques, Procs, y Lambdas</h2>
+<p>En Ruby, los bloques, Procs, y Lambdas son formas de encapsular código y pasarlo como argumento a un método. Aunque tienen similitudes, también tienen diferencias importantes en su comportamiento y uso.</p>
+<section id="bloques" class="level3">
+<h3 class="anchored" data-anchor-id="bloques">Bloques</h3>
+<p>Un bloque es un fragmento de código que se puede pasar a un método y ejecutar dentro de ese método. Los bloques se definen entre llaves <strong>{}</strong> o con la palabra clave <strong>do</strong> y <strong>end</strong>. Por ejemplo:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">def</span> ejecutar</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">yield</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>ejecutar <span class="kw">{</span> <span class="fu">puts</span> <span class="st">"Hola, mundo!"</span> <span class="kw">}</span> <span class="co"># Hola, mundo!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>ejecutar</strong> recibe un bloque y lo ejecuta utilizando la palabra clave <strong>yield</strong>. Al llamar al método <strong>ejecutar</strong> con un bloque que imprime <strong>“Hola, mundo!”</strong>, se ejecutará el bloque dentro del método.</p>
+</section>
+<section id="procs" class="level3">
+<h3 class="anchored" data-anchor-id="procs">Procs</h3>
+<p>Un Proc es un objeto que encapsula un bloque de código y se puede almacenar en una variable para ser reutilizado. Los Procs se crean utilizando la clase <strong>Proc</strong> y el método <strong>proc</strong> o <strong>lambda</strong>. Por ejemplo:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>saludar <span class="kw">=</span> <span class="dt">Proc</span><span class="at">.new</span> <span class="kw">{</span> <span class="kw">|</span>nombre<span class="kw">|</span> <span class="fu">puts</span> <span class="st">"Hola, </span><span class="sc">#{</span>nombre<span class="sc">}</span><span class="st">!"</span> <span class="kw">}</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>saludar<span class="at">.call</span>(<span class="st">"Juan"</span>) <span class="co"># Hola, Juan!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, se crea un Proc <strong>saludar</strong> que recibe un argumento <strong>nombre</strong> y lo imprime en la consola. Al llamar al Proc <strong>saludar</strong> con el argumento <strong>“Juan”</strong>, se ejecutará el bloque del Proc.</p>
+</section>
+<section id="lambdas" class="level3">
+<h3 class="anchored" data-anchor-id="lambdas">Lambdas</h3>
+<p>Un Lambda es similar a un Proc, pero con algunas diferencias en su comportamiento. Los Lambdas se crean utilizando la clase <strong>Proc</strong> y el método <strong>lambda</strong>. Por ejemplo:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>saludar <span class="kw">=</span> <span class="fu">lambda</span> <span class="kw">{</span> <span class="kw">|</span>nombre<span class="kw">|</span> <span class="fu">puts</span> <span class="st">"Hola, </span><span class="sc">#{</span>nombre<span class="sc">}</span><span class="st">!"</span> <span class="kw">}</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>saludar<span class="at">.call</span>(<span class="st">"Juan"</span>) <span class="co"># Hola, Juan!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, se crea un Lambda <strong>saludar</strong> que recibe un argumento <strong>nombre</strong> y lo imprime en la consola. Al llamar al Lambda <strong>saludar</strong> con el argumento <strong>“Juan”</strong>, se ejecutará el bloque del Lambda.</p>
+</section>
+<section id="diferencias-entre-procs-y-lambdas" class="level3">
+<h3 class="anchored" data-anchor-id="diferencias-entre-procs-y-lambdas">Diferencias entre Procs y Lambdas</h3>
+<p>Las diferencias más importantes entre Procs y Lambdas son:</p>
+<ul>
+<li>Los Lambdas comprueban el número de argumentos que se les pasan, mientras que los Procs no.</li>
+<li>Los Lambdas devuelven el valor de la última expresión evaluada, mientras que los Procs devuelven el valor de la última expresión evaluada en el método que los contiene.</li>
+</ul>
+<p>Ejemplo:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="cf">def</span> ejemplo</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">proc</span> <span class="kw">{</span> <span class="cf">return</span> <span class="st">"Proc"</span> <span class="kw">}</span><span class="at">.call</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">lambda</span> <span class="kw">{</span> <span class="cf">return</span> <span class="st">"Lambda"</span> <span class="kw">}</span><span class="at">.call</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="st">"Método"</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> ejemplo <span class="co"># Proc</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>ejemplo</strong> contiene un Proc y un Lambda que devuelven un valor. Al llamar al método <strong>ejemplo</strong>, se imprimirá <strong>“Proc”</strong> porque el Proc devuelve el valor de la última expresión evaluada en el método que lo contiene.</p>
+</section>
+</section>
+<section id="creación-y-uso-de-métodos" class="level2">
+<h2 class="anchored" data-anchor-id="creación-y-uso-de-métodos">Creación y Uso de Métodos</h2>
+<p>Para crear un método en Ruby, utilizamos la palabra clave <strong>def</strong>, seguida del nombre del método y los parámetros que recibe. El cuerpo del método se define con un bloque de código que se ejecuta cuando se llama al método. Por ejemplo:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">def</span> saludar(nombre)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">puts</span> <span class="st">"Hola, </span><span class="sc">#{</span>nombre<span class="sc">}</span><span class="st">!"</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>saludar(<span class="st">"Juan"</span>) <span class="co"># Hola, Juan!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>saludar</strong> recibe un argumento <strong>nombre</strong> y lo imprime en la consola. Al llamar al método <strong>saludar</strong> con el argumento <strong>“Juan”</strong>, se imprimirá <strong>“Hola, Juan!”</strong>.</p>
+</section>
+<section id="métodos-de-ruby" class="level2">
+<h2 class="anchored" data-anchor-id="métodos-de-ruby">Métodos de Ruby</h2>
+<p>Ruby proporciona una serie de métodos integrados que se pueden utilizar para realizar tareas comunes. Algunos de los métodos más utilizados en Ruby son:</p>
+<ul>
+<li><strong>puts</strong>: Imprime un mensaje en la consola.</li>
+</ul>
+<div class="sourceCode" id="cb8"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> <span class="st">"Hola, mundo!"</span> <span class="co"># Hola, mundo!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>puts</strong> imprime <strong>“Hola, mundo!”</strong> en la consola.</p>
+<ul>
+<li><strong>gets</strong>: Lee una línea de texto de la consola.</li>
+</ul>
+<div class="sourceCode" id="cb9"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> <span class="st">"Por favor, ingresa tu nombre:"</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>nombre <span class="kw">=</span> <span class="fu">gets</span><span class="at">.chomp</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> <span class="st">"Hola, </span><span class="sc">#{</span>nombre<span class="sc">}</span><span class="st">!"</span> <span class="co"># Hola, Juan!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>gets</strong> lee una línea de texto de la consola y la asigna a la variable <strong>nombre</strong>.</p>
+<ul>
+<li><strong>chomp</strong>: Elimina el salto de línea al final de una cadena.</li>
+</ul>
+<div class="sourceCode" id="cb10"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> <span class="st">"Por favor, dime tu nombre:"</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>nombre <span class="kw">=</span> <span class="fu">gets</span><span class="at">.chomp</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> <span class="st">"Hola, </span><span class="sc">#{</span>nombre<span class="sc">}</span><span class="st">!"</span> <span class="co"># Hola, Juan!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>chomp</strong> elimina el salto de línea al final de la cadena leída por el método <strong>gets</strong>.</p>
+<ul>
+<li><strong>to_i</strong>: Convierte una cadena en un entero.</li>
+</ul>
+<div class="sourceCode" id="cb11"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> <span class="st">"Por favor, ingrese un número:"</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>numero <span class="kw">=</span> <span class="fu">gets</span><span class="at">.chomp.to_i</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> numero <span class="kw">+</span> <span class="dv">1</span> <span class="co"># 6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>to_i</strong> convierte una cadena en un número entero, que se puede utilizar en operaciones matemáticas.</p>
+<ul>
+<li><strong>to_f</strong>: Convierte una cadena en un número de punto flotante.</li>
+</ul>
+<div class="sourceCode" id="cb12"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> <span class="st">"Por favor, digite um número: "</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>numero <span class="kw">=</span> <span class="fu">gets</span><span class="at">.chomp.to_f</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> numero <span class="kw">+</span> <span class="fl">1.5</span> <span class="co"># 6.5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>to_f</strong> convierte una cadena en un número de punto flotante, que se puede utilizar en operaciones matemáticas con decimales.</p>
+<ul>
+<li><strong>to_s</strong>: Convierte un número en una cadena.</li>
+</ul>
+<div class="sourceCode" id="cb13"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>numero <span class="kw">=</span> <span class="dv">5</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> <span class="st">"El número es </span><span class="sc">#{</span>numero<span class="sc">}</span><span class="st">"</span> <span class="co"># El número es 5</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> numero<span class="at">.class</span> <span class="co"># # Interger</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>numero <span class="kw">=</span> numero<span class="at">.to_s</span> <span class="co"># Convertir a string</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> <span class="st">"El número es </span><span class="sc">#{</span>numero<span class="sc">}</span><span class="st">"</span> <span class="co"># El número es 5</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> numero<span class="at">.class</span> <span class="co"># String</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>to_s</strong> convierte un número en una cadena, que se puede utilizar en la interpolación de cadenas.</p>
+<ul>
+<li><strong>length</strong>: Devuelve la longitud de una cadena.</li>
+</ul>
+<div class="sourceCode" id="cb14"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>cadena <span class="kw">=</span> <span class="st">"Hola, mundo!"</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> cadena<span class="at">.length</span> <span class="co"># 12</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>length</strong> devuelve la longitud de la cadena <strong>“Hola, mundo!”</strong>.</p>
+<ul>
+<li><strong>reverse</strong>: Invierte una cadena.</li>
+</ul>
+<div class="sourceCode" id="cb15"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>cadena <span class="kw">=</span> <span class="st">"Hola, mundo!"</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> cadena<span class="at">.reverse</span> <span class="co"># !odnum ,aloH</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>reverse</strong> invierte la cadena <strong>“Hola, mundo!”</strong>.</p>
+<ul>
+<li><strong>upcase</strong>: Convierte una cadena en mayúsculas.</li>
+</ul>
+<div class="sourceCode" id="cb16"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>cadena <span class="kw">=</span> <span class="st">"hola, mundo!"</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> cadena<span class="at">.upcase</span> <span class="co"># HOLA, MUNDO!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>upcase</strong> convierte la cadena <strong>“hola, mundo!”</strong> en mayúsculas.</p>
+<ul>
+<li><strong>downcase</strong>: Convierte una cadena en minúsculas.</li>
+</ul>
+<div class="sourceCode" id="cb17"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>cadena <span class="kw">=</span> <span class="st">"HOLA, MUNDO!"</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> cadena<span class="at">.downcase</span> <span class="co"># hola, mundo!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>downcase</strong> convierte la cadena <strong>“HOLA, MUNDO!”</strong> en minúsculas.</p>
+<ul>
+<li><strong>capitalize</strong>: Convierte la primera letra de una cadena en mayúscula.</li>
+</ul>
+<div class="sourceCode" id="cb18"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>cadena <span class="kw">=</span> <span class="st">"hola, mundo!"</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> cadena<span class="at">.capitalize</span> <span class="co"># Hola, mundo!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>capitalize</strong> convierte la primera letra de la cadena <strong>“hola, mundo!”</strong> en mayúscula.</p>
+<ul>
+<li><strong>split</strong>: Divide una cadena en un array de subcadenas.</li>
+</ul>
+<div class="sourceCode" id="cb19"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>cadena <span class="kw">=</span> <span class="st">"Hola, mundo!"</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>subcadenas <span class="kw">=</span> cadena<span class="at">.split</span>(<span class="st">", "</span>)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> subcadenas <span class="co"># ["Hola", "mundo!"]</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> subcadenas<span class="kw">[</span><span class="dv">0</span><span class="kw">]</span> <span class="co"># Hola</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> subcadenas<span class="kw">[</span><span class="dv">1</span><span class="kw">]</span> <span class="co"># mundo!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>split</strong> divide la cadena <strong>“Hola, mundo!”</strong> en un array de subcadenas.</p>
+<ul>
+<li><strong>join</strong>: Une un array de subcadenas en una sola cadena.</li>
+</ul>
+<div class="sourceCode" id="cb20"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>subcadenas <span class="kw">=</span> <span class="kw">[</span><span class="st">"Hola"</span>, <span class="st">"mundo!"</span><span class="kw">]</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>cadena <span class="kw">=</span> subcadenas<span class="at">.join</span>(<span class="st">", "</span>)</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> cadena <span class="co"># Hola, mundo!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>join</strong> une el array de subcadenas en una sola cadena.</p>
+</section>
+<section id="ejercicios-prácticos" class="level2">
+<h2 class="anchored" data-anchor-id="ejercicios-prácticos">Ejercicios Prácticos</h2>
+<ol type="1">
+<li>Crea un método que reciba un número entero y devuelva el cuadrado del número.</li>
+</ol>
+<details>
+<summary>
+Ver respuesta
+</summary>
+<div class="sourceCode" id="cb21"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="cf">def</span> cuadrado(numero)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> numero <span class="kw">*</span> numero</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> cuadrado(<span class="dv">5</span>) <span class="co"># 25</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>cuadrado</strong> recibe un número entero y devuelve el cuadrado del número.</p>
+</details>
+<ol start="2" type="1">
+<li>Crea un método que reciba un número entero y devuelva la suma de los dígitos del número.</li>
+</ol>
+<details>
+<summary>
+Ver respuesta
+</summary>
+<div class="sourceCode" id="cb22"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="cf">def</span> suma_digitos(numero)</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>  suma <span class="kw">=</span> <span class="dv">0</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">while</span> numero <span class="kw">&gt;</span> <span class="dv">0</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>    suma <span class="kw">+=</span> numero <span class="kw">%</span> <span class="dv">10</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>    numero <span class="kw">/= </span><span class="dv">10</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">end</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> suma</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> suma_digitos(<span class="dv">123</span>) <span class="co"># 6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>suma_digitos</strong> recibe un número entero y devuelve la suma de los dígitos del número.</p>
+</details>
+<ol start="3" type="1">
+<li>Crea un método que reciba una cadena y devuelva la cadena invertida.</li>
+</ol>
+<details>
+<summary>
+Ver respuesta
+</summary>
+<div class="sourceCode" id="cb23"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="cf">def</span> invertir(cadena)</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> cadena<span class="at">.reverse</span></span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> invertir(<span class="st">"Hola, mundo!"</span>) <span class="co"># !odnum ,aloH</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>invertir</strong> recibe una cadena y devuelve la cadena invertida.</p>
+</details>
+<ol start="4" type="1">
+<li>Crea un método que reciba una cadena y devuelva la cadena en mayúsculas.</li>
+</ol>
+<details>
+<summary>
+Ver respuesta
+</summary>
+<div class="sourceCode" id="cb24"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="cf">def</span> mayusculas(cadena)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> cadena<span class="at">.upcase</span></span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> mayusculas(<span class="st">"Hola, mundo!"</span>) <span class="co"># HOLA, MUNDO!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>mayusculas</strong> recibe una cadena y devuelve la cadena en mayúsculas.</p>
+</details>
+<ol start="5" type="1">
+<li>Crea un método que reciba una cadena y devuelva la cadena en minúsculas.</li>
+</ol>
+<details>
+<summary>
+Ver respuesta
+</summary>
+<div class="sourceCode" id="cb25"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="cf">def</span> minusculas(cadena)</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> cadena<span class="at">.downcase</span></span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="fu">puts</span> minusculas(<span class="st">"HOLA, MUNDO!"</span>) <span class="co"># hola, mundo!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, el método <strong>minusculas</strong> recibe una cadena y devuelve la cadena en minúsculas.</p>
+</details>
+<ol start="6" type="1">
+<li><p>Crea un programa en Ruby que contenga los siguientes métodos:</p>
+<ul>
+<li><strong>saludar</strong>: Recibe un nombre y un bloque, y ejecuta el bloque pasando el nombre como argumento.</li>
+<li><strong>sumar</strong>: Recibe dos números y un bloque, y ejecuta el bloque pasando la suma de los dos números como argumento.</li>
+<li><strong>restar</strong>: Recibe dos números y un bloque, y ejecuta el bloque pasando la resta de los dos números como argumento.</li>
+<li><strong>multiplicar</strong>: Recibe dos números y un bloque, y ejecuta el bloque pasando el producto de los dos números como argumento.</li>
+<li><strong>dividir</strong>: Recibe dos números y un bloque, y ejecuta el bloque pasando la división de los dos números como argumento.</li>
+</ul></li>
+</ol>
+<details>
+<summary>
+Ver respuesta
+</summary>
+<div class="sourceCode" id="cb26"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="cf">def</span> saludar(nombre, <span class="kw">&amp;</span>bloque)</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>  bloque<span class="at">.call</span>(nombre)</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="cf">def</span> sumar(a, b, <span class="kw">&amp;</span>bloque)</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>  bloque<span class="at">.call</span>(a <span class="kw">+</span> b)</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a><span class="cf">def</span> restar(a, b, <span class="kw">&amp;</span>bloque)</span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>  bloque<span class="at">.call</span>(a <span class="kw">-</span> b)</span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a><span class="cf">def</span> multiplicar(a, b, <span class="kw">&amp;</span>bloque)</span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a>  bloque<span class="at">.call</span>(a <span class="kw">*</span> b)</span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-17"><a href="#cb26-17" aria-hidden="true" tabindex="-1"></a><span class="cf">def</span> dividir(a, b, <span class="kw">&amp;</span>bloque)</span>
+<span id="cb26-18"><a href="#cb26-18" aria-hidden="true" tabindex="-1"></a>  bloque<span class="at">.call</span>(a <span class="kw">/</span> b)</span>
+<span id="cb26-19"><a href="#cb26-19" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb26-20"><a href="#cb26-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-21"><a href="#cb26-21" aria-hidden="true" tabindex="-1"></a>saludar(<span class="st">"Juan"</span>) <span class="kw">{</span> <span class="kw">|</span>nombre<span class="kw">|</span> <span class="fu">puts</span> <span class="st">"Hola, </span><span class="sc">#{</span>nombre<span class="sc">}</span><span class="st">!"</span> <span class="kw">}</span> <span class="co"># Hola, Juan!</span></span>
+<span id="cb26-22"><a href="#cb26-22" aria-hidden="true" tabindex="-1"></a>sumar(<span class="dv">3</span>, <span class="dv">5</span>) <span class="kw">{</span> <span class="kw">|</span>resultado<span class="kw">|</span> <span class="fu">puts</span> <span class="st">"La suma es </span><span class="sc">#{</span>resultado<span class="sc">}</span><span class="st">"</span> <span class="kw">}</span> <span class="co"># La suma es 8</span></span>
+<span id="cb26-23"><a href="#cb26-23" aria-hidden="true" tabindex="-1"></a>restar(<span class="dv">8</span>, <span class="dv">3</span>) <span class="kw">{</span> <span class="kw">|</span>resultado<span class="kw">|</span> <span class="fu">puts</span> <span class="st">"La resta es </span><span class="sc">#{</span>resultado<span class="sc">}</span><span class="st">"</span> <span class="kw">}</span> <span class="co"># La resta es 5</span></span>
+<span id="cb26-24"><a href="#cb26-24" aria-hidden="true" tabindex="-1"></a>multiplicar(<span class="dv">4</span>, <span class="dv">6</span>) <span class="kw">{</span> <span class="kw">|</span>resultado<span class="kw">|</span> <span class="fu">puts</span> <span class="st">"El producto es </span><span class="sc">#{</span>resultado<span class="sc">}</span><span class="st">"</span> <span class="kw">}</span> <span class="co"># El producto es 24</span></span>
+<span id="cb26-25"><a href="#cb26-25" aria-hidden="true" tabindex="-1"></a>dividir(<span class="dv">10</span>, <span class="dv">2</span>) <span class="kw">{</span> <span class="kw">|</span>resultado<span class="kw">|</span> <span class="fu">puts</span> <span class="st">"La división es </span><span class="sc">#{</span>resultado<span class="sc">}</span><span class="st">"</span> <span class="kw">}</span> <span class="co"># La división es 5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, se definen los métodos <strong>saludar</strong>, <strong>sumar</strong>, <strong>restar</strong>, <strong>multiplicar</strong>, y <strong>dividir</strong> que reciben argumentos y un bloque, y ejecutan el bloque pasando el resultado de la operación como argumento.</p>
+</details>
+<ol start="7" type="1">
+<li>Crea un bloque que imprima un mensaje con el nombre recibido como argumento.</li>
+</ol>
+<details>
+<summary>
+Ver respuesta
+</summary>
+<div class="sourceCode" id="cb27"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="cf">def</span> saludar(nombre, <span class="kw">&amp;</span>bloque)</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>  bloque<span class="at">.call</span>(nombre)</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>saludar(<span class="st">"Juan"</span>) <span class="kw">{</span> <span class="kw">|</span>nombre<span class="kw">|</span> <span class="fu">puts</span> <span class="st">"Hola, </span><span class="sc">#{</span>nombre<span class="sc">}</span><span class="st">!"</span> <span class="kw">}</span> <span class="co"># Hola, Juan!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, se crea un bloque que imprime un mensaje con el nombre recibido como argumento.</p>
+</details>
+<ol start="8" type="1">
+<li>Crea un bloque que imprima la suma de los dos números recibidos como argumento.</li>
+</ol>
+<details>
+<summary>
+Ver respuesta
+</summary>
+<div class="sourceCode" id="cb28"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="cf">def</span> sumar(a, b, <span class="kw">&amp;</span>bloque)</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  bloque<span class="at">.call</span>(a <span class="kw">+</span> b)</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>sumar(<span class="dv">3</span>, <span class="dv">5</span>) <span class="kw">{</span> <span class="kw">|</span>resultado<span class="kw">|</span> <span class="fu">puts</span> <span class="st">"La suma es </span><span class="sc">#{</span>resultado<span class="sc">}</span><span class="st">"</span> <span class="kw">}</span> <span class="co"># La suma es 8</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, se crea un bloque que imprime la suma de los dos números recibidos como argumento.</p>
+</details>
+<ol start="9" type="1">
+<li>Crea un bloque que imprima la resta de los dos números recibidos como argumento.</li>
+</ol>
+<details>
+<summary>
+Ver respuesta
+</summary>
+<div class="sourceCode" id="cb29"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="cf">def</span> restar(a, b, <span class="kw">&amp;</span>bloque)</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  bloque<span class="at">.call</span>(a <span class="kw">-</span> b)</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>restar(<span class="dv">8</span>, <span class="dv">3</span>) <span class="kw">{</span> <span class="kw">|</span>resultado<span class="kw">|</span> <span class="fu">puts</span> <span class="st">"La resta es </span><span class="sc">#{</span>resultado<span class="sc">}</span><span class="st">"</span> <span class="kw">}</span> <span class="co"># La resta es 5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, se crea un bloque que imprime la resta de los dos números recibidos como argumento.</p>
+</details>
+<ol start="10" type="1">
+<li>Crea un bloque que imprima el producto de los dos números recibidos como argumento.</li>
+</ol>
+<details>
+<summary>
+Ver respuesta
+</summary>
+<div class="sourceCode" id="cb30"><pre class="sourceCode ruby code-with-copy"><code class="sourceCode ruby"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="cf">def</span> multiplicar(a, b, <span class="kw">&amp;</span>bloque)</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>  bloque<span class="at">.call</span>(a <span class="kw">*</span> b)</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="cf">end</span></span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>multiplicar(<span class="dv">4</span>, <span class="dv">6</span>) <span class="kw">{</span> <span class="kw">|</span>resultado<span class="kw">|</span> <span class="fu">puts</span> <span class="st">"El producto es </span><span class="sc">#{</span>resultado<span class="sc">}</span><span class="st">"</span> <span class="kw">}</span> <span class="co"># El producto es 24</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este ejemplo, se crea un bloque que imprime el producto de los dos números recibidos como argumento.</p>
+</details>
+</section>
+<section id="conclusiones" class="level2">
+<h2 class="anchored" data-anchor-id="conclusiones">Conclusiones</h2>
+<p>En esta lección hemos aprendido sobre la importancia de los métodos en la programación, cómo definir y utilizar métodos en Ruby, y cómo utilizar bloques, Procs, y Lambdas. Los métodos son una parte fundamental de la programación orientada a objetos, ya que permiten reutilizar código y mantenerlo organizado. Los bloques, Procs, y Lambdas son formas de encapsular código y pasarlo como argumento a un método, y tienen diferencias importantes en su comportamiento y uso. Los bloques se definen entre llaves <strong>{}</strong> o con la palabra clave <strong>do</strong> y <strong>end</strong>, los Procs se crean utilizando la clase <strong>Proc</strong> y el método <strong>proc</strong> o <strong>lambda</strong>, y los Lambdas se crean utilizando la clase <strong>Proc</strong> y el método <strong>lambda</strong>. Los Procs y Lambdas se pueden utilizar para encapsular código y pasarlo como argumento a un método, y tienen diferencias en la comprobación de argumentos y el retorno de valores. En resumen, los métodos, bloques, Procs, y Lambdas son herramientas poderosas que nos permiten escribir código más limpio, modular, y reutilizable en Ruby.</p>
+</section>
+</div>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = true;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../unidades/unidad2/1_variables_y_tipos_de_datos.html" class="pagination-link" aria-label="Variables y Tipos de Datos">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Variables y Tipos de Datos</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../unidades/unidad4/1_programacion_orientada_a_objetos.html" class="pagination-link" aria-label="Clases y Objetos">
+        <span class="nav-page-text"><span class="chapter-title">Clases y Objetos</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../../about.html">
+<p>About</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../../license.html">
+<p>License</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

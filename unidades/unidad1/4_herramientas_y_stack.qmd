@@ -1,0 +1,46 @@
+# Herramientas y stack utilizado en el curso
+
+En este curso utilizaremos las siguientes herramientas y tecnologías:
+
+## Herramientas necesarias para el curso.
+
+Para poder seguir este curso, necesitarás tener instaladas las siguientes herramientas en tu computadora:
+
+- **Node.js**: Es un entorno de ejecución para JavaScript que nos permite ejecutar código JavaScript en el servidor. Puedes descargar Node.js desde la página oficial de Node.js.
+
+- **npm**: Es el gestor de paquetes de Node.js que nos permite instalar y gestionar las dependencias de nuestros proyectos. npm viene incluido con Node.js, por lo que no es necesario instalarlo por separado.
+
+- **Visual Studio Code**: Es un editor de código fuente desarrollado por Microsoft que nos permite escribir y editar código de forma sencilla. Puedes descargar Visual Studio Code desde la página oficial de Visual Studio Code.
+
+- **Git**: Es un sistema de control de versiones que nos permite gestionar el código fuente de nuestros proyectos. Puedes descargar Git desde la página oficial de Git.
+
+## Configuración del entorno de desarrollo.
+
+Creamos un nuevo proyecto de Next.js utilizando el siguiente comando:
+
+``` bash
+npx create-next-app@latest --ts
+```
+
+## Instalación y configuración de dependencias.
+
+Instalamos las dependencias del proyecto utilizando el siguiente comando:
+
+``` bash
+npm install
+```
+
+## Iniciar el servidor local.
+
+Iniciamos el servidor local utilizando el siguiente comando:
+
+``` bash
+npm run dev
+```
+
+## Acceder a la aplicación en el navegador.
+
+Accedemos a la aplicación en el navegador web utilizando la URL `http://localhost:3000`.
+
+
+

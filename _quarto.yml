@@ -1,0 +1,82 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Curso de Nextjs"
+  author: "Diego Saavedra"
+  output-file: "curso_Nextjs"  
+  date: today
+  date-format: medium
+  favicon: logo.png
+  description: Curso de Nextjs
+  keyword: Ruby, Rails
+  url: https://github.com/statick88/course_of_Nextjs
+  page-navigation: true
+  sidebar: 
+    logo: logo.png
+    search: true
+    collapse-level: 1
+
+  repo-subdir: book
+  sharing: [twitter, linkedin]
+  downloads: [pdf, epub]
+  image: logo.png
+
+  page-footer:
+    center: 
+      - text: "About"
+        href: about.qmd
+      - text: "License"
+        href: license.qmd
+        
+  chapters:
+    - index.qmd
+    - part: "Unidad 1: Introducción a Nextjs"
+      chapters: 
+        - unidades/unidad1/1_introduccion.qmd
+        - unidades/unidad1/2_que_es_nextjs.qmd
+        - unidades/unidad1/3_arquitectura_de_un_proyecto_de_Nextjs.qmd
+        - unidades/unidad1/4_herramientas_y_stack.qmd
+        - unidades/unidad1/5_conceptos_basicos.qmd
+        - unidades/unidad1/6_layout_next.qmd
+        - unidades/unidad1/7_navegacion_next.qmd
+        - unidades/unidad1/8_manejo_parametros_rutas_next.qmd
+        - unidades/unidad1/9_react_server_component_next.qmd
+        - unidades/unidad1/10_manejo_estilos_archivos_estaticos.qmd
+
+bibliography: references.bib
+biblio-style: "apalike"
+
+format:
+  html:
+    number-sections: false
+    theme: 
+      dark:  solar #slate, darkly, solar, superhero, vapor
+      # light: cosmo
+    number-depth: 4
+    link-external-icon: true
+    link-external-newwindow: true
+    css: css/styles.css
+
+  pdf:
+    documentclass: scrreprt
+    classoption: ["onepage", "openany"]
+    papersize: a4
+    toc: true
+    margin-top: 35mm
+    margin-left: 30mm
+    margin-bottom: 30mm
+    margin-right: 30mm
+    titlepage-geometry: 
+      - top=35mm
+      - bottom=30mm
+      - right=30mm
+      - left=30mm
+  epub: 
+    belongs-to-collection: "Curso de Nextjs"
+    group-position: 0
+    creator: "Lcdo. Diego Saavedra Mgtr."
+    rights: "© Statick | 2024"
+    fig-responsive: true
+    number-sections: true
