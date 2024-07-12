@@ -227,6 +227,17 @@
     ]
   },
   {
+    "objectID": "unidades/unidad1/5_conceptos_basicos.html#rutas-básicas.",
+    "href": "unidades/unidad1/5_conceptos_basicos.html#rutas-básicas.",
+    "title": "Cómo crear rutas en Next.js",
+    "section": "",
+    "text": "Componente Index:\nconst Index = () =&gt; {\n  return (\n    &lt;div&gt;\n      &lt;h1&gt;Home Page&lt;/h1&gt;\n      &lt;p&gt;Welcome to my Next.js App&lt;/p&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default Index\nEn el ejemplo anterior, se crea una ruta de inicio en la aplicación con el componente Index que renderiza el contenido de la página.",
+    "crumbs": [
+      "Unidad 1: Introducción a Nextjs",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Cómo crear rutas en Next.js</span>"
+    ]
+  },
+  {
     "objectID": "unidades/unidad1/5_conceptos_basicos.html#rutas-dinámicas.",
     "href": "unidades/unidad1/5_conceptos_basicos.html#rutas-dinámicas.",
     "title": "Cómo crear rutas en Next.js",
@@ -396,7 +407,7 @@
     "href": "unidades/unidad1/7_navegacion_next.html",
     "title": "Cómo funciona la navegación en Next.js",
     "section": "",
-    "text": "Link component.\nEl componente Link de Next.js nos permite crear enlaces entre las diferentes páginas de nuestra aplicación. Este componente se utiliza de la siguiente forma:\nEn el ejemplo anterior, se crea un enlace a la página About utilizando el componente Link. Al hacer clic en el enlace, se navegará a la página About de forma rápida y sin recargar la página.",
+    "text": "Link component.\nEl componente Link de Next.js nos permite crear enlaces entre las diferentes páginas de nuestra aplicación. Este componente se utiliza de la siguiente forma:\nEn el ejemplo anterior, se crea un enlace a la página About utilizando el componente Link. Al hacer clic en el enlace, se navegará a la página About de forma rápida y sin recargar la página.\nEste archivo es el punto de entrada de nuestra aplicación y se utiliza para envolver todos los componentes de la aplicación con un componente de diseño o estilo común.\nEn este archivo se crea la página About de la aplicación. Al navegar a esta página, se mostrará el contenido del componente About.",
     "crumbs": [
       "Unidad 1: Introducción a Nextjs",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Cómo funciona la navegación en Next.js</span>"
@@ -407,7 +418,7 @@
     "href": "unidades/unidad1/7_navegacion_next.html#link-component.",
     "title": "Cómo funciona la navegación en Next.js",
     "section": "",
-    "text": "import Link from 'next/link'\n\nconst Index = () =&gt; {\n  return (\n    &lt;div&gt;\n      &lt;h1&gt;Home Page&lt;/h1&gt;\n      &lt;Link href=\"/about\"&gt;\n        &lt;a&gt;About Page&lt;/a&gt;\n      &lt;/Link&gt;\n    &lt;/div&gt;\n  )\n}\n\nexport default Index",
+    "text": "//index.jsx\nimport Link from \"next/link\";\n\nexport default function Home() {\n  return (\n    &lt;div&gt;\n      Hello World.{\" \"}\n      &lt;Link href=\"/about\"&gt;\n        About\n      &lt;/Link&gt;\n    &lt;/div&gt;\n  );\n}\n\n//_app.js\nexport default function App({ Component, pageProps }) {\n    return &lt;Component {...pageProps} /&gt;;\n  }\n\n//about.jsx\nexport default function About() {\n    return &lt;div&gt;About&lt;/div&gt;;\n  }",
     "crumbs": [
       "Unidad 1: Introducción a Nextjs",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Cómo funciona la navegación en Next.js</span>"

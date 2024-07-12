@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -227,7 +261,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#rutas-básicas." id="toc-rutas-básicas." class="nav-link active" data-scroll-target="#rutas-básicas.">Rutas básicas.</a></li>
+  <li><a href="#rutas-básicas." id="toc-rutas-básicas." class="nav-link active" data-scroll-target="#rutas-básicas.">Rutas básicas.</a>
+  <ul class="collapse">
+  <li><a href="#componente-index" id="toc-componente-index" class="nav-link" data-scroll-target="#componente-index">Componente Index:</a></li>
+  </ul></li>
   <li><a href="#rutas-dinámicas." id="toc-rutas-dinámicas." class="nav-link" data-scroll-target="#rutas-dinámicas.">Rutas dinámicas.</a></li>
   <li><a href="#nested-routes." id="toc-nested-routes." class="nav-link" data-scroll-target="#nested-routes.">Nested routes.</a></li>
   <li><a href="#rutas-con-parámetros." id="toc-rutas-con-parámetros." class="nav-link" data-scroll-target="#rutas-con-parámetros.">Rutas con parámetros.</a></li>
@@ -266,6 +303,20 @@ ul.task-list li input[type="checkbox"] {
 <section id="rutas-básicas." class="level2">
 <h2 class="anchored" data-anchor-id="rutas-básicas.">Rutas básicas.</h2>
 <p>Las rutas en Next.js se crean utilizando la carpeta <strong>pages</strong>. Cada archivo en esta carpeta representa una ruta en la aplicación. Por ejemplo, si se crea un archivo <strong>index.js</strong> en esta carpeta, se creará una ruta de inicio en la aplicación.</p>
+<section id="componente-index" class="level3">
+<h3 class="anchored" data-anchor-id="componente-index">Componente Index:</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode jsx code-with-copy"><code class="sourceCode javascriptreact"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> <span class="bu">Index</span> <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;div&gt;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;h1&gt;</span>Home Page<span class="kw">&lt;/h1&gt;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;p&gt;</span>Welcome to my Next.js App<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> <span class="bu">Index</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En el ejemplo anterior, se crea una ruta de inicio en la aplicación con el componente <strong>Index</strong> que renderiza el contenido de la página.</p>
+</section>
 </section>
 <section id="rutas-dinámicas." class="level2">
 <h2 class="anchored" data-anchor-id="rutas-dinámicas.">Rutas dinámicas.</h2>
