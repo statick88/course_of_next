@@ -8,7 +8,7 @@
 
 <meta name="description" content="Curso de Nextjs">
 
-<title>Cómo crear rutas en Next.js – Curso de Nextjs</title>
+<title>Manejo y optimización de imágenes con Next Image – Curso de Nextjs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,8 +65,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../unidades/unidad1/6_layout_next.html" rel="next">
-<link href="../../unidades/unidad1/4_herramientas_y_stack.html" rel="prev">
+<link href="../../unidades/unidad2/15_optimizacion_fuentes.html" rel="next">
+<link href="../../unidades/unidad2/13_archivos_estaticos.html" rel="prev">
 <link href="../../logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -120,7 +120,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/unidad1/1_introduccion.html">Unidad 1: Introducción a Nextjs</a></li><li class="breadcrumb-item"><a href="../../unidades/unidad1/5_conceptos_basicos.html"><span class="chapter-title">Cómo crear rutas en Next.js</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/unidad2/10_css_modules.html">Unidad 2: Manejo de Estilos y Archivos Estáticos</a></li><li class="breadcrumb-item"><a href="../../unidades/unidad2/14_manejo_y_optimizacion_imagenes.html"><span class="chapter-title">Manejo y optimización de imágenes con Next Image</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -192,13 +192,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Unidad 1: Introducción a Nextjs</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unidades/unidad1/1_introduccion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducción</span></a>
@@ -221,7 +221,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad1/5_conceptos_basicos.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Cómo crear rutas en Next.js</span></a>
+  <a href="../../unidades/unidad1/5_conceptos_basicos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Cómo crear rutas en Next.js</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -248,13 +248,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Unidad 2: Manejo de Estilos y Archivos Estáticos</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unidades/unidad2/10_css_modules.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Manejo de estilos y archivos estáticos en Next.js</span></a>
@@ -277,7 +277,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad2/14_manejo_y_optimizacion_imagenes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Manejo y optimización de imágenes con Next Image</span></a>
+  <a href="../../unidades/unidad2/14_manejo_y_optimizacion_imagenes.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Manejo y optimización de imágenes con Next Image</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -306,28 +306,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#rutas-básicas." id="toc-rutas-básicas." class="nav-link active" data-scroll-target="#rutas-básicas.">Rutas básicas.</a>
-  <ul class="collapse">
-  <li><a href="#componente-index" id="toc-componente-index" class="nav-link" data-scroll-target="#componente-index">Componente Index:</a></li>
-  </ul></li>
-  <li><a href="#rutas-dinámicas." id="toc-rutas-dinámicas." class="nav-link" data-scroll-target="#rutas-dinámicas.">Rutas dinámicas.</a></li>
-  <li><a href="#nested-routes." id="toc-nested-routes." class="nav-link" data-scroll-target="#nested-routes.">Nested routes.</a></li>
-  <li><a href="#rutas-con-parámetros." id="toc-rutas-con-parámetros." class="nav-link" data-scroll-target="#rutas-con-parámetros.">Rutas con parámetros.</a></li>
-  <li><a href="#rutas-con-query-strings." id="toc-rutas-con-query-strings." class="nav-link" data-scroll-target="#rutas-con-query-strings.">Rutas con query strings.</a></li>
-  <li><a href="#rutas-con-rutas-anidadas." id="toc-rutas-con-rutas-anidadas." class="nav-link" data-scroll-target="#rutas-con-rutas-anidadas.">Rutas con rutas anidadas.</a></li>
-  <li><a href="#rutas-con-rutas-anidadas-y-parámetros." id="toc-rutas-con-rutas-anidadas-y-parámetros." class="nav-link" data-scroll-target="#rutas-con-rutas-anidadas-y-parámetros.">Rutas con rutas anidadas y parámetros.</a></li>
-  <li><a href="#rutas-con-rutas-anidadas-y-query-strings." id="toc-rutas-con-rutas-anidadas-y-query-strings." class="nav-link" data-scroll-target="#rutas-con-rutas-anidadas-y-query-strings.">Rutas con rutas anidadas y query strings.</a></li>
+  <li><a href="#introducción-al-componente-image." id="toc-introducción-al-componente-image." class="nav-link active" data-scroll-target="#introducción-al-componente-image.">Introducción al componente Image.</a></li>
+  <li><a href="#configuración-y-optimización-de-imágenes." id="toc-configuración-y-optimización-de-imágenes." class="nav-link" data-scroll-target="#configuración-y-optimización-de-imágenes.">Configuración y optimización de imágenes.</a></li>
+  <li><a href="#uso-de-imágenes-remotas-y-locales." id="toc-uso-de-imágenes-remotas-y-locales." class="nav-link" data-scroll-target="#uso-de-imágenes-remotas-y-locales.">Uso de imágenes remotas y locales.</a></li>
   <li><a href="#conclusión." id="toc-conclusión." class="nav-link" data-scroll-target="#conclusión.">Conclusión.</a></li>
-  <li><a href="#ejercicios." id="toc-ejercicios." class="nav-link" data-scroll-target="#ejercicios.">Ejercicios.</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/unidad1/1_introduccion.html">Unidad 1: Introducción a Nextjs</a></li><li class="breadcrumb-item"><a href="../../unidades/unidad1/5_conceptos_basicos.html"><span class="chapter-title">Cómo crear rutas en Next.js</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/unidad2/10_css_modules.html">Unidad 2: Manejo de Estilos y Archivos Estáticos</a></li><li class="breadcrumb-item"><a href="../../unidades/unidad2/14_manejo_y_optimizacion_imagenes.html"><span class="chapter-title">Manejo y optimización de imágenes con Next Image</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Cómo crear rutas en Next.js</span></h1>
+<h1 class="title"><span class="chapter-title">Manejo y optimización de imágenes con Next Image</span></h1>
 </div>
 
 
@@ -344,70 +335,70 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>En este capítulo se presentarán los conceptos básicos de cómo crear rutas en Next.js. A lo largo de este capítulo se presentarán los siguientes temas:</p>
-<section id="rutas-básicas." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-básicas.">Rutas básicas.</h2>
-<p>Las rutas en Next.js se crean utilizando la carpeta <strong>pages</strong>. Cada archivo en esta carpeta representa una ruta en la aplicación. Por ejemplo, si se crea un archivo <strong>index.js</strong> en esta carpeta, se creará una ruta de inicio en la aplicación.</p>
-<section id="componente-index" class="level3">
-<h3 class="anchored" data-anchor-id="componente-index">Componente Index:</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode jsx code-with-copy"><code class="sourceCode javascriptreact"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> <span class="bu">Index</span> <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;div&gt;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;h1&gt;</span>Home Page<span class="kw">&lt;/h1&gt;</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;p&gt;</span>Welcome to my Next.js App<span class="kw">&lt;/p&gt;</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/div&gt;</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> <span class="bu">Index</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>En el ejemplo anterior, se crea una ruta de inicio en la aplicación con el componente <strong>Index</strong> que renderiza el contenido de la página.</p>
+<p>Las imágenes son un elemento importante en el desarrollo web, ya que pueden mejorar la apariencia y la experiencia del usuario. En Next.js, se puede utilizar el componente <strong>Image</strong> para mostrar imágenes de forma eficiente y optimizada. En esta unidad, se explorará cómo manejar y optimizar imágenes con Next Image.</p>
+<section id="introducción-al-componente-image." class="level2">
+<h2 class="anchored" data-anchor-id="introducción-al-componente-image.">Introducción al componente Image.</h2>
+<p>El componente <strong>Image</strong> en Next.js se utiliza para mostrar imágenes de forma eficiente y optimizada. El componente <strong>Image</strong> utiliza el formato de imagen WebP y la carga perezosa para mejorar el rendimiento de la aplicación.</p>
+<p>Ejemplo:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode jsx code-with-copy"><code class="sourceCode javascriptreact"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Image.js</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> Image <span class="im">from</span> <span class="st">'next/image'</span><span class="op">;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> MyImage <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return </span><span class="fu">&lt;Image</span> <span class="ot">src</span><span class="op">=</span><span class="st">"/images/my-image.jpg"</span> <span class="ot">alt</span><span class="op">=</span><span class="st">"My Image"</span> <span class="ot">width</span><span class="op">=</span><span class="va">{</span><span class="dv">500</span><span class="va">}</span> <span class="ot">height</span><span class="op">=</span><span class="va">{</span><span class="dv">300</span><span class="va">}</span> <span class="fu">/&gt;</span><span class="op">;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> MyImage<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En el ejemplo anterior, se crea un componente <strong>MyImage</strong> que muestra la imagen <strong>my-image.jpg</strong> con un ancho de 500 píxeles y una altura de 300 píxeles utilizando el componente <strong>Image</strong>.</p>
 </section>
+<section id="configuración-y-optimización-de-imágenes." class="level2">
+<h2 class="anchored" data-anchor-id="configuración-y-optimización-de-imágenes.">Configuración y optimización de imágenes.</h2>
+<p>Para configurar y optimizar las imágenes en Next.js, se pueden utilizar las siguientes propiedades del componente <strong>Image</strong>:</p>
+<ul>
+<li><p><strong>src</strong>: La ruta de la imagen.</p></li>
+<li><p><strong>alt</strong>: El texto alternativo de la imagen.</p></li>
+<li><p><strong>width</strong>: El ancho de la imagen en píxeles.</p></li>
+<li><p><strong>height</strong>: La altura de la imagen en píxeles.</p></li>
+<li><p><strong>layout</strong>: La disposición de la imagen (responsive, fixed, fill, intrinsic).</p></li>
+<li><p><strong>objectFit</strong>: La forma en que la imagen se ajusta al contenedor.</p></li>
+<li><p><strong>objectPosition</strong>: La posición de la imagen dentro del contenedor.</p></li>
+</ul>
+<p>Ejemplo:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode jsx code-with-copy"><code class="sourceCode javascriptreact"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Image.js</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> Image <span class="im">from</span> <span class="st">'next/image'</span><span class="op">;</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> MyImage <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return </span><span class="fu">&lt;Image</span> <span class="ot">src</span><span class="op">=</span><span class="st">"/images/my-image.jpg"</span> <span class="ot">alt</span><span class="op">=</span><span class="st">"My Image"</span> <span class="ot">width</span><span class="op">=</span><span class="va">{</span><span class="dv">500</span><span class="va">}</span> <span class="ot">height</span><span class="op">=</span><span class="va">{</span><span class="dv">300</span><span class="va">}</span> <span class="ot">layout</span><span class="op">=</span><span class="st">"responsive"</span> <span class="ot">objectFit</span><span class="op">=</span><span class="st">"cover"</span> <span class="ot">objectPosition</span><span class="op">=</span><span class="st">"center"</span> <span class="fu">/&gt;</span><span class="op">;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> MyImage<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En el ejemplo anterior, se configura la imagen <strong>my-image.jpg</strong> con un ancho de 500 píxeles, una altura de 300 píxeles, una disposición responsive, un ajuste de objeto de cubierta y una posición de objeto centrada.</p>
 </section>
-<section id="rutas-dinámicas." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-dinámicas.">Rutas dinámicas.</h2>
-<p>Las rutas dinámicas en Next.js se crean utilizando corchetes <strong>[]</strong> en el nombre del archivo. Por ejemplo, si se crea un archivo <strong>[id].js</strong> en esta carpeta, se creará una ruta dinámica en la aplicación.</p>
-</section>
-<section id="nested-routes." class="level2">
-<h2 class="anchored" data-anchor-id="nested-routes.">Nested routes.</h2>
-<p>Las rutas anidadas en Next.js se crean utilizando la carpeta <strong>pages</strong> y subcarpetas. Por ejemplo, si se crea una carpeta <strong>blog</strong> y un archivo <strong>[slug].js</strong> en esta carpeta, se creará una ruta anidada en la aplicación.</p>
-</section>
-<section id="rutas-con-parámetros." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-con-parámetros.">Rutas con parámetros.</h2>
-<p>Las rutas con parámetros en Next.js se crean utilizando corchetes <strong>[]</strong> en la ruta. Por ejemplo, si se crea una ruta <strong>/blog/[slug]</strong> en la aplicación, se creará una ruta con parámetros en la aplicación.</p>
-</section>
-<section id="rutas-con-query-strings." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-con-query-strings.">Rutas con query strings.</h2>
-<p>Las rutas con query strings en Next.js se crean utilizando el signo de interrogación <strong>?</strong> en la ruta. Por ejemplo, si se crea una ruta <strong>/blog?slug=hello-world</strong> en la aplicación, se creará una ruta con query strings en la aplicación.º</p>
-</section>
-<section id="rutas-con-rutas-anidadas." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-con-rutas-anidadas.">Rutas con rutas anidadas.</h2>
-<p>Las rutas con rutas anidadas en Next.js se crean utilizando la carpeta <strong>pages</strong> y subcarpetas. Por ejemplo, si se crea una carpeta <strong>blog</strong> y un archivo <strong>[slug].js</strong> en esta carpeta, se creará una ruta anidada en la aplicación.</p>
-</section>
-<section id="rutas-con-rutas-anidadas-y-parámetros." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-con-rutas-anidadas-y-parámetros.">Rutas con rutas anidadas y parámetros.</h2>
-<p>Las rutas con rutas anidadas y parámetros en Next.js se crean utilizando la carpeta <strong>pages</strong> y subcarpetas. Por ejemplo, si se crea una carpeta <strong>blog</strong> y un archivo <strong>[slug].js</strong> en esta carpeta, se creará una ruta anidada con parámetros en la aplicación.</p>
-</section>
-<section id="rutas-con-rutas-anidadas-y-query-strings." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-con-rutas-anidadas-y-query-strings.">Rutas con rutas anidadas y query strings.</h2>
-<p>Las rutas con rutas anidadas y query strings en Next.js se crean utilizando la carpeta <strong>pages</strong> y subcarpetas. Por ejemplo, si se crea una carpeta <strong>blog</strong> y un archivo <strong>[slug].js</strong> en esta carpeta, se creará una ruta anidada con query strings en la aplicación.</p>
+<section id="uso-de-imágenes-remotas-y-locales." class="level2">
+<h2 class="anchored" data-anchor-id="uso-de-imágenes-remotas-y-locales.">Uso de imágenes remotas y locales.</h2>
+<p>En Next.js, se pueden utilizar imágenes remotas y locales en el componente <strong>Image</strong>. Las imágenes remotas se pueden cargar desde una URL externa, mientras que las imágenes locales se pueden cargar desde la carpeta <strong>public</strong>.</p>
+<p>Ejemplo:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode jsx code-with-copy"><code class="sourceCode javascriptreact"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Image.js</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> Image <span class="im">from</span> <span class="st">'next/image'</span><span class="op">;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> MyImage <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;div&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>      <span class="fu">&lt;Image</span> <span class="ot">src</span><span class="op">=</span><span class="st">"https://example.com/my-remote-image.jpg"</span> <span class="ot">alt</span><span class="op">=</span><span class="st">"My Remote Image"</span> <span class="ot">width</span><span class="op">=</span><span class="va">{</span><span class="dv">500</span><span class="va">}</span> <span class="ot">height</span><span class="op">=</span><span class="va">{</span><span class="dv">300</span><span class="va">}</span> <span class="fu">/&gt;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>      <span class="fu">&lt;Image</span> <span class="ot">src</span><span class="op">=</span><span class="st">"/images/my-local-image.jpg"</span> <span class="ot">alt</span><span class="op">=</span><span class="st">"My Local Image"</span> <span class="ot">width</span><span class="op">=</span><span class="va">{</span><span class="dv">500</span><span class="va">}</span> <span class="ot">height</span><span class="op">=</span><span class="va">{</span><span class="dv">300</span><span class="va">}</span> <span class="fu">/&gt;</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  )<span class="op">;</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> MyImage<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En el ejemplo anterior, se muestra una imagen remota <strong>my-remote-image.jpg</strong> y una imagen local <strong>my-local-image.jpg</strong> utilizando el componente <strong>Image</strong>.</p>
 </section>
 <section id="conclusión." class="level2">
 <h2 class="anchored" data-anchor-id="conclusión.">Conclusión.</h2>
-<p>En este capítulo se presentaron los conceptos básicos de cómo crear rutas en Next.js. A lo largo de este capítulo se presentaron los siguientes temas: rutas básicas, rutas dinámicas, rutas anidadas, rutas con parámetros, rutas con query strings, rutas con rutas anidadas, rutas con rutas anidadas y parámetros, y rutas con rutas anidadas y query strings. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo crear rutas en Next.js.</p>
-</section>
-<section id="ejercicios." class="level2">
-<h2 class="anchored" data-anchor-id="ejercicios.">Ejercicios.</h2>
-<ol type="1">
-<li><p>Crea una ruta básica en Next.js.</p></li>
-<li><p>Crea una ruta dinámica en Next.js.</p></li>
-<li><p>Crea una ruta anidada en Next.js.</p></li>
-<li><p>Crea una ruta con parámetros en Next.js.</p></li>
-<li><p>Crea una ruta con query strings en Next.js.</p></li>
-<li><p>Crea una ruta con rutas anidadas en Next.js.</p></li>
-<li><p>Crea una ruta con rutas anidadas y parámetros en Next.js.</p></li>
-<li><p>Crea una ruta con rutas anidadas y query strings en Next.js.</p></li>
-</ol>
-<p>Espero que estos ejercicios le sean de utilidad y le ayuden a practicar cómo crear rutas en Next.js.</p>
+<p>El componente <strong>Image</strong> en Next.js permite mostrar imágenes de forma eficiente y optimizada en la aplicación. Al utilizar el componente <strong>Image</strong>, se puede mejorar el rendimiento de la aplicación y proporcionar una mejor experiencia al usuario al cargar imágenes de manera rápida y eficiente.</p>
+<p>En esta unidad, se exploró cómo manejar y optimizar imágenes con Next Image, incluyendo la configuración de propiedades, el uso de imágenes remotas y locales, y la importancia de utilizar el componente <strong>Image</strong> para mejorar el rendimiento de la aplicación.</p>
 
 
 </section>
@@ -986,13 +977,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../unidades/unidad1/4_herramientas_y_stack.html" class="pagination-link" aria-label="Herramientas y stack utilizado en el curso">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Herramientas y stack utilizado en el curso</span></span>
+      <a href="../../unidades/unidad2/13_archivos_estaticos.html" class="pagination-link" aria-label="Cómo agregar archivos estáticos en Next.js">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Cómo agregar archivos estáticos en Next.js</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../unidades/unidad1/6_layout_next.html" class="pagination-link" aria-label="Cómo crear Layout en Next.js">
-        <span class="nav-page-text"><span class="chapter-title">Cómo crear Layout en Next.js</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../unidades/unidad2/15_optimizacion_fuentes.html" class="pagination-link" aria-label="Optimización de fuentes con Next.js">
+        <span class="nav-page-text"><span class="chapter-title">Optimización de fuentes con Next.js</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
