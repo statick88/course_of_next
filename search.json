@@ -1118,10 +1118,10 @@
     ]
   },
   {
-    "objectID": "unidades/laboratorios/2_laboratorio_fetch_stotre.html",
-    "href": "unidades/laboratorios/2_laboratorio_fetch_stotre.html",
+    "objectID": "unidades/laboratorios/2_laboratorio_fetch_stotre.html#introducción",
+    "href": "unidades/laboratorios/2_laboratorio_fetch_stotre.html#introducción",
     "title": "Laboratorio de Fetch con Next.js y FakeStoreAPI",
-    "section": "",
+    "section": "Introducción",
     "text": "Introducción\nEn este laboratorio, crearemos una aplicación de Next.js que obtiene datos de la FakeStoreAPI y los muestra en una lista. Aprenderemos cómo usar el hook useEffect para realizar peticiones a la API y manejar los datos de manera eficiente.",
     "crumbs": [
       "Laboratorios",
