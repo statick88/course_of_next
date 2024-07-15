@@ -16,7 +16,7 @@ En este laboratorio crearemos una aplicación de Next.js que obtiene datos de un
 npx create-next-app@latest 1_laboratorio_fetch
 ```
 
-2.  Crear un archivo llamado **lib/getsPokemons.tsx** en la raíz del proyecto.
+2.  Crear un archivo llamado **lib/getsPokemons.ts** en la raíz del proyecto.
 
 ``` ts
 export async function getPokemons() {
@@ -64,55 +64,79 @@ En resumen, la función getPokemons es responsable de obtener los primeros 10 po
 3.  Crear un archivo llamado **pages/index.tsx** en la raíz del proyecto.
 
 ``` ts
-import styles from '../../styles/Home.module.css'; //<1>
-import { useEffect, useState } from 'react'; //<2>
-import { getPokemons } from '../../lib/getPokemons'; //<3>
+import styles from '../styles/Home.module.css';
+import { useEffect, useState } from 'react';
+import { getPokemons } from '../lib/getsPokemons';
+import Image from 'next/image';
 
-export default function Home() { //<4>
-  const [pokemons, setPokemons] = useState<Array<any>>([]); //<5>
+export default function Home() {
+const [pokemons, setPokemons] = useState<{ id: number, sprites: { front_default: string }, name: string }[]>([]);
 
-  useEffect(() => { //<6>
-    const fetchPokemons = async () => { //<7>
-      console.log('Fetching pokemons...'); //<8>
-      const pokemonData = await getPokemons(); //<9>
-      console.log('Fetched pokemons:', pokemonData); //<10>
-      setPokemons(pokemonData); //<11>
-    };
+useEffect(() => {
+const fetchPokemons = async () => {
+    console.log('Fetching pokemons...');
+    const pokemonData = await getPokemons();
+    console.log('Fetched pokemons:', pokemonData);
+    setPokemons(pokemonData);
+};
 
-    fetchPokemons(); //<12>
-  }, []); //<13>
+fetchPokemons();
+}, []);
 
-  return (
-    <div className={styles.container}> //<14>
-      <main className={styles.main}> //<15>
-        <h1>Pokémons</h1> //<16>
-        <div className={styles.grid}> //<17>
-          {pokemons.map(pokemon => ( //<18>
-            <div key={pokemon.id} className={styles.card}> //<19>
-              <img src={pokemon.sprites.front_default} alt={pokemon.name} /> //<20>
-              <h3>{pokemon.name}</h3> //<21>
-            </div> //<22>
-          ))}
+return (
+<div className={styles.container}>
+    <main className={styles.main}>
+    <h1>Pokémons</h1>
+    <div className={styles.grid}>
+        {pokemons.map(pokemon => (
+        <div key={pokemon.id} className={styles.card}>
+            <Image
+            src={pokemon.sprites.front_default}
+            alt={pokemon.name}
+            width={96}
+            height={96}
+            />
+            <h3>{pokemon.name}</h3>
         </div>
-      </main>
+        ))}
     </div>
-  );
+    </main>
+</div>
+);
 }
 ```
+En el archivo anterior creamos un componente llamado Home que muestra una lista de los primeros 10 pokemons obtenidos de la API de Pokemons. Este componente es una página de la aplicación Next.js y se encuentra en el archivo pages/index.tsx.
 
-En el archivo anterior creamos un componente llamado **Home** que muestra una lista de los primeros 10 pokemons obtenidos de la API de Pokemons. Este componente es una página de la aplicación Next.js y se encuentra en el archivo **pages/index.tsx**.
+El componente Home utiliza el hook useEffect para realizar una petición a la API de Pokemons cuando se monta. El hook useEffect se ejecuta después de que el componente se haya renderizado en el navegador. En este caso, se utiliza para obtener los datos de los pokemons y actualizar el estado del componente con la lista de pokemons obtenidos.
 
-El componente `Home` utiliza el hook **useEffect** para realizar una petición a la API de Pokemons cuando se monta. El hook **useEffect** se ejecuta después de que el componente se haya renderizado en el navegador. En este caso, se utiliza para obtener los datos de los pokemons y actualizar el estado del componente con la lista de pokemons obtenidos.
+La función **fetchPokemons** es una función asíncrona que se define dentro del hook useEffect. Esta función se encarga de realizar la petición a la API de Pokemons utilizando la función getPokemons que hemos definido en el archivo **lib/getPokemons.ts**. La función getPokemons devuelve una promesa que se resuelve con los datos de los pokemons obtenidos de la API.
 
-La función **fetchPokemons** es una función asíncrona que se define dentro del hook **useEffect**. Esta función se encarga de realizar la petición a la API de Pokemons utilizando la función **getPokemons** que hemos definido en el archivo **lib/getPokemons.tsx**. La función **getPokemons** devuelve una promesa que se resuelve con los datos de los pokemons obtenidos de la API.
+Una vez que se obtienen los datos de los pokemons, se actualiza el estado del componente utilizando la función setPokemons. La función setPokemons es una función proporcionada por el hook useState que se utiliza para actualizar el valor de la variable de estado pokemons. Al actualizar el estado, el componente se vuelve a renderizar y muestra la lista de pokemons en la interfaz de usuario.
 
-Una vez que se obtienen los datos de los pokemons, se actualiza el estado del componente utilizando la función **setPokemons**. La función **setPokemons** es una función proporcionada por el hook **useState** que se utiliza para actualizar el valor de la variable de estado **pokemons**. Al actualizar el estado, el componente se vuelve a renderizar y muestra la lista de pokemons en la interfaz de usuario.
+La lista de pokemons se muestra utilizando el método map de JavaScript. El método map se utiliza para iterar sobre cada elemento de un arreglo y devolver un nuevo arreglo con los resultados de aplicar una función a cada elemento. En este caso, se utiliza el método map para iterar sobre la lista de pokemons y generar un elemento de la lista para cada pokemon.
 
-La lista de pokemons se muestra utilizando el método **map** de JavaScript. El método **map** se utiliza para iterar sobre cada elemento de un arreglo y devolver un nuevo arreglo con los resultados de aplicar una función a cada elemento. En este caso, se utiliza el método **map** para iterar sobre la lista de pokemons y generar un elemento de la lista para cada pokemon.
+Cada elemento de la lista de pokemons se representa como un **div** con una imagen y el nombre del pokemon. La imagen se muestra utilizando el componente Image de Next.js, que carga y muestra la imagen del pokemon utilizando la propiedad sprites.front_default del objeto pokemon, que contiene la URL de la imagen del pokemon. El nombre del pokemon se muestra utilizando la propiedad name del objeto pokemon.
 
-Cada elemento de la lista de pokemons se representa como un **<div>** con una imagen y el nombre del pokemon. La imagen se muestra utilizando la propiedad **sprites.front_default** del objeto pokemon, que contiene la URL de la imagen del pokemon. El nombre del pokemon se muestra utilizando la propiedad **name** del objeto pokemon.
+En resumen, el componente Home es responsable de obtener los datos de los primeros 10 pokemons de la API de Pokemons y mostrarlos en una lista en la interfaz de usuario. Utiliza el hook useEffect para realizar la petición a la API cuando se monta y el hook useState para almacenar y actualizar la lista de pokemons en el estado del componente. La lista de pokemons se muestra utilizando el método map y se representan como elementos **div** con una imagen y el nombre del pokemon.
 
-En resumen, el componente **Home** es responsable de obtener los datos de los primeros 10 pokemons de la API de Pokemons y mostrarlos en una lista en la interfaz de usuario. Utiliza el hook **useEffect** para realizar la petición a la API cuando se monta y el hook **useState** para almacenar y actualizar la lista de pokemons en el estado del componente. La lista de pokemons se muestra utilizando el método **map** y se representan como elementos **<div>** con una imagen y el nombre del pokemon.
+:::{.callout-tip}
+Si surgen errores, se sugiere:
+
+modificar el archivo **next.config.mjs**
+
+```bash
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    images: {
+        domains: ['raw.githubusercontent.com'],
+    },
+};
+
+export default nextConfig;
+```
+
+Es necesario actualizar el archivo **next.config.mjs** para permitir que Next.js cargue imágenes de dominios externos. En este caso, se agrega el dominio **raw.githubusercontent.com** a la configuración de imágenes para permitir que Next.js cargue las imágenes de los pokemons desde la API de Pokemons.
+:::
 
 4. Agregamos CSS
 
