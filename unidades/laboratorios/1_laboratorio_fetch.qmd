@@ -114,13 +114,68 @@ Cada elemento de la lista de pokemons se representa como un **<div>** con una im
 
 En resumen, el componente **Home** es responsable de obtener los datos de los primeros 10 pokemons de la API de Pokemons y mostrarlos en una lista en la interfaz de usuario. Utiliza el hook **useEffect** para realizar la petición a la API cuando se monta y el hook **useState** para almacenar y actualizar la lista de pokemons en el estado del componente. La lista de pokemons se muestra utilizando el método **map** y se representan como elementos **<div>** con una imagen y el nombre del pokemon.
 
-4.  Ejecutar la aplicación
+4. Agregamos CSS
+
+Creamos el archivo **styles/Home.module.css** en la raíz del proyecto con el siguiente contenido:
+
+``` css
+.container {
+    padding: 0 2rem;
+  }
+  
+  .main {
+    min-height: 100vh;
+    padding: 4rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin-top: 3rem;
+  }
+  
+  .card {
+    margin: 1rem;
+    flex-basis: 45%;
+    padding: 1.5rem;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  
+  .card:hover,
+  .card:focus,
+  .card:active {
+    color: #0070f3;
+    border-color: #0070f3;
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+```
+
+En este archivo se definen los estilos CSS para la aplicación. Los estilos se aplican a los elementos HTML utilizando clases CSS y se utilizan para dar formato y diseño a la interfaz de usuario.
+
+5.  Ejecutar la aplicación
 
 ``` bash
 npm run dev
 ```
 
-5.  Abrir la aplicación en el navegador <http://localhost:3000>
+6.  Abrir la aplicación en el navegador <http://localhost:3000>
 
 ## Resultado
 

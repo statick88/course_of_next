@@ -351,58 +351,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol start="2" type="1">
 <li>Crear un archivo llamado <strong>lib/getsPokemons.tsx</strong> en la raíz del proyecto.</li>
 </ol>
-<div class="sourceCode" id="cb2"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">async</span> <span class="kw">function</span> <span class="fu">getPokemons</span>() { <span class="co">//&lt;1&gt;</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> headers <span class="op">=</span> <span class="kw">new</span> <span class="fu">Headers</span>({ <span class="co">//&lt;2&gt;</span></span>
+<div class="sourceCode" id="cb2"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">async</span> <span class="kw">function</span> <span class="fu">getPokemons</span>() {</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> headers <span class="op">=</span> <span class="kw">new</span> <span class="fu">Headers</span>({ </span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Content-Type"</span><span class="op">:</span> <span class="st">"application/json"</span></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> requestOptions <span class="op">=</span> { <span class="co">//&lt;3&gt;</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    method<span class="op">:</span> <span class="st">'GET'</span><span class="op">,</span> <span class="co">//&lt;4&gt;</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    headers<span class="op">:</span> headers<span class="op">,</span> <span class="co">//&lt;5&gt;</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    redirect<span class="op">:</span> <span class="st">'follow'</span> <span class="im">as</span> RequestRedirect <span class="co">//&lt;6&gt;</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> requestOptions <span class="op">=</span> {</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    method<span class="op">:</span> <span class="st">'GET'</span><span class="op">,</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    headers<span class="op">:</span> headers<span class="op">,</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    redirect<span class="op">:</span> <span class="st">'follow'</span> <span class="im">as</span> RequestRedirect</span>
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">try</span> {</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> response <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(<span class="st">"https://pokeapi.co/api/v2/pokemon?limit=10"</span><span class="op">,</span> requestOptions)<span class="op">;</span> <span class="co">//&lt;7&gt;</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="op">!</span>response<span class="op">.</span><span class="at">ok</span>) { <span class="co">//&lt;8&gt;</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>      <span class="cf">throw</span> <span class="kw">new</span> <span class="bu">Error</span>(<span class="st">'Network response was not ok'</span>)<span class="op">;</span> <span class="co">//&lt;9&gt;</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> response <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(<span class="st">"https://pokeapi.co/api/v2/pokemon?limit=10"</span><span class="op">,</span> requestOptions)<span class="op">;</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="op">!</span>response<span class="op">.</span><span class="at">ok</span>) {</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>      <span class="cf">throw</span> <span class="kw">new</span> <span class="bu">Error</span>(<span class="st">'Network response was not ok'</span>)<span class="op">;</span></span>
 <span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> data <span class="op">=</span> <span class="cf">await</span> response<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span> <span class="co">//&lt;10&gt;</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> pokemonDetails <span class="op">=</span> <span class="cf">await</span> <span class="bu">Promise</span><span class="op">.</span><span class="fu">all</span>( <span class="co">//&lt;11&gt;</span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>      data<span class="op">.</span><span class="at">results</span><span class="op">.</span><span class="fu">map</span>(<span class="kw">async</span> (pokemon<span class="op">:</span> <span class="dt">any</span>) <span class="kw">=&gt;</span> { <span class="co">//&lt;12&gt;</span></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>        <span class="kw">const</span> res <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(pokemon<span class="op">.</span><span class="at">url</span>)<span class="op">;</span> <span class="co">//&lt;13&gt;</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>        <span class="kw">const</span> details <span class="op">=</span> <span class="cf">await</span> res<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span> <span class="co">//&lt;14&gt;</span></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> details<span class="op">;</span> <span class="co">//&lt;15&gt;</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> data <span class="op">=</span> <span class="cf">await</span> response<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> pokemonDetails <span class="op">=</span> <span class="cf">await</span> <span class="bu">Promise</span><span class="op">.</span><span class="fu">all</span>(</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>      data<span class="op">.</span><span class="at">results</span><span class="op">.</span><span class="fu">map</span>(<span class="kw">async</span> (pokemon<span class="op">:</span> <span class="dt">any</span>) <span class="kw">=&gt;</span> {</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>        <span class="kw">const</span> res <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(pokemon<span class="op">.</span><span class="at">url</span>)<span class="op">;</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>        <span class="kw">const</span> details <span class="op">=</span> <span class="cf">await</span> res<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> details<span class="op">;</span></span>
 <span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>      })</span>
 <span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    )<span class="op">;</span></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> pokemonDetails<span class="op">;</span> <span class="co">//&lt;16&gt;</span></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">catch</span> (error) { <span class="co">//&lt;17&gt;</span></span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">error</span>(<span class="st">'Failed to fetch pokemons:'</span><span class="op">,</span> error)<span class="op">;</span> <span class="co">//&lt;18&gt;</span></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> []<span class="op">;</span> <span class="co">//&lt;19&gt;</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> pokemonDetails<span class="op">;</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">catch</span> (error) {</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">error</span>(<span class="st">'Failed to fetch pokemons:'</span><span class="op">,</span> error)<span class="op">;</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> []<span class="op">;</span></span>
 <span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol type="1">
-<li><p>Creamos una función llamada <strong>getPokemons</strong> que realiza una petición a la API de Pokemons y obtiene los primeros 10 pokemons.</p></li>
-<li><p>Creamos un objeto <strong>Headers</strong> con el tipo de contenido <strong>application/json</strong>.</p></li>
-<li><p>Creamos un objeto <strong>requestOptions</strong> con el método <strong>GET</strong>, las cabeceras y la redirección.</p></li>
-<li><p>Definimos el método de la petición como <strong>GET</strong>.</p></li>
-<li><p>Definimos las cabeceras de la petición.</p></li>
-<li><p>Definimos la redirección de la petición.</p></li>
-<li><p>Realizamos una petición a la API de Pokemons con las opciones definidas.</p></li>
-<li><p>Verificamos si la respuesta es exitosa.</p></li>
-<li><p>Lanzamos un error si la respuesta no es exitosa.</p></li>
-<li><p>Obtenemos los datos de la respuesta.</p></li>
-<li><p>Obtenemos los detalles de cada pokemon.</p></li>
-<li><p>Mapeamos los resultados y realizamos una petición a la URL de cada pokemon.</p></li>
-<li><p>Realizamos una petición a la URL del pokemon.</p></li>
-<li><p>Obtenemos los detalles del pokemon.</p></li>
-<li><p>Retornamos los detalles del pokemon.</p></li>
-<li><p>Retornamos los detalles de los pokemons.</p></li>
-<li><p>Manejamos los errores de la petición.</p></li>
-<li><p>Mostramos un mensaje de error en la consola.</p></li>
-<li><p>Retornamos un arreglo vacío en caso de error.</p></li>
-</ol>
-<p>En el archivo anterior creamos una función llamada <strong>getPokemons</strong> que realiza una petición a la API de Pokemons y obtiene los primeros 10 pokemons. La función maneja los errores de la petición y retorna un arreglo vacío en caso de error.</p>
+<p>En el archivo mencionado, se ha creado una función llamada getPokemons. Esta función tiene la responsabilidad de realizar una petición a la API de Pokemons y obtener los primeros 10 pokemons.</p>
+<p>La API de Pokemons es una interfaz de programación de aplicaciones que permite acceder a información relacionada con los pokemons, como sus nombres, habilidades, tipos, entre otros datos. Al realizar una petición a esta API, podemos obtener los datos de los pokemons de manera programática.</p>
+<p>En el código proporcionado, la función getPokemons se encarga de manejar los posibles errores que puedan ocurrir durante la petición a la API. Si ocurre algún error, en lugar de lanzar una excepción o detener la ejecución del programa, la función retorna un arreglo vacío.</p>
+<p>Esta estrategia de manejo de errores es útil porque permite que el programa continúe ejecutándose sin interrupciones, incluso si la petición a la API falla. En lugar de detenerse por completo, el programa puede tomar medidas alternativas o mostrar un mensaje de error al usuario.</p>
+<p>En resumen, la función getPokemons es responsable de obtener los primeros 10 pokemons de la API de Pokemons y manejar los errores de manera adecuada. Esto garantiza que el programa pueda continuar ejecutándose sin problemas, incluso en caso de fallos en la petición.</p>
 <ol start="3" type="1">
 <li>Crear un archivo llamado <strong>pages/index.tsx</strong> en la raíz del proyecto.</li>
 </ol>
@@ -440,31 +423,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;/</span>div<span class="op">&gt;</span></span>
 <span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>  )<span class="op">;</span></span>
 <span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ol type="1">
-<li>Importamos los estilos del archivo <strong>Home.module.css</strong>.</li>
-<li>Importamos los hooks <strong>useEffect</strong> y <strong>useState</strong> de React.</li>
-<li>Importamos la función <strong>getPokemons</strong> del archivo <strong>getPokemons.tsx</strong>.</li>
-<li>Definimos el componente <strong>Home</strong>.</li>
-<li>Creamos un estado <strong>pokemons</strong> con un arreglo vacío.</li>
-<li>Utilizamos el hook <strong>useEffect</strong> para realizar una petición a la API cuando el componente se monta.</li>
-<li>Creamos una función <strong>fetchPokemons</strong> para obtener los pokemons.</li>
-<li>Mostramos un mensaje en la consola.</li>
-<li>Obtenemos los datos de los pokemons.</li>
-<li>Mostramos los datos de los pokemons en la consola.</li>
-<li>Actualizamos el estado con los datos de los pokemons.</li>
-<li>Llamamos a la función <strong>fetchPokemons</strong>.</li>
-<li>Definimos un arreglo vacío de dependencias para que la petición se realice una sola vez.</li>
-<li>Creamos un contenedor con los estilos de la aplicación.</li>
-<li>Creamos un contenedor principal con los estilos de la aplicación.</li>
-<li>Mostramos el título de la aplicación.</li>
-<li>Creamos un contenedor con los estilos de la lista de pokemons.</li>
-<li>Mapeamos los pokemons y mostramos sus detalles.</li>
-<li>Creamos una tarjeta con los detalles del pokemon.</li>
-<li>Mostramos la imagen del pokemon.</li>
-<li>Mostramos el nombre del pokemon.</li>
-<li>Cerramos la tarjeta del pokemon.</li>
-</ol>
-<p>En el archivo anterior creamos un componente <strong>Home</strong> que muestra una lista de los primeros 10 pokemons obtenidos de la API de Pokemons. El componente utiliza el hook <strong>useEffect</strong> para realizar una petición a la API cuando se monta y muestra los datos de los pokemons en una lista.</p>
+<p>En el archivo anterior creamos un componente llamado <strong>Home</strong> que muestra una lista de los primeros 10 pokemons obtenidos de la API de Pokemons. Este componente es una página de la aplicación Next.js y se encuentra en el archivo <strong>pages/index.tsx</strong>.</p>
+<p>El componente <code>Home</code> utiliza el hook <strong>useEffect</strong> para realizar una petición a la API de Pokemons cuando se monta. El hook <strong>useEffect</strong> se ejecuta después de que el componente se haya renderizado en el navegador. En este caso, se utiliza para obtener los datos de los pokemons y actualizar el estado del componente con la lista de pokemons obtenidos.</p>
+<p>La función <strong>fetchPokemons</strong> es una función asíncrona que se define dentro del hook <strong>useEffect</strong>. Esta función se encarga de realizar la petición a la API de Pokemons utilizando la función <strong>getPokemons</strong> que hemos definido en el archivo <strong>lib/getPokemons.tsx</strong>. La función <strong>getPokemons</strong> devuelve una promesa que se resuelve con los datos de los pokemons obtenidos de la API.</p>
+<p>Una vez que se obtienen los datos de los pokemons, se actualiza el estado del componente utilizando la función <strong>setPokemons</strong>. La función <strong>setPokemons</strong> es una función proporcionada por el hook <strong>useState</strong> que se utiliza para actualizar el valor de la variable de estado <strong>pokemons</strong>. Al actualizar el estado, el componente se vuelve a renderizar y muestra la lista de pokemons en la interfaz de usuario.</p>
+<p>La lista de pokemons se muestra utilizando el método <strong>map</strong> de JavaScript. El método <strong>map</strong> se utiliza para iterar sobre cada elemento de un arreglo y devolver un nuevo arreglo con los resultados de aplicar una función a cada elemento. En este caso, se utiliza el método <strong>map</strong> para iterar sobre la lista de pokemons y generar un elemento de la lista para cada pokemon.</p>
+Cada elemento de la lista de pokemons se representa como un **
+<div>
+<p>** con una imagen y el nombre del pokemon. La imagen se muestra utilizando la propiedad <strong>sprites.front_default</strong> del objeto pokemon, que contiene la URL de la imagen del pokemon. El nombre del pokemon se muestra utilizando la propiedad <strong>name</strong> del objeto pokemon.</p>
+En resumen, el componente <strong>Home</strong> es responsable de obtener los datos de los primeros 10 pokemons de la API de Pokemons y mostrarlos en una lista en la interfaz de usuario. Utiliza el hook <strong>useEffect</strong> para realizar la petición a la API cuando se monta y el hook <strong>useState</strong> para almacenar y actualizar la lista de pokemons en el estado del componente. La lista de pokemons se muestra utilizando el método <strong>map</strong> y se representan como elementos **
+<div>
+<p>** con una imagen y el nombre del pokemon.</p>
 <ol start="4" type="1">
 <li>Ejecutar la aplicación</li>
 </ol>
@@ -472,7 +441,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol start="5" type="1">
 <li>Abrir la aplicación en el navegador <a href="http://localhost:3000" class="uri">http://localhost:3000</a></li>
 </ol>
-</section>
 <section id="resultado" class="level2">
 <h2 class="anchored" data-anchor-id="resultado">Resultado</h2>
 <div class="center">
@@ -483,14 +451,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="conclusión" class="level2">
 <h2 class="anchored" data-anchor-id="conclusión">Conclusión</h2>
 <p>En este laboratorio, aprendimos cómo obtener datos de una API en una aplicación de Next.js y mostrarlos en una lista. También aprendimos cómo usar el hook <strong>useEffect</strong> para realizar una petición a la API cuando el componente se monta.</p>
-</section>
+<p>Además, vimos cómo manejar los posibles errores que puedan ocurrir durante la petición a la API utilizando un bloque try-catch. Esto nos permite manejar los errores de manera adecuada y evitar que la aplicación se detenga por completo en caso de fallos en la petición.</p>
+Para mostrar los datos de los pokemons en la lista, utilizamos el método <strong>map</strong> de JavaScript para iterar sobre la lista de pokemons y generar un elemento de la lista para cada pokemon. Cada elemento de la lista se representa como un **
+<div>
+<p>** con una imagen y el nombre del pokemon.</p>
+<p>En resumen, este laboratorio nos ha enseñado cómo obtener y mostrar datos de una API en una aplicación de Next.js, así como cómo manejar los errores de manera adecuada. Estos conceptos son fundamentales para el desarrollo de aplicaciones web que interactúan con servicios externos y proporcionan una experiencia de usuario fluida y sin interrupciones.</p>
 <section id="ejercicio" class="level2">
 <h2 class="anchored" data-anchor-id="ejercicio">Ejercicio</h2>
-<p>Crea una aplicación de Next.js que obtenga los primeros 10 pokemons de la API de Pokemons y muestre sus detalles en una lista. Los detalles a mostrar son: nombre, altura, peso y habilidades. Puedes utilizar la API para que muestre los Pokemon en 3D.</p>
+<p>Desarrollar una aplicación en Next.js que utilice la función fetch para obtener datos de una API externa de Pokemons y mostrarlos dinámicamente en una lista.</p>
+<p>:::</p>
+
+
 </section>
 </div>
-
-
+</section>
+</div>
+</div>
+</section>
+</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
