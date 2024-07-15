@@ -8,7 +8,7 @@
 
 <meta name="description" content="Curso de Nextjs">
 
-<title>Creando estilos dinámicos aplicando condicionales en Next.js – Curso de Nextjs</title>
+<title>Laboratorio de Fetch con Next – Curso de Nextjs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,8 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../unidades/laboratorios/1_laboratorio_fetch.html" rel="next">
-<link href="../../unidades/unidad2/15_optimizacion_fuentes.html" rel="prev">
+<link href="../../unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html" rel="prev">
 <link href="../../logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -120,7 +119,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/unidad2/10_css_modules.html">Unidad 2: Manejo de Estilos y Archivos Estáticos</a></li><li class="breadcrumb-item"><a href="../../unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html"><span class="chapter-title">Creando estilos dinámicos aplicando condicionales en Next.js</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/laboratorios/1_laboratorio_fetch.html">Laboratorios</a></li><li class="breadcrumb-item"><a href="../../unidades/laboratorios/1_laboratorio_fetch.html"><span class="chapter-title">Laboratorio de Fetch con Next</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -248,13 +247,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
  <span class="menu-text">Unidad 2: Manejo de Estilos y Archivos Estáticos</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unidades/unidad2/10_css_modules.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Manejo de estilos y archivos estáticos en Next.js</span></a>
@@ -287,23 +286,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Creando estilos dinámicos aplicando condicionales en Next.js</span></a>
+  <a href="../../unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Creando estilos dinámicos aplicando condicionales en Next.js</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Laboratorios</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../unidades/laboratorios/1_laboratorio_fetch.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Laboratorio de Fetch con Next</span></a>
+  <a href="../../unidades/laboratorios/1_laboratorio_fetch.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Laboratorio de Fetch con Next</span></a>
   </div>
 </li>
       </ul>
@@ -313,25 +312,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#estilos-dinámicos." id="toc-estilos-dinámicos." class="nav-link active" data-scroll-target="#estilos-dinámicos.">Estilos dinámicos.</a></li>
-  <li><a href="#aplicación-de-condicionales-en-estilos." id="toc-aplicación-de-condicionales-en-estilos." class="nav-link" data-scroll-target="#aplicación-de-condicionales-en-estilos.">Aplicación de condicionales en estilos.</a></li>
-  <li><a href="#ejemplos-prácticos." id="toc-ejemplos-prácticos." class="nav-link" data-scroll-target="#ejemplos-prácticos.">Ejemplos prácticos.</a></li>
-  <li><a href="#conclusión." id="toc-conclusión." class="nav-link" data-scroll-target="#conclusión.">Conclusión.</a></li>
-  <li><a href="#ejercicio." id="toc-ejercicio." class="nav-link" data-scroll-target="#ejercicio.">Ejercicio.</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/unidad2/10_css_modules.html">Unidad 2: Manejo de Estilos y Archivos Estáticos</a></li><li class="breadcrumb-item"><a href="../../unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html"><span class="chapter-title">Creando estilos dinámicos aplicando condicionales en Next.js</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/laboratorios/1_laboratorio_fetch.html">Laboratorios</a></li><li class="breadcrumb-item"><a href="../../unidades/laboratorios/1_laboratorio_fetch.html"><span class="chapter-title">Laboratorio de Fetch con Next</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Creando estilos dinámicos aplicando condicionales en Next.js</span></h1>
+<h1 class="title"><span class="chapter-title">Laboratorio de Fetch con Next</span></h1>
 </div>
 
 
@@ -348,107 +337,138 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>En Next.js, se pueden crear estilos dinámicos aplicando condicionales en los componentes para cambiar la apariencia de los elementos según ciertas condiciones. Esto permite personalizar la apariencia de los componentes de forma dinámica en función de la lógica de la aplicación.</p>
-<section id="estilos-dinámicos." class="level2">
-<h2 class="anchored" data-anchor-id="estilos-dinámicos.">Estilos dinámicos.</h2>
-<p>Los estilos dinámicos en Next.js se pueden aplicar utilizando condicionales en los estilos de los componentes. Esto permite cambiar la apariencia de los elementos en función de ciertas condiciones, como el estado de un componente o los datos recibidos de una API.</p>
-<p>Ejemplo:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode jsx code-with-copy"><code class="sourceCode javascriptreact"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Button.js</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> Button <span class="op">=</span> ({ primary }) <span class="kw">=&gt;</span> {</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;button</span> <span class="ot">style</span><span class="op">=</span><span class="va">{</span>{ <span class="dt">backgroundColor</span><span class="op">:</span> primary <span class="op">?</span> <span class="st">'#007bff'</span> <span class="op">:</span> <span class="st">'#f0f0f0'</span><span class="op">,</span> <span class="dt">color</span><span class="op">:</span> primary <span class="op">?</span> <span class="st">'#fff'</span> <span class="op">:</span> <span class="st">'#000'</span> }<span class="va">}</span><span class="kw">&gt;</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>      Click me</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/button&gt;</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  )<span class="op">;</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> Button<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>En el ejemplo anterior, se crea un componente <strong>Button</strong> con un estilo dinámico que cambia el color de fondo y el color del texto en función de la prop <strong>primary</strong>. Si la prop <strong>primary</strong> es verdadera, se aplican los estilos para un botón principal; de lo contrario, se aplican los estilos para un botón secundario.</p>
-</section>
-<section id="aplicación-de-condicionales-en-estilos." class="level2">
-<h2 class="anchored" data-anchor-id="aplicación-de-condicionales-en-estilos.">Aplicación de condicionales en estilos.</h2>
-<p>Para aplicar condicionales en los estilos de los componentes en Next.js, se pueden utilizar operadores ternarios o funciones condicionales para determinar los estilos a aplicar en función de ciertas condiciones.</p>
-<p>Ejemplo:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode jsx code-with-copy"><code class="sourceCode javascriptreact"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Button.js</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> Button <span class="op">=</span> ({ primary }) <span class="kw">=&gt;</span> {</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> buttonStyles <span class="op">=</span> {</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">backgroundColor</span><span class="op">:</span> primary <span class="op">?</span> <span class="st">'#007bff'</span> <span class="op">:</span> <span class="st">'#f0f0f0'</span><span class="op">,</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">color</span><span class="op">:</span> primary <span class="op">?</span> <span class="st">'#fff'</span> <span class="op">:</span> <span class="st">'#000'</span><span class="op">,</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">padding</span><span class="op">:</span> <span class="st">'10px 20px'</span><span class="op">,</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">border</span><span class="op">:</span> <span class="st">'none'</span><span class="op">,</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">borderRadius</span><span class="op">:</span> <span class="st">'5px'</span><span class="op">,</span></span>
+<div class="justify">
+<div class="center">
+<p><img src="images/paste-1.png" class="img-fluid"></p>
+</div>
+<p>En este laboratorio crearemos una aplicación de Next.js que obtiene datos de una API de Pokemons y los muestra en una lista.</p>
+<section id="pasos" class="level2">
+<h2 class="anchored" data-anchor-id="pasos">Pasos</h2>
+<ol type="1">
+<li>Crear una nueva aplicación de Next.js</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">npx</span> create-next-app@latest 1_laboratorio_fetch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="2" type="1">
+<li>Crear un archivo llamado <strong>lib/getsPokemons.tsx</strong> en la raíz del proyecto.</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">async</span> <span class="kw">function</span> <span class="fu">getPokemons</span>() {</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> headers <span class="op">=</span> <span class="kw">new</span> <span class="fu">Headers</span>({ </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Content-Type"</span><span class="op">:</span> <span class="st">"application/json"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> requestOptions <span class="op">=</span> {</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    method<span class="op">:</span> <span class="st">'GET'</span><span class="op">,</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    headers<span class="op">:</span> headers<span class="op">,</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    redirect<span class="op">:</span> <span class="st">'follow'</span> <span class="im">as</span> RequestRedirect</span>
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;button</span> <span class="ot">style</span><span class="op">=</span><span class="va">{</span>buttonStyles<span class="va">}</span><span class="kw">&gt;</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>      Click me</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/button&gt;</span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  )<span class="op">;</span></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> Button<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>En el ejemplo anterior, se crea un objeto <strong>buttonStyles</strong> con los estilos del botón y se utiliza un operador ternario para aplicar los estilos en función de la prop <strong>primary</strong>. Esto permite personalizar la apariencia del botón de forma dinámica en función de la prop recibida.</p>
-</section>
-<section id="ejemplos-prácticos." class="level2">
-<h2 class="anchored" data-anchor-id="ejemplos-prácticos.">Ejemplos prácticos.</h2>
-<ol type="1">
-<li>Crea un componente <strong>Button</strong> con estilos dinámicos que cambien la apariencia del botón en función de una prop <strong>primary</strong>.</li>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">try</span> {</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> response <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(<span class="st">"https://pokeapi.co/api/v2/pokemon?limit=10"</span><span class="op">,</span> requestOptions)<span class="op">;</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="op">!</span>response<span class="op">.</span><span class="at">ok</span>) {</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>      <span class="cf">throw</span> <span class="kw">new</span> <span class="bu">Error</span>(<span class="st">'Network response was not ok'</span>)<span class="op">;</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> data <span class="op">=</span> <span class="cf">await</span> response<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> pokemonDetails <span class="op">=</span> <span class="cf">await</span> <span class="bu">Promise</span><span class="op">.</span><span class="fu">all</span>(</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>      data<span class="op">.</span><span class="at">results</span><span class="op">.</span><span class="fu">map</span>(<span class="kw">async</span> (pokemon<span class="op">:</span> <span class="dt">any</span>) <span class="kw">=&gt;</span> {</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>        <span class="kw">const</span> res <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(pokemon<span class="op">.</span><span class="at">url</span>)<span class="op">;</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>        <span class="kw">const</span> details <span class="op">=</span> <span class="cf">await</span> res<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> details<span class="op">;</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>      })</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    )<span class="op">;</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> pokemonDetails<span class="op">;</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">catch</span> (error) {</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">error</span>(<span class="st">'Failed to fetch pokemons:'</span><span class="op">,</span> error)<span class="op">;</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> []<span class="op">;</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En el archivo mencionado, se ha creado una función llamada getPokemons. Esta función tiene la responsabilidad de realizar una petición a la API de Pokemons y obtener los primeros 10 pokemons.</p>
+<p>La API de Pokemons es una interfaz de programación de aplicaciones que permite acceder a información relacionada con los pokemons, como sus nombres, habilidades, tipos, entre otros datos. Al realizar una petición a esta API, podemos obtener los datos de los pokemons de manera programática.</p>
+<p>En el código proporcionado, la función getPokemons se encarga de manejar los posibles errores que puedan ocurrir durante la petición a la API. Si ocurre algún error, en lugar de lanzar una excepción o detener la ejecución del programa, la función retorna un arreglo vacío.</p>
+<p>Esta estrategia de manejo de errores es útil porque permite que el programa continúe ejecutándose sin interrupciones, incluso si la petición a la API falla. En lugar de detenerse por completo, el programa puede tomar medidas alternativas o mostrar un mensaje de error al usuario.</p>
+<p>En resumen, la función getPokemons es responsable de obtener los primeros 10 pokemons de la API de Pokemons y manejar los errores de manera adecuada. Esto garantiza que el programa pueda continuar ejecutándose sin problemas, incluso en caso de fallos en la petición.</p>
+<ol start="3" type="1">
+<li>Crear un archivo llamado <strong>pages/index.tsx</strong> en la raíz del proyecto.</li>
 </ol>
-<p>Ejemplo:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode jsx code-with-copy"><code class="sourceCode javascriptreact"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Button.js</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> Button <span class="op">=</span> ({ primary }) <span class="kw">=&gt;</span> {</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> buttonStyles <span class="op">=</span> {</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="dt">backgroundColor</span><span class="op">:</span> primary <span class="op">?</span> <span class="st">'#007bff'</span> <span class="op">:</span> <span class="st">'#f0f0f0'</span><span class="op">,</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">color</span><span class="op">:</span> primary <span class="op">?</span> <span class="st">'#fff'</span> <span class="op">:</span> <span class="st">'#000'</span><span class="op">,</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="dt">padding</span><span class="op">:</span> <span class="st">'10px 20px'</span><span class="op">,</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="dt">border</span><span class="op">:</span> <span class="st">'none'</span><span class="op">,</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="dt">borderRadius</span><span class="op">:</span> <span class="st">'5px'</span><span class="op">,</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;button</span> <span class="ot">style</span><span class="op">=</span><span class="va">{</span>buttonStyles<span class="va">}</span><span class="kw">&gt;</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>      Click me</span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/button&gt;</span></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>  )<span class="op">;</span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>}</span>
+<div class="sourceCode" id="cb3"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> styles <span class="im">from</span> <span class="st">'../../styles/Home.module.css'</span><span class="op">;</span> <span class="co">//&lt;1&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { useEffect<span class="op">,</span> useState } <span class="im">from</span> <span class="st">'react'</span><span class="op">;</span> <span class="co">//&lt;2&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { getPokemons } <span class="im">from</span> <span class="st">'../../lib/getPokemons'</span><span class="op">;</span> <span class="co">//&lt;3&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> <span class="kw">function</span> <span class="fu">Home</span>() { <span class="co">//&lt;4&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> [pokemons<span class="op">,</span> setPokemons] <span class="op">=</span> <span class="fu">useState</span><span class="op">&lt;</span><span class="bu">Array</span><span class="op">&lt;</span><span class="dt">any</span><span class="op">&gt;&gt;</span>([])<span class="op">;</span> <span class="co">//&lt;5&gt;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">useEffect</span>(() <span class="kw">=&gt;</span> { <span class="co">//&lt;6&gt;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> fetchPokemons <span class="op">=</span> <span class="kw">async</span> () <span class="kw">=&gt;</span> { <span class="co">//&lt;7&gt;</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>      <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">'Fetching pokemons...'</span>)<span class="op">;</span> <span class="co">//&lt;8&gt;</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> pokemonData <span class="op">=</span> <span class="cf">await</span> <span class="fu">getPokemons</span>()<span class="op">;</span> <span class="co">//&lt;9&gt;</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>      <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">'Fetched pokemons:'</span><span class="op">,</span> pokemonData)<span class="op">;</span> <span class="co">//&lt;10&gt;</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>      <span class="fu">setPokemons</span>(pokemonData)<span class="op">;</span> <span class="co">//&lt;11&gt;</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    }<span class="op">;</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">fetchPokemons</span>()<span class="op">;</span> <span class="co">//&lt;12&gt;</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span> [])<span class="op">;</span> <span class="co">//&lt;13&gt;</span></span>
 <span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> Button<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>En el ejemplo anterior, se crea un componente <strong>Button</strong> con estilos dinámicos que cambian la apariencia del botón en función de la prop <strong>primary</strong>. Si la prop <strong>primary</strong> es verdadera, se aplican los estilos para un botón principal; de lo contrario, se aplican los estilos para un botón secundario.</p>
-<ol start="2" type="1">
-<li>Utiliza el componente <strong>Button</strong> en otros componentes de la aplicación y prueba los estilos dinámicos cambiando el valor de la prop <strong>primary</strong>.</li>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;</span>div className<span class="op">=</span>{styles<span class="op">.</span><span class="at">container</span>}<span class="op">&gt;</span> <span class="co">//&lt;14&gt;</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>      <span class="op">&lt;</span>main className<span class="op">=</span>{styles<span class="op">.</span><span class="at">main</span>}<span class="op">&gt;</span> <span class="co">//&lt;15&gt;</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>h1<span class="op">&gt;</span>Pokémons<span class="op">&lt;/</span>h1<span class="op">&gt;</span> <span class="co">//&lt;16&gt;</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>div className<span class="op">=</span>{styles<span class="op">.</span><span class="at">grid</span>}<span class="op">&gt;</span> <span class="co">//&lt;17&gt;</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>          {pokemons<span class="op">.</span><span class="fu">map</span>(pokemon <span class="kw">=&gt;</span> ( <span class="co">//&lt;18&gt;</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>div key<span class="op">=</span>{pokemon<span class="op">.</span><span class="at">id</span>} className<span class="op">=</span>{styles<span class="op">.</span><span class="at">card</span>}<span class="op">&gt;</span> <span class="co">//&lt;19&gt;</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>              <span class="op">&lt;</span>img src<span class="op">=</span>{pokemon<span class="op">.</span><span class="at">sprites</span><span class="op">.</span><span class="at">front_default</span>} alt<span class="op">=</span>{pokemon<span class="op">.</span><span class="at">name</span>} <span class="op">/&gt;</span> <span class="co">//&lt;20&gt;</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>              <span class="op">&lt;</span>h3<span class="op">&gt;</span>{pokemon<span class="op">.</span><span class="at">name</span>}<span class="op">&lt;/</span>h3<span class="op">&gt;</span> <span class="co">//&lt;21&gt;</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;/</span>div<span class="op">&gt;</span> <span class="co">//&lt;22&gt;</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>          ))}</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;/</span>div<span class="op">&gt;</span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>      <span class="op">&lt;/</span>main<span class="op">&gt;</span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;/</span>div<span class="op">&gt;</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>  )<span class="op">;</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En el archivo anterior creamos un componente llamado <strong>Home</strong> que muestra una lista de los primeros 10 pokemons obtenidos de la API de Pokemons. Este componente es una página de la aplicación Next.js y se encuentra en el archivo <strong>pages/index.tsx</strong>.</p>
+<p>El componente <code>Home</code> utiliza el hook <strong>useEffect</strong> para realizar una petición a la API de Pokemons cuando se monta. El hook <strong>useEffect</strong> se ejecuta después de que el componente se haya renderizado en el navegador. En este caso, se utiliza para obtener los datos de los pokemons y actualizar el estado del componente con la lista de pokemons obtenidos.</p>
+<p>La función <strong>fetchPokemons</strong> es una función asíncrona que se define dentro del hook <strong>useEffect</strong>. Esta función se encarga de realizar la petición a la API de Pokemons utilizando la función <strong>getPokemons</strong> que hemos definido en el archivo <strong>lib/getPokemons.tsx</strong>. La función <strong>getPokemons</strong> devuelve una promesa que se resuelve con los datos de los pokemons obtenidos de la API.</p>
+<p>Una vez que se obtienen los datos de los pokemons, se actualiza el estado del componente utilizando la función <strong>setPokemons</strong>. La función <strong>setPokemons</strong> es una función proporcionada por el hook <strong>useState</strong> que se utiliza para actualizar el valor de la variable de estado <strong>pokemons</strong>. Al actualizar el estado, el componente se vuelve a renderizar y muestra la lista de pokemons en la interfaz de usuario.</p>
+<p>La lista de pokemons se muestra utilizando el método <strong>map</strong> de JavaScript. El método <strong>map</strong> se utiliza para iterar sobre cada elemento de un arreglo y devolver un nuevo arreglo con los resultados de aplicar una función a cada elemento. En este caso, se utiliza el método <strong>map</strong> para iterar sobre la lista de pokemons y generar un elemento de la lista para cada pokemon.</p>
+Cada elemento de la lista de pokemons se representa como un **
+<div>
+<p>** con una imagen y el nombre del pokemon. La imagen se muestra utilizando la propiedad <strong>sprites.front_default</strong> del objeto pokemon, que contiene la URL de la imagen del pokemon. El nombre del pokemon se muestra utilizando la propiedad <strong>name</strong> del objeto pokemon.</p>
+En resumen, el componente <strong>Home</strong> es responsable de obtener los datos de los primeros 10 pokemons de la API de Pokemons y mostrarlos en una lista en la interfaz de usuario. Utiliza el hook <strong>useEffect</strong> para realizar la petición a la API cuando se monta y el hook <strong>useState</strong> para almacenar y actualizar la lista de pokemons en el estado del componente. La lista de pokemons se muestra utilizando el método <strong>map</strong> y se representan como elementos **
+<div>
+<p>** con una imagen y el nombre del pokemon.</p>
+<ol start="4" type="1">
+<li>Ejecutar la aplicación</li>
 </ol>
-<p>Ejemplo:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode jsx code-with-copy"><code class="sourceCode javascriptreact"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">// App.js</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> Button <span class="im">from</span> <span class="st">'./components/Button'</span><span class="op">;</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> App <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;div&gt;</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;h1&gt;</span>Dynamic Styles in Next.js<span class="kw">&lt;/h1&gt;</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>      <span class="fu">&lt;Button</span> <span class="ot">primary</span><span class="fu">&gt;</span>Primary Button<span class="fu">&lt;/Button&gt;</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>      <span class="fu">&lt;Button&gt;</span>Secondary Button<span class="fu">&lt;/Button&gt;</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/div&gt;</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  )<span class="op">;</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> App<span class="op">;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>En el ejemplo anterior, se importa el componente <strong>Button</strong> en el componente <strong>App</strong> y se utiliza el componente con diferentes valores de la prop <strong>primary</strong> para probar los estilos dinámicos. El botón se mostrará con estilos diferentes en función del valor de la prop <strong>primary</strong>.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> run dev</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="5" type="1">
+<li>Abrir la aplicación en el navegador <a href="http://localhost:3000" class="uri">http://localhost:3000</a></li>
+</ol>
+<section id="resultado" class="level2">
+<h2 class="anchored" data-anchor-id="resultado">Resultado</h2>
+<div class="center">
+<p><img src="images/paste-1.png" class="img-fluid"></p>
+</div>
+<p>Como puedes observar en la imagen anterior, la aplicación muestra una lista de los primeros 10 pokemons obtenidos de la API de Pokemons.</p>
 </section>
-<section id="conclusión." class="level2">
-<h2 class="anchored" data-anchor-id="conclusión.">Conclusión.</h2>
-<p>En Next.js, se pueden crear estilos dinámicos aplicando condicionales en los componentes para cambiar la apariencia de los elementos en función de ciertas condiciones. Esto permite personalizar la apariencia de los componentes de forma dinámica y adaptativa, lo que mejora la experiencia del usuario y la interactividad de la aplicación.</p>
-<p>Los estilos dinámicos son una herramienta poderosa para crear interfaces atractivas y funcionales en Next.js, ya que permiten adaptar la apariencia de los elementos según el contexto y la interacción del usuario. Al aplicar condicionales en los estilos de los componentes, se pueden crear interfaces más dinámicas y personalizadas que se ajusten a las necesidades y preferencias de los usuarios.</p>
-</section>
-<section id="ejercicio." class="level2">
-<h2 class="anchored" data-anchor-id="ejercicio.">Ejercicio.</h2>
-<p>Crea un componente <strong>Card</strong> con estilos dinámicos que cambien el color de fondo y el color del texto en función de una prop <strong>variant</strong>. Utiliza diferentes valores de la prop <strong>variant</strong> para probar los estilos dinámicos y observa cómo cambia la apariencia de la tarjeta en función de la variante seleccionada.</p>
+<section id="conclusión" class="level2">
+<h2 class="anchored" data-anchor-id="conclusión">Conclusión</h2>
+<p>En este laboratorio, aprendimos cómo obtener datos de una API en una aplicación de Next.js y mostrarlos en una lista. También aprendimos cómo usar el hook <strong>useEffect</strong> para realizar una petición a la API cuando el componente se monta.</p>
+<p>Además, vimos cómo manejar los posibles errores que puedan ocurrir durante la petición a la API utilizando un bloque try-catch. Esto nos permite manejar los errores de manera adecuada y evitar que la aplicación se detenga por completo en caso de fallos en la petición.</p>
+Para mostrar los datos de los pokemons en la lista, utilizamos el método <strong>map</strong> de JavaScript para iterar sobre la lista de pokemons y generar un elemento de la lista para cada pokemon. Cada elemento de la lista se representa como un **
+<div>
+<p>** con una imagen y el nombre del pokemon.</p>
+<p>En resumen, este laboratorio nos ha enseñado cómo obtener y mostrar datos de una API en una aplicación de Next.js, así como cómo manejar los errores de manera adecuada. Estos conceptos son fundamentales para el desarrollo de aplicaciones web que interactúan con servicios externos y proporcionan una experiencia de usuario fluida y sin interrupciones.</p>
+<section id="ejercicio" class="level2">
+<h2 class="anchored" data-anchor-id="ejercicio">Ejercicio</h2>
+<p>Desarrollar una aplicación en Next.js que utilice la función fetch para obtener datos de una API externa de Pokemons y mostrarlos dinámicamente en una lista.</p>
+<p>:::</p>
 
 
 </section>
+</div>
+</section>
+</div>
+</div>
+</section>
+</div>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1024,14 +1044,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../unidades/unidad2/15_optimizacion_fuentes.html" class="pagination-link" aria-label="Optimización de fuentes con Next.js">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Optimización de fuentes con Next.js</span></span>
+      <a href="../../unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html" class="pagination-link" aria-label="Creando estilos dinámicos aplicando condicionales en Next.js">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Creando estilos dinámicos aplicando condicionales en Next.js</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../unidades/laboratorios/1_laboratorio_fetch.html" class="pagination-link" aria-label="Laboratorio de Fetch con Next">
-        <span class="nav-page-text"><span class="chapter-title">Laboratorio de Fetch con Next</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
