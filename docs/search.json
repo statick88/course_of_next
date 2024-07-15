@@ -47,7 +47,7 @@
     "text": "En este ebook se presentan lo conceptos básicos acerca del frmework Next JS, el cual es un framework de React que permite la creación de aplicaciones web de forma sencilla y rápida. A lo largo de este ebook se presentarán los conceptos básicos de Next JS, así como ejemplos de su uso.\nLo primero que se debe hacer es instalar Next JS en su computadora. Para ello, se debe tener instalado Node JS en su computadora. Si no lo tiene instalado, puede descargarlo desde la página oficial de Node JS. Una vez que tenga Node JS instalado, puede instalar Next JS utilizando el siguiente comando:\nnpx create-next-app@latest --ts\n\n\n\nEste comando creará una nueva aplicación de Next JS en su computadora. Una vez que la aplicación se haya creado, puede ejecutarla utilizando el siguiente comando:\nnpm run dev\n\n\n\nEste comando iniciará un servidor local en su computadora y podrá ver la aplicación en su navegador web. A partir de aquí, puede comenzar a desarrollar su aplicación utilizando Next JS.\nEn los siguientes capítulos se presentarán los conceptos básicos de Next JS, así como ejemplos de su uso. Espero que este ebook le sea de utilidad y le ayude a comprender mejor el framework Next JS.",
     "crumbs": [
       "Unidad 1: Introducción a Nextjs",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introducción</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introducción</span>"
     ]
   },
   {
@@ -612,69 +612,465 @@
     ]
   },
   {
-    "objectID": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html",
-    "href": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html",
+    "objectID": "unidades/unidad2/10_css_modules.html",
+    "href": "unidades/unidad2/10_css_modules.html",
     "title": "Manejo de estilos y archivos estáticos en Next.js",
     "section": "",
     "text": "Estilos en Next.js\nLos estilos en Next.js se pueden manejar de diferentes formas, como CSS global, CSS Modules y Styled JSX. Cada una de estas formas tiene sus propias ventajas y desventajas, y se pueden utilizar según las necesidades del proyecto.",
     "crumbs": [
-      "Unidad 1: Introducción a Nextjs",
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manejo de estilos y archivos estáticos en Next.js</span>"
     ]
   },
   {
-    "objectID": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#estilos-en-next.js",
-    "href": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#estilos-en-next.js",
+    "objectID": "unidades/unidad2/10_css_modules.html#estilos-en-next.js",
+    "href": "unidades/unidad2/10_css_modules.html#estilos-en-next.js",
     "title": "Manejo de estilos y archivos estáticos en Next.js",
     "section": "",
     "text": "CSS global\nEl CSS global en Next.js se puede utilizar para aplicar estilos a toda la aplicación. Para utilizar CSS global en Next.js, se puede crear un archivo styles.css en la carpeta public y enlazarlo en el archivo **_app.js**.\n/* styles.css */\n\nbody {\n  font-family: 'Arial', sans-serif;\n  background-color: #f0f0f0;\n}\n// _app.js\nimport '../public/styles.css'\n\nfunction MyApp({ Component, pageProps }) {\n  return &lt;Component {...pageProps} /&gt;\n}\n\nexport default MyApp",
     "crumbs": [
-      "Unidad 1: Introducción a Nextjs",
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manejo de estilos y archivos estáticos en Next.js</span>"
     ]
   },
   {
-    "objectID": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#css-modules-en-next.js",
-    "href": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#css-modules-en-next.js",
+    "objectID": "unidades/unidad2/10_css_modules.html#css-modules-en-next.js",
+    "href": "unidades/unidad2/10_css_modules.html#css-modules-en-next.js",
     "title": "Manejo de estilos y archivos estáticos en Next.js",
     "section": "CSS Modules en Next.js",
     "text": "CSS Modules en Next.js\n\nCSS Modules\nLos CSS Modules en Next.js permiten crear estilos locales para cada componente. Para utilizar CSS Modules en Next.js, se puede crear un archivo styles.module.css en la carpeta del componente y importarlo en el archivo del componente.\n/* Button.module.css */\n\n.button {\n  background-color: #007bff;\n  color: #fff;\n  padding: 10px 20px;\n  border: none;\n  border-radius: 5px;\n}\n// Button.js\nimport styles from './Button.module.css'\n\nconst Button = () =&gt; {\n  return &lt;button className={styles.button}&gt;Click me&lt;/button&gt;\n}\n\nexport default Button\n\n\nScoped CSS en Next.js\nEn Next.js, los estilos se aplican de forma local por defecto, lo que significa que los estilos de un componente no afectan a otros componentes. Esto se conoce como scoped CSS y ayuda a evitar conflictos de estilos entre componentes.\n\n\nCreación y uso de CSS Modules.\nPara crear y utilizar CSS Modules en Next.js, se deben seguir los siguientes pasos:\n\nCrear un archivo styles.module.css en la carpeta del componente.\nDefinir los estilos en el archivo styles.module.css utilizando la sintaxis de CSS.\nImportar los estilos en el archivo del componente y utilizar la clase generada por CSS Modules.\n\n/* styles.module.css */\n\n.button {\n  background-color: #007bff;\n  color: #fff;\n  padding: 10px 20px;\n  border: none;\n  border-radius: 5px;\n}\n// Button.js\nimport styles from './styles.module.css'\n\nconst Button = () =&gt; {\n  return &lt;button className={styles.button}&gt;Click me&lt;/button&gt;\n}\n\nexport default Button",
     "crumbs": [
-      "Unidad 1: Introducción a Nextjs",
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manejo de estilos y archivos estáticos en Next.js</span>"
     ]
   },
   {
-    "objectID": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#styled-jsx-en-next.js",
-    "href": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#styled-jsx-en-next.js",
+    "objectID": "unidades/unidad2/10_css_modules.html#styled-jsx-en-next.js",
+    "href": "unidades/unidad2/10_css_modules.html#styled-jsx-en-next.js",
     "title": "Manejo de estilos y archivos estáticos en Next.js",
     "section": "Styled JSX en Next.js",
     "text": "Styled JSX en Next.js\n\nStyled JSX\nStyled JSX en Next.js permite escribir estilos en línea dentro de los componentes. Para utilizar Styled JSX en Next.js, se puede utilizar la etiqueta style y definir los estilos dentro de ella.\n// Button.js\n\nconst Button = () =&gt; {\n  return (\n    &lt;button&gt;\n      Click me\n      &lt;style jsx&gt;{`\n        button {\n          background-color: #007bff;\n          color: #fff;\n          padding: 10px 20px;\n          border: none;\n          border-radius: 5px;\n        }\n      `}&lt;/style&gt;\n    &lt;/button&gt;\n  )\n}\n\nexport default Button\n\n\nVentajas de Styled JSX\nLas ventajas de Styled JSX en Next.js son las siguientes:\n\nPermite escribir estilos en línea de forma sencilla.\nPermite utilizar variables y funciones de JavaScript en los estilos.\nPermite aplicar estilos de forma local a un componente.",
     "crumbs": [
-      "Unidad 1: Introducción a Nextjs",
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manejo de estilos y archivos estáticos en Next.js</span>"
     ]
   },
   {
-    "objectID": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#conclusión",
-    "href": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#conclusión",
+    "objectID": "unidades/unidad2/10_css_modules.html#conclusión",
+    "href": "unidades/unidad2/10_css_modules.html#conclusión",
     "title": "Manejo de estilos y archivos estáticos en Next.js",
     "section": "Conclusión",
     "text": "Conclusión\nEn este capítulo se presentaron los conceptos básicos de cómo manejar estilos y archivos estáticos en Next.js. A lo largo de este capítulo se presentaron las diferentes formas de manejar estilos en Next.js, como CSS global, CSS Modules y Styled JSX. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo manejar estilos y archivos estáticos en Next.js.",
     "crumbs": [
-      "Unidad 1: Introducción a Nextjs",
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manejo de estilos y archivos estáticos en Next.js</span>"
     ]
   },
   {
-    "objectID": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#ejercicios",
-    "href": "unidades/unidad1/10_manejo_estilos_archivos_estaticos.html#ejercicios",
+    "objectID": "unidades/unidad2/10_css_modules.html#ejercicios",
+    "href": "unidades/unidad2/10_css_modules.html#ejercicios",
     "title": "Manejo de estilos y archivos estáticos en Next.js",
     "section": "Ejercicios",
     "text": "Ejercicios\n\nCrea un archivo styles.css en la carpeta public y enlázalo en el archivo **_app.js** para aplicar estilos globales a la aplicación.\nCrea un archivo styles.module.css en la carpeta de un componente y utilízalo para aplicar estilos locales al componente.\nUtiliza Styled JSX en un componente de Next.js para aplicar estilos en línea al componente.\n\nEspero que estos ejercicios le sean de utilidad y le ayuden a practicar cómo manejar estilos y archivos estáticos en Next.js.",
     "crumbs": [
-      "Unidad 1: Introducción a Nextjs",
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
       "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manejo de estilos y archivos estáticos en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/11_uso_sass.html",
+    "href": "unidades/unidad2/11_uso_sass.html",
+    "title": "Uso de Sass en Next.js",
+    "section": "",
+    "text": "Instalación y configuración de Sass.\nPara utilizar Sass en Next.js, se debe instalar la librería sass y configurarla en el archivo next.config.js. Para instalar la librería sass, se puede utilizar el siguiente comando:\nPara configurar Sass en Next.js, se debe crear un archivo next.config.js en la raíz del proyecto y agregar la siguiente configuración:\nEn el ejemplo anterior, se configura Sass en Next.js para que pueda importar archivos Sass desde la carpeta styles.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Uso de Sass en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/11_uso_sass.html#instalación-y-configuración-de-sass.",
+    "href": "unidades/unidad2/11_uso_sass.html#instalación-y-configuración-de-sass.",
+    "title": "Uso de Sass en Next.js",
+    "section": "",
+    "text": "npm install sass\n\n// next.config.js\nconst path = require('path')\n\nmodule.exports = {\n  sassOptions: {\n    includePaths: [path.join(__dirname, 'styles')],\n  },\n}",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Uso de Sass en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/11_uso_sass.html#uso-de-sass-en-componentes.",
+    "href": "unidades/unidad2/11_uso_sass.html#uso-de-sass-en-componentes.",
+    "title": "Uso de Sass en Next.js",
+    "section": "Uso de Sass en componentes.",
+    "text": "Uso de Sass en componentes.\nPara utilizar Sass en los componentes de Next.js, se puede crear un archivo styles.scss en la carpeta del componente y importarlo en el archivo del componente.\n// Button.module.scss\n\n.button {\n  background-color: #007bff;\n  color: #fff;\n  padding: 10px 20px;\n  border: none;\n  border-radius: 5px;\n}\n// Button.js\nimport styles from './Button.module.scss'\n\nconst Button = () =&gt; {\n  return &lt;button className={styles.button}&gt;Click me&lt;/button&gt;\n}\n\nexport default Button\nEn el ejemplo anterior, se crea un archivo styles.scss con estilos Sass para el componente Button y se importa en el archivo del componente.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Uso de Sass en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/11_uso_sass.html#variables-y-mixins-en-sass.",
+    "href": "unidades/unidad2/11_uso_sass.html#variables-y-mixins-en-sass.",
+    "title": "Uso de Sass en Next.js",
+    "section": "Variables y mixins en Sass.",
+    "text": "Variables y mixins en Sass.\nSass permite utilizar variables y mixins para reutilizar estilos en los componentes de Next.js. Para utilizar variables y mixins en Sass, se puede crear un archivo styles.scss con las variables y mixins necesarias y importarlo en los componentes.\n// styles.scss\n\n$primary-color: #007bff;\n\n@mixin button-styles {\n  background-color: $primary-color;\n  color: #fff;\n  padding: 10px 20px;\n  border: none;\n  border-radius: 5px;\n}\n// Button.module.scss\n@import 'styles.scss';\n\n.button {\n  @include button-styles;\n}\nEn el ejemplo anterior, se crea un archivo styles.scss con variables y mixins para los estilos del componente Button y se importa en el archivo Button.module.scss.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Uso de Sass en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/11_uso_sass.html#conclusión.",
+    "href": "unidades/unidad2/11_uso_sass.html#conclusión.",
+    "title": "Uso de Sass en Next.js",
+    "section": "Conclusión.",
+    "text": "Conclusión.\nEn este capítulo se presentó cómo utilizar Sass en Next.js. A lo largo de este capítulo se presentaron los siguientes temas: instalación y configuración de Sass, uso de Sass en componentes, variables y mixins en Sass. Espero que",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Uso de Sass en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/11_uso_sass.html#ejercicios.",
+    "href": "unidades/unidad2/11_uso_sass.html#ejercicios.",
+    "title": "Uso de Sass en Next.js",
+    "section": "Ejercicios.",
+    "text": "Ejercicios.\n\nCrea un archivo styles.scss con estilos Sass para un componente en Next.js.\nCrea variables y mixins en Sass para reutilizar estilos en los componentes de Next.js.\nImporta un archivo Sass en un componente de Next.js y aplica los estilos en el componente.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Uso de Sass en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/12_estilos_globales.html",
+    "href": "unidades/unidad2/12_estilos_globales.html",
+    "title": "Cómo utilizar estilos globales en Next.js",
+    "section": "",
+    "text": "Estilos globales vs. estilos locales.\nLos estilos globales en Next.js se pueden utilizar para aplicar estilos a toda la aplicación, mientras que los estilos locales se utilizan para aplicar estilos a componentes específicos.\nEjemplo:\nEn el código anterior, se crea un archivo styles.css con estilos globales para la aplicación. Los estilos se aplican al cuerpo de la página y al componente Button.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Cómo utilizar estilos globales en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/12_estilos_globales.html#estilos-globales-vs.-estilos-locales.",
+    "href": "unidades/unidad2/12_estilos_globales.html#estilos-globales-vs.-estilos-locales.",
+    "title": "Cómo utilizar estilos globales en Next.js",
+    "section": "",
+    "text": "/* styles.css */\n\nbody {\n  font-family: 'Arial', sans-serif;\n  background-color: #f0f0f0;\n}\n\n.button {\n  background-color: #007bff;\n  color: #fff;\n  padding: 10px 20px;\n  border: none;\n  border-radius: 5px;\n}",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Cómo utilizar estilos globales en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/12_estilos_globales.html#implementación-de-estilos-globales.",
+    "href": "unidades/unidad2/12_estilos_globales.html#implementación-de-estilos-globales.",
+    "title": "Cómo utilizar estilos globales en Next.js",
+    "section": "Implementación de estilos globales.",
+    "text": "Implementación de estilos globales.\nPara utilizar estilos globales en Next.js, se puede crear un archivo styles.css en la carpeta public y enlazarlo en el archivo **_app.js**.\n// _app.js\nimport '../public/styles.css'\n\nfunction MyApp({ Component, pageProps }) {\n  return &lt;Component {...pageProps} /&gt;\n}\n\nexport default MyApp",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Cómo utilizar estilos globales en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/12_estilos_globales.html#uso-de-reset-y-normalize.css.",
+    "href": "unidades/unidad2/12_estilos_globales.html#uso-de-reset-y-normalize.css.",
+    "title": "Cómo utilizar estilos globales en Next.js",
+    "section": "Uso de reset y normalize.css.",
+    "text": "Uso de reset y normalize.css.\nPara restablecer los estilos predeterminados del navegador y garantizar una apariencia consistente en diferentes navegadores, se pueden utilizar las bibliotecas reset.css o normalize.css.\nEjemplo:\n// _app.js\nimport 'normalize.css'\nimport '../public/styles.css'\n\nfunction MyApp({ Component, pageProps }) {\n  return &lt;Component {...pageProps} /&gt;\n}\n\nexport default MyApp\nEn el ejemplo anterior, se importa la biblioteca normalize.css en el archivo **_app.js** para restablecer los estilos predeterminados del navegador.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Cómo utilizar estilos globales en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/12_estilos_globales.html#conclusión.",
+    "href": "unidades/unidad2/12_estilos_globales.html#conclusión.",
+    "title": "Cómo utilizar estilos globales en Next.js",
+    "section": "Conclusión.",
+    "text": "Conclusión.\nEn este capítulo se presentaron los conceptos básicos de cómo utilizar estilos globales en Next.js. A lo largo de este capítulo se presentaron los siguientes temas: estilos globales vs. estilos locales, implementación de estilos globales, uso de reset y normalize.css. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo utilizar estilos globales en Next.js.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Cómo utilizar estilos globales en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/12_estilos_globales.html#ejercicios.",
+    "href": "unidades/unidad2/12_estilos_globales.html#ejercicios.",
+    "title": "Cómo utilizar estilos globales en Next.js",
+    "section": "Ejercicios.",
+    "text": "Ejercicios.\n\nCrea un archivo styles.css con estilos globales para tu aplicación Next.js.\nUtiliza la biblioteca normalize.css para restablecer los estilos predeterminados del navegador en tu aplicación Next.js.\nCrea un componente Button con estilos globales y locales en tu aplicación Next.js.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>13</span>  <span class='chapter-title'>Cómo utilizar estilos globales en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/13_archivos_estaticos.html",
+    "href": "unidades/unidad2/13_archivos_estaticos.html",
+    "title": "Cómo agregar archivos estáticos en Next.js",
+    "section": "",
+    "text": "Carpeta public.\nLos archivos estáticos en Next.js se pueden agregar en la carpeta public. Esta carpeta se utiliza para almacenar archivos estáticos como imágenes, fuentes, hojas de estilo y scripts.\nEjemplo:\nEn el ejemplo anterior, se crean las carpetas images y styles en la carpeta public para almacenar archivos estáticos como imágenes y hojas de estilo.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Cómo agregar archivos estáticos en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/13_archivos_estaticos.html#carpeta-public.",
+    "href": "unidades/unidad2/13_archivos_estaticos.html#carpeta-public.",
+    "title": "Cómo agregar archivos estáticos en Next.js",
+    "section": "",
+    "text": "public/\n  images/\n    logo.png\n  styles/\n    styles.css",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Cómo agregar archivos estáticos en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/13_archivos_estaticos.html#acceso-y-uso-de-archivos-estáticos.",
+    "href": "unidades/unidad2/13_archivos_estaticos.html#acceso-y-uso-de-archivos-estáticos.",
+    "title": "Cómo agregar archivos estáticos en Next.js",
+    "section": "Acceso y uso de archivos estáticos.",
+    "text": "Acceso y uso de archivos estáticos.\nLos archivos estáticos en la carpeta public se pueden acceder y utilizar en los componentes de Next.js utilizando la ruta relativa a la carpeta public.\nEjemplo:\n// Image.js\n\nconst Image = () =&gt; {\n  return &lt;img src=\"/images/logo.png\" alt=\"Logo\" /&gt;;\n}\n\nexport default Image;\nEn el ejemplo anterior, se crea un componente Image que muestra la imagen logo.png almacenada en la carpeta images de la carpeta public.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Cómo agregar archivos estáticos en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/13_archivos_estaticos.html#ventajas-de-la-carpeta-public.",
+    "href": "unidades/unidad2/13_archivos_estaticos.html#ventajas-de-la-carpeta-public.",
+    "title": "Cómo agregar archivos estáticos en Next.js",
+    "section": "Ventajas de la carpeta public.",
+    "text": "Ventajas de la carpeta public.\nLas ventajas de utilizar la carpeta public en Next.js son las siguientes:\n\nPermite almacenar archivos estáticos de forma organizada.\nPermite acceder y utilizar archivos estáticos en los componentes de forma sencilla.\nPermite mejorar el rendimiento de la aplicación al almacenar archivos estáticos en caché.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Cómo agregar archivos estáticos en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/13_archivos_estaticos.html#ejemplos-prácticos.",
+    "href": "unidades/unidad2/13_archivos_estaticos.html#ejemplos-prácticos.",
+    "title": "Cómo agregar archivos estáticos en Next.js",
+    "section": "Ejemplos prácticos.",
+    "text": "Ejemplos prácticos.\n\nCrea una carpeta public en la raíz del proyecto y agrega archivos estáticos como imágenes, fuentes, hojas de estilo y scripts.\n\nEjemplo:\npublic/\n  images/\n    logo.png\n  styles/\n    styles.css\nEn el ejemplo anterior, se crea la carpeta public en la raíz del proyecto y se agregan archivos estáticos como la imagen logo.png y la hoja de estilo styles.css.\n\nAccede y utiliza los archivos estáticos en los componentes de Next.js utilizando la ruta relativa a la carpeta public.\n\nEjemplo:\n// Image.js\n\nconst Image = () =&gt; {\n  return &lt;img src=\"/images/logo.png\" alt=\"Logo\" /&gt;;\n}\n\nexport default Image;\nEn el ejemplo anterior, se crea un componente Image que muestra la imagen logo.png almacenada en la carpeta images de la carpeta public.\n\nComprueba que los archivos estáticos se cargan correctamente en la aplicación y se muestran en los componentes.\n\nEjemplo:\n// App.js\n\nimport Image from './components/Image';\n\nconst App = () =&gt; {\n  return (\n    &lt;div&gt;\n      &lt;h1&gt;Static Files in Next.js&lt;/h1&gt;\n      &lt;Image /&gt;\n    &lt;/div&gt;\n  );\n}\n\nexport default App;\nEn el ejemplo anterior, se crea un componente App que muestra el título de la aplicación y el componente Image que muestra la imagen logo.png almacenada en la carpeta images de la carpeta public.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Cómo agregar archivos estáticos en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/13_archivos_estaticos.html#conclusión.",
+    "href": "unidades/unidad2/13_archivos_estaticos.html#conclusión.",
+    "title": "Cómo agregar archivos estáticos en Next.js",
+    "section": "Conclusión.",
+    "text": "Conclusión.\nEn este capítulo se presentaron los conceptos básicos de cómo agregar archivos estáticos en Next.js. A lo largo de este capítulo se presentaron las ventajas de utilizar la carpeta public para almacenar archivos estáticos y cómo acceder y utilizar los archivos estáticos en los componentes de Next.js. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo agregar archivos estáticos en Next.js.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Cómo agregar archivos estáticos en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/13_archivos_estaticos.html#ejercicios.",
+    "href": "unidades/unidad2/13_archivos_estaticos.html#ejercicios.",
+    "title": "Cómo agregar archivos estáticos en Next.js",
+    "section": "Ejercicios.",
+    "text": "Ejercicios.\n\nCrea una carpeta public en la raíz del proyecto y agrega archivos estáticos como imágenes, fuentes, hojas de estilo y scripts.\nAccede y utiliza los archivos estáticos en los componentes de Next.js utilizando la ruta relativa a la carpeta public.\nComprueba que los archivos estáticos se cargan correctamente en la aplicación y se muestran en los componentes.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>14</span>  <span class='chapter-title'>Cómo agregar archivos estáticos en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/14_manejo_y_optimizacion_imagenes.html",
+    "href": "unidades/unidad2/14_manejo_y_optimizacion_imagenes.html",
+    "title": "Manejo y optimización de imágenes con Next Image",
+    "section": "",
+    "text": "Introducción al componente Image.\nEl componente Image en Next.js se utiliza para mostrar imágenes de forma eficiente y optimizada. El componente Image utiliza el formato de imagen WebP y la carga perezosa para mejorar el rendimiento de la aplicación.\nEjemplo:\nEn el ejemplo anterior, se crea un componente MyImage que muestra la imagen my-image.jpg con un ancho de 500 píxeles y una altura de 300 píxeles utilizando el componente Image.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Manejo y optimización de imágenes con Next Image</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/14_manejo_y_optimizacion_imagenes.html#introducción-al-componente-image.",
+    "href": "unidades/unidad2/14_manejo_y_optimizacion_imagenes.html#introducción-al-componente-image.",
+    "title": "Manejo y optimización de imágenes con Next Image",
+    "section": "",
+    "text": "// Image.js\n\nimport Image from 'next/image';\n\nconst MyImage = () =&gt; {\n  return &lt;Image src=\"/images/my-image.jpg\" alt=\"My Image\" width={500} height={300} /&gt;;\n}\n\nexport default MyImage;",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Manejo y optimización de imágenes con Next Image</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/14_manejo_y_optimizacion_imagenes.html#configuración-y-optimización-de-imágenes.",
+    "href": "unidades/unidad2/14_manejo_y_optimizacion_imagenes.html#configuración-y-optimización-de-imágenes.",
+    "title": "Manejo y optimización de imágenes con Next Image",
+    "section": "Configuración y optimización de imágenes.",
+    "text": "Configuración y optimización de imágenes.\nPara configurar y optimizar las imágenes en Next.js, se pueden utilizar las siguientes propiedades del componente Image:\n\nsrc: La ruta de la imagen.\nalt: El texto alternativo de la imagen.\nwidth: El ancho de la imagen en píxeles.\nheight: La altura de la imagen en píxeles.\nlayout: La disposición de la imagen (responsive, fixed, fill, intrinsic).\nobjectFit: La forma en que la imagen se ajusta al contenedor.\nobjectPosition: La posición de la imagen dentro del contenedor.\n\nEjemplo:\n// Image.js\n\nimport Image from 'next/image';\n\nconst MyImage = () =&gt; {\n  return &lt;Image src=\"/images/my-image.jpg\" alt=\"My Image\" width={500} height={300} layout=\"responsive\" objectFit=\"cover\" objectPosition=\"center\" /&gt;;\n}\n\nexport default MyImage;\nEn el ejemplo anterior, se configura la imagen my-image.jpg con un ancho de 500 píxeles, una altura de 300 píxeles, una disposición responsive, un ajuste de objeto de cubierta y una posición de objeto centrada.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Manejo y optimización de imágenes con Next Image</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/14_manejo_y_optimizacion_imagenes.html#uso-de-imágenes-remotas-y-locales.",
+    "href": "unidades/unidad2/14_manejo_y_optimizacion_imagenes.html#uso-de-imágenes-remotas-y-locales.",
+    "title": "Manejo y optimización de imágenes con Next Image",
+    "section": "Uso de imágenes remotas y locales.",
+    "text": "Uso de imágenes remotas y locales.\nEn Next.js, se pueden utilizar imágenes remotas y locales en el componente Image. Las imágenes remotas se pueden cargar desde una URL externa, mientras que las imágenes locales se pueden cargar desde la carpeta public.\nEjemplo:\n// Image.js\n\nimport Image from 'next/image';\n\nconst MyImage = () =&gt; {\n  return (\n    &lt;div&gt;\n      &lt;Image src=\"https://example.com/my-remote-image.jpg\" alt=\"My Remote Image\" width={500} height={300} /&gt;\n      &lt;Image src=\"/images/my-local-image.jpg\" alt=\"My Local Image\" width={500} height={300} /&gt;\n    &lt;/div&gt;\n  );\n}\n\nexport default MyImage;\nEn el ejemplo anterior, se muestra una imagen remota my-remote-image.jpg y una imagen local my-local-image.jpg utilizando el componente Image.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Manejo y optimización de imágenes con Next Image</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/14_manejo_y_optimizacion_imagenes.html#conclusión.",
+    "href": "unidades/unidad2/14_manejo_y_optimizacion_imagenes.html#conclusión.",
+    "title": "Manejo y optimización de imágenes con Next Image",
+    "section": "Conclusión.",
+    "text": "Conclusión.\nEl componente Image en Next.js permite mostrar imágenes de forma eficiente y optimizada en la aplicación. Al utilizar el componente Image, se puede mejorar el rendimiento de la aplicación y proporcionar una mejor experiencia al usuario al cargar imágenes de manera rápida y eficiente.\nEn esta unidad, se exploró cómo manejar y optimizar imágenes con Next Image, incluyendo la configuración de propiedades, el uso de imágenes remotas y locales, y la importancia de utilizar el componente Image para mejorar el rendimiento de la aplicación.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>15</span>  <span class='chapter-title'>Manejo y optimización de imágenes con Next Image</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/15_optimizacion_fuentes.html",
+    "href": "unidades/unidad2/15_optimizacion_fuentes.html",
+    "title": "Optimización de fuentes con Next.js",
+    "section": "",
+    "text": "Uso de fuentes personalizadas.\nPara utilizar fuentes personalizadas en Next.js, se pueden agregar las fuentes en la carpeta public y enlazarlas en el archivo **_app.js**.\nEjemplo:\nEn el ejemplo anterior, se enlaza el archivo fonts.css que contiene las fuentes personalizadas en el archivo **_app.js**.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Optimización de fuentes con Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/15_optimizacion_fuentes.html#uso-de-fuentes-personalizadas.",
+    "href": "unidades/unidad2/15_optimizacion_fuentes.html#uso-de-fuentes-personalizadas.",
+    "title": "Optimización de fuentes con Next.js",
+    "section": "",
+    "text": "// _app.js\n\nimport '../public/fonts.css'\n\nfunction MyApp({ Component, pageProps }) {\n  return &lt;Component {...pageProps} /&gt;\n}\n\nexport default MyApp",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Optimización de fuentes con Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/15_optimizacion_fuentes.html#optimización-de-carga-de-fuentes.",
+    "href": "unidades/unidad2/15_optimizacion_fuentes.html#optimización-de-carga-de-fuentes.",
+    "title": "Optimización de fuentes con Next.js",
+    "section": "Optimización de carga de fuentes.",
+    "text": "Optimización de carga de fuentes.\nPara optimizar la carga de fuentes en Next.js, se pueden utilizar las propiedades preload y prefetch en el archivo **_document.js**.\nEjemplo:\n// _document.js\n\nimport Document, { Html, Head, Main, NextScript } from 'next/document'\n\nclass MyDocument extends Document {\n  render() {\n    return (\n      &lt;Html&gt;\n        &lt;Head&gt;\n          &lt;link rel=\"preload\" href=\"/fonts/my-font.woff2\" as=\"font\" type=\"font/woff2\" crossOrigin=\"anonymous\" /&gt;\n          &lt;link rel=\"prefetch\" href=\"/fonts/my-font.woff2\" as=\"font\" type=\"font/woff2\" crossOrigin=\"anonymous\" /&gt;\n        &lt;/Head&gt;\n        &lt;body&gt;\n          &lt;Main /&gt;\n          &lt;NextScript /&gt;\n        &lt;/body&gt;\n      &lt;/Html&gt;\n    )\n  }\n}\n\nexport default MyDocument\nEn el ejemplo anterior, se utiliza la propiedad preload para cargar la fuente my-font.woff2 de forma anticipada y la propiedad prefetch para cargar la fuente my-font.woff2 de forma diferida.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Optimización de fuentes con Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/15_optimizacion_fuentes.html#ejemplos-prácticos.",
+    "href": "unidades/unidad2/15_optimizacion_fuentes.html#ejemplos-prácticos.",
+    "title": "Optimización de fuentes con Next.js",
+    "section": "Ejemplos prácticos.",
+    "text": "Ejemplos prácticos.\n\nCrea una carpeta fonts en la carpeta public y agrega las fuentes personalizadas en formato WOFF2.\n\npublic/\n  fonts/\n    my-font.woff2\n\nCrea un archivo fonts.css en la carpeta public y enlaza las fuentes personalizadas.\n\n/* fonts.css */\n\n@font-face {\n  font-family: 'My Font';\n  src: url('/fonts/my-font.woff2') format('woff2');\n}\n\nEnlaza el archivo fonts.css en el archivo **_app.js** para utilizar las fuentes personalizadas en la aplicación.\n\n// _app.js\n\nimport '../public/fonts.css'\n\nfunction MyApp({ Component, pageProps }) {\n  return &lt;Component {...pageProps} /&gt;\n}\n\nexport default MyApp\n\nOptimiza la carga de las fuentes en Next.js utilizando las propiedades preload y prefetch en el archivo **_document.js**.\n\n// _document.js\n\nimport Document, { Html, Head, Main, NextScript } from 'next/document'\n\nclass MyDocument extends Document {\n  render() {\n    return (\n      &lt;Html&gt;\n        &lt;Head&gt;\n          &lt;link rel=\"preload\" href=\"/fonts/my-font.woff2\" as=\"font\" type=\"font/woff2\" crossOrigin=\"anonymous\" /&gt;\n          &lt;link rel=\"prefetch\" href=\"/fonts/my-font.woff2\" as=\"font\" type=\"font/woff2\" crossOrigin=\"anonymous\" /&gt;\n        &lt;/Head&gt;\n        &lt;body&gt;\n          &lt;Main /&gt;\n          &lt;NextScript /&gt;\n        &lt;/body&gt;\n      &lt;/Html&gt;\n    )\n  }\n}\n\nexport default MyDocument\nEn el ejemplo anterior, se optimiza la carga de la fuente my-font.woff2 utilizando las propiedades preload y prefetch en el archivo **_document.js**.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Optimización de fuentes con Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/15_optimizacion_fuentes.html#conclusión.",
+    "href": "unidades/unidad2/15_optimizacion_fuentes.html#conclusión.",
+    "title": "Optimización de fuentes con Next.js",
+    "section": "Conclusión.",
+    "text": "Conclusión.\nLa optimización de fuentes en Next.js es importante para mejorar el rendimiento y la carga de la aplicación. Al utilizar fuentes personalizadas y optimizar su carga, se puede garantizar una mejor experiencia de usuario y una mayor eficiencia en la aplicación.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Optimización de fuentes con Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/15_optimizacion_fuentes.html#ejericios",
+    "href": "unidades/unidad2/15_optimizacion_fuentes.html#ejericios",
+    "title": "Optimización de fuentes con Next.js",
+    "section": "Ejericios",
+    "text": "Ejericios\n\nAgrega una fuente personalizada a tu aplicación Next.js y enlázala en el archivo **_app.js**.\nOptimiza la carga de la fuente personalizada utilizando las propiedades preload y prefetch en el archivo **_document.js**.\nComprueba que la fuente personalizada se carga correctamente en la aplicación y se muestra en los componentes.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Optimización de fuentes con Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html",
+    "href": "unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html",
+    "title": "Creando estilos dinámicos aplicando condicionales en Next.js",
+    "section": "",
+    "text": "Estilos dinámicos.\nLos estilos dinámicos en Next.js se pueden aplicar utilizando condicionales en los estilos de los componentes. Esto permite cambiar la apariencia de los elementos en función de ciertas condiciones, como el estado de un componente o los datos recibidos de una API.\nEjemplo:\nEn el ejemplo anterior, se crea un componente Button con un estilo dinámico que cambia el color de fondo y el color del texto en función de la prop primary. Si la prop primary es verdadera, se aplican los estilos para un botón principal; de lo contrario, se aplican los estilos para un botón secundario.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Creando estilos dinámicos aplicando condicionales en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html#estilos-dinámicos.",
+    "href": "unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html#estilos-dinámicos.",
+    "title": "Creando estilos dinámicos aplicando condicionales en Next.js",
+    "section": "",
+    "text": "// Button.js\n\nconst Button = ({ primary }) =&gt; {\n  return (\n    &lt;button style={{ backgroundColor: primary ? '#007bff' : '#f0f0f0', color: primary ? '#fff' : '#000' }}&gt;\n      Click me\n    &lt;/button&gt;\n  );\n}\n\nexport default Button;",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Creando estilos dinámicos aplicando condicionales en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html#aplicación-de-condicionales-en-estilos.",
+    "href": "unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html#aplicación-de-condicionales-en-estilos.",
+    "title": "Creando estilos dinámicos aplicando condicionales en Next.js",
+    "section": "Aplicación de condicionales en estilos.",
+    "text": "Aplicación de condicionales en estilos.\nPara aplicar condicionales en los estilos de los componentes en Next.js, se pueden utilizar operadores ternarios o funciones condicionales para determinar los estilos a aplicar en función de ciertas condiciones.\nEjemplo:\n// Button.js\n\nconst Button = ({ primary }) =&gt; {\n  const buttonStyles = {\n    backgroundColor: primary ? '#007bff' : '#f0f0f0',\n    color: primary ? '#fff' : '#000',\n    padding: '10px 20px',\n    border: 'none',\n    borderRadius: '5px',\n  };\n\n  return (\n    &lt;button style={buttonStyles}&gt;\n      Click me\n    &lt;/button&gt;\n  );\n}\n\nexport default Button;\nEn el ejemplo anterior, se crea un objeto buttonStyles con los estilos del botón y se utiliza un operador ternario para aplicar los estilos en función de la prop primary. Esto permite personalizar la apariencia del botón de forma dinámica en función de la prop recibida.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Creando estilos dinámicos aplicando condicionales en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html#ejemplos-prácticos.",
+    "href": "unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html#ejemplos-prácticos.",
+    "title": "Creando estilos dinámicos aplicando condicionales en Next.js",
+    "section": "Ejemplos prácticos.",
+    "text": "Ejemplos prácticos.\n\nCrea un componente Button con estilos dinámicos que cambien la apariencia del botón en función de una prop primary.\n\nEjemplo:\n// Button.js\n\nconst Button = ({ primary }) =&gt; {\n  const buttonStyles = {\n    backgroundColor: primary ? '#007bff' : '#f0f0f0',\n    color: primary ? '#fff' : '#000',\n    padding: '10px 20px',\n    border: 'none',\n    borderRadius: '5px',\n  };\n\n  return (\n    &lt;button style={buttonStyles}&gt;\n      Click me\n    &lt;/button&gt;\n  );\n}\n\nexport default Button;\nEn el ejemplo anterior, se crea un componente Button con estilos dinámicos que cambian la apariencia del botón en función de la prop primary. Si la prop primary es verdadera, se aplican los estilos para un botón principal; de lo contrario, se aplican los estilos para un botón secundario.\n\nUtiliza el componente Button en otros componentes de la aplicación y prueba los estilos dinámicos cambiando el valor de la prop primary.\n\nEjemplo:\n// App.js\n\nimport Button from './components/Button';\n\nconst App = () =&gt; {\n  return (\n    &lt;div&gt;\n      &lt;h1&gt;Dynamic Styles in Next.js&lt;/h1&gt;\n      &lt;Button primary&gt;Primary Button&lt;/Button&gt;\n      &lt;Button&gt;Secondary Button&lt;/Button&gt;\n    &lt;/div&gt;\n  );\n}\n\nexport default App;\nEn el ejemplo anterior, se importa el componente Button en el componente App y se utiliza el componente con diferentes valores de la prop primary para probar los estilos dinámicos. El botón se mostrará con estilos diferentes en función del valor de la prop primary.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Creando estilos dinámicos aplicando condicionales en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html#conclusión.",
+    "href": "unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html#conclusión.",
+    "title": "Creando estilos dinámicos aplicando condicionales en Next.js",
+    "section": "Conclusión.",
+    "text": "Conclusión.\nEn Next.js, se pueden crear estilos dinámicos aplicando condicionales en los componentes para cambiar la apariencia de los elementos en función de ciertas condiciones. Esto permite personalizar la apariencia de los componentes de forma dinámica y adaptativa, lo que mejora la experiencia del usuario y la interactividad de la aplicación.\nLos estilos dinámicos son una herramienta poderosa para crear interfaces atractivas y funcionales en Next.js, ya que permiten adaptar la apariencia de los elementos según el contexto y la interacción del usuario. Al aplicar condicionales en los estilos de los componentes, se pueden crear interfaces más dinámicas y personalizadas que se ajusten a las necesidades y preferencias de los usuarios.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Creando estilos dinámicos aplicando condicionales en Next.js</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html#ejercicio.",
+    "href": "unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html#ejercicio.",
+    "title": "Creando estilos dinámicos aplicando condicionales en Next.js",
+    "section": "Ejercicio.",
+    "text": "Ejercicio.\nCrea un componente Card con estilos dinámicos que cambien el color de fondo y el color del texto en función de una prop variant. Utiliza diferentes valores de la prop variant para probar los estilos dinámicos y observa cómo cambia la apariencia de la tarjeta en función de la variante seleccionada.",
+    "crumbs": [
+      "Unidad 2: Manejo de Estilos y Archivos Estáticos",
+      "<span class='chapter-number'>17</span>  <span class='chapter-title'>Creando estilos dinámicos aplicando condicionales en Next.js</span>"
     ]
   },
   {
@@ -711,5 +1107,60 @@
     "title": "Licencia",
     "section": "Cambios en la Licencia",
     "text": "Cambios en la Licencia\n[Nombre de la Compañía] se reserva el derecho de modificar los términos de esta licencia en cualquier momento. Cualquier cambio se reflejará en esta página.\nGracias por respetar nuestros derechos de autor y por tu comprensión."
+  },
+  {
+    "objectID": "unidades/laboratorios/1_laboratorio_fetch.html",
+    "href": "unidades/laboratorios/1_laboratorio_fetch.html",
+    "title": "Laboratorio de Fetch con Next",
+    "section": "",
+    "text": "Pasos\nEn el archivo anterior, creamos una función llamada getPokemons que realiza una petición a la API de Pokemons y obtiene los primeros 10 pokemons. Luego, obtenemos los detalles de cada pokemon y los retornamos.\nEn el archivo anterior, importamos la función getPokemons que creamos en el paso 2. Luego, creamos un componente funcional llamado Home que obtiene los pokemons y los muestra en una lista.\nhttp://localhost:3000",
+    "crumbs": [
+      "Laboratorios: Nextjs",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Laboratorio de Fetch con Next</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/laboratorios/1_laboratorio_fetch.html#pasos",
+    "href": "unidades/laboratorios/1_laboratorio_fetch.html#pasos",
+    "title": "Laboratorio de Fetch con Next",
+    "section": "Pasos",
+    "text": "Pasos\n\nCrear una nueva aplicación de Next.js\n\nnpx create-next-app@latest 1_laboratorio_fetch\n\nCrear un archivo llamado lib/getsPokemons.tsx en la raíz del proyecto.\n\nexport async function getPokemons() { //&lt;1&gt;\n  const headers = new Headers({ //&lt;2&gt;\n    \"Content-Type\": \"application/json\"\n  });\n\n  const requestOptions = { //&lt;3&gt;\n    method: 'GET', //&lt;4&gt;\n    headers: headers, //&lt;5&gt;\n    redirect: 'follow' as RequestRedirect //&lt;6&gt;\n  };\n\n  try {\n    const response = await fetch(\"https://pokeapi.co/api/v2/pokemon?limit=10\", requestOptions); //&lt;7&gt;\n    if (!response.ok) { //&lt;8&gt;\n      throw new Error('Network response was not ok'); //&lt;9&gt;\n    }\n    const data = await response.json(); //&lt;10&gt;\n    const pokemonDetails = await Promise.all( //&lt;11&gt;\n      data.results.map(async (pokemon: any) =&gt; { //&lt;12&gt;\n        const res = await fetch(pokemon.url); //&lt;13&gt;\n        const details = await res.json(); //&lt;14&gt;\n        return details; //&lt;15&gt;\n      })\n    );\n    return pokemonDetails; //&lt;16&gt;\n  } catch (error) { //&lt;17&gt;\n    console.error('Failed to fetch pokemons:', error); //&lt;18&gt;\n    return []; //&lt;19&gt;\n  }\n}\n\nCreamos una función llamada getPokemons que realiza una petición a la API de Pokemons y obtiene los primeros 10 pokemons.\nCreamos un objeto Headers con el tipo de contenido application/json.\nCreamos un objeto requestOptions con el método GET, las cabeceras y la redirección.\nDefinimos el método de la petición como GET.\nDefinimos las cabeceras de la petición.\nDefinimos la redirección de la petición.\nRealizamos una petición a la API de Pokemons con las opciones definidas.\nVerificamos si la respuesta es exitosa.\nLanzamos un error si la respuesta no es exitosa.\nObtenemos los datos de la respuesta.\nObtenemos los detalles de cada pokemon.\nMapeamos los resultados y realizamos una petición a la URL de cada pokemon.\nRealizamos una petición a la URL del pokemon.\nObtenemos los detalles del pokemon.\nRetornamos los detalles del pokemon.\nRetornamos los detalles de los pokemons.\nManejamos los errores de la petición.\nMostramos un mensaje de error en la consola.\nRetornamos un arreglo vacío en caso de error.\n\nEn el archivo anterior creamos una función llamada getPokemons que realiza una petición a la API de Pokemons y obtiene los primeros 10 pokemons. La función maneja los errores de la petición y retorna un arreglo vacío en caso de error.\n\nCrear un archivo llamado pages/index.tsx en la raíz del proyecto.\n\nimport styles from '../../styles/Home.module.css'; //&lt;1&gt;\nimport { useEffect, useState } from 'react'; //&lt;2&gt;\nimport { getPokemons } from '../../lib/getPokemons'; //&lt;3&gt;\n\nexport default function Home() { //&lt;4&gt;\n  const [pokemons, setPokemons] = useState&lt;Array&lt;any&gt;&gt;([]); //&lt;5&gt;\n\n  useEffect(() =&gt; { //&lt;6&gt;\n    const fetchPokemons = async () =&gt; { //&lt;7&gt;\n      console.log('Fetching pokemons...'); //&lt;8&gt;\n      const pokemonData = await getPokemons(); //&lt;9&gt;\n      console.log('Fetched pokemons:', pokemonData); //&lt;10&gt;\n      setPokemons(pokemonData); //&lt;11&gt;\n    };\n\n    fetchPokemons(); //&lt;12&gt;\n  }, []); //&lt;13&gt;\n\n  return (\n    &lt;div className={styles.container}&gt; //&lt;14&gt;\n      &lt;main className={styles.main}&gt; //&lt;15&gt;\n        &lt;h1&gt;Pokémons&lt;/h1&gt; //&lt;16&gt;\n        &lt;div className={styles.grid}&gt; //&lt;17&gt;\n          {pokemons.map(pokemon =&gt; ( //&lt;18&gt;\n            &lt;div key={pokemon.id} className={styles.card}&gt; //&lt;19&gt;\n              &lt;img src={pokemon.sprites.front_default} alt={pokemon.name} /&gt; //&lt;20&gt;\n              &lt;h3&gt;{pokemon.name}&lt;/h3&gt; //&lt;21&gt;\n            &lt;/div&gt; //&lt;22&gt;\n          ))}\n        &lt;/div&gt;\n      &lt;/main&gt;\n    &lt;/div&gt;\n  );\n}\n\nImportamos los estilos del archivo Home.module.css.\nImportamos los hooks useEffect y useState de React.\nImportamos la función getPokemons del archivo getPokemons.tsx.\nDefinimos el componente Home.\nCreamos un estado pokemons con un arreglo vacío.\nUtilizamos el hook useEffect para realizar una petición a la API cuando el componente se monta.\nCreamos una función fetchPokemons para obtener los pokemons.\nMostramos un mensaje en la consola.\nObtenemos los datos de los pokemons.\nMostramos los datos de los pokemons en la consola.\nActualizamos el estado con los datos de los pokemons.\nLlamamos a la función fetchPokemons.\nDefinimos un arreglo vacío de dependencias para que la petición se realice una sola vez.\nCreamos un contenedor con los estilos de la aplicación.\nCreamos un contenedor principal con los estilos de la aplicación.\nMostramos el título de la aplicación.\nCreamos un contenedor con los estilos de la lista de pokemons.\nMapeamos los pokemons y mostramos sus detalles.\nCreamos una tarjeta con los detalles del pokemon.\nMostramos la imagen del pokemon.\nMostramos el nombre del pokemon.\nCerramos la tarjeta del pokemon.\n\nEn el archivo anterior creamos un componente Home que muestra una lista de los primeros 10 pokemons obtenidos de la API de Pokemons. El componente utiliza el hook useEffect para realizar una petición a la API cuando se monta y muestra los datos de los pokemons en una lista.\n\nEjecutar la aplicación\n\nnpm run dev\n\nAbrir la aplicación en el navegador http://localhost:3000",
+    "crumbs": [
+      "Laboratorios",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Laboratorio de Fetch con Next</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/laboratorios/1_laboratorio_fetch.html#resultado",
+    "href": "unidades/laboratorios/1_laboratorio_fetch.html#resultado",
+    "title": "Laboratorio de Fetch con Next",
+    "section": "Resultado",
+    "text": "Resultado\n\n\n\nComo puedes observar en la imagen anterior, la aplicación muestra una lista de los primeros 10 pokemons obtenidos de la API de Pokemons.",
+    "crumbs": [
+      "Laboratorios",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Laboratorio de Fetch con Next</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/laboratorios/1_laboratorio_fetch.html#conclusión",
+    "href": "unidades/laboratorios/1_laboratorio_fetch.html#conclusión",
+    "title": "Laboratorio de Fetch con Next",
+    "section": "Conclusión",
+    "text": "Conclusión\nEn este laboratorio, aprendimos cómo obtener datos de una API en una aplicación de Next.js y mostrarlos en una lista. También aprendimos cómo usar el hook useEffect para realizar una petición a la API cuando el componente se monta.",
+    "crumbs": [
+      "Laboratorios",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Laboratorio de Fetch con Next</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/laboratorios/1_laboratorio_fetch.html#ejercicio",
+    "href": "unidades/laboratorios/1_laboratorio_fetch.html#ejercicio",
+    "title": "Laboratorio de Fetch con Next",
+    "section": "Ejercicio",
+    "text": "Ejercicio\nCrea una aplicación de Next.js que obtenga los primeros 10 pokemons de la API de Pokemons y muestre sus detalles en una lista. Los detalles a mostrar son: nombre, altura, peso y habilidades. Puedes utilizar la API para que muestre los Pokemon en 3D.",
+    "crumbs": [
+      "Laboratorios",
+      "<span class='chapter-number'>18</span>  <span class='chapter-title'>Laboratorio de Fetch con Next</span>"
+    ]
   }
 ]

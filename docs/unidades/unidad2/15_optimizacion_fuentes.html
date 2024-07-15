@@ -8,7 +8,7 @@
 
 <meta name="description" content="Curso de Nextjs">
 
-<title>Cómo crear rutas en Next.js – Curso de Nextjs</title>
+<title>Optimización de fuentes con Next.js – Curso de Nextjs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,8 +65,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../unidades/unidad1/6_layout_next.html" rel="next">
-<link href="../../unidades/unidad1/4_herramientas_y_stack.html" rel="prev">
+<link href="../../unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html" rel="next">
+<link href="../../unidades/unidad2/14_manejo_y_optimizacion_imagenes.html" rel="prev">
 <link href="../../logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -120,7 +120,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/unidad1/1_introduccion.html">Unidad 1: Introducción a Nextjs</a></li><li class="breadcrumb-item"><a href="../../unidades/unidad1/5_conceptos_basicos.html"><span class="chapter-title">Cómo crear rutas en Next.js</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/unidad2/10_css_modules.html">Unidad 2: Manejo de Estilos y Archivos Estáticos</a></li><li class="breadcrumb-item"><a href="../../unidades/unidad2/15_optimizacion_fuentes.html"><span class="chapter-title">Optimización de fuentes con Next.js</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -192,13 +192,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Unidad 1: Introducción a Nextjs</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unidades/unidad1/1_introduccion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducción</span></a>
@@ -221,7 +221,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad1/5_conceptos_basicos.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Cómo crear rutas en Next.js</span></a>
+  <a href="../../unidades/unidad1/5_conceptos_basicos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Cómo crear rutas en Next.js</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -248,13 +248,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
  <span class="menu-text">Unidad 2: Manejo de Estilos y Archivos Estáticos</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unidades/unidad2/10_css_modules.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Manejo de estilos y archivos estáticos en Next.js</span></a>
@@ -282,7 +282,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad2/15_optimizacion_fuentes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Optimización de fuentes con Next.js</span></a>
+  <a href="../../unidades/unidad2/15_optimizacion_fuentes.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Optimización de fuentes con Next.js</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -306,28 +306,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#rutas-básicas." id="toc-rutas-básicas." class="nav-link active" data-scroll-target="#rutas-básicas.">Rutas básicas.</a>
-  <ul class="collapse">
-  <li><a href="#componente-index" id="toc-componente-index" class="nav-link" data-scroll-target="#componente-index">Componente Index:</a></li>
-  </ul></li>
-  <li><a href="#rutas-dinámicas." id="toc-rutas-dinámicas." class="nav-link" data-scroll-target="#rutas-dinámicas.">Rutas dinámicas.</a></li>
-  <li><a href="#nested-routes." id="toc-nested-routes." class="nav-link" data-scroll-target="#nested-routes.">Nested routes.</a></li>
-  <li><a href="#rutas-con-parámetros." id="toc-rutas-con-parámetros." class="nav-link" data-scroll-target="#rutas-con-parámetros.">Rutas con parámetros.</a></li>
-  <li><a href="#rutas-con-query-strings." id="toc-rutas-con-query-strings." class="nav-link" data-scroll-target="#rutas-con-query-strings.">Rutas con query strings.</a></li>
-  <li><a href="#rutas-con-rutas-anidadas." id="toc-rutas-con-rutas-anidadas." class="nav-link" data-scroll-target="#rutas-con-rutas-anidadas.">Rutas con rutas anidadas.</a></li>
-  <li><a href="#rutas-con-rutas-anidadas-y-parámetros." id="toc-rutas-con-rutas-anidadas-y-parámetros." class="nav-link" data-scroll-target="#rutas-con-rutas-anidadas-y-parámetros.">Rutas con rutas anidadas y parámetros.</a></li>
-  <li><a href="#rutas-con-rutas-anidadas-y-query-strings." id="toc-rutas-con-rutas-anidadas-y-query-strings." class="nav-link" data-scroll-target="#rutas-con-rutas-anidadas-y-query-strings.">Rutas con rutas anidadas y query strings.</a></li>
+  <li><a href="#uso-de-fuentes-personalizadas." id="toc-uso-de-fuentes-personalizadas." class="nav-link active" data-scroll-target="#uso-de-fuentes-personalizadas.">Uso de fuentes personalizadas.</a></li>
+  <li><a href="#optimización-de-carga-de-fuentes." id="toc-optimización-de-carga-de-fuentes." class="nav-link" data-scroll-target="#optimización-de-carga-de-fuentes.">Optimización de carga de fuentes.</a></li>
+  <li><a href="#ejemplos-prácticos." id="toc-ejemplos-prácticos." class="nav-link" data-scroll-target="#ejemplos-prácticos.">Ejemplos prácticos.</a></li>
   <li><a href="#conclusión." id="toc-conclusión." class="nav-link" data-scroll-target="#conclusión.">Conclusión.</a></li>
-  <li><a href="#ejercicios." id="toc-ejercicios." class="nav-link" data-scroll-target="#ejercicios.">Ejercicios.</a></li>
+  <li><a href="#ejericios" id="toc-ejericios" class="nav-link" data-scroll-target="#ejericios">Ejericios</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/unidad1/1_introduccion.html">Unidad 1: Introducción a Nextjs</a></li><li class="breadcrumb-item"><a href="../../unidades/unidad1/5_conceptos_basicos.html"><span class="chapter-title">Cómo crear rutas en Next.js</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/unidad2/10_css_modules.html">Unidad 2: Manejo de Estilos y Archivos Estáticos</a></li><li class="breadcrumb-item"><a href="../../unidades/unidad2/15_optimizacion_fuentes.html"><span class="chapter-title">Optimización de fuentes con Next.js</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Cómo crear rutas en Next.js</span></h1>
+<h1 class="title"><span class="chapter-title">Optimización de fuentes con Next.js</span></h1>
 </div>
 
 
@@ -344,70 +336,117 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>En este capítulo se presentarán los conceptos básicos de cómo crear rutas en Next.js. A lo largo de este capítulo se presentarán los siguientes temas:</p>
-<section id="rutas-básicas." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-básicas.">Rutas básicas.</h2>
-<p>Las rutas en Next.js se crean utilizando la carpeta <strong>pages</strong>. Cada archivo en esta carpeta representa una ruta en la aplicación. Por ejemplo, si se crea un archivo <strong>index.js</strong> en esta carpeta, se creará una ruta de inicio en la aplicación.</p>
-<section id="componente-index" class="level3">
-<h3 class="anchored" data-anchor-id="componente-index">Componente Index:</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode jsx code-with-copy"><code class="sourceCode javascriptreact"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> <span class="bu">Index</span> <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;div&gt;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;h1&gt;</span>Home Page<span class="kw">&lt;/h1&gt;</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;p&gt;</span>Welcome to my Next.js App<span class="kw">&lt;/p&gt;</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/div&gt;</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> <span class="bu">Index</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>En el ejemplo anterior, se crea una ruta de inicio en la aplicación con el componente <strong>Index</strong> que renderiza el contenido de la página.</p>
+<p>En Next.js, se pueden optimizar las fuentes para mejorar el rendimiento y la carga de la aplicación. Para optimizar las fuentes en Next.js, se pueden utilizar las siguientes técnicas:</p>
+<section id="uso-de-fuentes-personalizadas." class="level2">
+<h2 class="anchored" data-anchor-id="uso-de-fuentes-personalizadas.">Uso de fuentes personalizadas.</h2>
+<p>Para utilizar fuentes personalizadas en Next.js, se pueden agregar las fuentes en la carpeta <strong>public</strong> y enlazarlas en el archivo **_app.js**.</p>
+<p>Ejemplo:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode jsx code-with-copy"><code class="sourceCode javascriptreact"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">// _app.js</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> <span class="st">'../public/fonts.css'</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">MyApp</span>({ Component<span class="op">,</span> pageProps }) {</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return </span><span class="fu">&lt;Component</span> <span class="va">{</span><span class="op">...</span>pageProps<span class="va">}</span> <span class="fu">/&gt;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> MyApp</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En el ejemplo anterior, se enlaza el archivo <strong>fonts.css</strong> que contiene las fuentes personalizadas en el archivo **_app.js**.</p>
 </section>
+<section id="optimización-de-carga-de-fuentes." class="level2">
+<h2 class="anchored" data-anchor-id="optimización-de-carga-de-fuentes.">Optimización de carga de fuentes.</h2>
+<p>Para optimizar la carga de fuentes en Next.js, se pueden utilizar las propiedades <strong>preload</strong> y <strong>prefetch</strong> en el archivo **_document.js**.</p>
+<p>Ejemplo:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode jsx code-with-copy"><code class="sourceCode javascriptreact"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">// _document.js</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> <span class="bu">Document</span><span class="op">,</span> { Html<span class="op">,</span> Head<span class="op">,</span> Main<span class="op">,</span> NextScript } <span class="im">from</span> <span class="st">'next/document'</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> MyDocument <span class="kw">extends</span> <span class="bu">Document</span> {</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">render</span>() {</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>      <span class="fu">&lt;Html&gt;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">&lt;Head&gt;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>          <span class="kw">&lt;link</span> <span class="ot">rel</span><span class="op">=</span><span class="st">"preload"</span> <span class="ot">href</span><span class="op">=</span><span class="st">"/fonts/my-font.woff2"</span> <span class="ot">as</span><span class="op">=</span><span class="st">"font"</span> <span class="ot">type</span><span class="op">=</span><span class="st">"font/woff2"</span> <span class="ot">crossOrigin</span><span class="op">=</span><span class="st">"anonymous"</span> <span class="kw">/&gt;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>          <span class="kw">&lt;link</span> <span class="ot">rel</span><span class="op">=</span><span class="st">"prefetch"</span> <span class="ot">href</span><span class="op">=</span><span class="st">"/fonts/my-font.woff2"</span> <span class="ot">as</span><span class="op">=</span><span class="st">"font"</span> <span class="ot">type</span><span class="op">=</span><span class="st">"font/woff2"</span> <span class="ot">crossOrigin</span><span class="op">=</span><span class="st">"anonymous"</span> <span class="kw">/&gt;</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>        <span class="fu">&lt;/Head&gt;</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;body&gt;</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>          <span class="fu">&lt;Main</span> <span class="fu">/&gt;</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>          <span class="fu">&lt;NextScript</span> <span class="fu">/&gt;</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;/body&gt;</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>      <span class="fu">&lt;/Html&gt;</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> MyDocument</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En el ejemplo anterior, se utiliza la propiedad <strong>preload</strong> para cargar la fuente <strong>my-font.woff2</strong> de forma anticipada y la propiedad <strong>prefetch</strong> para cargar la fuente <strong>my-font.woff2</strong> de forma diferida.</p>
 </section>
-<section id="rutas-dinámicas." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-dinámicas.">Rutas dinámicas.</h2>
-<p>Las rutas dinámicas en Next.js se crean utilizando corchetes <strong>[]</strong> en el nombre del archivo. Por ejemplo, si se crea un archivo <strong>[id].js</strong> en esta carpeta, se creará una ruta dinámica en la aplicación.</p>
-</section>
-<section id="nested-routes." class="level2">
-<h2 class="anchored" data-anchor-id="nested-routes.">Nested routes.</h2>
-<p>Las rutas anidadas en Next.js se crean utilizando la carpeta <strong>pages</strong> y subcarpetas. Por ejemplo, si se crea una carpeta <strong>blog</strong> y un archivo <strong>[slug].js</strong> en esta carpeta, se creará una ruta anidada en la aplicación.</p>
-</section>
-<section id="rutas-con-parámetros." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-con-parámetros.">Rutas con parámetros.</h2>
-<p>Las rutas con parámetros en Next.js se crean utilizando corchetes <strong>[]</strong> en la ruta. Por ejemplo, si se crea una ruta <strong>/blog/[slug]</strong> en la aplicación, se creará una ruta con parámetros en la aplicación.</p>
-</section>
-<section id="rutas-con-query-strings." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-con-query-strings.">Rutas con query strings.</h2>
-<p>Las rutas con query strings en Next.js se crean utilizando el signo de interrogación <strong>?</strong> en la ruta. Por ejemplo, si se crea una ruta <strong>/blog?slug=hello-world</strong> en la aplicación, se creará una ruta con query strings en la aplicación.º</p>
-</section>
-<section id="rutas-con-rutas-anidadas." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-con-rutas-anidadas.">Rutas con rutas anidadas.</h2>
-<p>Las rutas con rutas anidadas en Next.js se crean utilizando la carpeta <strong>pages</strong> y subcarpetas. Por ejemplo, si se crea una carpeta <strong>blog</strong> y un archivo <strong>[slug].js</strong> en esta carpeta, se creará una ruta anidada en la aplicación.</p>
-</section>
-<section id="rutas-con-rutas-anidadas-y-parámetros." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-con-rutas-anidadas-y-parámetros.">Rutas con rutas anidadas y parámetros.</h2>
-<p>Las rutas con rutas anidadas y parámetros en Next.js se crean utilizando la carpeta <strong>pages</strong> y subcarpetas. Por ejemplo, si se crea una carpeta <strong>blog</strong> y un archivo <strong>[slug].js</strong> en esta carpeta, se creará una ruta anidada con parámetros en la aplicación.</p>
-</section>
-<section id="rutas-con-rutas-anidadas-y-query-strings." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-con-rutas-anidadas-y-query-strings.">Rutas con rutas anidadas y query strings.</h2>
-<p>Las rutas con rutas anidadas y query strings en Next.js se crean utilizando la carpeta <strong>pages</strong> y subcarpetas. Por ejemplo, si se crea una carpeta <strong>blog</strong> y un archivo <strong>[slug].js</strong> en esta carpeta, se creará una ruta anidada con query strings en la aplicación.</p>
+<section id="ejemplos-prácticos." class="level2">
+<h2 class="anchored" data-anchor-id="ejemplos-prácticos.">Ejemplos prácticos.</h2>
+<ol type="1">
+<li>Crea una carpeta <strong>fonts</strong> en la carpeta <strong>public</strong> y agrega las fuentes personalizadas en formato WOFF2.</li>
+</ol>
+<pre><code>public/
+  fonts/
+    my-font.woff2</code></pre>
+<ol start="2" type="1">
+<li>Crea un archivo <strong>fonts.css</strong> en la carpeta <strong>public</strong> y enlaza las fuentes personalizadas.</li>
+</ol>
+<div class="sourceCode" id="cb4"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">/* fonts.css */</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">@font-face</span> {</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-family</span><span class="ch">:</span> <span class="st">'My Font'</span><span class="op">;</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">src</span><span class="ch">:</span> <span class="fu">url(</span><span class="st">'/fonts/my-font.woff2'</span><span class="fu">)</span> <span class="fu">format(</span><span class="st">'woff2'</span><span class="fu">)</span><span class="op">;</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="3" type="1">
+<li>Enlaza el archivo <strong>fonts.css</strong> en el archivo **_app.js** para utilizar las fuentes personalizadas en la aplicación.</li>
+</ol>
+<div class="sourceCode" id="cb5"><pre class="sourceCode jsx code-with-copy"><code class="sourceCode javascriptreact"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">// _app.js</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> <span class="st">'../public/fonts.css'</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">MyApp</span>({ Component<span class="op">,</span> pageProps }) {</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return </span><span class="fu">&lt;Component</span> <span class="va">{</span><span class="op">...</span>pageProps<span class="va">}</span> <span class="fu">/&gt;</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> MyApp</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="4" type="1">
+<li>Optimiza la carga de las fuentes en Next.js utilizando las propiedades <strong>preload</strong> y <strong>prefetch</strong> en el archivo **_document.js**.</li>
+</ol>
+<div class="sourceCode" id="cb6"><pre class="sourceCode jsx code-with-copy"><code class="sourceCode javascriptreact"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">// _document.js</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> <span class="bu">Document</span><span class="op">,</span> { Html<span class="op">,</span> Head<span class="op">,</span> Main<span class="op">,</span> NextScript } <span class="im">from</span> <span class="st">'next/document'</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> MyDocument <span class="kw">extends</span> <span class="bu">Document</span> {</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">render</span>() {</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> (</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>      <span class="fu">&lt;Html&gt;</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">&lt;Head&gt;</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>          <span class="kw">&lt;link</span> <span class="ot">rel</span><span class="op">=</span><span class="st">"preload"</span> <span class="ot">href</span><span class="op">=</span><span class="st">"/fonts/my-font.woff2"</span> <span class="ot">as</span><span class="op">=</span><span class="st">"font"</span> <span class="ot">type</span><span class="op">=</span><span class="st">"font/woff2"</span> <span class="ot">crossOrigin</span><span class="op">=</span><span class="st">"anonymous"</span> <span class="kw">/&gt;</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>          <span class="kw">&lt;link</span> <span class="ot">rel</span><span class="op">=</span><span class="st">"prefetch"</span> <span class="ot">href</span><span class="op">=</span><span class="st">"/fonts/my-font.woff2"</span> <span class="ot">as</span><span class="op">=</span><span class="st">"font"</span> <span class="ot">type</span><span class="op">=</span><span class="st">"font/woff2"</span> <span class="ot">crossOrigin</span><span class="op">=</span><span class="st">"anonymous"</span> <span class="kw">/&gt;</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>        <span class="fu">&lt;/Head&gt;</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;body&gt;</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>          <span class="fu">&lt;Main</span> <span class="fu">/&gt;</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>          <span class="fu">&lt;NextScript</span> <span class="fu">/&gt;</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>        <span class="kw">&lt;/body&gt;</span></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>      <span class="fu">&lt;/Html&gt;</span></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> MyDocument</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En el ejemplo anterior, se optimiza la carga de la fuente <strong>my-font.woff2</strong> utilizando las propiedades <strong>preload</strong> y <strong>prefetch</strong> en el archivo **_document.js**.</p>
 </section>
 <section id="conclusión." class="level2">
 <h2 class="anchored" data-anchor-id="conclusión.">Conclusión.</h2>
-<p>En este capítulo se presentaron los conceptos básicos de cómo crear rutas en Next.js. A lo largo de este capítulo se presentaron los siguientes temas: rutas básicas, rutas dinámicas, rutas anidadas, rutas con parámetros, rutas con query strings, rutas con rutas anidadas, rutas con rutas anidadas y parámetros, y rutas con rutas anidadas y query strings. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo crear rutas en Next.js.</p>
+<p>La optimización de fuentes en Next.js es importante para mejorar el rendimiento y la carga de la aplicación. Al utilizar fuentes personalizadas y optimizar su carga, se puede garantizar una mejor experiencia de usuario y una mayor eficiencia en la aplicación.</p>
 </section>
-<section id="ejercicios." class="level2">
-<h2 class="anchored" data-anchor-id="ejercicios.">Ejercicios.</h2>
+<section id="ejericios" class="level2">
+<h2 class="anchored" data-anchor-id="ejericios">Ejericios</h2>
 <ol type="1">
-<li><p>Crea una ruta básica en Next.js.</p></li>
-<li><p>Crea una ruta dinámica en Next.js.</p></li>
-<li><p>Crea una ruta anidada en Next.js.</p></li>
-<li><p>Crea una ruta con parámetros en Next.js.</p></li>
-<li><p>Crea una ruta con query strings en Next.js.</p></li>
-<li><p>Crea una ruta con rutas anidadas en Next.js.</p></li>
-<li><p>Crea una ruta con rutas anidadas y parámetros en Next.js.</p></li>
-<li><p>Crea una ruta con rutas anidadas y query strings en Next.js.</p></li>
+<li><p>Agrega una fuente personalizada a tu aplicación Next.js y enlázala en el archivo **_app.js**.</p></li>
+<li><p>Optimiza la carga de la fuente personalizada utilizando las propiedades <strong>preload</strong> y <strong>prefetch</strong> en el archivo **_document.js**.</p></li>
+<li><p>Comprueba que la fuente personalizada se carga correctamente en la aplicación y se muestra en los componentes.</p></li>
 </ol>
-<p>Espero que estos ejercicios le sean de utilidad y le ayuden a practicar cómo crear rutas en Next.js.</p>
 
 
 </section>
@@ -986,13 +1025,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../unidades/unidad1/4_herramientas_y_stack.html" class="pagination-link" aria-label="Herramientas y stack utilizado en el curso">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Herramientas y stack utilizado en el curso</span></span>
+      <a href="../../unidades/unidad2/14_manejo_y_optimizacion_imagenes.html" class="pagination-link" aria-label="Manejo y optimización de imágenes con Next Image">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Manejo y optimización de imágenes con Next Image</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../unidades/unidad1/6_layout_next.html" class="pagination-link" aria-label="Cómo crear Layout en Next.js">
-        <span class="nav-page-text"><span class="chapter-title">Cómo crear Layout en Next.js</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html" class="pagination-link" aria-label="Creando estilos dinámicos aplicando condicionales en Next.js">
+        <span class="nav-page-text"><span class="chapter-title">Creando estilos dinámicos aplicando condicionales en Next.js</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

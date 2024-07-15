@@ -8,7 +8,7 @@
 
 <meta name="description" content="Curso de Nextjs">
 
-<title>Cómo crear rutas en Next.js – Curso de Nextjs</title>
+<title>Laboratorio de Fetch con Next – Curso de Nextjs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,8 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../unidades/unidad1/6_layout_next.html" rel="next">
-<link href="../../unidades/unidad1/4_herramientas_y_stack.html" rel="prev">
+<link href="../../unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html" rel="prev">
 <link href="../../logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -120,7 +119,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/unidad1/1_introduccion.html">Unidad 1: Introducción a Nextjs</a></li><li class="breadcrumb-item"><a href="../../unidades/unidad1/5_conceptos_basicos.html"><span class="chapter-title">Cómo crear rutas en Next.js</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/laboratorios/1_laboratorio_fetch.html">Laboratorios</a></li><li class="breadcrumb-item"><a href="../../unidades/laboratorios/1_laboratorio_fetch.html"><span class="chapter-title">Laboratorio de Fetch con Next</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -192,13 +191,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Unidad 1: Introducción a Nextjs</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unidades/unidad1/1_introduccion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducción</span></a>
@@ -221,7 +220,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad1/5_conceptos_basicos.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Cómo crear rutas en Next.js</span></a>
+  <a href="../../unidades/unidad1/5_conceptos_basicos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Cómo crear rutas en Next.js</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -293,41 +292,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
-      <span class="sidebar-item-text sidebar-link text-start">
- <span class="menu-text">Unidad 3: Data Fetching en Next.js</span></span>
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Laboratorios</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unidades/laboratorios/1_laboratorio_fetch.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Laboratorio de Fetch con Next</span></a>
+  </div>
+</li>
+      </ul>
   </li>
     </ul>
     </div>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#rutas-básicas." id="toc-rutas-básicas." class="nav-link active" data-scroll-target="#rutas-básicas.">Rutas básicas.</a>
-  <ul class="collapse">
-  <li><a href="#componente-index" id="toc-componente-index" class="nav-link" data-scroll-target="#componente-index">Componente Index:</a></li>
-  </ul></li>
-  <li><a href="#rutas-dinámicas." id="toc-rutas-dinámicas." class="nav-link" data-scroll-target="#rutas-dinámicas.">Rutas dinámicas.</a></li>
-  <li><a href="#nested-routes." id="toc-nested-routes." class="nav-link" data-scroll-target="#nested-routes.">Nested routes.</a></li>
-  <li><a href="#rutas-con-parámetros." id="toc-rutas-con-parámetros." class="nav-link" data-scroll-target="#rutas-con-parámetros.">Rutas con parámetros.</a></li>
-  <li><a href="#rutas-con-query-strings." id="toc-rutas-con-query-strings." class="nav-link" data-scroll-target="#rutas-con-query-strings.">Rutas con query strings.</a></li>
-  <li><a href="#rutas-con-rutas-anidadas." id="toc-rutas-con-rutas-anidadas." class="nav-link" data-scroll-target="#rutas-con-rutas-anidadas.">Rutas con rutas anidadas.</a></li>
-  <li><a href="#rutas-con-rutas-anidadas-y-parámetros." id="toc-rutas-con-rutas-anidadas-y-parámetros." class="nav-link" data-scroll-target="#rutas-con-rutas-anidadas-y-parámetros.">Rutas con rutas anidadas y parámetros.</a></li>
-  <li><a href="#rutas-con-rutas-anidadas-y-query-strings." id="toc-rutas-con-rutas-anidadas-y-query-strings." class="nav-link" data-scroll-target="#rutas-con-rutas-anidadas-y-query-strings.">Rutas con rutas anidadas y query strings.</a></li>
-  <li><a href="#conclusión." id="toc-conclusión." class="nav-link" data-scroll-target="#conclusión.">Conclusión.</a></li>
-  <li><a href="#ejercicios." id="toc-ejercicios." class="nav-link" data-scroll-target="#ejercicios.">Ejercicios.</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/unidad1/1_introduccion.html">Unidad 1: Introducción a Nextjs</a></li><li class="breadcrumb-item"><a href="../../unidades/unidad1/5_conceptos_basicos.html"><span class="chapter-title">Cómo crear rutas en Next.js</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/laboratorios/1_laboratorio_fetch.html">Laboratorios</a></li><li class="breadcrumb-item"><a href="../../unidades/laboratorios/1_laboratorio_fetch.html"><span class="chapter-title">Laboratorio de Fetch con Next</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Cómo crear rutas en Next.js</span></h1>
+<h1 class="title"><span class="chapter-title">Laboratorio de Fetch con Next</span></h1>
 </div>
 
 
@@ -344,73 +337,160 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>En este capítulo se presentarán los conceptos básicos de cómo crear rutas en Next.js. A lo largo de este capítulo se presentarán los siguientes temas:</p>
-<section id="rutas-básicas." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-básicas.">Rutas básicas.</h2>
-<p>Las rutas en Next.js se crean utilizando la carpeta <strong>pages</strong>. Cada archivo en esta carpeta representa una ruta en la aplicación. Por ejemplo, si se crea un archivo <strong>index.js</strong> en esta carpeta, se creará una ruta de inicio en la aplicación.</p>
-<section id="componente-index" class="level3">
-<h3 class="anchored" data-anchor-id="componente-index">Componente Index:</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode jsx code-with-copy"><code class="sourceCode javascriptreact"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> <span class="bu">Index</span> <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;div&gt;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;h1&gt;</span>Home Page<span class="kw">&lt;/h1&gt;</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;p&gt;</span>Welcome to my Next.js App<span class="kw">&lt;/p&gt;</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/div&gt;</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> <span class="bu">Index</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>En el ejemplo anterior, se crea una ruta de inicio en la aplicación con el componente <strong>Index</strong> que renderiza el contenido de la página.</p>
-</section>
-</section>
-<section id="rutas-dinámicas." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-dinámicas.">Rutas dinámicas.</h2>
-<p>Las rutas dinámicas en Next.js se crean utilizando corchetes <strong>[]</strong> en el nombre del archivo. Por ejemplo, si se crea un archivo <strong>[id].js</strong> en esta carpeta, se creará una ruta dinámica en la aplicación.</p>
-</section>
-<section id="nested-routes." class="level2">
-<h2 class="anchored" data-anchor-id="nested-routes.">Nested routes.</h2>
-<p>Las rutas anidadas en Next.js se crean utilizando la carpeta <strong>pages</strong> y subcarpetas. Por ejemplo, si se crea una carpeta <strong>blog</strong> y un archivo <strong>[slug].js</strong> en esta carpeta, se creará una ruta anidada en la aplicación.</p>
-</section>
-<section id="rutas-con-parámetros." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-con-parámetros.">Rutas con parámetros.</h2>
-<p>Las rutas con parámetros en Next.js se crean utilizando corchetes <strong>[]</strong> en la ruta. Por ejemplo, si se crea una ruta <strong>/blog/[slug]</strong> en la aplicación, se creará una ruta con parámetros en la aplicación.</p>
-</section>
-<section id="rutas-con-query-strings." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-con-query-strings.">Rutas con query strings.</h2>
-<p>Las rutas con query strings en Next.js se crean utilizando el signo de interrogación <strong>?</strong> en la ruta. Por ejemplo, si se crea una ruta <strong>/blog?slug=hello-world</strong> en la aplicación, se creará una ruta con query strings en la aplicación.º</p>
-</section>
-<section id="rutas-con-rutas-anidadas." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-con-rutas-anidadas.">Rutas con rutas anidadas.</h2>
-<p>Las rutas con rutas anidadas en Next.js se crean utilizando la carpeta <strong>pages</strong> y subcarpetas. Por ejemplo, si se crea una carpeta <strong>blog</strong> y un archivo <strong>[slug].js</strong> en esta carpeta, se creará una ruta anidada en la aplicación.</p>
-</section>
-<section id="rutas-con-rutas-anidadas-y-parámetros." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-con-rutas-anidadas-y-parámetros.">Rutas con rutas anidadas y parámetros.</h2>
-<p>Las rutas con rutas anidadas y parámetros en Next.js se crean utilizando la carpeta <strong>pages</strong> y subcarpetas. Por ejemplo, si se crea una carpeta <strong>blog</strong> y un archivo <strong>[slug].js</strong> en esta carpeta, se creará una ruta anidada con parámetros en la aplicación.</p>
-</section>
-<section id="rutas-con-rutas-anidadas-y-query-strings." class="level2">
-<h2 class="anchored" data-anchor-id="rutas-con-rutas-anidadas-y-query-strings.">Rutas con rutas anidadas y query strings.</h2>
-<p>Las rutas con rutas anidadas y query strings en Next.js se crean utilizando la carpeta <strong>pages</strong> y subcarpetas. Por ejemplo, si se crea una carpeta <strong>blog</strong> y un archivo <strong>[slug].js</strong> en esta carpeta, se creará una ruta anidada con query strings en la aplicación.</p>
-</section>
-<section id="conclusión." class="level2">
-<h2 class="anchored" data-anchor-id="conclusión.">Conclusión.</h2>
-<p>En este capítulo se presentaron los conceptos básicos de cómo crear rutas en Next.js. A lo largo de este capítulo se presentaron los siguientes temas: rutas básicas, rutas dinámicas, rutas anidadas, rutas con parámetros, rutas con query strings, rutas con rutas anidadas, rutas con rutas anidadas y parámetros, y rutas con rutas anidadas y query strings. Espero que este capítulo le sea de utilidad y le ayude a comprender mejor cómo crear rutas en Next.js.</p>
-</section>
-<section id="ejercicios." class="level2">
-<h2 class="anchored" data-anchor-id="ejercicios.">Ejercicios.</h2>
+<div class="justify">
+<div class="center">
+<p><img src="images/paste-1.png" class="img-fluid"></p>
+</div>
+<p>En este laboratorio crearemos una aplicación de Next.js que obtiene datos de una API de Pokemons y los muestra en una lista.</p>
+<section id="pasos" class="level2">
+<h2 class="anchored" data-anchor-id="pasos">Pasos</h2>
 <ol type="1">
-<li><p>Crea una ruta básica en Next.js.</p></li>
-<li><p>Crea una ruta dinámica en Next.js.</p></li>
-<li><p>Crea una ruta anidada en Next.js.</p></li>
-<li><p>Crea una ruta con parámetros en Next.js.</p></li>
-<li><p>Crea una ruta con query strings en Next.js.</p></li>
-<li><p>Crea una ruta con rutas anidadas en Next.js.</p></li>
-<li><p>Crea una ruta con rutas anidadas y parámetros en Next.js.</p></li>
-<li><p>Crea una ruta con rutas anidadas y query strings en Next.js.</p></li>
+<li>Crear una nueva aplicación de Next.js</li>
 </ol>
-<p>Espero que estos ejercicios le sean de utilidad y le ayuden a practicar cómo crear rutas en Next.js.</p>
-
-
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">npx</span> create-next-app@latest 1_laboratorio_fetch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="2" type="1">
+<li>Crear un archivo llamado <strong>lib/getsPokemons.tsx</strong> en la raíz del proyecto.</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">async</span> <span class="kw">function</span> <span class="fu">getPokemons</span>() { <span class="co">//&lt;1&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> headers <span class="op">=</span> <span class="kw">new</span> <span class="fu">Headers</span>({ <span class="co">//&lt;2&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Content-Type"</span><span class="op">:</span> <span class="st">"application/json"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> requestOptions <span class="op">=</span> { <span class="co">//&lt;3&gt;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    method<span class="op">:</span> <span class="st">'GET'</span><span class="op">,</span> <span class="co">//&lt;4&gt;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    headers<span class="op">:</span> headers<span class="op">,</span> <span class="co">//&lt;5&gt;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    redirect<span class="op">:</span> <span class="st">'follow'</span> <span class="im">as</span> RequestRedirect <span class="co">//&lt;6&gt;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">try</span> {</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> response <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(<span class="st">"https://pokeapi.co/api/v2/pokemon?limit=10"</span><span class="op">,</span> requestOptions)<span class="op">;</span> <span class="co">//&lt;7&gt;</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="op">!</span>response<span class="op">.</span><span class="at">ok</span>) { <span class="co">//&lt;8&gt;</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>      <span class="cf">throw</span> <span class="kw">new</span> <span class="bu">Error</span>(<span class="st">'Network response was not ok'</span>)<span class="op">;</span> <span class="co">//&lt;9&gt;</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> data <span class="op">=</span> <span class="cf">await</span> response<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span> <span class="co">//&lt;10&gt;</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> pokemonDetails <span class="op">=</span> <span class="cf">await</span> <span class="bu">Promise</span><span class="op">.</span><span class="fu">all</span>( <span class="co">//&lt;11&gt;</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>      data<span class="op">.</span><span class="at">results</span><span class="op">.</span><span class="fu">map</span>(<span class="kw">async</span> (pokemon<span class="op">:</span> <span class="dt">any</span>) <span class="kw">=&gt;</span> { <span class="co">//&lt;12&gt;</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>        <span class="kw">const</span> res <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(pokemon<span class="op">.</span><span class="at">url</span>)<span class="op">;</span> <span class="co">//&lt;13&gt;</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>        <span class="kw">const</span> details <span class="op">=</span> <span class="cf">await</span> res<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span> <span class="co">//&lt;14&gt;</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> details<span class="op">;</span> <span class="co">//&lt;15&gt;</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>      })</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    )<span class="op">;</span></span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> pokemonDetails<span class="op">;</span> <span class="co">//&lt;16&gt;</span></span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">catch</span> (error) { <span class="co">//&lt;17&gt;</span></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">error</span>(<span class="st">'Failed to fetch pokemons:'</span><span class="op">,</span> error)<span class="op">;</span> <span class="co">//&lt;18&gt;</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> []<span class="op">;</span> <span class="co">//&lt;19&gt;</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol type="1">
+<li><p>Creamos una función llamada <strong>getPokemons</strong> que realiza una petición a la API de Pokemons y obtiene los primeros 10 pokemons.</p></li>
+<li><p>Creamos un objeto <strong>Headers</strong> con el tipo de contenido <strong>application/json</strong>.</p></li>
+<li><p>Creamos un objeto <strong>requestOptions</strong> con el método <strong>GET</strong>, las cabeceras y la redirección.</p></li>
+<li><p>Definimos el método de la petición como <strong>GET</strong>.</p></li>
+<li><p>Definimos las cabeceras de la petición.</p></li>
+<li><p>Definimos la redirección de la petición.</p></li>
+<li><p>Realizamos una petición a la API de Pokemons con las opciones definidas.</p></li>
+<li><p>Verificamos si la respuesta es exitosa.</p></li>
+<li><p>Lanzamos un error si la respuesta no es exitosa.</p></li>
+<li><p>Obtenemos los datos de la respuesta.</p></li>
+<li><p>Obtenemos los detalles de cada pokemon.</p></li>
+<li><p>Mapeamos los resultados y realizamos una petición a la URL de cada pokemon.</p></li>
+<li><p>Realizamos una petición a la URL del pokemon.</p></li>
+<li><p>Obtenemos los detalles del pokemon.</p></li>
+<li><p>Retornamos los detalles del pokemon.</p></li>
+<li><p>Retornamos los detalles de los pokemons.</p></li>
+<li><p>Manejamos los errores de la petición.</p></li>
+<li><p>Mostramos un mensaje de error en la consola.</p></li>
+<li><p>Retornamos un arreglo vacío en caso de error.</p></li>
+</ol>
+<p>En el archivo anterior creamos una función llamada <strong>getPokemons</strong> que realiza una petición a la API de Pokemons y obtiene los primeros 10 pokemons. La función maneja los errores de la petición y retorna un arreglo vacío en caso de error.</p>
+<ol start="3" type="1">
+<li>Crear un archivo llamado <strong>pages/index.tsx</strong> en la raíz del proyecto.</li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> styles <span class="im">from</span> <span class="st">'../../styles/Home.module.css'</span><span class="op">;</span> <span class="co">//&lt;1&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { useEffect<span class="op">,</span> useState } <span class="im">from</span> <span class="st">'react'</span><span class="op">;</span> <span class="co">//&lt;2&gt;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { getPokemons } <span class="im">from</span> <span class="st">'../../lib/getPokemons'</span><span class="op">;</span> <span class="co">//&lt;3&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> <span class="kw">function</span> <span class="fu">Home</span>() { <span class="co">//&lt;4&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> [pokemons<span class="op">,</span> setPokemons] <span class="op">=</span> <span class="fu">useState</span><span class="op">&lt;</span><span class="bu">Array</span><span class="op">&lt;</span><span class="dt">any</span><span class="op">&gt;&gt;</span>([])<span class="op">;</span> <span class="co">//&lt;5&gt;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">useEffect</span>(() <span class="kw">=&gt;</span> { <span class="co">//&lt;6&gt;</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> fetchPokemons <span class="op">=</span> <span class="kw">async</span> () <span class="kw">=&gt;</span> { <span class="co">//&lt;7&gt;</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>      <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">'Fetching pokemons...'</span>)<span class="op">;</span> <span class="co">//&lt;8&gt;</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> pokemonData <span class="op">=</span> <span class="cf">await</span> <span class="fu">getPokemons</span>()<span class="op">;</span> <span class="co">//&lt;9&gt;</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>      <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">'Fetched pokemons:'</span><span class="op">,</span> pokemonData)<span class="op">;</span> <span class="co">//&lt;10&gt;</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>      <span class="fu">setPokemons</span>(pokemonData)<span class="op">;</span> <span class="co">//&lt;11&gt;</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    }<span class="op">;</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">fetchPokemons</span>()<span class="op">;</span> <span class="co">//&lt;12&gt;</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span> [])<span class="op">;</span> <span class="co">//&lt;13&gt;</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;</span>div className<span class="op">=</span>{styles<span class="op">.</span><span class="at">container</span>}<span class="op">&gt;</span> <span class="co">//&lt;14&gt;</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>      <span class="op">&lt;</span>main className<span class="op">=</span>{styles<span class="op">.</span><span class="at">main</span>}<span class="op">&gt;</span> <span class="co">//&lt;15&gt;</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>h1<span class="op">&gt;</span>Pokémons<span class="op">&lt;/</span>h1<span class="op">&gt;</span> <span class="co">//&lt;16&gt;</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>div className<span class="op">=</span>{styles<span class="op">.</span><span class="at">grid</span>}<span class="op">&gt;</span> <span class="co">//&lt;17&gt;</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>          {pokemons<span class="op">.</span><span class="fu">map</span>(pokemon <span class="kw">=&gt;</span> ( <span class="co">//&lt;18&gt;</span></span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>div key<span class="op">=</span>{pokemon<span class="op">.</span><span class="at">id</span>} className<span class="op">=</span>{styles<span class="op">.</span><span class="at">card</span>}<span class="op">&gt;</span> <span class="co">//&lt;19&gt;</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>              <span class="op">&lt;</span>img src<span class="op">=</span>{pokemon<span class="op">.</span><span class="at">sprites</span><span class="op">.</span><span class="at">front_default</span>} alt<span class="op">=</span>{pokemon<span class="op">.</span><span class="at">name</span>} <span class="op">/&gt;</span> <span class="co">//&lt;20&gt;</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>              <span class="op">&lt;</span>h3<span class="op">&gt;</span>{pokemon<span class="op">.</span><span class="at">name</span>}<span class="op">&lt;/</span>h3<span class="op">&gt;</span> <span class="co">//&lt;21&gt;</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;/</span>div<span class="op">&gt;</span> <span class="co">//&lt;22&gt;</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>          ))}</span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;/</span>div<span class="op">&gt;</span></span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>      <span class="op">&lt;/</span>main<span class="op">&gt;</span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;/</span>div<span class="op">&gt;</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>  )<span class="op">;</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol type="1">
+<li>Importamos los estilos del archivo <strong>Home.module.css</strong>.</li>
+<li>Importamos los hooks <strong>useEffect</strong> y <strong>useState</strong> de React.</li>
+<li>Importamos la función <strong>getPokemons</strong> del archivo <strong>getPokemons.tsx</strong>.</li>
+<li>Definimos el componente <strong>Home</strong>.</li>
+<li>Creamos un estado <strong>pokemons</strong> con un arreglo vacío.</li>
+<li>Utilizamos el hook <strong>useEffect</strong> para realizar una petición a la API cuando el componente se monta.</li>
+<li>Creamos una función <strong>fetchPokemons</strong> para obtener los pokemons.</li>
+<li>Mostramos un mensaje en la consola.</li>
+<li>Obtenemos los datos de los pokemons.</li>
+<li>Mostramos los datos de los pokemons en la consola.</li>
+<li>Actualizamos el estado con los datos de los pokemons.</li>
+<li>Llamamos a la función <strong>fetchPokemons</strong>.</li>
+<li>Definimos un arreglo vacío de dependencias para que la petición se realice una sola vez.</li>
+<li>Creamos un contenedor con los estilos de la aplicación.</li>
+<li>Creamos un contenedor principal con los estilos de la aplicación.</li>
+<li>Mostramos el título de la aplicación.</li>
+<li>Creamos un contenedor con los estilos de la lista de pokemons.</li>
+<li>Mapeamos los pokemons y mostramos sus detalles.</li>
+<li>Creamos una tarjeta con los detalles del pokemon.</li>
+<li>Mostramos la imagen del pokemon.</li>
+<li>Mostramos el nombre del pokemon.</li>
+<li>Cerramos la tarjeta del pokemon.</li>
+</ol>
+<p>En el archivo anterior creamos un componente <strong>Home</strong> que muestra una lista de los primeros 10 pokemons obtenidos de la API de Pokemons. El componente utiliza el hook <strong>useEffect</strong> para realizar una petición a la API cuando se monta y muestra los datos de los pokemons en una lista.</p>
+<ol start="4" type="1">
+<li>Ejecutar la aplicación</li>
+</ol>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> run dev</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="5" type="1">
+<li>Abrir la aplicación en el navegador <a href="http://localhost:3000" class="uri">http://localhost:3000</a></li>
+</ol>
 </section>
+<section id="resultado" class="level2">
+<h2 class="anchored" data-anchor-id="resultado">Resultado</h2>
+<div class="center">
+<p><img src="images/paste-1.png" class="img-fluid"></p>
+</div>
+<p>Como puedes observar en la imagen anterior, la aplicación muestra una lista de los primeros 10 pokemons obtenidos de la API de Pokemons.</p>
+</section>
+<section id="conclusión" class="level2">
+<h2 class="anchored" data-anchor-id="conclusión">Conclusión</h2>
+<p>En este laboratorio, aprendimos cómo obtener datos de una API en una aplicación de Next.js y mostrarlos en una lista. También aprendimos cómo usar el hook <strong>useEffect</strong> para realizar una petición a la API cuando el componente se monta.</p>
+</section>
+<section id="ejercicio" class="level2">
+<h2 class="anchored" data-anchor-id="ejercicio">Ejercicio</h2>
+<p>Crea una aplicación de Next.js que obtenga los primeros 10 pokemons de la API de Pokemons y muestre sus detalles en una lista. Los detalles a mostrar son: nombre, altura, peso y habilidades. Puedes utilizar la API para que muestre los Pokemon en 3D.</p>
+</section>
+</div>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -986,14 +1066,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../unidades/unidad1/4_herramientas_y_stack.html" class="pagination-link" aria-label="Herramientas y stack utilizado en el curso">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Herramientas y stack utilizado en el curso</span></span>
+      <a href="../../unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html" class="pagination-link" aria-label="Creando estilos dinámicos aplicando condicionales en Next.js">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Creando estilos dinámicos aplicando condicionales en Next.js</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../unidades/unidad1/6_layout_next.html" class="pagination-link" aria-label="Cómo crear Layout en Next.js">
-        <span class="nav-page-text"><span class="chapter-title">Cómo crear Layout en Next.js</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

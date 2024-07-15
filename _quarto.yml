@@ -32,6 +32,7 @@ book:
         
   chapters:
     - index.qmd
+
     - part: "Unidad 1: Introducción a Nextjs"
       chapters: 
         - unidades/unidad1/1_introduccion.qmd
@@ -54,7 +55,9 @@ book:
         - unidades/unidad2/15_optimizacion_fuentes.qmd
         - unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.qmd
 
-    - part: "Unidad 3: Data Fetching en Next.js"
+    - part: "Laboratorios"
+      chapters:
+        - unidades/laboratorios/1_laboratorio_fetch.qmd
 
 bibliography: references.bib
 biblio-style: "apalike"
