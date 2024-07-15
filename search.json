@@ -1118,6 +1118,50 @@
     ]
   },
   {
+    "objectID": "unidades/laboratorios/2_laboratorio_fetch_stotre.html",
+    "href": "unidades/laboratorios/2_laboratorio_fetch_stotre.html",
+    "title": "Laboratorio de Fetch con Next.js y FakeStoreAPI",
+    "section": "",
+    "text": "Introducción\nEn este laboratorio, crearemos una aplicación de Next.js que obtiene datos de la FakeStoreAPI y los muestra en una lista. Aprenderemos cómo usar el hook useEffect para realizar peticiones a la API y manejar los datos de manera eficiente.",
+    "crumbs": [
+      "Laboratorios",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Laboratorio de Fetch con Next.js y FakeStoreAPI</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/laboratorios/2_laboratorio_fetch_stotre.html#resultado",
+    "href": "unidades/laboratorios/2_laboratorio_fetch_stotre.html#resultado",
+    "title": "Laboratorio de Fetch con Next.js y FakeStoreAPI",
+    "section": "Resultado",
+    "text": "Resultado\nLa aplicación muestra una lista de productos obtenidos de la FakeStoreAPI.",
+    "crumbs": [
+      "Laboratorios",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Laboratorio de Fetch con Next.js y FakeStoreAPI</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/laboratorios/2_laboratorio_fetch_stotre.html#conclusión",
+    "href": "unidades/laboratorios/2_laboratorio_fetch_stotre.html#conclusión",
+    "title": "Laboratorio de Fetch con Next.js y FakeStoreAPI",
+    "section": "Conclusión",
+    "text": "Conclusión\nEn este laboratorio, aprendimos cómo obtener datos de una API en una aplicación de Next.js y mostrarlos en una lista. También aprendimos cómo usar el hook useEffect para realizar una petición a la API cuando el componente se monta.\nAdemás, vimos cómo manejar los posibles errores que puedan ocurrir durante la petición a la API utilizando un bloque try-catch. Esto nos permite manejar los errores de manera adecuada y evitar que la aplicación se detenga por completo en caso de fallos en la petición.\nPara mostrar los datos de los productos en la lista, utilizamos el método map de JavaScript para iterar sobre la lista de productos y generar un elemento de la lista para cada producto. Cada elemento de la lista se representa como un div con una imagen y el título del producto.\nEn resumen, este laboratorio nos ha enseñado cómo obtener y mostrar datos de una API en una aplicación de Next.js, así como cómo manejar los errores de manera adecuada. Estos conceptos son fundamentales para el desarrollo de aplicaciones web que interactúan con servicios externos y proporcionan una experiencia de usuario fluida y sin interrupciones.",
+    "crumbs": [
+      "Laboratorios",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Laboratorio de Fetch con Next.js y FakeStoreAPI</span>"
+    ]
+  },
+  {
+    "objectID": "unidades/laboratorios/2_laboratorio_fetch_stotre.html#ejercicio",
+    "href": "unidades/laboratorios/2_laboratorio_fetch_stotre.html#ejercicio",
+    "title": "Laboratorio de Fetch con Next.js y FakeStoreAPI",
+    "section": "Ejercicio",
+    "text": "Ejercicio\nDesarrollar una aplicación en Next.js que utilice la función fetch para obtener datos de una API externa de FakeStoreAPI y mostrarlos dinámicamente en una lista.",
+    "crumbs": [
+      "Laboratorios",
+      "<span class='chapter-number'>19</span>  <span class='chapter-title'>Laboratorio de Fetch con Next.js y FakeStoreAPI</span>"
+    ]
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Acerca de mi",

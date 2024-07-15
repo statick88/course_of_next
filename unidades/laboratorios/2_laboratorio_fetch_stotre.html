@@ -8,7 +8,7 @@
 
 <meta name="description" content="Curso de Nextjs">
 
-<title>Cómo funciona la navegación en Next.js – Curso de Nextjs</title>
+<title>Laboratorio de Fetch con Next.js y FakeStoreAPI – Curso de Nextjs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,8 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../unidades/unidad1/8_manejo_parametros_rutas_next.html" rel="next">
-<link href="../../unidades/unidad1/6_layout_next.html" rel="prev">
+<link href="../../unidades/laboratorios/1_laboratorio_fetch.html" rel="prev">
 <link href="../../logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -120,7 +119,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/unidad1/1_introduccion.html">Unidad 1: Introducción a Nextjs</a></li><li class="breadcrumb-item"><a href="../../unidades/unidad1/7_navegacion_next.html"><span class="chapter-title">Cómo funciona la navegación en Next.js</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/laboratorios/1_laboratorio_fetch.html">Laboratorios</a></li><li class="breadcrumb-item"><a href="../../unidades/laboratorios/2_laboratorio_fetch_stotre.html"><span class="chapter-title">Laboratorio de Fetch con Next.js y FakeStoreAPI</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -192,13 +191,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
  <span class="menu-text">Unidad 1: Introducción a Nextjs</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unidades/unidad1/1_introduccion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducción</span></a>
@@ -231,7 +230,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad1/7_navegacion_next.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Cómo funciona la navegación en Next.js</span></a>
+  <a href="../../unidades/unidad1/7_navegacion_next.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Cómo funciona la navegación en Next.js</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -294,13 +293,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
  <span class="menu-text">Laboratorios</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../unidades/laboratorios/1_laboratorio_fetch.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Laboratorio de Fetch con Next</span></a>
@@ -308,7 +307,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../unidades/laboratorios/2_laboratorio_fetch_stotre.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Laboratorio de Fetch con Next.js y FakeStoreAPI</span></a>
+  <a href="../../unidades/laboratorios/2_laboratorio_fetch_stotre.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Laboratorio de Fetch con Next.js y FakeStoreAPI</span></a>
   </div>
 </li>
       </ul>
@@ -323,20 +322,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#link-component." id="toc-link-component." class="nav-link active" data-scroll-target="#link-component.">Link component.</a></li>
-  <li><a href="#uso-de-router." id="toc-uso-de-router." class="nav-link" data-scroll-target="#uso-de-router.">Uso de Router.</a></li>
-  <li><a href="#navegación-programática." id="toc-navegación-programática." class="nav-link" data-scroll-target="#navegación-programática.">Navegación programática.</a></li>
-  <li><a href="#conclusión." id="toc-conclusión." class="nav-link" data-scroll-target="#conclusión.">Conclusión.</a></li>
-  <li><a href="#ejercicio." id="toc-ejercicio." class="nav-link" data-scroll-target="#ejercicio.">Ejercicio.</a></li>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción">Introducción</a></li>
+  <li><a href="#pasos" id="toc-pasos" class="nav-link" data-scroll-target="#pasos">Pasos</a>
+  <ul class="collapse">
+  <li><a href="#resultado" id="toc-resultado" class="nav-link" data-scroll-target="#resultado">Resultado</a></li>
+  <li><a href="#conclusión" id="toc-conclusión" class="nav-link" data-scroll-target="#conclusión">Conclusión</a></li>
+  <li><a href="#ejercicio" id="toc-ejercicio" class="nav-link" data-scroll-target="#ejercicio">Ejercicio</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/unidad1/1_introduccion.html">Unidad 1: Introducción a Nextjs</a></li><li class="breadcrumb-item"><a href="../../unidades/unidad1/7_navegacion_next.html"><span class="chapter-title">Cómo funciona la navegación en Next.js</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/laboratorios/1_laboratorio_fetch.html">Laboratorios</a></li><li class="breadcrumb-item"><a href="../../unidades/laboratorios/2_laboratorio_fetch_stotre.html"><span class="chapter-title">Laboratorio de Fetch con Next.js y FakeStoreAPI</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Cómo funciona la navegación en Next.js</span></h1>
+<h1 class="title"><span class="chapter-title">Laboratorio de Fetch con Next.js y FakeStoreAPI</span></h1>
 </div>
 
 
@@ -353,75 +354,178 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>La navegación en Next.js se realiza a través de la librería <code>next/router</code>. Esta librería nos permite navegar entre las diferentes páginas de nuestra aplicación de forma programática o mediante enlaces.</p>
-<p>Es necesario eliminar el directorio <strong>src/app</strong> y el archivo “src/app.js” para que la aplicación funcione correctamente.</p>
-<section id="link-component." class="level2">
-<h2 class="anchored" data-anchor-id="link-component.">Link component.</h2>
-<p>El componente <strong>Link</strong> de Next.js nos permite crear enlaces entre las diferentes páginas de nuestra aplicación. Este componente se utiliza de la siguiente forma:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode jsx code-with-copy"><code class="sourceCode javascriptreact"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">//index.jsx</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> Link <span class="im">from</span> <span class="st">"next/link"</span><span class="op">;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> <span class="kw">function</span> <span class="fu">Home</span>() {</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;div&gt;</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>      Hello World.<span class="va">{</span><span class="st">" "</span><span class="va">}</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>      <span class="fu">&lt;Link</span> <span class="ot">href</span><span class="op">=</span><span class="st">"/about"</span><span class="fu">&gt;</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        About</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>      <span class="fu">&lt;/Link&gt;</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/div&gt;</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  )<span class="op">;</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>En el ejemplo anterior, se crea un enlace a la página <strong>About</strong> utilizando el componente <strong>Link</strong>. Al hacer clic en el enlace, se navegará a la página <strong>About</strong> de forma rápida y sin recargar la página.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">//_app.js</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> <span class="kw">function</span> <span class="fu">App</span>({ Component<span class="op">,</span> pageProps }) {</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="op">&lt;</span>Component {<span class="op">...</span>pageProps} <span class="op">/&gt;;</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Este archivo es el punto de entrada de nuestra aplicación y se utiliza para envolver todos los componentes de la aplicación con un componente de diseño o estilo común.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode jsx code-with-copy"><code class="sourceCode javascriptreact"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">//about.jsx</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> <span class="kw">function</span> <span class="fu">About</span>() {</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return </span><span class="kw">&lt;div&gt;</span>About<span class="kw">&lt;/div&gt;</span><span class="op">;</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>En este archivo se crea la página <strong>About</strong> de la aplicación. Al navegar a esta página, se mostrará el contenido del componente <strong>About</strong>.</p>
+<div class="center">
+<p><img src="images/paste-2.png" class="img-fluid"></p>
+</div>
+<section id="introducción" class="level2">
+<h2 class="anchored" data-anchor-id="introducción">Introducción</h2>
+<p>En este laboratorio, crearemos una aplicación de Next.js que obtiene datos de la FakeStoreAPI y los muestra en una lista. Aprenderemos cómo usar el hook useEffect para realizar peticiones a la API y manejar los datos de manera eficiente.</p>
 </section>
-<section id="uso-de-router." class="level2">
-<h2 class="anchored" data-anchor-id="uso-de-router.">Uso de Router.</h2>
-<p>La librería <strong>next/router</strong> nos permite navegar entre las diferentes páginas de nuestra aplicación de forma programática. Para utilizar esta librería, se debe importar el objeto <strong>Router</strong> de la siguiente forma:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode jsx code-with-copy"><code class="sourceCode javascriptreact"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { useRouter } <span class="im">from</span> <span class="st">'next/router'</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> About <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> router <span class="op">=</span> <span class="fu">useRouter</span>()</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> handleClick <span class="op">=</span> () <span class="kw">=&gt;</span> {</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    router<span class="op">.</span><span class="fu">push</span>(<span class="st">'/'</span>)</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;div&gt;</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;h1&gt;</span>About Page<span class="kw">&lt;/h1&gt;</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>      <span class="kw">&lt;button</span> <span class="ot">onClick</span><span class="op">=</span><span class="va">{</span>handleClick<span class="va">}</span><span class="kw">&gt;</span>Go to Home Page<span class="kw">&lt;/button&gt;</span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/div&gt;</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> About</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>En el ejemplo anterior, se importa el objeto <strong>Router</strong> de la librería <strong>next/router</strong> y se utiliza el método <strong>push</strong> para navegar a la página de inicio al hacer clic en un botón.</p>
+<section id="pasos" class="level1">
+<h1>Pasos</h1>
+<ol type="1">
+<li>Crear una nueva aplicación de Next.js</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">npx</span> create-next-app@latest 1_laboratorio_fetch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="2" type="1">
+<li>Crear un archivo llamado <strong>lib/getProducts.tsx</strong> en la raíz del proyecto</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">async</span> <span class="kw">function</span> <span class="fu">getProducts</span>() {</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> headers <span class="op">=</span> <span class="kw">new</span> <span class="fu">Headers</span>({ </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Content-Type"</span><span class="op">:</span> <span class="st">"application/json"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> requestOptions <span class="op">=</span> {</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    method<span class="op">:</span> <span class="st">'GET'</span><span class="op">,</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    headers<span class="op">:</span> headers<span class="op">,</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    redirect<span class="op">:</span> <span class="st">'follow'</span> <span class="im">as</span> RequestRedirect</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">try</span> {</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> response <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(<span class="st">"https://fakestoreapi.com/products"</span><span class="op">,</span> requestOptions)<span class="op">;</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="op">!</span>response<span class="op">.</span><span class="at">ok</span>) {</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>      <span class="cf">throw</span> <span class="kw">new</span> <span class="bu">Error</span>(<span class="st">'Network response was not ok'</span>)<span class="op">;</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> data <span class="op">=</span> <span class="cf">await</span> response<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> data<span class="op">;</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">catch</span> (error) {</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">error</span>(<span class="st">'Failed to fetch products:'</span><span class="op">,</span> error)<span class="op">;</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> []<span class="op">;</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>El código proporcionado muestra una función llamada <strong>getProducts</strong>. Esta función se encarga de realizar una petición a la <strong>FakeStoreAPI</strong> para obtener una lista de productos.</p>
+<p>La FakeStoreAPI es una API falsa que simula una tienda en línea y proporciona datos de productos. Al hacer una solicitud a esta API, podemos obtener información sobre los productos disponibles, como su <strong>nombre</strong>, <strong>precio</strong>, <strong>descripción</strong>, <strong>categoría</strong>, etc.</p>
+<p>La función <strong>getProducts</strong> utiliza una técnica llamada <strong>fetch</strong> para realizar la solicitud a la API. Fetch es una función incorporada en JavaScript que permite realizar solicitudes HTTP. En este caso, se utiliza para enviar una solicitud GET a la FakeStoreAPI y obtener la lista de productos.</p>
+<p>Una vez que se realiza la solicitud, la función <strong>getProducts</strong> espera a que la respuesta de la API esté disponible. Luego, utiliza el método <strong>json()</strong> para convertir la respuesta en un objeto JSON legible.</p>
+<p>Después de convertir la respuesta en un objeto JSON, la función <strong>getProducts</strong> devuelve la lista de productos obtenida de la API.</p>
+<p>Es importante tener en cuenta que esta función no realiza ninguna acción adicional con los datos obtenidos de la API. Su único propósito es obtener la lista de productos y devolverla como resultado. Si se desea realizar alguna acción adicional con los datos, como mostrarlos en la interfaz de usuario o realizar cálculos, será necesario implementar esa lógica adicional fuera de esta función.</p>
+<p>En resumen, el código proporcionado muestra una función llamada <strong>getProducts</strong> que utiliza la técnica de <strong>fetch</strong> para realizar una solicitud a la FakeStoreAPI y obtener una lista de productos. Esta función devuelve la lista de productos obtenida de la API.</p>
+<ol start="3" type="1">
+<li>Crear un archivo llamado <strong>pages/index.tsx</strong> en la raíz del proyecto</li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> styles <span class="im">from</span> <span class="st">'../styles/Home.module.css'</span><span class="op">;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { useEffect<span class="op">,</span> useState } <span class="im">from</span> <span class="st">'react'</span><span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { getProducts } <span class="im">from</span> <span class="st">'../lib/getProducts'</span><span class="op">;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> <span class="kw">function</span> <span class="fu">Home</span>() {</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> [products<span class="op">,</span> setProducts] <span class="op">=</span> <span class="fu">useState</span><span class="op">&lt;</span><span class="bu">Array</span><span class="op">&lt;</span><span class="dt">any</span><span class="op">&gt;&gt;</span>([])<span class="op">;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">useEffect</span>(() <span class="kw">=&gt;</span> {</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> fetchProducts <span class="op">=</span> <span class="kw">async</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>      <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">'Fetching products...'</span>)<span class="op">;</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> productData <span class="op">=</span> <span class="cf">await</span> <span class="fu">getProducts</span>()<span class="op">;</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>      <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">'Fetched products:'</span><span class="op">,</span> productData)<span class="op">;</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>      <span class="fu">setProducts</span>(productData)<span class="op">;</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    }<span class="op">;</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">fetchProducts</span>()<span class="op">;</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span> [])<span class="op">;</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (</span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;</span>div className<span class="op">=</span>{styles<span class="op">.</span><span class="at">container</span>}<span class="op">&gt;</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>      <span class="op">&lt;</span>main className<span class="op">=</span>{styles<span class="op">.</span><span class="at">main</span>}<span class="op">&gt;</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>h1<span class="op">&gt;</span>Products<span class="op">&lt;/</span>h1<span class="op">&gt;</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>div className<span class="op">=</span>{styles<span class="op">.</span><span class="at">grid</span>}<span class="op">&gt;</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>          {products<span class="op">.</span><span class="fu">map</span>(product <span class="kw">=&gt;</span> (</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>div key<span class="op">=</span>{product<span class="op">.</span><span class="at">id</span>} className<span class="op">=</span>{styles<span class="op">.</span><span class="at">card</span>}<span class="op">&gt;</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>              <span class="op">&lt;</span>img src<span class="op">=</span>{product<span class="op">.</span><span class="at">image</span>} alt<span class="op">=</span>{product<span class="op">.</span><span class="at">title</span>} <span class="op">/&gt;</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>              <span class="op">&lt;</span>h3<span class="op">&gt;</span>{product<span class="op">.</span><span class="at">title</span>}<span class="op">&lt;/</span>h3<span class="op">&gt;</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>              <span class="op">&lt;</span>p<span class="op">&gt;</span>{product<span class="op">.</span><span class="at">price</span>}<span class="op">&lt;/</span>p<span class="op">&gt;</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;/</span>div<span class="op">&gt;</span></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>          ))}</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;/</span>div<span class="op">&gt;</span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>      <span class="op">&lt;/</span>main<span class="op">&gt;</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;/</span>div<span class="op">&gt;</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>  )<span class="op">;</span></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>El código proporcionado en este archivo, se crea un componente llamado Home que muestra una lista de productos obtenidos de la <strong>FakeStoreAPI</strong>. Este componente es una página de la aplicación Next.js y se encuentra en el archivo <strong>pages/index.tsx</strong>.</p>
+<p>Next.js es un framework de React utilizado para construir aplicaciones web del lado del servidor. Permite crear páginas estáticas y dinámicas de manera sencilla y eficiente.</p>
+<p>En este caso, el componente Home se utiliza como la página principal de la aplicación. Su función principal es mostrar una lista de productos obtenidos de la FakeStoreAPI. Esta API es una API de prueba que proporciona datos ficticios de productos.</p>
+<p>Para obtener los datos de la API, es probable que el código utilice una función de fetch o una biblioteca como axios para realizar una solicitud HTTP al endpoint de la API. Una vez que se obtienen los datos, se pueden mostrar en la página utilizando elementos de React como listas o tarjetas.</p>
+<p>Es importante tener en cuenta que este fragmento de código es solo una descripción del componente Home y no muestra el código real utilizado para obtener los datos de la API o mostrar la lista de productos. Para comprender completamente cómo funciona este componente, sería necesario revisar el archivo pages/index.tsx y examinar el código completo.</p>
+<ol start="4" type="1">
+<li>Agregar CSS</li>
+</ol>
+<p>Creamos el archivo <strong>styles/Home.module.css</strong> en la raíz del proyecto con el siguiente contenido:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.container</span> {</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">padding</span><span class="ch">:</span> <span class="dv">0</span> <span class="dv">2</span><span class="dt">rem</span><span class="op">;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">.main</span> {</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">min-height</span><span class="ch">:</span> <span class="dv">100</span><span class="dt">vh</span><span class="op">;</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">padding</span><span class="ch">:</span> <span class="dv">4</span><span class="dt">rem</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">flex</span><span class="ch">:</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span><span class="ch">:</span> <span class="dv">flex</span><span class="op">;</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">flex-direction</span><span class="ch">:</span> <span class="dv">column</span><span class="op">;</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="kw">justify-content</span><span class="ch">:</span> <span class="dv">center</span><span class="op">;</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="kw">align-items</span><span class="ch">:</span> <span class="dv">center</span><span class="op">;</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="fu">.grid</span> {</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span><span class="ch">:</span> <span class="dv">flex</span><span class="op">;</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  <span class="kw">align-items</span><span class="ch">:</span> <span class="dv">center</span><span class="op">;</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>  <span class="kw">justify-content</span><span class="ch">:</span> <span class="dv">center</span><span class="op">;</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>  <span class="kw">flex-wrap</span><span class="ch">:</span> <span class="dv">wrap</span><span class="op">;</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>  <span class="kw">max-width</span><span class="ch">:</span> <span class="dv">800</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin-top</span><span class="ch">:</span> <span class="dv">3</span><span class="dt">rem</span><span class="op">;</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="fu">.card</span> {</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">rem</span><span class="op">;</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>  <span class="kw">flex-basis</span><span class="ch">:</span> <span class="dv">45</span><span class="dt">%</span><span class="op">;</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>  <span class="kw">padding</span><span class="ch">:</span> <span class="dv">1.5</span><span class="dt">rem</span><span class="op">;</span></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>  <span class="kw">text-align</span><span class="ch">:</span> <span class="dv">left</span><span class="op">;</span></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span><span class="ch">:</span> <span class="bu">inherit</span><span class="op">;</span></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>  <span class="kw">text-decoration</span><span class="ch">:</span> <span class="dv">none</span><span class="op">;</span></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#eaeaea</span><span class="op">;</span></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border-radius</span><span class="ch">:</span> <span class="dv">10</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>  <span class="kw">transition</span><span class="ch">:</span> <span class="dv">color</span> <span class="dv">0.15</span><span class="dt">s</span> <span class="dv">ease</span><span class="op">,</span> <span class="dv">border-color 0.15</span><span class="dt">s</span> <span class="dv">ease</span><span class="op">;</span></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a><span class="fu">.card</span><span class="in">:hover</span><span class="op">,</span></span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a><span class="fu">.card</span><span class="in">:focus</span><span class="op">,</span></span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a><span class="fu">.card</span><span class="in">:active</span> {</span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span><span class="ch">:</span> <span class="cn">#0070f3</span><span class="op">;</span></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border-color</span><span class="ch">:</span> <span class="cn">#0070f3</span><span class="op">;</span></span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a><span class="fu">.card</span> img {</span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>  <span class="kw">max-width</span><span class="ch">:</span> <span class="dv">100</span><span class="dt">%</span><span class="op">;</span></span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border-radius</span><span class="ch">:</span> <span class="dv">10</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>En este archivo se definen los estilos CSS para la aplicación. Los estilos se aplican a los elementos HTML utilizando clases CSS y se utilizan para dar formato y diseño a la interfaz de usuario.</p>
+<ol start="5" type="1">
+<li>Ejecutar la aplicación</li>
+</ol>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> run dev</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="6" type="1">
+<li>Abrir la aplicación en el navegador</li>
+</ol>
+<p>Abrimos la aplicación en el navegador en <a href="http://localhost:3000" class="uri">http://localhost:3000</a>.</p>
+<section id="resultado" class="level2">
+<h2 class="anchored" data-anchor-id="resultado">Resultado</h2>
+<p>La aplicación muestra una lista de productos obtenidos de la FakeStoreAPI.</p>
+<div class="center">
+<p><img src="images/paste-2.png" class="img-fluid"></p>
+</div>
 </section>
-<section id="navegación-programática." class="level2">
-<h2 class="anchored" data-anchor-id="navegación-programática.">Navegación programática.</h2>
-<p>La navegación programática nos permite navegar entre las diferentes páginas de nuestra aplicación de forma dinámica. Esto nos permite crear experiencias de usuario más interactivas y personalizadas.</p>
+<section id="conclusión" class="level2">
+<h2 class="anchored" data-anchor-id="conclusión">Conclusión</h2>
+<p>En este laboratorio, aprendimos cómo obtener datos de una API en una aplicación de Next.js y mostrarlos en una lista. También aprendimos cómo usar el hook useEffect para realizar una petición a la API cuando el componente se monta.</p>
+<p>Además, vimos cómo manejar los posibles errores que puedan ocurrir durante la petición a la API utilizando un bloque try-catch. Esto nos permite manejar los errores de manera adecuada y evitar que la aplicación se detenga por completo en caso de fallos en la petición.</p>
+<p>Para mostrar los datos de los productos en la lista, utilizamos el método map de JavaScript para iterar sobre la lista de productos y generar un elemento de la lista para cada producto. Cada elemento de la lista se representa como un <strong>div</strong> con una imagen y el título del producto.</p>
+<p>En resumen, este laboratorio nos ha enseñado cómo obtener y mostrar datos de una API en una aplicación de Next.js, así como cómo manejar los errores de manera adecuada. Estos conceptos son fundamentales para el desarrollo de aplicaciones web que interactúan con servicios externos y proporcionan una experiencia de usuario fluida y sin interrupciones.</p>
 </section>
-<section id="conclusión." class="level2">
-<h2 class="anchored" data-anchor-id="conclusión.">Conclusión.</h2>
-<p>La navegación en Next.js se realiza a través de la librería <strong>next/router</strong> y el componente <strong>Link</strong>. Estas herramientas nos permiten crear enlaces entre las diferentes páginas de nuestra aplicación y navegar de forma programática. Conocer cómo funciona la navegación en Next.js es fundamental para crear aplicaciones web modernas y eficientes.</p>
-</section>
-<section id="ejercicio." class="level2">
-<h2 class="anchored" data-anchor-id="ejercicio.">Ejercicio.</h2>
-<p>Crea un enlace en la página de inicio que te lleve a la página <strong>About</strong> y un botón en la página <strong>About</strong> que te lleve a la página de inicio. Utiliza tanto el componente <strong>Link</strong> como la librería <strong>next/router</strong> para realizar la navegación entre las páginas de la aplicación.</p>
+<section id="ejercicio" class="level2">
+<h2 class="anchored" data-anchor-id="ejercicio">Ejercicio</h2>
+<p>Desarrollar una aplicación en Next.js que utilice la función fetch para obtener datos de una API externa de FakeStoreAPI y mostrarlos dinámicamente en una lista.</p>
+</section></section></main></div>
 
 
-</section>
 
-</main> <!-- /main -->
+
+
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -995,17 +1099,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../unidades/unidad1/6_layout_next.html" class="pagination-link" aria-label="Cómo crear Layout en Next.js">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Cómo crear Layout en Next.js</span></span>
+      <a href="../../unidades/laboratorios/1_laboratorio_fetch.html" class="pagination-link" aria-label="Laboratorio de Fetch con Next">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Laboratorio de Fetch con Next</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../unidades/unidad1/8_manejo_parametros_rutas_next.html" class="pagination-link" aria-label="Manejo de parámetros en rutas en Next.js">
-        <span class="nav-page-text"><span class="chapter-title">Manejo de parámetros en rutas en Next.js</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
-</div> <!-- /content -->
+ <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
