@@ -1,3 +1,4 @@
+:::{.justify}
 # Laboratorio de Fetch con Next.js y FakeStoreAPI
 
 ::: center
@@ -194,5 +195,4 @@ En resumen, este laboratorio nos ha enseñado cómo obtener y mostrar datos de u
 ## Ejercicio
 
 Desarrollar una aplicación en Next.js que utilice la función fetch para obtener datos de una API externa de FakeStoreAPI y mostrarlos dinámicamente en una lista.
-
-</div>
+:::
