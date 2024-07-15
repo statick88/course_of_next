@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Curso de Nextjs">
 
-<title>Laboratorio de Fetch con Next – Curso de Nextjs</title>
+<title>laboratorio_fetch_3d</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,286 +57,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html" rel="prev">
-<link href="../../logo.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script id="quarto-search-options" type="application/json">{
-  "location": "sidebar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "start",
-  "type": "textbox",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
+<script src="2_laboratorio_fetch_3d_files/libs/clipboard/clipboard.min.js"></script>
+<script src="2_laboratorio_fetch_3d_files/libs/quarto-html/quarto.js"></script>
+<script src="2_laboratorio_fetch_3d_files/libs/quarto-html/popper.min.js"></script>
+<script src="2_laboratorio_fetch_3d_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="2_laboratorio_fetch_3d_files/libs/quarto-html/anchor.min.js"></script>
+<link href="2_laboratorio_fetch_3d_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="2_laboratorio_fetch_3d_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="2_laboratorio_fetch_3d_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="2_laboratorio_fetch_3d_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="2_laboratorio_fetch_3d_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
 
-<link rel="stylesheet" href="../../css/styles.css">
 </head>
 
-<body class="nav-sidebar floating">
+<body class="fullcontent">
 
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/laboratorios/1_laboratorio_fetch.html">Laboratorios</a></li><li class="breadcrumb-item"><a href="../../unidades/laboratorios/1_laboratorio_fetch.html"><span class="chapter-title">Laboratorio de Fetch con Next</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
-<!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="../../index.html" class="sidebar-logo-link">
-      <img src="../../logo.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      </a>
-    <div class="sidebar-title mb-0 py-0">
-      <a href="../../">Curso de Nextjs</a> 
-        <div class="sidebar-tools-main tools-wide">
-    <div class="dropdown">
-      <a href="" title="Download" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Download"><i class="bi bi-download"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="../../curso_Nextjs.pdf">
-              <i class="bi bi-file-pdf pe-1"></i>
-            Download PDF
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="../../curso_Nextjs.epub">
-              <i class="bi bi-journal pe-1"></i>
-            Download ePub
-            </a>
-          </li>
-      </ul>
-    </div>
-    <div class="dropdown">
-      <a href="" title="Share" id="quarto-navigation-tool-dropdown-1" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
-      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-1">
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://twitter.com/intent/tweet?url=|url|">
-              <i class="bi bi-twitter pe-1"></i>
-            Twitter
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item sidebar-tools-main-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
-              <i class="bi bi-linkedin pe-1"></i>
-            LinkedIn
-            </a>
-          </li>
-      </ul>
-    </div>
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
-</div>
-    </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Bienvenido</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
- <span class="menu-text">Unidad 1: Introducción a Nextjs</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad1/1_introduccion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introducción</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad1/2_que_es_nextjs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">¿Qué es Next.js y por qué aprenderlo si quieres ser frontend senior?</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad1/3_arquitectura_de_un_proyecto_de_Nextjs.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Arquitectura de un proyecto de Next.js</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad1/4_herramientas_y_stack.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Herramientas y stack utilizado en el curso</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad1/5_conceptos_basicos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Cómo crear rutas en Next.js</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad1/6_layout_next.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Cómo crear Layout en Next.js</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad1/7_navegacion_next.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Cómo funciona la navegación en Next.js</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad1/8_manejo_parametros_rutas_next.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Manejo de parámetros en rutas en Next.js</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad1/9_react_server_component_next.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">React Server Components en Next.js: notación “use Client”</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
- <span class="menu-text">Unidad 2: Manejo de Estilos y Archivos Estáticos</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad2/10_css_modules.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Manejo de estilos y archivos estáticos en Next.js</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad2/11_uso_sass.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Uso de Sass en Next.js</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad2/12_estilos_globales.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Cómo utilizar estilos globales en Next.js</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad2/13_archivos_estaticos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Cómo agregar archivos estáticos en Next.js</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad2/14_manejo_y_optimizacion_imagenes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Manejo y optimización de imágenes con Next Image</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad2/15_optimizacion_fuentes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Optimización de fuentes con Next.js</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Creando estilos dinámicos aplicando condicionales en Next.js</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Laboratorios</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../unidades/laboratorios/1_laboratorio_fetch.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Laboratorio de Fetch con Next</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
-<!-- main -->
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/laboratorios/1_laboratorio_fetch.html">Laboratorios</a></li><li class="breadcrumb-item"><a href="../../unidades/laboratorios/1_laboratorio_fetch.html"><span class="chapter-title">Laboratorio de Fetch con Next</span></a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Laboratorio de Fetch con Next</span></h1>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<div class="justify">
+<section id="laboratorio-de-fetch-con-next" class="level1 justify">
+<h1>Laboratorio de Fetch con Next</h1>
 <div class="center">
 <p><img src="images/paste-1.png" class="img-fluid"></p>
 </div>
@@ -389,34 +133,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol start="3" type="1">
 <li>Crear un archivo llamado <strong>pages/index.tsx</strong> en la raíz del proyecto.</li>
 </ol>
-<div class="sourceCode" id="cb3"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> styles <span class="im">from</span> <span class="st">'../../styles/Home.module.css'</span><span class="op">;</span> <span class="co">//&lt;1&gt;</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { useEffect<span class="op">,</span> useState } <span class="im">from</span> <span class="st">'react'</span><span class="op">;</span> <span class="co">//&lt;2&gt;</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { getPokemons } <span class="im">from</span> <span class="st">'../../lib/getPokemons'</span><span class="op">;</span> <span class="co">//&lt;3&gt;</span></span>
+<div class="sourceCode" id="cb3"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> styles <span class="im">from</span> <span class="st">'../../styles/Home.module.css'</span><span class="op">;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { useEffect<span class="op">,</span> useState } <span class="im">from</span> <span class="st">'react'</span><span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { getPokemons } <span class="im">from</span> <span class="st">'../../lib/getPokemons'</span><span class="op">;</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> <span class="kw">function</span> <span class="fu">Home</span>() { <span class="co">//&lt;4&gt;</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> [pokemons<span class="op">,</span> setPokemons] <span class="op">=</span> <span class="fu">useState</span><span class="op">&lt;</span><span class="bu">Array</span><span class="op">&lt;</span><span class="dt">any</span><span class="op">&gt;&gt;</span>([])<span class="op">;</span> <span class="co">//&lt;5&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> <span class="kw">function</span> <span class="fu">Home</span>() {</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> [pokemons<span class="op">,</span> setPokemons] <span class="op">=</span> <span class="fu">useState</span><span class="op">&lt;</span><span class="bu">Array</span><span class="op">&lt;</span><span class="dt">any</span><span class="op">&gt;&gt;</span>([])<span class="op">;</span></span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">useEffect</span>(() <span class="kw">=&gt;</span> { <span class="co">//&lt;6&gt;</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> fetchPokemons <span class="op">=</span> <span class="kw">async</span> () <span class="kw">=&gt;</span> { <span class="co">//&lt;7&gt;</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>      <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">'Fetching pokemons...'</span>)<span class="op">;</span> <span class="co">//&lt;8&gt;</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> pokemonData <span class="op">=</span> <span class="cf">await</span> <span class="fu">getPokemons</span>()<span class="op">;</span> <span class="co">//&lt;9&gt;</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>      <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">'Fetched pokemons:'</span><span class="op">,</span> pokemonData)<span class="op">;</span> <span class="co">//&lt;10&gt;</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>      <span class="fu">setPokemons</span>(pokemonData)<span class="op">;</span> <span class="co">//&lt;11&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">useEffect</span>(() <span class="kw">=&gt;</span> {</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> fetchPokemons <span class="op">=</span> <span class="kw">async</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>      <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">'Fetching pokemons...'</span>)<span class="op">;</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> pokemonData <span class="op">=</span> <span class="cf">await</span> <span class="fu">getPokemons</span>()<span class="op">;</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>      <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">'Fetched pokemons:'</span><span class="op">,</span> pokemonData)<span class="op">;</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>      <span class="fu">setPokemons</span>(pokemonData)<span class="op">;</span></span>
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    }<span class="op">;</span></span>
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">fetchPokemons</span>()<span class="op">;</span> <span class="co">//&lt;12&gt;</span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span> [])<span class="op">;</span> <span class="co">//&lt;13&gt;</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">fetchPokemons</span>()<span class="op">;</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span> [])<span class="op">;</span></span>
 <span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (</span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;</span>div className<span class="op">=</span>{styles<span class="op">.</span><span class="at">container</span>}<span class="op">&gt;</span> <span class="co">//&lt;14&gt;</span></span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>      <span class="op">&lt;</span>main className<span class="op">=</span>{styles<span class="op">.</span><span class="at">main</span>}<span class="op">&gt;</span> <span class="co">//&lt;15&gt;</span></span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>h1<span class="op">&gt;</span>Pokémons<span class="op">&lt;/</span>h1<span class="op">&gt;</span> <span class="co">//&lt;16&gt;</span></span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>div className<span class="op">=</span>{styles<span class="op">.</span><span class="at">grid</span>}<span class="op">&gt;</span> <span class="co">//&lt;17&gt;</span></span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>          {pokemons<span class="op">.</span><span class="fu">map</span>(pokemon <span class="kw">=&gt;</span> ( <span class="co">//&lt;18&gt;</span></span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>div key<span class="op">=</span>{pokemon<span class="op">.</span><span class="at">id</span>} className<span class="op">=</span>{styles<span class="op">.</span><span class="at">card</span>}<span class="op">&gt;</span> <span class="co">//&lt;19&gt;</span></span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>              <span class="op">&lt;</span>img src<span class="op">=</span>{pokemon<span class="op">.</span><span class="at">sprites</span><span class="op">.</span><span class="at">front_default</span>} alt<span class="op">=</span>{pokemon<span class="op">.</span><span class="at">name</span>} <span class="op">/&gt;</span> <span class="co">//&lt;20&gt;</span></span>
-<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>              <span class="op">&lt;</span>h3<span class="op">&gt;</span>{pokemon<span class="op">.</span><span class="at">name</span>}<span class="op">&lt;/</span>h3<span class="op">&gt;</span> <span class="co">//&lt;21&gt;</span></span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;/</span>div<span class="op">&gt;</span> <span class="co">//&lt;22&gt;</span></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;</span>div className<span class="op">=</span>{styles<span class="op">.</span><span class="at">container</span>}<span class="op">&gt;</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>      <span class="op">&lt;</span>main className<span class="op">=</span>{styles<span class="op">.</span><span class="at">main</span>}<span class="op">&gt;</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>h1<span class="op">&gt;</span>Pokémons<span class="op">&lt;/</span>h1<span class="op">&gt;</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>div className<span class="op">=</span>{styles<span class="op">.</span><span class="at">grid</span>}<span class="op">&gt;</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>          {pokemons<span class="op">.</span><span class="fu">map</span>(pokemon <span class="kw">=&gt;</span> (</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>div key<span class="op">=</span>{pokemon<span class="op">.</span><span class="at">id</span>} className<span class="op">=</span>{styles<span class="op">.</span><span class="at">card</span>}<span class="op">&gt;</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>              <span class="op">&lt;</span>img src<span class="op">=</span>{pokemon<span class="op">.</span><span class="at">sprites</span><span class="op">.</span><span class="at">front_default</span>} alt<span class="op">=</span>{pokemon<span class="op">.</span><span class="at">name</span>} <span class="op">/&gt;</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>              <span class="op">&lt;</span>h3<span class="op">&gt;</span>{pokemon<span class="op">.</span><span class="at">name</span>}<span class="op">&lt;/</span>h3<span class="op">&gt;</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;/</span>div<span class="op">&gt;</span></span>
 <span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>          ))}</span>
 <span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;/</span>div<span class="op">&gt;</span></span>
 <span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>      <span class="op">&lt;/</span>main<span class="op">&gt;</span></span>
@@ -424,7 +168,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>  )<span class="op">;</span></span>
 <span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>En el archivo anterior creamos un componente llamado <strong>Home</strong> que muestra una lista de los primeros 10 pokemons obtenidos de la API de Pokemons. Este componente es una página de la aplicación Next.js y se encuentra en el archivo <strong>pages/index.tsx</strong>.</p>
-<p>El componente <code>Home</code> utiliza el hook <strong>useEffect</strong> para realizar una petición a la API de Pokemons cuando se monta. El hook <strong>useEffect</strong> se ejecuta después de que el componente se haya renderizado en el navegador. En este caso, se utiliza para obtener los datos de los pokemons y actualizar el estado del componente con la lista de pokemons obtenidos.</p>
+<p>El componente <strong>Home</strong> utiliza el hook <strong>useEffect</strong> para realizar una petición a la API de Pokemons cuando se monta. El hook <strong>useEffect</strong> se ejecuta después de que el componente se haya renderizado en el navegador. En este caso, se utiliza para obtener los datos de los pokemons y actualizar el estado del componente con la lista de pokemons obtenidos.</p>
 <p>La función <strong>fetchPokemons</strong> es una función asíncrona que se define dentro del hook <strong>useEffect</strong>. Esta función se encarga de realizar la petición a la API de Pokemons utilizando la función <strong>getPokemons</strong> que hemos definido en el archivo <strong>lib/getPokemons.tsx</strong>. La función <strong>getPokemons</strong> devuelve una promesa que se resuelve con los datos de los pokemons obtenidos de la API.</p>
 <p>Una vez que se obtienen los datos de los pokemons, se actualiza el estado del componente utilizando la función <strong>setPokemons</strong>. La función <strong>setPokemons</strong> es una función proporcionada por el hook <strong>useState</strong> que se utiliza para actualizar el valor de la variable de estado <strong>pokemons</strong>. Al actualizar el estado, el componente se vuelve a renderizar y muestra la lista de pokemons en la interfaz de usuario.</p>
 <p>La lista de pokemons se muestra utilizando el método <strong>map</strong> de JavaScript. El método <strong>map</strong> se utiliza para iterar sobre cada elemento de un arreglo y devolver un nuevo arreglo con los resultados de aplicar una función a cada elemento. En este caso, se utiliza el método <strong>map</strong> para iterar sobre la lista de pokemons y generar un elemento de la lista para cada pokemon.</p>
@@ -511,17 +255,16 @@ Para mostrar los datos de los pokemons en la lista, utilizamos el método <stron
 <h2 class="anchored" data-anchor-id="ejercicio">Ejercicio</h2>
 <p>Desarrollar una aplicación en Next.js que utilice la función fetch para obtener datos de una API externa de Pokemons y mostrarlos dinámicamente en una lista.</p>
 <p>:::</p>
-
-
 </section>
 </div>
 </section>
 </div>
 </div>
 </section>
-</div>
+</section>
 
-</main> <!-- /main -->
+</main>
+<!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -542,150 +285,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
-    }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
-    }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
-      }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
-        }
-      }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
-      return false;
-    }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  const darkModeDefault = true;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
-  };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -772,13 +371,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
-          // target, if specified
-          link.setAttribute("target", "_blank");
-          if (link.getAttribute("rel") === null) {
-            link.setAttribute("rel", "noopener");
-          }
-          // default icon
-          link.classList.add("external");
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -1093,40 +685,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../../unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html" class="pagination-link" aria-label="Creando estilos dinámicos aplicando condicionales en Next.js">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Creando estilos dinámicos aplicando condicionales en Next.js</span></span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-  </div>
-</nav>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
-    <a class="nav-link" href="../../about.html">
-<p>About</p>
-</a>
-  </li>  
-    <li class="nav-item">
-    <a class="nav-link" href="../../license.html">
-<p>License</p>
-</a>
-  </li>  
-</ul>
-    </div>
-    <div class="nav-footer-right">
-      &nbsp;
-    </div>
-  </div>
-</footer>
 
 
 

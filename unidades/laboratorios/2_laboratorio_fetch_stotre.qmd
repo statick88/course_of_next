@@ -1,0 +1,198 @@
+# Laboratorio de Fetch con Next.js y FakeStoreAPI
+
+::: center
+![](images/paste-2.png)
+:::
+
+## Introducción
+
+En este laboratorio, crearemos una aplicación de Next.js que obtiene datos de la FakeStoreAPI y los muestra en una lista. Aprenderemos cómo usar el hook useEffect para realizar peticiones a la API y manejar los datos de manera eficiente.
+
+# Pasos
+
+1.  Crear una nueva aplicación de Next.js
+
+``` bash
+npx create-next-app@latest 1_laboratorio_fetch
+```
+
+2.  Crear un archivo llamado **lib/getProducts.tsx** en la raíz del proyecto
+
+``` ts
+export async function getProducts() {
+  const headers = new Headers({ 
+    "Content-Type": "application/json"
+  });
+
+  const requestOptions = {
+    method: 'GET',
+    headers: headers,
+    redirect: 'follow' as RequestRedirect
+  };
+
+  try {
+    const response = await fetch("https://fakestoreapi.com/products", requestOptions);
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Failed to fetch products:', error);
+    return [];
+  }
+}
+```
+
+El código proporcionado muestra una función llamada **getProducts**. Esta función se encarga de realizar una petición a la **FakeStoreAPI** para obtener una lista de productos.
+
+La FakeStoreAPI es una API falsa que simula una tienda en línea y proporciona datos de productos. Al hacer una solicitud a esta API, podemos obtener información sobre los productos disponibles, como su **nombre**, **precio**, **descripción**, **categoría**, etc.
+
+La función **getProducts** utiliza una técnica llamada **fetch** para realizar la solicitud a la API. Fetch es una función incorporada en JavaScript que permite realizar solicitudes HTTP. En este caso, se utiliza para enviar una solicitud GET a la FakeStoreAPI y obtener la lista de productos.
+
+Una vez que se realiza la solicitud, la función **getProducts** espera a que la respuesta de la API esté disponible. Luego, utiliza el método **json()** para convertir la respuesta en un objeto JSON legible.
+
+Después de convertir la respuesta en un objeto JSON, la función **getProducts** devuelve la lista de productos obtenida de la API.
+
+Es importante tener en cuenta que esta función no realiza ninguna acción adicional con los datos obtenidos de la API. Su único propósito es obtener la lista de productos y devolverla como resultado. Si se desea realizar alguna acción adicional con los datos, como mostrarlos en la interfaz de usuario o realizar cálculos, será necesario implementar esa lógica adicional fuera de esta función.
+
+En resumen, el código proporcionado muestra una función llamada **getProducts** que utiliza la técnica de **fetch** para realizar una solicitud a la FakeStoreAPI y obtener una lista de productos. Esta función devuelve la lista de productos obtenida de la API.
+
+3.  Crear un archivo llamado **pages/index.tsx** en la raíz del proyecto
+
+``` ts
+import styles from '../styles/Home.module.css';
+import { useEffect, useState } from 'react';
+import { getProducts } from '../lib/getProducts';
+
+export default function Home() {
+  const [products, setProducts] = useState<Array<any>>([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      console.log('Fetching products...');
+      const productData = await getProducts();
+      console.log('Fetched products:', productData);
+      setProducts(productData);
+    };
+
+    fetchProducts();
+  }, []);
+
+  return (
+    <div className={styles.container}>
+      <main className={styles.main}>
+        <h1>Products</h1>
+        <div className={styles.grid}>
+          {products.map(product => (
+            <div key={product.id} className={styles.card}>
+              <img src={product.image} alt={product.title} />
+              <h3>{product.title}</h3>
+              <p>{product.price}</p>
+            </div>
+          ))}
+        </div>
+      </main>
+    </div>
+  );
+}
+```
+
+El código proporcionado en este archivo, se crea un componente llamado Home que muestra una lista de productos obtenidos de la **FakeStoreAPI**. Este componente es una página de la aplicación Next.js y se encuentra en el archivo **pages/index.tsx**.
+
+Next.js es un framework de React utilizado para construir aplicaciones web del lado del servidor. Permite crear páginas estáticas y dinámicas de manera sencilla y eficiente.
+
+En este caso, el componente Home se utiliza como la página principal de la aplicación. Su función principal es mostrar una lista de productos obtenidos de la FakeStoreAPI. Esta API es una API de prueba que proporciona datos ficticios de productos.
+
+Para obtener los datos de la API, es probable que el código utilice una función de fetch o una biblioteca como axios para realizar una solicitud HTTP al endpoint de la API. Una vez que se obtienen los datos, se pueden mostrar en la página utilizando elementos de React como listas o tarjetas.
+
+Es importante tener en cuenta que este fragmento de código es solo una descripción del componente Home y no muestra el código real utilizado para obtener los datos de la API o mostrar la lista de productos. Para comprender completamente cómo funciona este componente, sería necesario revisar el archivo pages/index.tsx y examinar el código completo.
+
+4.  Agregar CSS
+
+Creamos el archivo **styles/Home.module.css** en la raíz del proyecto con el siguiente contenido:
+
+``` css
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin-top: 3rem;
+}
+
+.card {
+  margin: 1rem;
+  flex-basis: 45%;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+```
+
+En este archivo se definen los estilos CSS para la aplicación. Los estilos se aplican a los elementos HTML utilizando clases CSS y se utilizan para dar formato y diseño a la interfaz de usuario.
+
+5.  Ejecutar la aplicación
+
+``` bash
+npm run dev
+```
+
+6.  Abrir la aplicación en el navegador
+
+Abrimos la aplicación en el navegador en <http://localhost:3000>.
+
+## Resultado
+
+La aplicación muestra una lista de productos obtenidos de la FakeStoreAPI.
+
+::: center
+![](images/paste-2.png)
+:::
+
+## Conclusión
+
+En este laboratorio, aprendimos cómo obtener datos de una API en una aplicación de Next.js y mostrarlos en una lista. También aprendimos cómo usar el hook useEffect para realizar una petición a la API cuando el componente se monta.
+
+Además, vimos cómo manejar los posibles errores que puedan ocurrir durante la petición a la API utilizando un bloque try-catch. Esto nos permite manejar los errores de manera adecuada y evitar que la aplicación se detenga por completo en caso de fallos en la petición.
+
+Para mostrar los datos de los productos en la lista, utilizamos el método map de JavaScript para iterar sobre la lista de productos y generar un elemento de la lista para cada producto. Cada elemento de la lista se representa como un **div** con una imagen y el título del producto.
+
+En resumen, este laboratorio nos ha enseñado cómo obtener y mostrar datos de una API en una aplicación de Next.js, así como cómo manejar los errores de manera adecuada. Estos conceptos son fundamentales para el desarrollo de aplicaciones web que interactúan con servicios externos y proporcionan una experiencia de usuario fluida y sin interrupciones.
+
+## Ejercicio
+
+Desarrollar una aplicación en Next.js que utilice la función fetch para obtener datos de una API externa de FakeStoreAPI y mostrarlos dinámicamente en una lista.
+
+</div>

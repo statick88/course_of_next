@@ -8,7 +8,7 @@
 
 <meta name="description" content="Curso de Nextjs">
 
-<title>Laboratorio de Fetch con Next – Curso de Nextjs</title>
+<title>Laboratorio de Fetch con Next.js y FakeStoreAPI – Curso de Nextjs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -65,7 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html" rel="prev">
+<link href="../../unidades/laboratorios/1_laboratorio_fetch.html" rel="prev">
 <link href="../../logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -119,7 +119,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/laboratorios/1_laboratorio_fetch.html">Laboratorios</a></li><li class="breadcrumb-item"><a href="../../unidades/laboratorios/1_laboratorio_fetch.html"><span class="chapter-title">Laboratorio de Fetch con Next</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/laboratorios/1_laboratorio_fetch.html">Laboratorios</a></li><li class="breadcrumb-item"><a href="../../unidades/laboratorios/2_laboratorio_fetch_stotre.html"><span class="chapter-title">Laboratorio de Fetch con Next.js y FakeStoreAPI</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -302,7 +302,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../unidades/laboratorios/1_laboratorio_fetch.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Laboratorio de Fetch con Next</span></a>
+  <a href="../../unidades/laboratorios/1_laboratorio_fetch.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Laboratorio de Fetch con Next</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../unidades/laboratorios/2_laboratorio_fetch_stotre.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Laboratorio de Fetch con Next.js y FakeStoreAPI</span></a>
   </div>
 </li>
       </ul>
@@ -312,15 +317,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción">Introducción</a></li>
+  <li><a href="#pasos" id="toc-pasos" class="nav-link" data-scroll-target="#pasos">Pasos</a>
+  <ul class="collapse">
+  <li><a href="#resultado" id="toc-resultado" class="nav-link" data-scroll-target="#resultado">Resultado</a></li>
+  <li><a href="#conclusión" id="toc-conclusión" class="nav-link" data-scroll-target="#conclusión">Conclusión</a></li>
+  <li><a href="#ejercicio" id="toc-ejercicio" class="nav-link" data-scroll-target="#ejercicio">Ejercicio</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/laboratorios/1_laboratorio_fetch.html">Laboratorios</a></li><li class="breadcrumb-item"><a href="../../unidades/laboratorios/1_laboratorio_fetch.html"><span class="chapter-title">Laboratorio de Fetch con Next</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../unidades/laboratorios/1_laboratorio_fetch.html">Laboratorios</a></li><li class="breadcrumb-item"><a href="../../unidades/laboratorios/2_laboratorio_fetch_stotre.html"><span class="chapter-title">Laboratorio de Fetch con Next.js y FakeStoreAPI</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-title">Laboratorio de Fetch con Next</span></h1>
+<h1 class="title"><span class="chapter-title">Laboratorio de Fetch con Next.js y FakeStoreAPI</span></h1>
 </div>
 
 
@@ -337,21 +354,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<div class="justify">
 <div class="center">
-<p><img src="images/paste-1.png" class="img-fluid"></p>
+<p><img src="images/paste-2.png" class="img-fluid"></p>
 </div>
-<p>En este laboratorio crearemos una aplicación de Next.js que obtiene datos de una API de Pokemons y los muestra en una lista.</p>
-<section id="pasos" class="level2">
-<h2 class="anchored" data-anchor-id="pasos">Pasos</h2>
+<section id="introducción" class="level2">
+<h2 class="anchored" data-anchor-id="introducción">Introducción</h2>
+<p>En este laboratorio, crearemos una aplicación de Next.js que obtiene datos de la FakeStoreAPI y los muestra en una lista. Aprenderemos cómo usar el hook useEffect para realizar peticiones a la API y manejar los datos de manera eficiente.</p>
+</section>
+<section id="pasos" class="level1">
+<h1>Pasos</h1>
 <ol type="1">
 <li>Crear una nueva aplicación de Next.js</li>
 </ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">npx</span> create-next-app@latest 1_laboratorio_fetch</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="2" type="1">
-<li>Crear un archivo llamado <strong>lib/getsPokemons.tsx</strong> en la raíz del proyecto.</li>
+<li>Crear un archivo llamado <strong>lib/getProducts.tsx</strong> en la raíz del proyecto</li>
 </ol>
-<div class="sourceCode" id="cb2"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">async</span> <span class="kw">function</span> <span class="fu">getPokemons</span>() {</span>
+<div class="sourceCode" id="cb2"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="kw">async</span> <span class="kw">function</span> <span class="fu">getProducts</span>() {</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> headers <span class="op">=</span> <span class="kw">new</span> <span class="fu">Headers</span>({ </span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"Content-Type"</span><span class="op">:</span> <span class="st">"application/json"</span></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
@@ -363,165 +382,150 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  }<span class="op">;</span></span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="cf">try</span> {</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> response <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(<span class="st">"https://pokeapi.co/api/v2/pokemon?limit=10"</span><span class="op">,</span> requestOptions)<span class="op">;</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> response <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(<span class="st">"https://fakestoreapi.com/products"</span><span class="op">,</span> requestOptions)<span class="op">;</span></span>
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="op">!</span>response<span class="op">.</span><span class="at">ok</span>) {</span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>      <span class="cf">throw</span> <span class="kw">new</span> <span class="bu">Error</span>(<span class="st">'Network response was not ok'</span>)<span class="op">;</span></span>
 <span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> data <span class="op">=</span> <span class="cf">await</span> response<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> pokemonDetails <span class="op">=</span> <span class="cf">await</span> <span class="bu">Promise</span><span class="op">.</span><span class="fu">all</span>(</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>      data<span class="op">.</span><span class="at">results</span><span class="op">.</span><span class="fu">map</span>(<span class="kw">async</span> (pokemon<span class="op">:</span> <span class="dt">any</span>) <span class="kw">=&gt;</span> {</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>        <span class="kw">const</span> res <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(pokemon<span class="op">.</span><span class="at">url</span>)<span class="op">;</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>        <span class="kw">const</span> details <span class="op">=</span> <span class="cf">await</span> res<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> details<span class="op">;</span></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>      })</span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    )<span class="op">;</span></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> pokemonDetails<span class="op">;</span></span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">catch</span> (error) {</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">error</span>(<span class="st">'Failed to fetch pokemons:'</span><span class="op">,</span> error)<span class="op">;</span></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> []<span class="op">;</span></span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>En el archivo mencionado, se ha creado una función llamada getPokemons. Esta función tiene la responsabilidad de realizar una petición a la API de Pokemons y obtener los primeros 10 pokemons.</p>
-<p>La API de Pokemons es una interfaz de programación de aplicaciones que permite acceder a información relacionada con los pokemons, como sus nombres, habilidades, tipos, entre otros datos. Al realizar una petición a esta API, podemos obtener los datos de los pokemons de manera programática.</p>
-<p>En el código proporcionado, la función getPokemons se encarga de manejar los posibles errores que puedan ocurrir durante la petición a la API. Si ocurre algún error, en lugar de lanzar una excepción o detener la ejecución del programa, la función retorna un arreglo vacío.</p>
-<p>Esta estrategia de manejo de errores es útil porque permite que el programa continúe ejecutándose sin interrupciones, incluso si la petición a la API falla. En lugar de detenerse por completo, el programa puede tomar medidas alternativas o mostrar un mensaje de error al usuario.</p>
-<p>En resumen, la función getPokemons es responsable de obtener los primeros 10 pokemons de la API de Pokemons y manejar los errores de manera adecuada. Esto garantiza que el programa pueda continuar ejecutándose sin problemas, incluso en caso de fallos en la petición.</p>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> data<span class="op">;</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">catch</span> (error) {</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">error</span>(<span class="st">'Failed to fetch products:'</span><span class="op">,</span> error)<span class="op">;</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> []<span class="op">;</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>El código proporcionado muestra una función llamada <strong>getProducts</strong>. Esta función se encarga de realizar una petición a la <strong>FakeStoreAPI</strong> para obtener una lista de productos.</p>
+<p>La FakeStoreAPI es una API falsa que simula una tienda en línea y proporciona datos de productos. Al hacer una solicitud a esta API, podemos obtener información sobre los productos disponibles, como su <strong>nombre</strong>, <strong>precio</strong>, <strong>descripción</strong>, <strong>categoría</strong>, etc.</p>
+<p>La función <strong>getProducts</strong> utiliza una técnica llamada <strong>fetch</strong> para realizar la solicitud a la API. Fetch es una función incorporada en JavaScript que permite realizar solicitudes HTTP. En este caso, se utiliza para enviar una solicitud GET a la FakeStoreAPI y obtener la lista de productos.</p>
+<p>Una vez que se realiza la solicitud, la función <strong>getProducts</strong> espera a que la respuesta de la API esté disponible. Luego, utiliza el método <strong>json()</strong> para convertir la respuesta en un objeto JSON legible.</p>
+<p>Después de convertir la respuesta en un objeto JSON, la función <strong>getProducts</strong> devuelve la lista de productos obtenida de la API.</p>
+<p>Es importante tener en cuenta que esta función no realiza ninguna acción adicional con los datos obtenidos de la API. Su único propósito es obtener la lista de productos y devolverla como resultado. Si se desea realizar alguna acción adicional con los datos, como mostrarlos en la interfaz de usuario o realizar cálculos, será necesario implementar esa lógica adicional fuera de esta función.</p>
+<p>En resumen, el código proporcionado muestra una función llamada <strong>getProducts</strong> que utiliza la técnica de <strong>fetch</strong> para realizar una solicitud a la FakeStoreAPI y obtener una lista de productos. Esta función devuelve la lista de productos obtenida de la API.</p>
 <ol start="3" type="1">
-<li>Crear un archivo llamado <strong>pages/index.tsx</strong> en la raíz del proyecto.</li>
+<li>Crear un archivo llamado <strong>pages/index.tsx</strong> en la raíz del proyecto</li>
 </ol>
-<div class="sourceCode" id="cb3"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> styles <span class="im">from</span> <span class="st">'../../styles/Home.module.css'</span><span class="op">;</span> <span class="co">//&lt;1&gt;</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { useEffect<span class="op">,</span> useState } <span class="im">from</span> <span class="st">'react'</span><span class="op">;</span> <span class="co">//&lt;2&gt;</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { getPokemons } <span class="im">from</span> <span class="st">'../../lib/getPokemons'</span><span class="op">;</span> <span class="co">//&lt;3&gt;</span></span>
+<div class="sourceCode" id="cb3"><pre class="sourceCode ts code-with-copy"><code class="sourceCode typescript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> styles <span class="im">from</span> <span class="st">'../styles/Home.module.css'</span><span class="op">;</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { useEffect<span class="op">,</span> useState } <span class="im">from</span> <span class="st">'react'</span><span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> { getProducts } <span class="im">from</span> <span class="st">'../lib/getProducts'</span><span class="op">;</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> <span class="kw">function</span> <span class="fu">Home</span>() { <span class="co">//&lt;4&gt;</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> [pokemons<span class="op">,</span> setPokemons] <span class="op">=</span> <span class="fu">useState</span><span class="op">&lt;</span><span class="bu">Array</span><span class="op">&lt;</span><span class="dt">any</span><span class="op">&gt;&gt;</span>([])<span class="op">;</span> <span class="co">//&lt;5&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> <span class="kw">function</span> <span class="fu">Home</span>() {</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> [products<span class="op">,</span> setProducts] <span class="op">=</span> <span class="fu">useState</span><span class="op">&lt;</span><span class="bu">Array</span><span class="op">&lt;</span><span class="dt">any</span><span class="op">&gt;&gt;</span>([])<span class="op">;</span></span>
 <span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">useEffect</span>(() <span class="kw">=&gt;</span> { <span class="co">//&lt;6&gt;</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> fetchPokemons <span class="op">=</span> <span class="kw">async</span> () <span class="kw">=&gt;</span> { <span class="co">//&lt;7&gt;</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>      <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">'Fetching pokemons...'</span>)<span class="op">;</span> <span class="co">//&lt;8&gt;</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> pokemonData <span class="op">=</span> <span class="cf">await</span> <span class="fu">getPokemons</span>()<span class="op">;</span> <span class="co">//&lt;9&gt;</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>      <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">'Fetched pokemons:'</span><span class="op">,</span> pokemonData)<span class="op">;</span> <span class="co">//&lt;10&gt;</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>      <span class="fu">setPokemons</span>(pokemonData)<span class="op">;</span> <span class="co">//&lt;11&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">useEffect</span>(() <span class="kw">=&gt;</span> {</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> fetchProducts <span class="op">=</span> <span class="kw">async</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>      <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">'Fetching products...'</span>)<span class="op">;</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> productData <span class="op">=</span> <span class="cf">await</span> <span class="fu">getProducts</span>()<span class="op">;</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>      <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">'Fetched products:'</span><span class="op">,</span> productData)<span class="op">;</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>      <span class="fu">setProducts</span>(productData)<span class="op">;</span></span>
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    }<span class="op">;</span></span>
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">fetchPokemons</span>()<span class="op">;</span> <span class="co">//&lt;12&gt;</span></span>
-<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span> [])<span class="op">;</span> <span class="co">//&lt;13&gt;</span></span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">fetchProducts</span>()<span class="op">;</span></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span> [])<span class="op">;</span></span>
 <span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> (</span>
-<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;</span>div className<span class="op">=</span>{styles<span class="op">.</span><span class="at">container</span>}<span class="op">&gt;</span> <span class="co">//&lt;14&gt;</span></span>
-<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>      <span class="op">&lt;</span>main className<span class="op">=</span>{styles<span class="op">.</span><span class="at">main</span>}<span class="op">&gt;</span> <span class="co">//&lt;15&gt;</span></span>
-<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>h1<span class="op">&gt;</span>Pokémons<span class="op">&lt;/</span>h1<span class="op">&gt;</span> <span class="co">//&lt;16&gt;</span></span>
-<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>div className<span class="op">=</span>{styles<span class="op">.</span><span class="at">grid</span>}<span class="op">&gt;</span> <span class="co">//&lt;17&gt;</span></span>
-<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>          {pokemons<span class="op">.</span><span class="fu">map</span>(pokemon <span class="kw">=&gt;</span> ( <span class="co">//&lt;18&gt;</span></span>
-<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>div key<span class="op">=</span>{pokemon<span class="op">.</span><span class="at">id</span>} className<span class="op">=</span>{styles<span class="op">.</span><span class="at">card</span>}<span class="op">&gt;</span> <span class="co">//&lt;19&gt;</span></span>
-<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>              <span class="op">&lt;</span>img src<span class="op">=</span>{pokemon<span class="op">.</span><span class="at">sprites</span><span class="op">.</span><span class="at">front_default</span>} alt<span class="op">=</span>{pokemon<span class="op">.</span><span class="at">name</span>} <span class="op">/&gt;</span> <span class="co">//&lt;20&gt;</span></span>
-<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>              <span class="op">&lt;</span>h3<span class="op">&gt;</span>{pokemon<span class="op">.</span><span class="at">name</span>}<span class="op">&lt;/</span>h3<span class="op">&gt;</span> <span class="co">//&lt;21&gt;</span></span>
-<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;/</span>div<span class="op">&gt;</span> <span class="co">//&lt;22&gt;</span></span>
-<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>          ))}</span>
-<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;/</span>div<span class="op">&gt;</span></span>
-<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>      <span class="op">&lt;/</span>main<span class="op">&gt;</span></span>
-<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;/</span>div<span class="op">&gt;</span></span>
-<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>  )<span class="op">;</span></span>
-<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>En el archivo anterior creamos un componente llamado <strong>Home</strong> que muestra una lista de los primeros 10 pokemons obtenidos de la API de Pokemons. Este componente es una página de la aplicación Next.js y se encuentra en el archivo <strong>pages/index.tsx</strong>.</p>
-<p>El componente <code>Home</code> utiliza el hook <strong>useEffect</strong> para realizar una petición a la API de Pokemons cuando se monta. El hook <strong>useEffect</strong> se ejecuta después de que el componente se haya renderizado en el navegador. En este caso, se utiliza para obtener los datos de los pokemons y actualizar el estado del componente con la lista de pokemons obtenidos.</p>
-<p>La función <strong>fetchPokemons</strong> es una función asíncrona que se define dentro del hook <strong>useEffect</strong>. Esta función se encarga de realizar la petición a la API de Pokemons utilizando la función <strong>getPokemons</strong> que hemos definido en el archivo <strong>lib/getPokemons.tsx</strong>. La función <strong>getPokemons</strong> devuelve una promesa que se resuelve con los datos de los pokemons obtenidos de la API.</p>
-<p>Una vez que se obtienen los datos de los pokemons, se actualiza el estado del componente utilizando la función <strong>setPokemons</strong>. La función <strong>setPokemons</strong> es una función proporcionada por el hook <strong>useState</strong> que se utiliza para actualizar el valor de la variable de estado <strong>pokemons</strong>. Al actualizar el estado, el componente se vuelve a renderizar y muestra la lista de pokemons en la interfaz de usuario.</p>
-<p>La lista de pokemons se muestra utilizando el método <strong>map</strong> de JavaScript. El método <strong>map</strong> se utiliza para iterar sobre cada elemento de un arreglo y devolver un nuevo arreglo con los resultados de aplicar una función a cada elemento. En este caso, se utiliza el método <strong>map</strong> para iterar sobre la lista de pokemons y generar un elemento de la lista para cada pokemon.</p>
-Cada elemento de la lista de pokemons se representa como un **
-<div>
-<p>** con una imagen y el nombre del pokemon. La imagen se muestra utilizando la propiedad <strong>sprites.front_default</strong> del objeto pokemon, que contiene la URL de la imagen del pokemon. El nombre del pokemon se muestra utilizando la propiedad <strong>name</strong> del objeto pokemon.</p>
-En resumen, el componente <strong>Home</strong> es responsable de obtener los datos de los primeros 10 pokemons de la API de Pokemons y mostrarlos en una lista en la interfaz de usuario. Utiliza el hook <strong>useEffect</strong> para realizar la petición a la API cuando se monta y el hook <strong>useState</strong> para almacenar y actualizar la lista de pokemons en el estado del componente. La lista de pokemons se muestra utilizando el método <strong>map</strong> y se representan como elementos **
-<div>
-<p>** con una imagen y el nombre del pokemon.</p>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;</span>div className<span class="op">=</span>{styles<span class="op">.</span><span class="at">container</span>}<span class="op">&gt;</span></span>
+<span id="cb3-21"><a href="#cb3-21" aria-hidden="true" tabindex="-1"></a>      <span class="op">&lt;</span>main className<span class="op">=</span>{styles<span class="op">.</span><span class="at">main</span>}<span class="op">&gt;</span></span>
+<span id="cb3-22"><a href="#cb3-22" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>h1<span class="op">&gt;</span>Products<span class="op">&lt;/</span>h1<span class="op">&gt;</span></span>
+<span id="cb3-23"><a href="#cb3-23" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;</span>div className<span class="op">=</span>{styles<span class="op">.</span><span class="at">grid</span>}<span class="op">&gt;</span></span>
+<span id="cb3-24"><a href="#cb3-24" aria-hidden="true" tabindex="-1"></a>          {products<span class="op">.</span><span class="fu">map</span>(product <span class="kw">=&gt;</span> (</span>
+<span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;</span>div key<span class="op">=</span>{product<span class="op">.</span><span class="at">id</span>} className<span class="op">=</span>{styles<span class="op">.</span><span class="at">card</span>}<span class="op">&gt;</span></span>
+<span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>              <span class="op">&lt;</span>img src<span class="op">=</span>{product<span class="op">.</span><span class="at">image</span>} alt<span class="op">=</span>{product<span class="op">.</span><span class="at">title</span>} <span class="op">/&gt;</span></span>
+<span id="cb3-27"><a href="#cb3-27" aria-hidden="true" tabindex="-1"></a>              <span class="op">&lt;</span>h3<span class="op">&gt;</span>{product<span class="op">.</span><span class="at">title</span>}<span class="op">&lt;/</span>h3<span class="op">&gt;</span></span>
+<span id="cb3-28"><a href="#cb3-28" aria-hidden="true" tabindex="-1"></a>              <span class="op">&lt;</span>p<span class="op">&gt;</span>{product<span class="op">.</span><span class="at">price</span>}<span class="op">&lt;/</span>p<span class="op">&gt;</span></span>
+<span id="cb3-29"><a href="#cb3-29" aria-hidden="true" tabindex="-1"></a>            <span class="op">&lt;/</span>div<span class="op">&gt;</span></span>
+<span id="cb3-30"><a href="#cb3-30" aria-hidden="true" tabindex="-1"></a>          ))}</span>
+<span id="cb3-31"><a href="#cb3-31" aria-hidden="true" tabindex="-1"></a>        <span class="op">&lt;/</span>div<span class="op">&gt;</span></span>
+<span id="cb3-32"><a href="#cb3-32" aria-hidden="true" tabindex="-1"></a>      <span class="op">&lt;/</span>main<span class="op">&gt;</span></span>
+<span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>    <span class="op">&lt;/</span>div<span class="op">&gt;</span></span>
+<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>  )<span class="op">;</span></span>
+<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>El código proporcionado en este archivo, se crea un componente llamado Home que muestra una lista de productos obtenidos de la <strong>FakeStoreAPI</strong>. Este componente es una página de la aplicación Next.js y se encuentra en el archivo <strong>pages/index.tsx</strong>.</p>
+<p>Next.js es un framework de React utilizado para construir aplicaciones web del lado del servidor. Permite crear páginas estáticas y dinámicas de manera sencilla y eficiente.</p>
+<p>En este caso, el componente Home se utiliza como la página principal de la aplicación. Su función principal es mostrar una lista de productos obtenidos de la FakeStoreAPI. Esta API es una API de prueba que proporciona datos ficticios de productos.</p>
+<p>Para obtener los datos de la API, es probable que el código utilice una función de fetch o una biblioteca como axios para realizar una solicitud HTTP al endpoint de la API. Una vez que se obtienen los datos, se pueden mostrar en la página utilizando elementos de React como listas o tarjetas.</p>
+<p>Es importante tener en cuenta que este fragmento de código es solo una descripción del componente Home y no muestra el código real utilizado para obtener los datos de la API o mostrar la lista de productos. Para comprender completamente cómo funciona este componente, sería necesario revisar el archivo pages/index.tsx y examinar el código completo.</p>
 <ol start="4" type="1">
-<li>Agregamos CSS</li>
+<li>Agregar CSS</li>
 </ol>
 <p>Creamos el archivo <strong>styles/Home.module.css</strong> en la raíz del proyecto con el siguiente contenido:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.container</span> {</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">padding</span><span class="ch">:</span> <span class="dv">0</span> <span class="dv">2</span><span class="dt">rem</span><span class="op">;</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">.main</span> {</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">min-height</span><span class="ch">:</span> <span class="dv">100</span><span class="dt">vh</span><span class="op">;</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">padding</span><span class="ch">:</span> <span class="dv">4</span><span class="dt">rem</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">flex</span><span class="ch">:</span> <span class="dv">1</span><span class="op">;</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">display</span><span class="ch">:</span> <span class="dv">flex</span><span class="op">;</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">flex-direction</span><span class="ch">:</span> <span class="dv">column</span><span class="op">;</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">justify-content</span><span class="ch">:</span> <span class="dv">center</span><span class="op">;</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">align-items</span><span class="ch">:</span> <span class="dv">center</span><span class="op">;</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">.grid</span> {</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">display</span><span class="ch">:</span> <span class="dv">flex</span><span class="op">;</span></span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">align-items</span><span class="ch">:</span> <span class="dv">center</span><span class="op">;</span></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    <span class="kw">justify-content</span><span class="ch">:</span> <span class="dv">center</span><span class="op">;</span></span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    <span class="kw">flex-wrap</span><span class="ch">:</span> <span class="dv">wrap</span><span class="op">;</span></span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>    <span class="kw">max-width</span><span class="ch">:</span> <span class="dv">800</span><span class="dt">px</span><span class="op">;</span></span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>    <span class="kw">margin-top</span><span class="ch">:</span> <span class="dv">3</span><span class="dt">rem</span><span class="op">;</span></span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">.card</span> {</span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>    <span class="kw">margin</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">rem</span><span class="op">;</span></span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>    <span class="kw">flex-basis</span><span class="ch">:</span> <span class="dv">45</span><span class="dt">%</span><span class="op">;</span></span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>    <span class="kw">padding</span><span class="ch">:</span> <span class="dv">1.5</span><span class="dt">rem</span><span class="op">;</span></span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>    <span class="kw">text-align</span><span class="ch">:</span> <span class="dv">left</span><span class="op">;</span></span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>    <span class="kw">color</span><span class="ch">:</span> <span class="bu">inherit</span><span class="op">;</span></span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>    <span class="kw">text-decoration</span><span class="ch">:</span> <span class="dv">none</span><span class="op">;</span></span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>    <span class="kw">border</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#eaeaea</span><span class="op">;</span></span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>    <span class="kw">border-radius</span><span class="ch">:</span> <span class="dv">10</span><span class="dt">px</span><span class="op">;</span></span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>    <span class="kw">transition</span><span class="ch">:</span> <span class="dv">color</span> <span class="dv">0.15</span><span class="dt">s</span> <span class="dv">ease</span><span class="op">,</span> <span class="dv">border-color 0.15</span><span class="dt">s</span> <span class="dv">ease</span><span class="op">;</span></span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">.card</span><span class="in">:hover</span><span class="op">,</span></span>
-<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">.card</span><span class="in">:focus</span><span class="op">,</span></span>
-<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">.card</span><span class="in">:active</span> {</span>
-<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>    <span class="kw">color</span><span class="ch">:</span> <span class="cn">#0070f3</span><span class="op">;</span></span>
-<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>    <span class="kw">border-color</span><span class="ch">:</span> <span class="cn">#0070f3</span><span class="op">;</span></span>
-<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">.card</span> img {</span>
-<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>    <span class="kw">max-width</span><span class="ch">:</span> <span class="dv">100</span><span class="dt">%</span><span class="op">;</span></span>
-<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>    <span class="kw">border-radius</span><span class="ch">:</span> <span class="dv">10</span><span class="dt">px</span><span class="op">;</span></span>
-<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>  }</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">padding</span><span class="ch">:</span> <span class="dv">0</span> <span class="dv">2</span><span class="dt">rem</span><span class="op">;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">.main</span> {</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">min-height</span><span class="ch">:</span> <span class="dv">100</span><span class="dt">vh</span><span class="op">;</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">padding</span><span class="ch">:</span> <span class="dv">4</span><span class="dt">rem</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">flex</span><span class="ch">:</span> <span class="dv">1</span><span class="op">;</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span><span class="ch">:</span> <span class="dv">flex</span><span class="op">;</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="kw">flex-direction</span><span class="ch">:</span> <span class="dv">column</span><span class="op">;</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="kw">justify-content</span><span class="ch">:</span> <span class="dv">center</span><span class="op">;</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="kw">align-items</span><span class="ch">:</span> <span class="dv">center</span><span class="op">;</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="fu">.grid</span> {</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  <span class="kw">display</span><span class="ch">:</span> <span class="dv">flex</span><span class="op">;</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  <span class="kw">align-items</span><span class="ch">:</span> <span class="dv">center</span><span class="op">;</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>  <span class="kw">justify-content</span><span class="ch">:</span> <span class="dv">center</span><span class="op">;</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>  <span class="kw">flex-wrap</span><span class="ch">:</span> <span class="dv">wrap</span><span class="op">;</span></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>  <span class="kw">max-width</span><span class="ch">:</span> <span class="dv">800</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin-top</span><span class="ch">:</span> <span class="dv">3</span><span class="dt">rem</span><span class="op">;</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="fu">.card</span> {</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>  <span class="kw">margin</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">rem</span><span class="op">;</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>  <span class="kw">flex-basis</span><span class="ch">:</span> <span class="dv">45</span><span class="dt">%</span><span class="op">;</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>  <span class="kw">padding</span><span class="ch">:</span> <span class="dv">1.5</span><span class="dt">rem</span><span class="op">;</span></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>  <span class="kw">text-align</span><span class="ch">:</span> <span class="dv">left</span><span class="op">;</span></span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span><span class="ch">:</span> <span class="bu">inherit</span><span class="op">;</span></span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>  <span class="kw">text-decoration</span><span class="ch">:</span> <span class="dv">none</span><span class="op">;</span></span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border</span><span class="ch">:</span> <span class="dv">1</span><span class="dt">px</span> <span class="dv">solid</span> <span class="cn">#eaeaea</span><span class="op">;</span></span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border-radius</span><span class="ch">:</span> <span class="dv">10</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>  <span class="kw">transition</span><span class="ch">:</span> <span class="dv">color</span> <span class="dv">0.15</span><span class="dt">s</span> <span class="dv">ease</span><span class="op">,</span> <span class="dv">border-color 0.15</span><span class="dt">s</span> <span class="dv">ease</span><span class="op">;</span></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a><span class="fu">.card</span><span class="in">:hover</span><span class="op">,</span></span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a><span class="fu">.card</span><span class="in">:focus</span><span class="op">,</span></span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a><span class="fu">.card</span><span class="in">:active</span> {</span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span><span class="ch">:</span> <span class="cn">#0070f3</span><span class="op">;</span></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border-color</span><span class="ch">:</span> <span class="cn">#0070f3</span><span class="op">;</span></span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a><span class="fu">.card</span> img {</span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>  <span class="kw">max-width</span><span class="ch">:</span> <span class="dv">100</span><span class="dt">%</span><span class="op">;</span></span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>  <span class="kw">border-radius</span><span class="ch">:</span> <span class="dv">10</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>En este archivo se definen los estilos CSS para la aplicación. Los estilos se aplican a los elementos HTML utilizando clases CSS y se utilizan para dar formato y diseño a la interfaz de usuario.</p>
 <ol start="5" type="1">
 <li>Ejecutar la aplicación</li>
 </ol>
 <div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">npm</span> run dev</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="6" type="1">
-<li>Abrir la aplicación en el navegador <a href="http://localhost:3000" class="uri">http://localhost:3000</a></li>
+<li>Abrir la aplicación en el navegador</li>
 </ol>
+<p>Abrimos la aplicación en el navegador en <a href="http://localhost:3000" class="uri">http://localhost:3000</a>.</p>
 <section id="resultado" class="level2">
 <h2 class="anchored" data-anchor-id="resultado">Resultado</h2>
+<p>La aplicación muestra una lista de productos obtenidos de la FakeStoreAPI.</p>
 <div class="center">
-<p><img src="images/paste-1.png" class="img-fluid"></p>
+<p><img src="images/paste-2.png" class="img-fluid"></p>
 </div>
-<p>Como puedes observar en la imagen anterior, la aplicación muestra una lista de los primeros 10 pokemons obtenidos de la API de Pokemons.</p>
 </section>
 <section id="conclusión" class="level2">
 <h2 class="anchored" data-anchor-id="conclusión">Conclusión</h2>
-<p>En este laboratorio, aprendimos cómo obtener datos de una API en una aplicación de Next.js y mostrarlos en una lista. También aprendimos cómo usar el hook <strong>useEffect</strong> para realizar una petición a la API cuando el componente se monta.</p>
+<p>En este laboratorio, aprendimos cómo obtener datos de una API en una aplicación de Next.js y mostrarlos en una lista. También aprendimos cómo usar el hook useEffect para realizar una petición a la API cuando el componente se monta.</p>
 <p>Además, vimos cómo manejar los posibles errores que puedan ocurrir durante la petición a la API utilizando un bloque try-catch. Esto nos permite manejar los errores de manera adecuada y evitar que la aplicación se detenga por completo en caso de fallos en la petición.</p>
-Para mostrar los datos de los pokemons en la lista, utilizamos el método <strong>map</strong> de JavaScript para iterar sobre la lista de pokemons y generar un elemento de la lista para cada pokemon. Cada elemento de la lista se representa como un **
-<div>
-<p>** con una imagen y el nombre del pokemon.</p>
+<p>Para mostrar los datos de los productos en la lista, utilizamos el método map de JavaScript para iterar sobre la lista de productos y generar un elemento de la lista para cada producto. Cada elemento de la lista se representa como un <strong>div</strong> con una imagen y el título del producto.</p>
 <p>En resumen, este laboratorio nos ha enseñado cómo obtener y mostrar datos de una API en una aplicación de Next.js, así como cómo manejar los errores de manera adecuada. Estos conceptos son fundamentales para el desarrollo de aplicaciones web que interactúan con servicios externos y proporcionan una experiencia de usuario fluida y sin interrupciones.</p>
+</section>
 <section id="ejercicio" class="level2">
 <h2 class="anchored" data-anchor-id="ejercicio">Ejercicio</h2>
-<p>Desarrollar una aplicación en Next.js que utilice la función fetch para obtener datos de una API externa de Pokemons y mostrarlos dinámicamente en una lista.</p>
-<p>:::</p>
+<p>Desarrollar una aplicación en Next.js que utilice la función fetch para obtener datos de una API externa de FakeStoreAPI y mostrarlos dinámicamente en una lista.</p>
+</section></section></main></div>
 
 
-</section>
-</div>
-</section>
-</div>
-</div>
-</section>
-</div>
 
-</main> <!-- /main -->
+
+
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -1095,14 +1099,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../unidades/unidad2/16_creando_estilos_dinamicos_apicando_condicionales.html" class="pagination-link" aria-label="Creando estilos dinámicos aplicando condicionales en Next.js">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Creando estilos dinámicos aplicando condicionales en Next.js</span></span>
+      <a href="../../unidades/laboratorios/1_laboratorio_fetch.html" class="pagination-link" aria-label="Laboratorio de Fetch con Next">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Laboratorio de Fetch con Next</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
   </div>
 </nav>
-</div> <!-- /content -->
+ <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">

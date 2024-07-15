@@ -58,6 +58,7 @@ book:
     - part: "Laboratorios"
       chapters:
         - unidades/laboratorios/1_laboratorio_fetch.qmd
+        - unidades/laboratorios/2_laboratorio_fetch_stotre.qmd
 
 bibliography: references.bib
 biblio-style: "apalike"
